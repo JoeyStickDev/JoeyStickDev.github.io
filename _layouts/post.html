@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<article class="post-content-area" style="max-width: 900px; margin: 40px auto; padding: 40px; background: var(--bg-card); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <header class="post-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px;">
+        <span class="post-category" style="background: var(--accent-color); color: #fff; padding: 4px 10px; border-radius: 4px; font-size: 0.9rem;">{{ page.category }}</span>
+        <h1 class="post-title" style="margin-top: 15px; font-size: 2rem; color: #fff;">{{ page.title }}</h1>
+        <p class="post-meta" style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">{{ page.date | date: "%Y년 %m월 %d일" }}</p>
+    </header>
+    
+    <div class="post-body" style="font-size: 1.1rem; line-height: 1.8;">
+        {{ content }}
+    </div>
+    
+    <!-- 카테고리 내 이전/다음 글 찾기 -->
+    {% assign match_cat = page.category | default: page.categories.last %}
+    
+    {% assign prev_post = nil %}
+    {% assign next_post = nil %}
+    {% assign found_current = false %}
+    {% assign posts_reversed = site.posts | reverse %}
+    
+    {% for post in posts_reversed %}
+        {% if post.category == match_cat or post.categories contains match_cat %}
+            {% if found_current == true and prev_post == nil %}
+                {% assign prev_post = post %}
+            {% endif %}
+            
+            {% if post.url == page.url %}
+                {% assign found_current = true %}
+            {% else %}
+                {% if found_current == false %}
+                    {% assign next_post = post %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="post-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+        <div class="nav-prev" style="flex: 1; text-align: left;">
+            {% if prev_post %}
+            <a href="{{ prev_post.url | relative_url }}" style="color: var(--text-muted); text-decoration: none; display: flex; flex-direction: column; transition: color 0.3s;">
+                <span style="font-size: 0.85rem; margin-bottom: 5px;">← 이전 글</span>
+                <span style="color: var(--accent-color); font-weight: bold; font-size: 1.05rem;">{{ prev_post.title | truncate: 20 }}</span>
+            </a>
+            {% endif %}
+        </div>
+        
+        <div class="nav-list" style="margin: 0 20px;">
+            {% if page.url contains '/lorebook/' %}
+            <a href="{{ '/lorebook/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
+            {% elsif match_cat == '메인' or match_cat == '메인서브' or match_cat == '스킬' or match_cat == '스토리' %}
+            <a href="{{ '/storybook/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
+            {% else %}
+            <a href="{{ '/news/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
+            {% endif %}
+        </div>
+
+        <div class="nav-next" style="flex: 1; text-align: right;">
+            {% if next_post %}
+            <a href="{{ next_post.url | relative_url }}" style="color: var(--text-muted); text-decoration: none; display: flex; flex-direction: column; transition: color 0.3s;">
+                <span style="font-size: 0.85rem; margin-bottom: 5px;">다음 글 →</span>
+                <span style="color: var(--accent-color); font-weight: bold; font-size: 1.05rem;">{{ next_post.title | truncate: 20 }}</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</article>

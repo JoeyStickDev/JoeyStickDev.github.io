@@ -1,0 +1,138 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section (Maplestory Style big banner) -->
+<section class="hero-section">
+    <!-- placeholder background -->
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <h1 class="game-title">Shards of the Library</h1>
+        <p class="game-subtitle">수수께끼의 도서관에서 펼쳐지는 이야기</p>
+        <div class="hero-actions">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-hero-play">
+                <span class="btn-text">스팀페이지로 이동하기</span>
+                <span class="btn-icon">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Content Layout (Maplestory Style: Notice Board with Tabs + Quick Links) -->
+<section class="main-content">
+    <div class="content-container">
+        
+        <!-- News & Notice Board -->
+        <div class="notice-board">
+            <div class="board-header">
+                <h2>새로운 소식</h2>
+                <a href="{{ '/news' | relative_url }}" class="btn-more">더보기 +</a>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-target="tab-all">전체</button>
+                <button class="tab-btn" data-target="tab-notice">공지</button>
+                <button class="tab-btn" data-target="tab-update">업데이트</button>
+                <button class="tab-btn" data-target="tab-devlog">개발일지</button>
+            </div>
+            
+            <div class="tab-content-container">
+                <!-- All Tab -->
+                <div class="tab-content active" id="tab-all">
+                    <ul class="post-list">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '공지' or post.category == '공지' or post.categories contains '업데이트' or post.category == '업데이트' or post.categories contains '개발일지' or post.category == '개발일지' %}
+                                {% if count < 5 %}
+                                    <li>
+                                        <span class="post-category cat-{% if post.categories contains '공지' or post.category == '공지' %}notice{% elsif post.categories contains '업데이트' or post.category == '업데이트' %}update{% else %}devlog{% endif %}">
+                                            {% if post.categories contains '공지' or post.category == '공지' %}공지{% elsif post.categories contains '업데이트' or post.category == '업데이트' %}업데이트{% else %}개발일지{% endif %}
+                                        </span>
+                                        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                        <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                    </li>
+                                    {% assign count = count | plus: 1 %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <!-- Notice Tab -->
+                <div class="tab-content" id="tab-notice">
+                    <ul class="post-list">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '공지' or post.category == '공지' %}
+                                {% if count < 5 %}
+                                    <li>
+                                        <span class="post-category cat-notice">공지</span>
+                                        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                        <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                    </li>
+                                    {% assign count = count | plus: 1 %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <!-- Update Tab -->
+                <div class="tab-content" id="tab-update">
+                    <ul class="post-list">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '업데이트' or post.category == '업데이트' %}
+                                {% if count < 5 %}
+                                    <li>
+                                        <span class="post-category cat-update">업데이트</span>
+                                        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                        <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                    </li>
+                                    {% assign count = count | plus: 1 %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <!-- Devlog Tab -->
+                <div class="tab-content" id="tab-devlog">
+                    <ul class="post-list">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '개발일지' or post.category == '개발일지' %}
+                                {% if count < 5 %}
+                                    <li>
+                                        <span class="post-category cat-devlog">개발일지</span>
+                                        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                        <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                    </li>
+                                    {% assign count = count | plus: 1 %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Media / Quick Links Grid -->
+        <div class="feature-grid">
+            <a href="{{ '/guide' | relative_url }}" class="feature-card feature-game-info">
+                <div class="card-overlay">
+                    <h3>게임 가이드</h3>
+                    <p>시스템과 세계관 알아보기</p>
+                </div>
+            </a>
+            <a href="{{ '/media' | relative_url }}" class="feature-card feature-media">
+                <div class="card-overlay">
+                    <h3>미디어 갤러리</h3>
+                    <p>인게임 영상과 스크린샷</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>

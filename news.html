@@ -1,0 +1,109 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<section class="main-content" style="padding-top: 100px; min-height: 80vh;">
+    <div class="content-container" style="grid-template-columns: 1fr; max-width: 1000px; margin: 0 auto;">
+
+        <!-- 대형 뉴스 보드 -->
+        <div class="notice-board" style="padding: 40px;">
+            <div class="board-header" style="margin-bottom: 30px;">
+                <h1 style="font-size: 2rem; color: #fff; margin-bottom: 10px;">새로운 소식</h1>
+                <p style="color: var(--text-muted);"></p>
+            </div>
+
+            <div class="tabs"
+                style="margin-bottom: 30px; border-bottom: 2px solid var(--border-color); padding-bottom: 15px;">
+                <button class="tab-btn active" data-target="tab-all"
+                    style="font-size: 1.1rem; padding: 10px 20px;">전체</button>
+                <button class="tab-btn" data-target="tab-notice"
+                    style="font-size: 1.1rem; padding: 10px 20px;">공지</button>
+                <button class="tab-btn" data-target="tab-update"
+                    style="font-size: 1.1rem; padding: 10px 20px;">업데이트</button>
+                <button class="tab-btn" data-target="tab-devlog"
+                    style="font-size: 1.1rem; padding: 10px 20px;">개발일지</button>
+            </div>
+
+            <div class="tab-content-container">
+                <!-- 전체 (All) -->
+                <div class="tab-content active" id="tab-all">
+                    <ul class="post-list" style="font-size: 1.1rem;">
+                        {% for post in site.posts %}
+                            {% if post.categories contains '공지' or post.category == '공지' or post.categories contains '업데이트' or post.category == '업데이트' or post.categories contains '개발일지' or post.category == '개발일지' %}
+                            <li style="padding: 15px 0;">
+                                <span class="post-category cat-{% if post.categories contains '공지' or post.category == '공지' %}notice{% elsif post.categories contains '업데이트' or post.category == '업데이트' %}update{% else %}devlog{% endif %}">
+                                    {% if post.categories contains '공지' or post.category == '공지' %}공지{% elsif post.categories contains '업데이트' or post.category == '업데이트' %}업데이트{% else %}개발일지{% endif %}
+                                </span>
+                                <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
+                                <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!-- 공지 (Notice) -->
+                <div class="tab-content" id="tab-notice">
+                    <ul class="post-list" style="font-size: 1.1rem;">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '공지' or post.category == '공지' %}
+                                <li style="padding: 15px 0;">
+                                    <span class="post-category cat-notice">공지</span>
+                                    <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
+                                    <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                </li>
+                                {% assign count = count | plus: 1 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if count == 0 %}
+                            <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 공지사항이 없습니다.</li>
+                        {% endif %}
+                    </ul>
+                </div>
+
+                <!-- 업데이트 (Update) -->
+                <div class="tab-content" id="tab-update">
+                    <ul class="post-list" style="font-size: 1.1rem;">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '업데이트' or post.category == '업데이트' %}
+                                <li style="padding: 15px 0;">
+                                    <span class="post-category cat-update">업데이트</span>
+                                    <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
+                                    <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                </li>
+                                {% assign count = count | plus: 1 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if count == 0 %}
+                            <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 업데이트가 없습니다.</li>
+                        {% endif %}
+                    </ul>
+                </div>
+
+                <!-- 개발일지 (Devlog) -->
+                <div class="tab-content" id="tab-devlog">
+                    <ul class="post-list" style="font-size: 1.1rem;">
+                        {% assign count = 0 %}
+                        {% for post in site.posts %}
+                            {% if post.categories contains '개발일지' or post.category == '개발일지' %}
+                                <li style="padding: 15px 0;">
+                                    <span class="post-category cat-devlog">개발일지</span>
+                                    <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
+                                    <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                                </li>
+                                {% assign count = count | plus: 1 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if count == 0 %}
+                            <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 개발일지가 없습니다.</li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
