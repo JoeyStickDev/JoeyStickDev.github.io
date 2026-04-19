@@ -34,14 +34,47 @@ layout: default
             {% assign cat_key = page.dict_cat_key | default: "category" %}
             {% assign subcat_key = page.dict_subcat_key | default: "subcategory" %}
 
-            {% assign i_name = item.DisplayName | default: item[t_key] %}
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            {% assign raw_name = item.DisplayName | default: item[t_key] %}
+            {% assign i_name = raw_name %}
+            
+            {% if raw_name contains '""' %}
+               {% assign name_parts = raw_name | split: '""' %}
+               <!-- Usually the last or second to last quoted part is the display name -->
+               {% if name_parts.size >= 6 %}
+                  {% assign i_name = name_parts[5] %}
+               {% elsif name_parts.size >= 4 %}
+                  {% assign i_name = name_parts[3] %}
+               {% endif %}
+            {% endif %}
+            
+            {% assign i_name = i_name | replace: 'Name_', '' | split: ')' | first | remove: '"' | strip %}
+
             {% assign i_desc = item[d_key] %}
             {% assign i_img = item[img_key] %}
             {% assign i_img_fn_key = img_key | append: "_Filename" %}
             {% assign i_img_fn = item[i_img_fn_key] %}
             {% assign i_img_display = i_img_fn | default: i_img %}
             
+            <!-- 2. Custom Classification Logic (Liquid) -->
             {% assign i_cat = item[cat_key] %}
+            {% if page.dataset == 'characters' %}
+                <!-- Character Gender Logic -->
+                {% assign npc_path = item.Pic | default: item.Animation %}
+                {% if npc_path contains 'Women' %}
+                    {% assign i_cat = '여자캐릭터' %}
+                {% elsif npc_path contains 'Male' %}
+                    {% assign i_cat = '남자캐릭터' %}
+                {% endif %}
+            {% elsif page.dataset == 'creatures' %}
+                <!-- Creature Hostility Logic -->
+                {% if item.IsAttackFirst == 'True' %}
+                    {% assign i_cat = '선공' %}
+                {% else %}
+                    {% assign i_cat = '비선공' %}
+                {% endif %}
+            {% endif %}
+
             {% assign i_subcat = item[subcat_key] %}
 
             <div class="dict-card" 
