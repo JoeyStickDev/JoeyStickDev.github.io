@@ -47,7 +47,9 @@ layout: default
         </div>
         
         <div class="nav-list" style="margin: 0 20px;">
-            {% if match_cat == '메인' or match_cat == '메인서브' or match_cat == '스킬' or match_cat == '스토리' %}
+            {% if page.url contains '/lorebook/' %}
+            <a href="{{ '/lorebook/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
+            {% elsif match_cat == '메인' or match_cat == '메인서브' or match_cat == '스킬' or match_cat == '스토리' %}
             <a href="{{ '/storybook/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
             {% else %}
             <a href="{{ '/news/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
