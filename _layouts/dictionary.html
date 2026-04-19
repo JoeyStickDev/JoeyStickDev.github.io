@@ -185,29 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cat && cat.trim() !== '') primaryCats.add(cat);
     });
 
-    if (primaryCats.size > 0) {
-        filterContainer.style.display = 'block';
-        
-        // 전체 버튼 생성
-        let btnStr = `<button class="tab-btn active" data-cat="전체">전체</button>`;
-        primaryCats.forEach(cat => {
-            btnStr += `<button class="tab-btn" data-cat="${cat}">${cat}</button>`;
-        });
-        primaryContainer.innerHTML = btnStr;
-
-        // 버튼 클릭 이벤트
-        primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                activePrimary = btn.getAttribute('data-cat');
-                activeSecondary = '전체'; // 소분류 초기화
-                updateSecondaryTabs();
-                applyFilters();
-            });
-        });
-    }
-
     // 2. Secondary Categories 탭 갱신
     function updateSecondaryTabs() {
         if (activePrimary === '전체') {
@@ -263,6 +240,100 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.style.display = show ? 'block' : 'none';
         });
+    }
+
+    // --- [NEW] 아이템 도감 전용 그룹 필터 로직 ---
+    function initGroupedFilters() {
+        const groups = [
+            { name: "장비류", cats: ["Gloves", "Hat", "Bottom", "Upper", "Shoes", "Pendant", "Shield"] },
+            { name: "무기류", cats: ["Sword", "Bow", "Gun", "Orb", "Guitar", "Aura"] },
+            { name: "도구", cats: ["Pickaxe", "Shovel", "Scythe", "Watering", "Fishing", "Axe", "Bucket"] },
+            { name: "농사용품", cats: ["Booster", "Crop", "Crops", "Seed", "Fish"] },
+            { name: "작물용품", cats: ["Herb", "Mushroom", "Ore", "Ingot", "Gem", "Relic"] },
+            { name: "제작아이템", cats: ["Food", "Drink", "Building", "Wall", "Campfire", "Potion", "Soup", "Essence", "Extract", "Product"] },
+            { name: "기타템", cats: ["Quest", "Ingredient", "Book", "Paint", "Ridding", "Key", "Letter", "Sealed Bottle", "Sheet Music", "Coin", "Wood", "towel", "Animal food", "Warmth"] }
+        ];
+
+        let filterHtml = `<div class="grouped-filters" style="display: flex; flex-direction: column; gap: 20px;">`;
+        
+        // 전체보기 버튼을 위한 별도 섹션
+        filterHtml += `
+            <div class="filter-group" style="padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <button class="tab-btn active" data-cat="전체" style="padding: 10px 30px; font-weight: 800; border-radius: 40px; background: var(--accent-color); color: #000;">전체 아이템 목록</button>
+            </div>
+        `;
+
+        groups.forEach(group => {
+            // 해당 그룹에 존재하는 카테고리만 필터링 (데이터셋에 없는 카테고리는 표시 안함)
+            const availableCats = group.cats.filter(c => primaryCats.has(c));
+            
+            if (availableCats.length > 0) {
+                filterHtml += `
+                    <div class="filter-row" style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                        <span class="group-label" style="min-width: 100px; color: #ffd700; font-weight: bold; font-size: 0.95rem; background: rgba(255,215,0,0.1); padding: 5px 12px; border-radius: 6px; text-align: center;">${group.name}</span>
+                        <div class="row-btns" style="display: flex; gap: 10px; flex-wrap: wrap; flex: 1;">
+                            ${availableCats.map(cat => `<button class="tab-btn" data-cat="${cat}">${cat}</button>`).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+        });
+
+        filterHtml += `</div>`;
+        primaryContainer.innerHTML = filterHtml;
+        primaryContainer.style.borderBottom = "none"; // 기존 하단선 제거
+
+        // 이벤트 리스너 재설정
+        primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                primaryContainer.querySelectorAll('.tab-btn').forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = "rgba(255,255,255,0.05)";
+                    b.style.color = "#888";
+                });
+                
+                btn.classList.add('active');
+                if (btn.getAttribute('data-cat') === '전체') {
+                    btn.style.background = "var(--accent-color)";
+                    btn.style.color = "#000";
+                } else {
+                    btn.style.background = "rgba(255,215,0,0.2)";
+                    btn.style.color = "#fff";
+                }
+
+                activePrimary = btn.getAttribute('data-cat');
+                activeSecondary = '전체';
+                updateSecondaryTabs();
+                applyFilters();
+            });
+        });
+    }
+
+    if (primaryCats.size > 0) {
+        filterContainer.style.display = 'block';
+        
+        // 아이템 도감인 경우 그룹 필터 실행, 그 외엔 기존 방식 사용
+        if ("{{ page.dataset }}" === 'items') {
+            initGroupedFilters();
+        } else {
+            // (기존 레거시 코드) 전체 버튼 생성
+            let btnStr = `<button class="tab-btn active" data-cat="전체">전체</button>`;
+            primaryCats.forEach(cat => {
+                btnStr += `<button class="tab-btn" data-cat="${cat}">${cat}</button>`;
+            });
+            primaryContainer.innerHTML = btnStr;
+
+            primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activePrimary = btn.getAttribute('data-cat');
+                    activeSecondary = '전체';
+                    updateSecondaryTabs();
+                    applyFilters();
+                });
+            });
+        }
     }
 
     // 모달 로직 (Payload Architecture)
