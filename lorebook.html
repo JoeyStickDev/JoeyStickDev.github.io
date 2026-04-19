@@ -1,0 +1,74 @@
+---
+layout: default
+title: Lorebook
+permalink: /lorebook/
+---
+<section class="main-content page-lore" style="padding-top: 100px; min-height: 80vh;">
+    <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+        
+        <div class="lore-header" style="margin-bottom: 50px; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+                <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;"><span style="color: var(--accent-color);">설정집</span> (Lorebook)</h1>
+                <p style="color: var(--text-muted); font-size: 1.15rem;">Shards of the Library의 세계관, 인물, 지역 및 마법 등 종합적인 백과사전입니다.</p>
+            </div>
+            <!-- 검색창 목업 -->
+            <div style="background: var(--bg-card); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--border-color); display: flex; align-items: center;">
+                <span style="color: var(--text-muted); margin-right: 10px;">🔍</span>
+                <input type="text" placeholder="검색어 입력..." style="background: transparent; border: none; color: #fff; outline: none; width: 150px;">
+            </div>
+        </div>
+
+        <!-- 설정 항목 그리드형 위키 스타일 레이아웃 -->
+        <div class="lore-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px;">
+            
+            <!-- 세계관 (World) -->
+            <div class="lore-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;">
+                <div style="height: 180px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">카테고리</div>
+                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4.5rem; font-family: var(--font-heading); margin: 0;">WORLD</h3>
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">세계 및 배경</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">농업과 목축이 일상인 시골 마을, 그리고 그 아래 숨겨진 고대의 거대한 '대도서관'의 기원.</p>
+                </div>
+            </div>
+
+            <!-- 주요 인물 (NPCs) -->
+            <div class="lore-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;">
+                <div style="height: 180px; background: linear-gradient(135deg, var(--secondary-color), #2c3e50); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">카테고리</div>
+                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4.5rem; font-family: var(--font-heading); margin: 0;">NPCS</h3>
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">인물 도감</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">진실을 이끄는 세바스찬, 플레이어를 돕는 키리 등 도서관과 마을 인물들의 상세 프로필.</p>
+                </div>
+            </div>
+
+            <!-- 마법/시련 (Magic) -->
+            <div class="lore-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;">
+                <div style="height: 180px; background: linear-gradient(135deg, #151e32, #0b132b); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">카테고리</div>
+                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4.5rem; font-family: var(--font-heading); margin: 0;">MAGIC</h3>
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">마법과 책의 시련</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">원소 마법과 유틸리티 스킬의 원리, 환영의 공간(겨울 마을 테마 등) 상세 정보 기록.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 디자인 요소를 위한 인라인 스타일 (임시) -->
+<style>
+.lore-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    border-color: var(--accent-color);
+}
+.lore-card:hover h3:first-of-type {
+    color: rgba(252, 163, 17, 0.2) !important;
+}
+</style>

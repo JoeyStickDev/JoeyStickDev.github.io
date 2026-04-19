@@ -5,21 +5,26 @@ permalink: /news/
 ---
 <section class="main-content" style="padding-top: 100px; min-height: 80vh;">
     <div class="content-container" style="grid-template-columns: 1fr; max-width: 1000px; margin: 0 auto;">
-        
+
         <!-- 대형 뉴스 보드 -->
         <div class="notice-board" style="padding: 40px;">
             <div class="board-header" style="margin-bottom: 30px;">
                 <h1 style="font-size: 2rem; color: #fff; margin-bottom: 10px;">새로운 소식</h1>
-                <p style="color: var(--text-muted);">Shards of the Library의 모든 공지사항과 업데이트를 확인하세요.</p>
+                <p style="color: var(--text-muted);"></p>
             </div>
-            
-            <div class="tabs" style="margin-bottom: 30px; border-bottom: 2px solid var(--border-color); padding-bottom: 15px;">
-                <button class="tab-btn active" data-target="tab-all" style="font-size: 1.1rem; padding: 10px 20px;">전체</button>
-                <button class="tab-btn" data-target="tab-notice" style="font-size: 1.1rem; padding: 10px 20px;">공지</button>
-                <button class="tab-btn" data-target="tab-update" style="font-size: 1.1rem; padding: 10px 20px;">업데이트</button>
-                <button class="tab-btn" data-target="tab-devlog" style="font-size: 1.1rem; padding: 10px 20px;">개발일지</button>
+
+            <div class="tabs"
+                style="margin-bottom: 30px; border-bottom: 2px solid var(--border-color); padding-bottom: 15px;">
+                <button class="tab-btn active" data-target="tab-all"
+                    style="font-size: 1.1rem; padding: 10px 20px;">전체</button>
+                <button class="tab-btn" data-target="tab-notice"
+                    style="font-size: 1.1rem; padding: 10px 20px;">공지</button>
+                <button class="tab-btn" data-target="tab-update"
+                    style="font-size: 1.1rem; padding: 10px 20px;">업데이트</button>
+                <button class="tab-btn" data-target="tab-devlog"
+                    style="font-size: 1.1rem; padding: 10px 20px;">개발일지</button>
             </div>
-            
+
             <div class="tab-content-container">
                 <!-- 전체 (All) -->
                 <div class="tab-content active" id="tab-all">
@@ -27,68 +32,75 @@ permalink: /news/
                         {% for post in site.posts %}
                         <li style="padding: 15px 0;">
                             <span class="post-category cat-{{ post.category | downcase }}">{{ post.category }}</span>
-                            <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
+                            <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
+                                post.title }}</a>
                             <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
                         </li>
                         {% endfor %}
                     </ul>
                 </div>
-                
+
                 <!-- 공지 (Notice) -->
                 <div class="tab-content" id="tab-notice">
                     <ul class="post-list" style="font-size: 1.1rem;">
                         {% assign notice_posts = site.posts | where:"category", "공지" %}
                         {% if notice_posts.size > 0 %}
-                            {% for post in notice_posts %}
-                            <li style="padding: 15px 0;">
-                                <span class="post-category cat-notice">{{ post.category }}</span>
-                                <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
-                                <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
-                            </li>
-                            {% endfor %}
+                        {% for post in notice_posts %}
+                        <li style="padding: 15px 0;">
+                            <span class="post-category cat-notice">{{ post.category }}</span>
+                            <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
+                                post.title }}</a>
+                            <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                        </li>
+                        {% endfor %}
                         {% else %}
-                            <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 공지사항이 없습니다.</li>
+                        <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 공지사항이 없습니다.
+                        </li>
                         {% endif %}
                     </ul>
                 </div>
-                
+
                 <!-- 업데이트 (Update) -->
                 <div class="tab-content" id="tab-update">
                     <ul class="post-list" style="font-size: 1.1rem;">
                         {% assign update_posts = site.posts | where:"category", "업데이트" %}
                         {% if update_posts.size > 0 %}
-                            {% for post in update_posts %}
-                            <li style="padding: 15px 0;">
-                                <span class="post-category cat-update">{{ post.category }}</span>
-                                <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
-                                <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
-                            </li>
-                            {% endfor %}
+                        {% for post in update_posts %}
+                        <li style="padding: 15px 0;">
+                            <span class="post-category cat-update">{{ post.category }}</span>
+                            <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
+                                post.title }}</a>
+                            <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                        </li>
+                        {% endfor %}
                         {% else %}
-                            <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 업데이트가 없습니다.</li>
+                        <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 업데이트가 없습니다.
+                        </li>
                         {% endif %}
                     </ul>
                 </div>
-                
+
                 <!-- 개발일지 (Devlog) -->
                 <div class="tab-content" id="tab-devlog">
                     <ul class="post-list" style="font-size: 1.1rem;">
                         {% assign dev_posts = site.posts | where:"category", "개발일지" %}
                         {% if dev_posts.size > 0 %}
-                            {% for post in dev_posts %}
-                            <li style="padding: 15px 0;">
-                                <span class="post-category cat-devlog">{{ post.category }}</span>
-                                <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
-                                <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
-                            </li>
-                            {% endfor %}
+                        {% for post in dev_posts %}
+                        <li style="padding: 15px 0;">
+                            <span class="post-category cat-devlog">{{ post.category }}</span>
+                            <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
+                                post.title }}</a>
+                            <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                        </li>
+                        {% endfor %}
                         {% else %}
-                            <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 개발일지가 없습니다.</li>
+                        <li style="justify-content: center; color: var(--text-muted); padding: 30px;">등록된 개발일지가 없습니다.
+                        </li>
                         {% endif %}
                     </ul>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </section>
