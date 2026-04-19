@@ -4,7 +4,7 @@ title: Lorebook
 permalink: /lorebook/
 ---
 <section class="main-content page-lore" style="padding-top: 100px; min-height: 80vh;">
-    <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+    <div style="max-width: 1200px; margin: 0 auto; display: block;">
         
         <div class="lore-header" style="margin-bottom: 50px; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
             <div>
@@ -19,7 +19,19 @@ permalink: /lorebook/
         </div>
 
         <!-- 설정 항목 그리드형 위키 스타일 레이아웃 -->
-        <div class="lore-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px;">
+        <div class="lore-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            
+            <!-- 세계관 설정 -->
+            <a href="{{ '/lorebook/world/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
+                <div style="height: 180px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">카테고리</div>
+                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">WORLD</h3>
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">세계 및 배경</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">농업과 목축이 일상인 시골 마을, 그리고 그 아래 숨겨진 거대한 '대도서관'의 기원.</p>
+                </div>
+            </a>
             
             <!-- 잊혀진 설정 -->
             <a href="{{ '/lorebook/forgotten/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
