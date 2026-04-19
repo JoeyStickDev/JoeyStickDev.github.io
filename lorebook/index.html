@@ -23,59 +23,64 @@ permalink: /lorebook/
             
             <!-- 세계관 설정 -->
             <a href="{{ '/lorebook/world/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">카테고리</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">WORLD</h3>
+                <div class="lore-card-img" style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_world.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">Category</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">WORLD</h3>
                 </div>
-                <div style="padding: 30px;">
-                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">세계 및 배경</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">농업과 목축이 일상인 시골 마을, 그리고 그 아래 숨겨진 거대한 '대도서관'의 기원.</p>
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 10px;">세계 및 배경</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">농업과 목축이 일상인 시골 마을, 그리고 그 아래 숨겨진 거대한 '대도서관'의 기원.</p>
                 </div>
             </a>
             
             <!-- 잊혀진 설정 -->
             <a href="{{ '/lorebook/forgotten/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">위키</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">LORE</h3>
+                <div class="lore-card-img" style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_lore.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">Wiki</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">LORE</h3>
                 </div>
-                <div style="padding: 30px;">
-                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">잊혀진 설정</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">도서관 곳곳에 숨겨진 비밀스러운 이야기와 세계관 비화.</p>
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 10px;">잊혀진 설정</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">도서관 곳곳에 숨겨진 비밀스러운 이야기와 세계관 비화.</p>
                 </div>
             </a>
 
-            <!-- 퀘스트 도감 (Moved from 7th to 3rd) -->
+            <!-- 퀘스트 도감 -->
             <a href="{{ '/lorebook/quests/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #27ae60, #16a085); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">QUEST</h3>
+                <div class="lore-card-img" style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_quest.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">Atlas</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">QUEST</h3>
                 </div>
-                <div style="padding: 30px;">
-                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">퀘스트 도감</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">도서관에서 주어지는 여러 임무와 보상 목록.</p>
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 10px;">퀘스트 도감</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">도서관에서 주어지는 여러 임무와 보상 목록.</p>
                 </div>
             </a>
 
             <!-- 아이템 도감 -->
             <a href="{{ '/lorebook/items/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #f39c12, #d35400); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">ITEM</h3>
+                <div class="lore-card-img" style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_item.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">Encyclopedia</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">ITEM</h3>
                 </div>
-                <div style="padding: 30px;">
-                    <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">아이템 도감</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">도서관의 서고에서 발견되는 희귀한 아이템과 장비들.</p>
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 10px;">아이템 도감</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">도서관의 서고에서 발견되는 희귀한 아이템과 장비들.</p>
                 </div>
             </a>
 
             <!-- 인물 도감 (NPC) -->
             <a href="{{ '/lorebook/characters/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, var(--secondary-color), #2c3e50); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">NPC</h3>
+                <div class="lore-card-img" style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_npc.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">People</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">NPC</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">인물 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">영원한 도서관을 맴도는 관리자들과 방문객들.</p>
                 </div>
@@ -83,11 +88,12 @@ permalink: /lorebook/
 
             <!-- 생물 도감 (Creatures) -->
             <a href="{{ '/lorebook/creatures/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #151e32, #0b132b); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">BEAST</h3>
+                <div class="lore-card-img" style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_beast.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">Bestiary</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">BEAST</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">생물 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">방치된 서고와 마법의 파편 속에서 태어난 몬스터들.</p>
                 </div>
@@ -95,11 +101,12 @@ permalink: /lorebook/
 
             <!-- 제작 도감 (Crafting) -->
             <a href="{{ '/lorebook/crafting/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #7f8c8d, #bdc3c7); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">CRAFT</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #7f8c8d, #bdc3c7); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Handbook</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">CRAFT</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">제작 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">재료 조합을 통해 만들어낼 수 있는 다양한 물품 레시피.</p>
                 </div>
@@ -107,11 +114,12 @@ permalink: /lorebook/
 
             <!-- 작물 도감 (Crops) -->
             <a href="{{ '/lorebook/crops/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #2ecc71, #27ae60); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">CROPS</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #2ecc71, #27ae60); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Botany</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">CROPS</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">작물 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">다양한 기후에서 피어나는 신비로운 식물과 수확량 정보.</p>
                 </div>
@@ -119,11 +127,12 @@ permalink: /lorebook/
 
             <!-- 어류 도감 (Fish) -->
             <a href="{{ '/lorebook/fishes/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #1abc9c, #16a085); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">FISH</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #1abc9c, #16a085); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Aquarium</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">FISH</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">어류 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">낚싯대 끝에 걸려드는 계절별 서식지와 생태 기록.</p>
                 </div>
@@ -131,11 +140,12 @@ permalink: /lorebook/
 
             <!-- 장인 도감 (Artisan) -->
             <a href="{{ '/lorebook/artisans/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #9b59b6, #8e44ad); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">도감</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">ARTISAN</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #9b59b6, #8e44ad); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Mastery</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">ARTISAN</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">장인 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">가공과 연성을 통해 탄생하는 최고의 마법 물품들.</p>
                 </div>
@@ -143,11 +153,12 @@ permalink: /lorebook/
 
             <!-- 액티브 스킬 (Moved to end) -->
             <a href="{{ '/lorebook/active_skills/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #e74c3c, #c0392b); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">스킬</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">ACTIVE</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #e74c3c, #c0392b); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Magic</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">ACTIVE</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">액티브 스킬</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">마력을 소모하여 발동하는 사용 시점의 마법 효과들.</p>
                 </div>
@@ -155,11 +166,12 @@ permalink: /lorebook/
 
             <!-- 패시브 스킬 (Moved to end) -->
             <a href="{{ '/lorebook/passive_skills/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #3498db, #2980b9); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">스킬</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">PASSIVE</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #3498db, #2980b9); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Ability</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">PASSIVE</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">패시브 스킬</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">지속적으로 몸에 스며들어 능력을 끌어올리는 효과들.</p>
                 </div>
@@ -167,11 +179,12 @@ permalink: /lorebook/
 
             <!-- 버프 스킬 (Moved to end) -->
             <a href="{{ '/lorebook/buff_skills/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
-                <div style="height: 180px; background: linear-gradient(135deg, #f1c40f, #f39c12); display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: #fff;">스킬</div>
-                    <h3 style="color: rgba(255,255,255,0.15); font-size: 4rem; font-family: var(--font-heading); margin: 0; text-align: center;">BUFF</h3>
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #f1c40f, #f39c12); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">Blessing</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.5rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">BUFF</h3>
                 </div>
-                <div style="padding: 30px;">
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 12px;">버프 스킬</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 1rem;">일시적으로 나를 강화하거나 적을 약화시키는 마법.</p>
                 </div>
