@@ -1,0 +1,91 @@
+---
+layout: default
+---
+<section class="main-content dictionary-page" style="padding-top: 100px; min-height: 80vh;">
+    <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+        
+        <div class="media-header" style="margin-bottom: 40px; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; display: flex; align-items: flex-end; justify-content: space-between;">
+            <div>
+                <a href="{{ '/lorebook/' | relative_url }}" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px; display: inline-block; transition: color 0.3s;">← 설정집 홈으로 돌아가기</a>
+                <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;"><span style="color: var(--accent-color);">{{ page.title }}</span></h1>
+                <p style="color: var(--text-muted); font-size: 1.15rem;">{{ page.description }}</p>
+            </div>
+            <div class="search-box" style="position: relative;">
+                <input type="text" id="dict-search" placeholder="도감 내용 검색..." style="padding: 10px 20px; border-radius: 30px; border: 1px solid var(--border-color); background: var(--bg-card); color: #fff; width: 280px; font-family: inherit; font-size: 1rem; outline: none; transition: border-color 0.3s;">
+            </div>
+        </div>
+
+        {% assign items = site.data[page.dataset] %}
+        
+        {% if items %}
+        <div class="dict-grid" id="dict-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
+            {% for item in items %}
+            <div class="dict-card" data-search="{{ item.name }} {{ item.description }} {{ item.type }} {{ item.category }} {{ item.role }}" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;">
+                <div class="dict-img" style="height: 160px; background: {% if item.image and item.image != '' %}url('{{ item.image }}'){% else %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% endif %} center/cover; position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    {% if item.type and item.type != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: var(--accent-color); color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.type }}</span>
+                    {% elsif item.role and item.role != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e74c3c; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.role }}</span>
+                    {% elsif item.category and item.category != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.category }}</span>
+                    {% elsif item.reward and item.reward != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #2ecc71; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">🎁 {{ item.reward }}</span>
+                    {% endif %}
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">{{ item.name }}</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">{{ item.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div style="text-align: center; padding: 50px 0;">
+            <h2 style="color: var(--text-muted);">데이터베이스가 비어있습니다.</h2>
+            <p style="color: #556070; margin-top: 10px;">`_data/{{ page.dataset }}.csv` 파일에 정보를 입력해주세요.</p>
+        </div>
+        {% endif %}
+        
+    </div>
+</section>
+
+<style>
+.dict-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-color: var(--accent-color);
+}
+.dict-card:hover h3 {
+    color: var(--accent-color) !important;
+}
+#dict-search:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(252, 163, 17, 0.2);
+}
+.media-header a:hover {
+    color: #fff !important;
+}
+</style>
+
+<script>
+// 간단한 실시간 검색 스크립트
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('dict-search');
+    const cards = document.querySelectorAll('.dict-card');
+
+    if(searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            cards.forEach(card => {
+                const searchData = card.getAttribute('data-search').toLowerCase();
+                if(searchData.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
+});
+</script>
