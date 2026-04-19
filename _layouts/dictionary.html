@@ -17,18 +17,28 @@ layout: default
 
         {% assign items = site.data[page.dataset] %}
         
+        <!-- 동적 2중 카테고리 필터 영역 -->
+        <div id="dict-filters" style="margin-bottom: 30px; display: none;">
+            <div id="primary-filters" class="tabs" style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;">
+            </div>
+            <div id="secondary-filters" class="tabs" style="display: none; padding-bottom: 15px; gap: 10px;">
+            </div>
+        </div>
+
         {% if items %}
         <div class="dict-grid" id="dict-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
             {% for item in items %}
-            <div class="dict-card" data-search="{{ item.name }} {{ item.description }} {{ item.type }} {{ item.category }} {{ item.role }}" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;">
+            <div class="dict-card" data-category="{{ item.category | escape }}" data-subcategory="{{ item.subcategory | escape }}" data-search="{{ item.name }} {{ item.description }} {{ item.type }} {{ item.category }} {{ item.subcategory }} {{ item.role }}" data-name="{{ item.name | escape }}" data-desc="{{ item.description | escape }}" data-badge="{% if item.subcategory %}{{ item.subcategory }}{% elsif item.category %}{{ item.category }}{% elsif item.type %}{{ item.type }}{% elsif item.role %}{{ item.role }}{% elsif item.reward %}🎁 {{ item.reward }}{% endif %}" data-img="{% if item.image and item.image != '' %}{{ item.image }}{% endif %}" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
                 <div class="dict-img" style="height: 160px; background: {% if item.image and item.image != '' %}url('{{ item.image }}'){% else %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% endif %} center/cover; position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
-                    {% if item.type and item.type != '' %}
+                    {% if item.subcategory and item.subcategory != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.subcategory }}</span>
+                    {% elsif item.category and item.category != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.category }}</span>
+                    {% elsif item.type and item.type != '' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: var(--accent-color); color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.type }}</span>
                     {% elsif item.role and item.role != '' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e74c3c; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.role }}</span>
-                    {% elsif item.category and item.category != '' %}
-                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.category }}</span>
                     {% elsif item.reward and item.reward != '' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #2ecc71; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">🎁 {{ item.reward }}</span>
                     {% endif %}
@@ -50,6 +60,22 @@ layout: default
     </div>
 </section>
 
+<!-- Dictionary Detail Modal -->
+<div id="dict-modal" class="dict-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); z-index: 9999; align-items: center; justify-content: center; padding: 20px;">
+    <div class="dict-modal-content" style="background: var(--bg-card); border: 2px solid var(--border-color); border-radius: 12px; width: 100%; max-width: 600px; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+        <button id="dict-modal-close" style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: var(--text-muted); font-size: 2rem; cursor: pointer; transition: color 0.3s; z-index: 10;">&times;</button>
+        
+        <div id="dict-modal-img" style="height: 250px; background: center/cover; position: relative;">
+            <span id="dict-modal-badge" style="position: absolute; top: 15px; left: 15px; background: var(--accent-color); color: #fff; font-size: 0.9rem; padding: 5px 15px; border-radius: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">Badge</span>
+        </div>
+        
+        <div style="padding: 35px;">
+            <h2 id="dict-modal-title" style="color: #fff; font-size: 2rem; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px;">Title</h2>
+            <p id="dict-modal-desc" style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; white-space: pre-line;">Description goes here...</p>
+        </div>
+    </div>
+</div>
+
 <style>
 .dict-card:hover {
     transform: translateY(-5px);
@@ -63,7 +89,7 @@ layout: default
     border-color: var(--accent-color);
     box-shadow: 0 0 15px rgba(252, 163, 17, 0.2);
 }
-.media-header a:hover {
+#dict-modal-close:hover {
     color: #fff !important;
 }
 </style>
@@ -79,12 +105,157 @@ document.addEventListener('DOMContentLoaded', () => {
             const query = e.target.value.toLowerCase();
             cards.forEach(card => {
                 const searchData = card.getAttribute('data-search').toLowerCase();
+                const currentDisplay = card.style.display;
+                
+                // If it passes search query, show it (rely on JS filter to hide it later if needed)
                 if(searchData.includes(query)) {
-                    card.style.display = 'block';
+                    card.classList.remove('search-hidden');
                 } else {
-                    card.style.display = 'none';
+                    card.classList.add('search-hidden');
                 }
+                applyFilters();
             });
+        });
+    }
+
+    // --- 동적 2중 필터 생성 로직 ---
+    const filterContainer = document.getElementById('dict-filters');
+    const primaryContainer = document.getElementById('primary-filters');
+    const secondaryContainer = document.getElementById('secondary-filters');
+    
+    let activePrimary = '전체';
+    let activeSecondary = '전체';
+
+    // 1. 존재하는 Primary Categories 추출
+    let primaryCats = new Set();
+    cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (cat && cat.trim() !== '') primaryCats.add(cat);
+    });
+
+    if (primaryCats.size > 0) {
+        filterContainer.style.display = 'block';
+        
+        // 전체 버튼 생성
+        let btnStr = `<button class="tab-btn active" data-cat="전체">전체</button>`;
+        primaryCats.forEach(cat => {
+            btnStr += `<button class="tab-btn" data-cat="${cat}">${cat}</button>`;
+        });
+        primaryContainer.innerHTML = btnStr;
+
+        // 버튼 클릭 이벤트
+        primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activePrimary = btn.getAttribute('data-cat');
+                activeSecondary = '전체'; // 소분류 초기화
+                updateSecondaryTabs();
+                applyFilters();
+            });
+        });
+    }
+
+    // 2. Secondary Categories 탭 갱신
+    function updateSecondaryTabs() {
+        if (activePrimary === '전체') {
+            secondaryContainer.style.display = 'none';
+            return;
+        }
+
+        let subCats = new Set();
+        cards.forEach(card => {
+            if (card.getAttribute('data-category') === activePrimary) {
+                const sub = card.getAttribute('data-subcategory');
+                if (sub && sub.trim() !== '') subCats.add(sub);
+            }
+        });
+
+        if (subCats.size > 0) {
+            secondaryContainer.style.display = 'block';
+            let btnStr = `<button class="tab-btn active" data-sub="전체" style="padding: 5px 15px; font-size: 0.9rem;">전체</button>`;
+            subCats.forEach(sub => {
+                btnStr += `<button class="tab-btn" data-sub="${sub}" style="padding: 5px 15px; font-size: 0.9rem;">${sub}</button>`;
+            });
+            secondaryContainer.innerHTML = btnStr;
+
+            secondaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    secondaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeSecondary = btn.getAttribute('data-sub');
+                    applyFilters();
+                });
+            });
+        } else {
+            secondaryContainer.style.display = 'none';
+        }
+    }
+
+    // 3. 필터 및 검색 적용
+    function applyFilters() {
+        cards.forEach(card => {
+            if (card.classList.contains('search-hidden')) {
+                card.style.display = 'none';
+                return;
+            }
+
+            const cat = card.getAttribute('data-category');
+            const sub = card.getAttribute('data-subcategory');
+
+            let show = true;
+            if (activePrimary !== '전체') {
+                if (cat !== activePrimary) show = false;
+                else if (activeSecondary !== '전체' && sub !== activeSecondary) show = false;
+            }
+
+            card.style.display = show ? 'block' : 'none';
+        });
+    }
+
+    // 모달 로직
+    const modal = document.getElementById('dict-modal');
+    const closeBtn = document.getElementById('dict-modal-close');
+
+    if (modal && cards) {
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                document.getElementById('dict-modal-title').innerText = card.getAttribute('data-name');
+                document.getElementById('dict-modal-desc').innerText = card.getAttribute('data-desc');
+                
+                const badgeText = card.getAttribute('data-badge');
+                const badgeEl = document.getElementById('dict-modal-badge');
+                if(badgeText && badgeText.trim() !== '') {
+                    badgeEl.innerText = badgeText;
+                    badgeEl.style.display = 'inline-block';
+                } else {
+                    badgeEl.style.display = 'none';
+                }
+                
+                const imgUrl = card.getAttribute('data-img');
+                const imgEl = document.getElementById('dict-modal-img');
+                if (imgUrl && imgUrl.trim() !== '') {
+                    imgEl.style.backgroundImage = `url('${imgUrl}')`;
+                } else {
+                    imgEl.style.backgroundImage = `linear-gradient(45deg, var(--secondary-color), var(--primary-color))`;
+                }
+                
+                modal.style.display = 'flex';
+                modal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: 'forwards'});
+                modal.querySelector('.dict-modal-content').animate([{transform: 'translateY(20px)', opacity: 0}, {transform: 'translateY(0)', opacity: 1}], {duration: 400, delay: 50, fill: 'both', easing: 'ease-out'});
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.animate([{opacity: 1}, {opacity: 0}], {duration: 200, fill: 'forwards'}).onfinish = () => {
+                modal.style.display = 'none';
+            };
+        });
+
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) {
+                closeBtn.click();
+            }
         });
     }
 });

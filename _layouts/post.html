@@ -12,11 +12,58 @@ layout: default
         {{ content }}
     </div>
     
-    <div style="margin-top: 40px; text-align: center;">
-        {% if page.category == '메인' or page.category == '메인서브' or page.category == '스킬' or page.category == '스토리' %}
-        <a href="{{ '/storybook/' | relative_url }}" class="btn-play-small" style="background: var(--secondary-color);">목록으로 돌아가기</a>
-        {% else %}
-        <a href="{{ '/news/' | relative_url }}" class="btn-play-small" style="background: var(--secondary-color);">목록으로 돌아가기</a>
+    <!-- 카테고리 내 이전/다음 글 찾기 -->
+    {% assign related_posts = "" | split: "" %}
+    {% assign match_cat = page.category %}
+    {% if match_cat == nil or match_cat == empty %}
+        {% assign match_cat = page.categories.last %}
+    {% endif %}
+    
+    {% assign related_posts = site.posts | where_exp: "item", "item.category == match_cat or item.categories contains match_cat" %}
+    
+    {% assign prev_post = nil %}
+    {% assign next_post = nil %}
+    {% assign found_current = false %}
+    
+    {% for post in related_posts %}
+        {% if found_current == true and prev_post == nil %}
+            {% assign prev_post = post %}
         {% endif %}
+        
+        {% if post.url == page.url %}
+            {% assign found_current = true %}
+        {% else %}
+            {% if found_current == false %}
+                {% assign next_post = post %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="post-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+        <div class="nav-prev" style="flex: 1; text-align: left;">
+            {% if prev_post %}
+            <a href="{{ prev_post.url | relative_url }}" style="color: var(--text-muted); text-decoration: none; display: flex; flex-direction: column; transition: color 0.3s;">
+                <span style="font-size: 0.85rem; margin-bottom: 5px;">← 이전 글</span>
+                <span style="color: var(--accent-color); font-weight: bold; font-size: 1.05rem;">{{ prev_post.title | truncate: 20 }}</span>
+            </a>
+            {% endif %}
+        </div>
+        
+        <div class="nav-list" style="margin: 0 20px;">
+            {% if match_cat == '메인' or match_cat == '메인서브' or match_cat == '스킬' or match_cat == '스토리' %}
+            <a href="{{ '/storybook/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
+            {% else %}
+            <a href="{{ '/news/' | relative_url }}" class="btn-play-small" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-color); padding: 10px 25px; border-radius: 30px; font-size: 0.95rem; display: inline-block;">목록으로</a>
+            {% endif %}
+        </div>
+
+        <div class="nav-next" style="flex: 1; text-align: right;">
+            {% if next_post %}
+            <a href="{{ next_post.url | relative_url }}" style="color: var(--text-muted); text-decoration: none; display: flex; flex-direction: column; transition: color 0.3s;">
+                <span style="font-size: 0.85rem; margin-bottom: 5px;">다음 글 →</span>
+                <span style="color: var(--accent-color); font-weight: bold; font-size: 1.05rem;">{{ next_post.title | truncate: 20 }}</span>
+            </a>
+            {% endif %}
+        </div>
     </div>
 </article>
