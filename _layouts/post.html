@@ -13,6 +13,10 @@ layout: default
     </div>
     
     <div style="margin-top: 40px; text-align: center;">
-        <a href="{{ '/' | relative_url }}" class="btn-play-small" style="background: var(--secondary-color);">목록으로 돌아가기</a>
+        {% if page.category == '메인' or page.category == '메인서브' or page.category == '스킬' or page.category == '스토리' %}
+        <a href="{{ '/storybook/' | relative_url }}" class="btn-play-small" style="background: var(--secondary-color);">목록으로 돌아가기</a>
+        {% else %}
+        <a href="{{ '/news/' | relative_url }}" class="btn-play-small" style="background: var(--secondary-color);">목록으로 돌아가기</a>
+        {% endif %}
     </div>
 </article>

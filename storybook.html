@@ -4,37 +4,117 @@ title: Storybook
 permalink: /storybook/
 ---
 <section class="main-content" style="padding-top: 100px; min-height: 80vh;">
-    <div class="content-container" style="max-width: 900px; margin: 0 auto;">
+    <!-- 그리드 버그 방지를 위해 display:block 방식 채택 -->
+    <div style="max-width: 1000px; margin: 0 auto; display: block;">
         
-        <div class="storybook-header" style="text-align: center; margin-bottom: 50px;">
+        <div class="storybook-header" style="text-align: center; margin-bottom: 40px; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 30px;">
             <h1 style="color: var(--accent-color); font-family: var(--font-heading); font-size: 3rem; letter-spacing: 2px;">Storybook</h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">도서관의 숨겨진 이야기들을 열람하세요.</p>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">도서관의 잊혀진 이야기와 인물들의 기록을 열람하세요.</p>
         </div>
 
-        <div class="storybook-content" style="background: rgba(28, 37, 65, 0.4); padding: 60px; border-radius: 12px; border: 1px solid var(--border-color); position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.6);">
-            
-            <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 40px; text-align: center;">[ 서장 ]<br><span style="font-size: 1.5rem; color: var(--text-muted); font-weight: normal; margin-top: 10px; display: inline-block;">부서진 도서관의 부름</span></h2>
-            
-            <div style="font-size: 1.25rem; line-height: 2.3; color: #e2e8f0; text-align: justify; word-break: keep-all; letter-spacing: 0.5px;">
-                <p style="margin-bottom: 30px;">
-                    평화롭던 마을 외곽, 오랜 시간 버려져 있던 낡은 도서관.<br>
-                    어느 날 밤, 그곳에서 시작된 기묘한 지진과 함께 하늘을 가르는 푸른 빛이 솟구쳤고 세상의 상식은 산산조각 나버렸다.
-                </p>
-                <p style="margin-bottom: 30px; border-left: 3px solid var(--accent-color); padding-left: 20px; color: var(--text-muted); font-style: italic;">
-                    "진실은 책의 가장 깊숙한 곳에서 잠을 청하고 있단다." - 세바스찬(Sebastian)
-                </p>
-                <p style="margin-bottom: 30px;">
-                    이곳을 위탁받게 된 당신은 낮에는 평범한 농장을 돌보고 이웃들과 교류하지만, 밤이 되면 도서관 책장 너머로 일렁이는 <strong>환영의 공간</strong> 속으로 발을 들여놓아야 한다.
-                </p>
-                <p>
-                    이제 부서진 수정 조각(Shards)들을 모아 찢겨진 페이지들을 복원하라. 잃어버린 세계의 기억이 당신을 기다린다.
-                </p>
+        <div class="notice-board" style="background: rgba(28, 37, 65, 0.4); backdrop-filter: blur(5px);">
+            <div class="board-header">
+                <h2>스토리 도서관 목록</h2>
             </div>
             
-            <div style="text-align: center; margin-top: 60px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 40px;">
-                <button class="btn-play-small" style="background: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); font-size: 1.1rem; padding: 10px 30px; border-radius: 50px;">제 1장 읽기 →</button>
+            <div class="tabs">
+                <button class="tab-btn active" data-target="tab-story-all">전체</button>
+                <button class="tab-btn" data-target="tab-story-main">메인</button>
+                <button class="tab-btn" data-target="tab-story-sub">메인서브</button>
+                <button class="tab-btn" data-target="tab-story-skill">스킬</button>
+                <button class="tab-btn" data-target="tab-story-story">스토리</button>
+            </div>
+
+            <div class="tab-content-container">
+                <!-- 전체 탭 -->
+                <div class="tab-content active" id="tab-story-all">
+                    <ul class="post-list">
+                        {% for post in site.posts %}
+                            {% if post.category == '메인' or post.category == '메인서브' or post.category == '스킬' or post.category == '스토리' %}
+                            <li>
+                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!-- 메인 탭 -->
+                <div class="tab-content" id="tab-story-main">
+                    <ul class="post-list">
+                        {% for post in site.posts %}
+                            {% if post.category == '메인' %}
+                            <li>
+                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if site.categories['메인'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 이야기가 없습니다.</p>{% endif %}
+                    </ul>
+                </div>
+
+                <!-- 메인서브 탭 -->
+                <div class="tab-content" id="tab-story-sub">
+                    <ul class="post-list">
+                        {% for post in site.posts %}
+                            {% if post.category == '메인서브' %}
+                            <li>
+                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if site.categories['메인서브'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 이야기가 없습니다.</p>{% endif %}
+                    </ul>
+                </div>
+
+                <!-- 스킬 탭 -->
+                <div class="tab-content" id="tab-story-skill">
+                    <ul class="post-list">
+                        {% for post in site.posts %}
+                            {% if post.category == '스킬' %}
+                            <li>
+                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if site.categories['스킬'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 스킬비화가 없습니다.</p>{% endif %}
+                    </ul>
+                </div>
+
+                <!-- 스토리 탭 -->
+                <div class="tab-content" id="tab-story-story">
+                    <ul class="post-list">
+                        {% for post in site.posts %}
+                            {% if post.category == '스토리' %}
+                            <li>
+                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+                                <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if site.categories['스토리'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 이야기가 없습니다.</p>{% endif %}
+                    </ul>
+                </div>
+                
             </div>
         </div>
 
     </div>
 </section>
+
+<style>
+/* 카테고리별 컬러 뱃지용 추가 스타일 */
+.cat-메인 { background: #e74c3c; color: white; }
+.cat-메인서브 { background: #d35400; color: white; }
+.cat-스킬 { background: #9b59b6; color: white; }
+.cat-스토리 { background: #3498db; color: white; }
+</style>
