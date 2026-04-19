@@ -11,15 +11,25 @@ permalink: /lorebook/
                 <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;"><span style="color: var(--accent-color);">설정집</span> (Lorebook)</h1>
                 <p style="color: var(--text-muted); font-size: 1.15rem;">Shards of the Library의 세계관, 인물, 지역 및 마법 등 종합적인 백과사전입니다.</p>
             </div>
-            <!-- 검색창 목업 -->
-            <div style="background: var(--bg-card); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--border-color); display: flex; align-items: center;">
-                <span style="color: var(--text-muted); margin-right: 10px;">🔍</span>
-                <input type="text" placeholder="검색어 입력..." style="background: transparent; border: none; color: #fff; outline: none; width: 150px;">
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Grid Controls -->
+                <div class="grid-controls" style="background: var(--bg-card); padding: 3px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 5px;">
+                    <button id="zoom-out" style="background: transparent; border: none; color: #fff; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; transition: background 0.2s;" title="축소 (더 많은 열)">−</button>
+                    <span id="col-count" style="color: var(--accent-color); font-weight: bold; min-width: 20px; text-align: center; font-size: 0.9rem;">3</span>
+                    <button id="zoom-in" style="background: transparent; border: none; color: #fff; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; transition: background 0.2s;" title="확대 (적은 열)">+</button>
+                </div>
+
+                <!-- 검색창 목업 -->
+                <div style="background: var(--bg-card); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--border-color); display: flex; align-items: center;">
+                    <span style="color: var(--text-muted); margin-right: 10px;">🔍</span>
+                    <input type="text" placeholder="검색어 입력..." style="background: transparent; border: none; color: #fff; outline: none; width: 150px;">
+                </div>
             </div>
         </div>
 
         <!-- 설정 항목 그리드형 위키 스타일 레이아웃 -->
-        <div class="lore-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+        <div class="lore-grid" id="lore-grid" style="display: grid; grid-template-columns: repeat(var(--grid-cols, 3), 1fr); gap: 30px; transition: grid-template-columns 0.4s ease;">
             
             <!-- 세계관 설정 -->
             <a href="{{ '/lorebook/world/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
@@ -57,6 +67,19 @@ permalink: /lorebook/
                 <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 10px;">퀘스트 도감</h3>
                     <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">도서관에서 주어지는 여러 임무와 보상 목록.</p>
+                </div>
+            </a>
+
+            <!-- 도전과제 (NEW) -->
+            <a href="{{ '/lorebook/achievements/' | relative_url }}" class="lore-card" style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
+                <div class="lore-card-img" style="height: 180px; background: linear-gradient(135deg, #f1c40f, #e67e22); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.2);"></div>
+                    <div style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">Awards</div>
+                    <h3 style="color: rgba(255,255,255,0.2); font-size: 3.2rem; font-family: var(--font-heading); margin: 0; text-align: center; position: relative; z-index: 1;">TROPHY</h3>
+                </div>
+                <div style="padding: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 10px;">도전과제</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">게임을 플레이하며 달성한 특별한 기록과 보상들을 확인하세요.</p>
                 </div>
             </a>
 
@@ -194,7 +217,7 @@ permalink: /lorebook/
     </div>
 </section>
 
-<!-- 디자인 요소를 위한 인라인 스타일 (임시) -->
+<!-- 디자인 요소를 위한 인라인 스타일 -->
 <style>
 .lore-card:hover {
     transform: translateY(-8px);
@@ -204,4 +227,64 @@ permalink: /lorebook/
 .lore-card:hover h3:first-of-type {
     color: rgba(252, 163, 17, 0.2) !important;
 }
+.grid-controls button:hover {
+    background: rgba(255,255,255,0.1) !important;
+}
+.grid-controls button:active {
+    background: var(--accent-color) !important;
+    color: #000 !important;
+}
+
+/* Responsive Grid Fallback */
+@media (max-width: 1024px) {
+    .lore-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 600px) {
+    .lore-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('lore-grid');
+    const colDisplay = document.getElementById('col-count');
+    const btnIn = document.getElementById('zoom-in');
+    const btnOut = document.getElementById('zoom-out');
+
+    // Load saved preference or default
+    let cols = parseInt(localStorage.getItem('lore-grid-cols')) || 3;
+    
+    const updateGrid = () => {
+        grid.style.setProperty('--grid-cols', cols);
+        colDisplay.innerText = cols;
+        localStorage.setItem('lore-grid-cols', cols);
+        
+        // Disable buttons at limits
+        btnIn.style.opacity = cols <= 2 ? '0.3' : '1';
+        btnIn.style.cursor = cols <= 2 ? 'not-allowed' : 'pointer';
+        btnOut.style.opacity = cols >= 6 ? '0.3' : '1';
+        btnOut.style.cursor = cols >= 6 ? 'not-allowed' : 'pointer';
+    };
+
+    btnIn.addEventListener('click', () => {
+        if (cols > 2) {
+            cols--;
+            updateGrid();
+        }
+    });
+
+    btnOut.addEventListener('click', () => {
+        if (cols < 6) {
+            cols++;
+            updateGrid();
+        }
+    });
+
+    // Initialize
+    updateGrid();
+});
+</script>
