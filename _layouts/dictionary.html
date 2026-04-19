@@ -73,6 +73,17 @@ layout: default
                 {% else %}
                     {% assign i_cat = '비선공' %}
                 {% endif %}
+            {% elsif page.dataset == 'passive_skills' %}
+                <!-- Passive Skill Stat Logic -->
+                {% if item.Type == 'Sword' %}
+                    {% assign i_cat = '힘' %}
+                {% elsif item.Type == 'Bow' %}
+                    {% assign i_cat = '덱스' %}
+                {% elsif item.Type == 'Magic' %}
+                    {% assign i_cat = '지능' %}
+                {% elsif item.Type == 'Gun' %}
+                    {% assign i_cat = '행운' %}
+                {% endif %}
             {% endif %}
 
             {% assign i_subcat = item[subcat_key] %}
