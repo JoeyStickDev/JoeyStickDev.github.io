@@ -129,26 +129,39 @@ def process_csv(filename, output_name, mapping=None, key_field=None):
 def load_mapping():
     mapping = {}
     st_path = os.path.join(ROW_DATA_DIR, "ItemName_ST_DT.csv")
-    if os.path.exists(st_path):
+    if not os.path.exists(st_path): return mapping
+
+    for enc in ['utf-8-sig', 'utf-16', 'utf-16-le', 'utf-8']:
         try:
-            with open(st_path, 'r', encoding='utf-8') as f:
+            with open(st_path, 'r', encoding=enc) as f:
                 reader = csv.DictReader(f)
                 for row in reader:
                     mapping[row['Key']] = row['SourceString']
+            return mapping
         except:
-            pass
+            continue
     return mapping
 
 def main():
     mapping = load_mapping()
+    
+    # Skills
     process_csv("Skills_DT.csv", "active_skills.csv", mapping, "SkillName")
     process_csv("PassiveSkill_DT.csv", "passive_skills.csv", mapping, "SkillName")
     process_csv("BuffData_DT.csv", "buff_skills.csv", mapping, "BuffName")
+    
+    # World
     process_csv("PlantData_DT.csv", "crops.csv", mapping, "PlantRowName")
     process_csv("FishData_DT.csv", "fishes.csv", mapping, "FishRowName")
+    process_csv("Quest_DT.csv", "quests.csv", mapping, "QuestRowName")
+    
+    # Economy
     process_csv("CraftData_DT.csv", "crafting.csv", mapping, "RowName")
     process_csv("ItemData_DT.csv", "items.csv", mapping, "RowName")
-    process_csv("Quest_DT.csv", "quests.csv", mapping, "QuestRowName")
+    process_csv("MakingData_DT.csv", "artisans.csv", mapping, "RowName")
+    
+    # Characters
+    process_csv("NPC_DT.csv", "characters.csv", mapping, "NPCRowName")
 
 if __name__ == "__main__":
     main()

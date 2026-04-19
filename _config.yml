@@ -21,3 +21,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - RowData/
+  - scripts/
+  - README.md
+  - .antigravityignore
