@@ -6,11 +6,8 @@ def create_pixel_placeholder(path):
     img = Image.new('RGB', (128, 128), color=(30, 34, 42))
     draw = ImageDraw.Draw(img)
     
-    # Create a subtle pixel grid pattern
-    for i in range(0, 128, 8):
-        for j in range(0, 128, 8):
-            if (i + j) % 16 == 0:
-                draw.rectangle([i, j, i + 7, j + 7], fill=(40, 44, 52))
+    # Subtle center square instead of a full checkerboard
+    draw.rectangle([32, 32, 95, 95], fill=(40, 44, 52))
     
     # Gold border for premium feel
     draw.rectangle([0, 0, 127, 127], outline=(252, 163, 17), width=4)
