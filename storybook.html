@@ -30,9 +30,11 @@ permalink: /storybook/
                 <div class="tab-content active" id="tab-story-all">
                     <ul class="post-list">
                         {% for post in site.posts %}
-                            {% if post.category == '메인' or post.category == '메인서브' or post.category == '스킬' or post.category == '스토리' %}
+                            {% if post.categories contains '메인' or post.category == '메인' or post.categories contains '메인서브' or post.category == '메인서브' or post.categories contains '스킬' or post.category == '스킬' or post.categories contains '스토리' or post.category == '스토리' %}
                             <li>
-                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <span class="post-category cat-{% if post.categories contains '메인' %}메인{% elsif post.categories contains '메인서브' %}메인서브{% elsif post.categories contains '스킬' %}스킬{% else %}스토리{% endif %}">
+                                    {% if post.categories contains '메인' %}메인{% elsif post.categories contains '메인서브' %}메인서브{% elsif post.categories contains '스킬' %}스킬{% else %}스토리{% endif %}
+                                </span>
                                 <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
                                 <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
                             </li>
@@ -45,15 +47,14 @@ permalink: /storybook/
                 <div class="tab-content" id="tab-story-main">
                     <ul class="post-list">
                         {% for post in site.posts %}
-                            {% if post.category == '메인' %}
+                            {% if post.categories contains '메인' or post.category == '메인' %}
                             <li>
-                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <span class="post-category cat-메인">메인</span>
                                 <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
                                 <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
                             </li>
                             {% endif %}
                         {% endfor %}
-                        {% if site.categories['메인'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 이야기가 없습니다.</p>{% endif %}
                     </ul>
                 </div>
 
@@ -61,15 +62,14 @@ permalink: /storybook/
                 <div class="tab-content" id="tab-story-sub">
                     <ul class="post-list">
                         {% for post in site.posts %}
-                            {% if post.category == '메인서브' %}
+                            {% if post.categories contains '메인서브' or post.category == '메인서브' %}
                             <li>
-                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <span class="post-category cat-메인서브">메인서브</span>
                                 <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
                                 <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
                             </li>
                             {% endif %}
                         {% endfor %}
-                        {% if site.categories['메인서브'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 이야기가 없습니다.</p>{% endif %}
                     </ul>
                 </div>
 
@@ -77,15 +77,14 @@ permalink: /storybook/
                 <div class="tab-content" id="tab-story-skill">
                     <ul class="post-list">
                         {% for post in site.posts %}
-                            {% if post.category == '스킬' %}
+                            {% if post.categories contains '스킬' or post.category == '스킬' %}
                             <li>
-                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <span class="post-category cat-스킬">스킬</span>
                                 <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
                                 <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
                             </li>
                             {% endif %}
                         {% endfor %}
-                        {% if site.categories['스킬'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 스킬비화가 없습니다.</p>{% endif %}
                     </ul>
                 </div>
 
@@ -93,15 +92,14 @@ permalink: /storybook/
                 <div class="tab-content" id="tab-story-story">
                     <ul class="post-list">
                         {% for post in site.posts %}
-                            {% if post.category == '스토리' %}
+                            {% if post.categories contains '스토리' or post.category == '스토리' %}
                             <li>
-                                <span class="post-category cat-{{ post.category }}">{{ post.category }}</span>
+                                <span class="post-category cat-스토리">스토리</span>
                                 <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
                                 <span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
                             </li>
                             {% endif %}
                         {% endfor %}
-                        {% if site.categories['스토리'].size == 0 %}<p style="text-align:center;color:var(--text-muted);padding:30px;">등록된 이야기가 없습니다.</p>{% endif %}
                     </ul>
                 </div>
                 

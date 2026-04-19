@@ -30,12 +30,15 @@ permalink: /news/
                 <div class="tab-content active" id="tab-all">
                     <ul class="post-list" style="font-size: 1.1rem;">
                         {% for post in site.posts %}
-                        <li style="padding: 15px 0;">
-                            <span class="post-category cat-{{ post.category | downcase }}">{{ post.category }}</span>
-                            <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
-                                post.title }}</a>
-                            <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
-                        </li>
+                            {% if post.categories contains '공지' or post.category == '공지' or post.categories contains '업데이트' or post.category == '업데이트' or post.categories contains '개발일지' or post.category == '개발일지' %}
+                            <li style="padding: 15px 0;">
+                                <span class="post-category cat-{% if post.categories contains '공지' or post.category == '공지' %}notice{% elsif post.categories contains '업데이트' or post.category == '업데이트' %}update{% else %}devlog{% endif %}">
+                                    {% if post.categories contains '공지' or post.category == '공지' %}공지{% elsif post.categories contains '업데이트' or post.category == '업데이트' %}업데이트{% else %}개발일지{% endif %}
+                                </span>
+                                <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{ post.title }}</a>
+                                <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
+                            </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -43,11 +46,11 @@ permalink: /news/
                 <!-- 공지 (Notice) -->
                 <div class="tab-content" id="tab-notice">
                     <ul class="post-list" style="font-size: 1.1rem;">
-                        {% assign notice_posts = site.posts | where:"category", "공지" %}
+                        {% assign notice_posts = site.posts | where_exp: "post", "post.categories contains '공지' or post.category == '공지'" %}
                         {% if notice_posts.size > 0 %}
                         {% for post in notice_posts %}
                         <li style="padding: 15px 0;">
-                            <span class="post-category cat-notice">{{ post.category }}</span>
+                            <span class="post-category cat-notice">공지</span>
                             <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
                                 post.title }}</a>
                             <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
@@ -63,11 +66,11 @@ permalink: /news/
                 <!-- 업데이트 (Update) -->
                 <div class="tab-content" id="tab-update">
                     <ul class="post-list" style="font-size: 1.1rem;">
-                        {% assign update_posts = site.posts | where:"category", "업데이트" %}
+                        {% assign update_posts = site.posts | where_exp: "post", "post.categories contains '업데이트' or post.category == '업데이트'" %}
                         {% if update_posts.size > 0 %}
                         {% for post in update_posts %}
                         <li style="padding: 15px 0;">
-                            <span class="post-category cat-update">{{ post.category }}</span>
+                            <span class="post-category cat-update">업데이트</span>
                             <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
                                 post.title }}</a>
                             <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
@@ -83,11 +86,11 @@ permalink: /news/
                 <!-- 개발일지 (Devlog) -->
                 <div class="tab-content" id="tab-devlog">
                     <ul class="post-list" style="font-size: 1.1rem;">
-                        {% assign dev_posts = site.posts | where:"category", "개발일지" %}
+                        {% assign dev_posts = site.posts | where_exp: "post", "post.categories contains '개발일지' or post.category == '개발일지'" %}
                         {% if dev_posts.size > 0 %}
                         {% for post in dev_posts %}
                         <li style="padding: 15px 0;">
-                            <span class="post-category cat-devlog">{{ post.category }}</span>
+                            <span class="post-category cat-devlog">개발일지</span>
                             <a href="{{ post.url | relative_url }}" class="post-title" style="font-weight: 500;">{{
                                 post.title }}</a>
                             <span class="post-date" style="font-size: 1rem;">{{ post.date | date: "%Y.%m.%d" }}</span>
