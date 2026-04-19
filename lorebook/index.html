@@ -21,12 +21,12 @@ permalink: /lorebook/
                     style="background: var(--bg-card); padding: 3px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 5px;">
                     <button id="zoom-out"
                         style="background: transparent; border: none; color: #fff; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; transition: background 0.2s;"
-                        title="축소 (더 많은 열)">−</button>
+                        title="축소 (더 많은 열)">+</button>
                     <span id="col-count"
                         style="color: var(--accent-color); font-weight: bold; min-width: 20px; text-align: center; font-size: 0.9rem;">3</span>
                     <button id="zoom-in"
                         style="background: transparent; border: none; color: #fff; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; transition: background 0.2s;"
-                        title="확대 (적은 열)">+</button>
+                        title="확대 (적은 열)">-</button>
                 </div>
 
                 <!-- 검색창 목업 -->
@@ -48,7 +48,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/world/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_world.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">
@@ -68,7 +68,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/forgotten/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_lore.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #2c3e50, #000000); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">
@@ -88,7 +88,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/quests/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_quest.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #1b4332, #081c15); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">
@@ -128,7 +128,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/items/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_item.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #23395d, #000000); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">
@@ -148,7 +148,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/characters/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_npc.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #4b0082, #1a1a2e); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">
@@ -167,7 +167,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/creatures/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: url('{{ site.baseurl }}/assets/images/categories/cat_beast.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #660708, #000000); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; letter-spacing: 1px;">
@@ -187,7 +187,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/crafting/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #7f8c8d, #bdc3c7); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #7f8c8d, #2c3e50); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
@@ -207,7 +207,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/crops/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #2ecc71, #27ae60); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #1b4332, #2d6a4f); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
@@ -227,7 +227,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/fishes/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #1abc9c, #16a085); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #005f73, #0a9396); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
@@ -247,7 +247,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/artisans/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #9b59b6, #8e44ad); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #4a4e69, #22223b); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
@@ -267,7 +267,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/active_skills/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #e74c3c, #c0392b); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #780000, #c1121f); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
@@ -287,7 +287,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/passive_skills/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #3498db, #2980b9); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #03045e, #0077b6); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
@@ -307,7 +307,7 @@ permalink: /lorebook/
             <a href="{{ '/lorebook/buff_skills/' | relative_url }}" class="lore-card"
                 style="display: block; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                 <div class="lore-card-img"
-                    style="height: 180px; background: linear-gradient(135deg, #f1c40f, #f39c12); display: flex; align-items: center; justify-content: center; position: relative;">
+                    style="height: 180px; background: linear-gradient(135deg, #ffb703, #fb8500); display: flex; align-items: center; justify-content: center; position: relative;">
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3);"></div>
                     <div
                         style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; color: #fff; z-index: 1; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase;">
