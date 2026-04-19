@@ -7,9 +7,14 @@
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/news' | relative_url }}">News</a></li>
-                <li><a href="{{ '/guide' | relative_url }}">Guide</a></li>
-                <li><a href="{{ '/storybook' | relative_url }}">Story</a></li>
-                <li><a href="{{ '/lorebook' | relative_url }}">Lore</a></li>
+                <li class="dropdown">
+                    <a href="{{ '/guide' | relative_url }}">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="{{ '/guide' | relative_url }}">게임 가이드</a>
+                        <a href="{{ '/storybook' | relative_url }}">스토리북</a>
+                        <a href="{{ '/lorebook' | relative_url }}">설정집</a>
+                    </div>
+                </li>
                 <li><a href="{{ '/media' | relative_url }}">Media</a></li>
             </ul>
         </nav>
