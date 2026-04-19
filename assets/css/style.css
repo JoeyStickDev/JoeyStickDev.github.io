@@ -88,10 +88,15 @@ ul {
     transition: width 0.3s;
 }
 
-.main-nav a:hover {
-    color: var(--accent-color);
-}
 .main-nav a:hover::after {
+    width: 100%;
+}
+
+.main-nav a.active-nav {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+.main-nav a.active-nav::after {
     width: 100%;
 }
 
@@ -140,7 +145,7 @@ ul {
 
 /* 링크 호버 시 밑줄 효과 제거하고 배경색/글자색 변경 */
 .dropdown-content a::after {
-    display: none;
+    display: none !important;
 }
 
 .dropdown-content a:hover {
@@ -148,7 +153,11 @@ ul {
     color: var(--accent-color);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown > .dropdown-content {
+    display: none;
+}
+
+.dropdown:hover > .dropdown-content {
     display: block;
     animation: fadeIn 0.3s;
 }

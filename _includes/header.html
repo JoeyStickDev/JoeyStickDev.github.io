@@ -5,17 +5,34 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/news' | relative_url }}">News</a></li>
+                <li><a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == '/index.html' %}active-nav{% endif %}">Home</a></li>
+                
                 <li class="dropdown">
-                    <a href="{{ '/guide' | relative_url }}">Guide ▾</a>
+                    <a href="{{ '/news/' | relative_url }}" class="{% if page.url contains '/news' %}active-nav{% endif %}">News ▾</a>
                     <div class="dropdown-content">
-                        <a href="{{ '/guide' | relative_url }}">게임 가이드</a>
-                        <a href="{{ '/storybook' | relative_url }}">스토리북</a>
-                        <a href="{{ '/lorebook' | relative_url }}">설정집</a>
+                        <a href="{{ '/news/' | relative_url }}">전체</a>
+                        <a href="{{ '/news/#tab-notice' | relative_url }}">공지사항</a>
+                        <a href="{{ '/news/#tab-update' | relative_url }}">업데이트</a>
+                        <a href="{{ '/news/#tab-devlog' | relative_url }}">개발일지</a>
                     </div>
                 </li>
-                <li><a href="{{ '/media' | relative_url }}">Media</a></li>
+                
+                <li class="dropdown">
+                    <a href="{{ '/guide/' | relative_url }}" class="{% if page.url contains '/guide' or page.url contains '/storybook' or page.url contains '/lorebook' %}active-nav{% endif %}">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="{{ '/guide/' | relative_url }}">게임 가이드</a>
+                        <a href="{{ '/storybook/' | relative_url }}">스토리북</a>
+                        <a href="{{ '/lorebook/' | relative_url }}">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="{{ '/media/' | relative_url }}" class="{% if page.url contains '/media' %}active-nav{% endif %}">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="{{ '/media/#tab-screenshots' | relative_url }}">스크린샷</a>
+                        <a href="{{ '/media/#tab-artwork' | relative_url }}">아트워크</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div class="header-action">
