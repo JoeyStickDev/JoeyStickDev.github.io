@@ -1,0 +1,4 @@
+---,KeywordName,KeywordBP
+Date,"Date","/Game/Main/NPC/KeyWord/DateKeyword_BP.DateKeyword_BP_C"
+ChangeCloth,"ChangeCloth","/Game/Main/NPC/KeyWord/ChangeCloth_BP.ChangeCloth_BP_C"
+Quest,"Quest","/Game/Main/NPC/KeyWord/QuestKeyword_BP.QuestKeyword_BP_C"

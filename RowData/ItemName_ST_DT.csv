@@ -1,0 +1,304 @@
+Key,SourceString
+Armor_Gloves,Gloves
+Armor_Gloves_Hunter,Hunter Gloves
+Armor_Gloves_Mage,Mage Gloves
+Armor_Gloves_Warrior,Warrior Gloves
+Armor_Hat_Basic,Hat
+Armor_Hat_FarmerHat,Farmer Hat
+Armor_Hat_Beanie,Beanie
+Armor_Hat_Warrior,Warrior Hat
+Armor_Hat_Warrior_Expert,Expert Warrior Hat
+Armor_Hat_Warrior_Master,Master Warrior Hat
+Armor_Hat_Hunter,Hunter Hat
+Armor_Hat_Hunter_Expert,Expert Hunter Hat
+Armor_Hat_Hunter_Master,Master Hunter Hat
+Armor_Hat_Mage,Mage Hat
+Armor_Hat_Mage_Expert,Expert Mage Hat
+Armor_Hat_Mage_Master,Master Mage Hat
+Armor_Pants,Pants
+Armor_Pants_Hunter,Hunter Pants
+Armor_Pants_Mage,Mage Pants
+Armor_Pants_Warrior,Warrior Pants
+Armor_Shirts,Shirts
+Armor_Shirts_Warrior,Warrior Shirts
+Armor_Shirts_Warrior_Expert,Expert Warrior Shirts
+Armor_Shirts_Warrior_Master,Master Warrior Shirts
+Armor_Shirts_Hunter,Hunter Shirts
+Armor_Shirts_Hunter_Expert,Expert Hunter Shirts
+Armor_Shirts_Hunter_Master,Master Hunter Shirts
+Armor_Shirts_Mage,Mage Shirts
+Armor_Shirts_Mage_Expert,Expert Mage Shirts
+Armor_Shirts_Mage_Master,Master Mage Shirts
+Armor_Shoes,Shoes
+Armor_Shoes_Hunter,Hunter Shoes
+Armor_Shoes_Mage,Mage Shoes
+Armor_Shoes_Warrior,Warrior Shoes
+Consumable_Boost_Q_B,Boost Q
+Consumable_Boost_S_B,Boost S
+Consumable_Boost_W_B,Boost W
+Crops_Strawberry,Strawberry
+Crops_Blueberry,Blueberry
+Crops_ChiliPepper,Chili Pepper
+Crops_Corn,Corn
+Crops_Eggplant,Eggplant
+Crops_Garlic,Garlic
+Crops_Grape,Grape
+Crops_Potato,Potato
+Crops_Pumpkin,Pumpkin
+Crops_Tomato,Tomato
+Crops_Letus,Letus
+Crops_Wheat,Wheat
+Crops_Tulip,Tulip
+Crops_Sunflower,Sunflower
+Crops_Rose,Rose
+Mushroom_White,White Mushroom
+Mushroom_Brown,Brown Mushroom
+Mushroom_Red,Red Mushroom
+Herb_Green,Green Herb
+Herb_Blue,Blue Herb
+Herb_Red,Red Herb
+Herb_Sakura,Sakura Petal
+Itembag,Item Bag
+Itembags,Item Bags
+Key_GolfCart,Golf Cart Key
+Material_Coal,Coal
+Material_Ore_Stone,Stone Ore
+Material_Ore_Copper,Copper Ore
+Material_Ore_Iron,Iron Ore
+Material_Ore_Gold,Gold Ore
+Material_Ingot_Stone,Stone Ingot
+Material_Ingot_Copper,Copper Ingot
+Material_Ingot_Iron,Iron Ingot
+Material_Ingot_Gold,Gold Ingot
+Material_Coin_Gold,Coin
+Material_Nail,Nail
+Material_Feather,Feather
+Material_Leather,Leather
+Material_Cloth,Cloth
+Material_Paper,Paper
+Material_Ink,Ink
+Material_Salt,Salt
+Material_Sugar,Sugar
+Material_Pepper,Pepper
+Material_Wood,Wood
+Material_Wood_Hard,Hardwood
+Material_Wood_Condensed,Condensed wood
+Material_Wood_Winter,Winter Wood
+Material_Wood_Sakura,Sakura Wood
+Material_Essence_Tulip,Tulip Essence
+Material_Essence_Rose,Rose Essence
+Material_Essence_Sunflower,Sunflower Essence
+Material_Thread,Thread
+Material_Flour,Flour
+Material_RawMeat,Raw Meat
+Material_Gem_Diamond,Diamond
+Material_Gem_BlackDiamond,Black Diamond
+Material_Gem_Amethyst,Amethyst
+Material_Gem_Aquamarine,Aquamarine
+Material_Gem_Emerald,Emerald
+Material_Gem_Topaz,Topaz
+Material_Gem_Ruby,Ruby
+Material_Relic,Ancient Relics
+Material_Relic_STR,Power Relics
+Material_Relic_DEX,Agility Relics
+Material_Relic_INT,Intelligence Relics
+Material_Relic_LUK,Luck Relics
+Material_Book,Book
+Material_Paint,Paint
+Material_SheetMusic,Sheet Music
+Material_FoxOrb,Fox Orb
+Material_RatTail,Rat Tail
+Material_WolfClaws,Wolf Claws
+Seed_Strawberry,Strawberry Seed
+Seed_Garlic,Garlic Seed
+Seed_Potato,Potato Seed
+Seed_Letus,Letus Seed
+Seed_Tulip,Tulip Seed
+Seed_Blueberry,Blueberry Seed
+Seed_ChilliPepper,Chili Pepper Seed
+Seed_Corn,Corn Seed
+Seed_Sunflower,Sunflower Seed
+Seed_Tomato,Tomato Seed
+Seed_Grape,Grape Seed
+Seed_Eggplant,Eggplant Seed
+Seed_Pumpkin,Pumpkin Seed
+Seed_Rose,Rose Seed
+Seed_Wheat,Wheat Seed
+Seed_Coffee,Coffee Seed
+Structure_Bed,Bed
+Structure_Container,Container
+Structure_Chicken_Nest,Chicken Nest
+Structure_CowHouse,Cowshed
+Structure_Beehive,Beehive
+Structure_Furnace,Furnace
+Structure_Keg,Keg
+Structure_Dehydrator,Dehydrator
+Structure_OilExtractor,Oil Extractor
+Structure_PreservesJar,Preserves Jar
+Structure_Sprinkler,Sprinkler
+Structure_Wall,Wall
+Structure_Candle,Candle Stand
+Structure_Floor,Wall
+Structure_StandLamp,Stand Lamp
+Structure_Cabinet,Cabinet
+Structure_BookShelf,Bookshelf
+Structure_Desk,Desk
+Structure_Campfire,Campfire Kit
+Structure_Fireplace,Fireplace
+Structure_Rug,Rug
+Structure_Chair,Stool
+Structure_DeskLamp,Desk Lamp
+Tool_Axe,Axe
+Tool_Pickaxe,Pickaxe
+Tool_Shovel,Shovel
+Tool_Scythe,Scythe
+Tool_WateringCan,Watering Can
+Tool_AED,Automated External Defibrillator
+Tool_Bomb_Basic,Basic Bomb
+Tool_Bomb_Throwable,Throwable Bomb
+Tool_FishingRod,Fishing Rod
+Tool_Guitar_Acoustic,Acoustic Guitar
+Tool_Guitar_Electic,Electic Guitar
+Weapon_Sword,Sword
+Weapon_Sword_Expert,Expert Sword
+Weapon_Sword_Master,Master Sword
+Weapon_Bow,Bow
+Weapon_Bow_Expert,Expert Bow
+Weapon_Bow_Master,Master Bow
+Weapon_Gun,Gun
+Weapon_Gun_Expert,Expert Gun
+Weapon_Gun_Master,Master Gun
+Weapon_Orb,Orb
+Weapon_Orb_Expert,Expert Orb
+Weapon_Orb_Master,Master Orb
+Weapon_Shield,Shield
+Fish_WaterLilySalmon,Water Lily Salmon
+Fish_StoneSeaBass,Stone Sea Bass
+Fish_CherryBlossomCarp,Cherry Blossom Carp
+Fish_SpringlightTrout,Springlight Trout
+Fish_SummerCod,Summer Cod
+Fish_TurquoiseSnapper,Turquoise Snapper\t
+Fish_CrimsonBass,Crimson Bass
+Fish_AutumnCatfish,Autumn Catfish
+Fish_IcefinTrout,Icefin Trout
+Fish_SilverCod,Silver Cod
+Drink_Milk,Milk
+Drink_Coffee,Coffee
+Drink_Cocktail,Cocktail
+Drink_HoneyTea,Honey Tea
+Drink_Honey,Honey
+Drink_Wine,Wine
+Drink_Wine_Blueberry,Blueberry wine
+Drink_Wine_Strawberry,Strawberry wine
+Drink_Wine_Grape,Grape wine
+Drink_Extract_Garlic,Garlic Extract
+Drink_Liquor_Potato,Potato Liquor
+Drink_Oil_Chili,Chili Oil
+Drink_Whiskey_Corn,Corn Whiskey
+Drink_Concentrate_Eggplant,Eggplant Concentrate
+Drink_Ale_Pumpkin,Pumpkin Ale
+Drink_BlueberryJuice,Blueberry Juice
+Drink_StrawberryJuice,Strawberry Juice
+Drink_GrapeSoda,Grape Soda
+Drink_PSL,Pumpkin Spicy Latte
+Drink_Sunset,Sunset
+Drink_ChiliSauce,Chili Sauce
+Drink_Latte,Latte
+Drink_Wine_Strawberry,Strawberry wine
+Drink_TomatoJuice,Tomato Juice
+Food_Animal_Food,Animal Food
+Food_Egg,Egg
+Food_FriedEgg,Fried Egg
+Food_RoastedChicken,Roasted Chicken
+Food_Jelly_Strawberry,Strawberry Jelly
+Food_Jelly_Blueberry,Blueberry Jelly
+Food_Jelly_Grape,Strawberry Jelly
+Food_Pickle_Garlic,Pickled Garlic
+Food_Pickle_Potato,Pickled Potato
+Food_Pickle_ChiliPepper,Pickled Pepper
+Food_Pickle_Corn,Pickled Corn
+Food_Pickle_Eggplant,Pickled Eggplant
+Food_Jelly_Pumpkin,Pumpkin Jelly
+Food_Dried_BlossomCarp,Dried Blossom Carp
+Food_Dried_SpringTrout,Dried Spring Trout
+Food_Dried_SummerCod,Dried Summer Cod
+Food_Dried_TurquoiseSnapper,Dried Turquoise Snapper
+Food_Dried_AutumnCatfish,Dried Autumn Catfish
+Food_Dried_CrimsonBass,Dried Crimson Bass
+Food_Dried_IcefinTrout,Dried Icefin Trout
+Food_Dried_SilverCod,Dried Silver Cod
+Food_Dried_WaterLilySalmon,Dried Water Lily Salmon\t
+Food_Dried_StoneSeaBass,Dried Stone Sea Bass
+Food_Bread,Bread
+Food_Cheese,Cheese
+Food_CornSoup,Corn Soup
+Food_EggCheeseBread,Egg Cheese Bread
+Food_GarlicBread,Garlic Bread
+Food_JellyToast,JellyToast
+Food_MushroomSoup,Mushroom Soup
+Food_PumpkinPie,Pumpkin Pie
+Food_Salad,Salad
+Food_VegieSoup,VegieSoup
+Food_WhippingCream,WhippingCream
+Food_Paste_Letus,Pickled Eggplant
+Food_TomatoSoup,Tomato Soup
+Food_Paste_Tomato,Tomato Paste
+Food_CrabMeat,Crab Meat
+Food_CrabSoup,Crab Soup
+Potion_XP_Testing,Testing XP Potion
+Potion_Bandage,Bandage
+Potion_EmergencyPotion,Emergency Potion
+Potion_HP_Emergency,Emergency HP Potion
+Potion_MP_Emergency,Emergency MP Potion
+Potion_Agility,Potion of Agility
+Potion_Strength,Potion of Strength
+Potion_Focus,Potion of Focus
+Potion_Vitality,Potion of Vitality
+Potion_ManaSurge,Potion of Mana Surge
+Potion_Invisibility,Potion of Invisibility
+Potion_FireResitance,Potion of Fire Resistance
+Potion_FroestResistance,Emergency HP Potion
+Potion_Harvest,Potion of Frost Resistance
+Potion_Fourtune,Potion of Fortune
+Potion_Experimental,Experimental Potion
+Potion_StellarEssence,Stellar Essence
+Quest_M0_LockedStorybook,Locked Storybook
+Quest_M1_OldKey,Old Key
+Quest_M1_Warmth,Warmth
+Quest_M1_IceCrystal,Ice Crystal
+Quest_M1_PendantOfTheIceSprit,Pendant Of The Ice Sprit
+Quest_M2_Storybook,Storybook
+Quest_M2_LunaFlower,Luna Flower
+Quest_M2_LunaFlowerExtract,Luna Flower Extract
+Quest_M2_SpiritsEnergy,Spirit’s Energy
+Quest_M3_UnderFlower,Under Flower
+Quest_M3_Letter,Hades’ Letter
+Quest_M5_Mugwort,Mugwort
+Quest_M6_OldBook,Ancient record
+Quest_SK0_Hammer,Hammer
+Quest_SK3_WindmillBook,Windmill Training Manual
+Quest_SK4_Waterbucket,Water bucket
+Quest_SK6_BeachTowel,Syra\'s Beach Tower.
+Quest_SK16_LuckyCharm,LuckyCharm
+Quest_S5_SealedBottle,Sealed Bottle
+Quest_S5_OceansBack,Ocean\'s Back
+Quest_M8_Essence_M1,Luna Flower Extract
+Quest_M8_Essence_M2,Ember Scent
+Quest_M8_Essence_M3,Underworld Bloom
+Quest_M8_Essence_M4,Survivor’s Spirit
+Quest_M8_Essence_M5,Totem Scent
+Quest_M8_Essence_M6,Blood of Promise
+Quest_M8_Essence_M7,Equilibrium Essence
+Quest_M10_Jodiac_Aquarius,Aquarius Fragment
+Quest_M10_Jodiac_Aries,Aries Fragment
+Quest_M10_Jodiac_Cancer,Cancer Fragment
+Quest_M10_Jodiac_Capricorn,Capricorn Fragment
+Quest_M10_Jodiac_Gemini,Gemini Fragment
+Quest_M10_Jodiac_Leo,Leo Fragment
+Quest_M10_Jodiac_Libra,Libra Fragment
+Quest_M10_Jodiac_Pisces,Pisces Fragment
+Quest_M10_Jodiac_Sagittarius,Sagittarius Fragment
+Quest_M10_Jodiac_Scorpio,Scorpio Fragment
+Quest_M10_Jodiac_Taurus,Taurus Fragment
+Quest_M10_Jodiac_Virgo,Virgo Fragment
+Quest_Festival_Music,Festival note

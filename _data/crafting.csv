@@ -1,5 +1,79 @@
-name,description,category,subcategory,image
-초보자의 검,"가장 먼저 만드는 무기. 공격력이 낮다.",무기,검,
-마법의 지팡이,"마법 능력을 끌어내는 나무 지팡이.",무기,지팡이,
-회복 물약,"체력을 소량 회복시키는 빨간 포션.",소비품,포션,
-마나 회복 물약,"마나를 소량 회복시키는 파란 포션.",소비품,포션,
+ID,RowName,RequiredSklillName,RequiredCraftLevel,RewardCraftXP,Ingridient,FireRequired,DisplayName
+Armor_Gloves,Armor_Gloves,BlackSmith,1,10,"Leather x5, Cloth x2, Thread x3",FALSE,Gloves
+Armor_Gloves_Hunter,Armor_Gloves_Hunter,BlackSmith,3,10,"Leather x5, Cloth x2, Thread x3",FALSE,Hunter Gloves
+Armor_Gloves_Mage,Armor_Gloves_Mage,BlackSmith,4,10,"Leather x5, Cloth x2, Thread x3",FALSE,Mage Gloves
+Armor_Gloves_Warrior,Armor_Gloves_Warrior,BlackSmith,2,10,"Leather x5, Cloth x2, Thread x3",FALSE,Warrior Gloves
+Armor_Hat,Armor_Hat,BlackSmith,1,10,"Leather x5, Cloth x2, Thread x3",FALSE,
+Armor_Hat_Hunter,Armor_Hat_Hunter,BlackSmith,3,10,"Leather x5, Cloth x2, Thread x3",FALSE,Hunter Hat
+Armor_Hat_Mage,Armor_Hat_Mage,BlackSmith,4,10,"Leather x5, Cloth x2, Thread x3",FALSE,Mage Hat
+Armor_Hat_Warrior,Armor_Hat_Warrior,BlackSmith,2,10,"Leather x5, Cloth x2, Thread x3",FALSE,Warrior Hat
+Armor_Pants,Armor_Pants,BlackSmith,1,20,"Leather x5, Cloth x10, Thread x5",FALSE,Pants
+Armor_Pants_Hunter,Armor_Pants_Hunter,BlackSmith,3,20,"Leather x5, Cloth x10, Thread x5",FALSE,Hunter Pants
+Armor_Pants_Mage,Armor_Pants_Mage,BlackSmith,4,20,"Leather x5, Cloth x10, Thread x5",FALSE,Mage Pants
+Armor_Pants_Warrior,Armor_Pants_Warrior,BlackSmith,2,20,"Leather x5, Cloth x10, Thread x5",FALSE,Warrior Pants
+Armor_Shirts,Armor_Shirts,BlackSmith,1,20,"Leather x5, Cloth x10, Thread x5",FALSE,Shirts
+Armor_Shirts_Hunter,Armor_Shirts_Hunter,BlackSmith,3,20,"Leather x5, Cloth x10, Thread x5",FALSE,Hunter Shirts
+Armor_Shirts_Mage,Armor_Shirts_Mage,BlackSmith,4,20,"Leather x5, Cloth x10, Thread x5",FALSE,Mage Shirts
+Armor_Shirts_Warrior,Armor_Shirts_Warrior,BlackSmith,2,20,"Leather x5, Cloth x10, Thread x5",FALSE,Warrior Shirts
+Armor_Shoes,Armor_Shoes,BlackSmith,1,10,"Leather x5, Cloth x2, Thread x3",FALSE,Shoes
+Armor_Shoes_Hunter,Armor_Shoes_Hunter,BlackSmith,3,10,"Leather x5, Cloth x2, Thread x3",FALSE,Hunter Shoes
+Armor_Shoes_Mage,Armor_Shoes_Mage,BlackSmith,4,10,"Leather x5, Cloth x2, Thread x3",FALSE,Mage Shoes
+Armor_Shoes_Warrior,Armor_Shoes_Warrior,BlackSmith,2,10,"Leather x5, Cloth x2, Thread x3",FALSE,Warrior Shoes
+Weapon_Gun,Weapon_Gun,BlackSmith,3,40,"Ingot_Iron x20, Ingot_Gold x15, Nail x5",FALSE,Gun
+Weapon_Bow,Weapon_Bow,BlackSmith,2,40,"Wood x20, Wood_Hard x15, Thread x5",FALSE,Bow
+Weapon_Orb,Weapon_Orb,BlackSmith,4,20,"Ingot_Copper x10, Ingot_Gold x10",FALSE,Orb
+Weapon_Shield,Weapon_Shield,BlackSmith,1,35,"Wood x10, Wood_Hard x5, Ingot_Stone x10, Ingot_Iron x5, Nail x5",FALSE,Shield
+Weapon_Sword,Weapon_Sword,BlackSmith,1,45,"Wood x10, Wood_Hard x10, Ingot_Iron x10, Ingot_Gold x10, Nail x5",FALSE,Sword
+Tool_Axe,Tool_Axe,BlackSmith,1,20,"Wood x3, Wood_Hard x3, Ingot_Stone x3, Ingot_Iron x3, Nail x5",FALSE,Axe
+Tool_FishingRod,Tool_FishingRod,BlackSmith,2,15,"Wood x3, Wood_Hard x3, Thread x5",FALSE,Fishing Rod
+Tool_Pickaxe,Tool_Pickaxe,BlackSmith,1,20,"Wood x3, Wood_Hard x3, Ingot_Stone x3, Ingot_Iron x3, Nail x5",FALSE,Pickaxe
+Tool_Shovel,Tool_Shovel,BlackSmith,1,20,"Wood x3, Wood_Hard x3, Ingot_Stone x3, Ingot_Iron x3, Nail x5",FALSE,Shovel
+Tool_Scythe,Tool_Scythe,BlackSmith,2,15,"Wood x3, Wood_Hard x3, Ingot_Iron x3, Nail x5",FALSE,Scythe
+Tool_WateringCan,Tool_WateringCan,BlackSmith,1,10,"Ingot_Iron x5, Nail x5",FALSE,Watering Can
+Tool_Guitar_Acoustic,Tool_Guitar_Acoustic,BlackSmith,3,60,"Wood x10, Wood_Hard x10, Ingot_Iron x5, Ingot_Copper x5, NoneIngot_Gold x5, Nail x10, Thread x12",FALSE,Acoustic Guitar
+Tool_Guitar_Electic,Tool_Guitar_Electic,BlackSmith,4,60,"Wood x5, Wood_Hard x5, Ingot_Iron x10, Ingot_Copper x10, NoneIngot_Gold x5, Nail x10, Thread x12",FALSE,Electic Guitar
+Drink_HoneyTea,Drink_HoneyTea,BeverageMixing,1,3,Drink_Honey x3,FALSE,Honey Tea
+Drink_Coffee,Drink_Coffee,BeverageMixing,3,5,Coffee x5,FALSE,Coffee
+Drink_Latte,Drink_Latte,BeverageMixing,4,2,"Drink_Coffee x1, Drink_Milk x1",FALSE,Latte
+Drink_PSL,Drink_PSL,BeverageMixing,5,3,"Drink_Coffee x1, Drink_Milk x1, Food_Jelly_Pumpkin x1",FALSE,Pumpkin Spicy Latte
+Drink_BlueberryJuice,Drink_BlueberryJuice,BeverageMixing,1,6,"Blueberry x5, Sugar x1",FALSE,Blueberry Juice
+Drink_StrawberryJuice,Drink_StrawberryJuice,BeverageMixing,1,6,"Strawberry x5, Sugar x1",FALSE,Strawberry Juice
+Drink_GrapeSoda,Drink_GrapeSoda,BeverageMixing,1,6,"Grape x5, Sugar x1",FALSE,Grape Soda
+Drink_TomatoJuice,Drink_TomatoJuice,BeverageMixing,1,2,"Drink_Sauce_Tomato x1, Sugar x1",FALSE,Tomato Juice
+Drink_Cocktail,Drink_Cocktail,BeverageMixing,2,3,"Drink_Liquor_Potato x1, Drink_StrawberryJuice x1, Drink_BlueberryJuice x1",FALSE,Cocktail
+Drink_Sunset,Drink_ChiliSauce,BeverageMixing,3,7,"Drink_Cocktail x1, Strawberry x3, Blueberry x3",FALSE,Chili Sauce
+Food_CornSoup,Food_CornSoup,Cooking,1,7,"Corn x5, Salt x1, Pepper x1",FALSE,Corn Soup
+Food_Bread,Food_Bread,Cooking,1,8,"Wheat x5, Salt x1, Sugar x1, Drink_Milk x1",FALSE,Bread
+Food_EggCheeseBread,Food_EggCheeseBread,Cooking,4,3,"Food_Bread x1, Food_Cheese x1, Food_Egg x1",FALSE,Egg Cheese Bread
+Food_GarlicBread,Food_GarlicBread,Cooking,3,8,"Garlic x5, Food_Bread x1, Salt x1, Pepper x1",FALSE,Garlic Bread
+Food_JellyToast,Food_JellyToast,Cooking,2,2,"Food_Bread x1, Food_Jelly_Strawberry x1",FALSE,JellyToast
+Food_MushroomSoup,Food_MushroomSoup,Cooking,2,4,"Mushroom_White x1, Mushroom_Brown x1, Salt x1, Pepper x1",FALSE,Mushroom Soup
+Food_PumpkinPie,Food_PumpkinPie,Cooking,3,3,"Food_Bread x1, Food_Jelly_Pumpkin x1, Drink_Milk x1",FALSE,Pumpkin Pie
+Food_TomatoSoup,Food_TomatoSoup,Cooking,3,3,"Food_Paste_Tomato x1, Salt x1, Pepper x1",FALSE,Tomato Soup
+Food_Salad,Food_Salad,Cooking,2,3,"Tomato x1, Corn x1, Letus x1",FALSE,Salad
+Food_VegieSoup,Food_VegieSoup,Cooking,3,5,"Potato x1, Eggplant x1, Salt x1, Pepper x1, Garlic x1",FALSE,VegieSoup
+Food_WhippingCream,Food_WhippingCream,Cooking,1,2,"Drink_Milk x1, Sugar x1",FALSE,WhippingCream
+Potion_MP_Emergency,Potion_MP_Emergency,PotionBrewing,1,6,"Herb_Green x3, Herb_Blue x3",FALSE,Emergency MP Potion
+Potion_HP_Emergency,Potion_HP_Emergency,PotionBrewing,1,6,"Herb_Green x3, Herb_Red x3",FALSE,Emergency HP Potion
+Potion_Agility,Potion_MP_Emergency,PotionBrewing,2,9,"Herb_Green x3, Herb_Red x3, Herb_Blue x3",FALSE,Emergency MP Potion
+Potion_Strength,Potion_MP_Emergency,PotionBrewing,3,9,"Herb_Green x3, Herb_Red x3, Mushroom_Red x3",FALSE,Emergency MP Potion
+Potion_Focus,Potion_MP_Emergency,PotionBrewing,4,9,"Herb_Green x3, Herb_Red x3, Mushroom_White x3",FALSE,Emergency MP Potion
+Potion_Vitality,Potion_MP_Emergency,PotionBrewing,5,9,"Herb_Green x3, Herb_Red x3, Mushroom_Brown x3",FALSE,Emergency MP Potion
+Potion_ManaSurge,Potion_MP_Emergency,PotionBrewing,6,9,"Herb_Green x3, Herb_Blue x3, Mushroom_White x3",FALSE,Emergency MP Potion
+Potion_Invisibility,Potion_MP_Emergency,PotionBrewing,7,9,"Herb_Green x3, Herb_Blue x3, Mushroom_Brown x3",FALSE,Emergency MP Potion
+Potion_FireResitance,Potion_MP_Emergency,PotionBrewing,8,9,"Herb_Green x3, Herb_Blue x3, Mushroom_Red x3",FALSE,Emergency MP Potion
+Potion_FroestResistance,Potion_MP_Emergency,PotionBrewing,9,9,"Herb_Green x3, Mushroom_White x3, Mushroom_Brown x3",FALSE,Emergency MP Potion
+Potion_Harvest,Potion_MP_Emergency,PotionBrewing,10,12,"Herb_Green x3, Mushroom_White x3, Mushroom_Brown x3, Mushroom_Red x3",FALSE,Emergency MP Potion
+Potion_Fourtune,Potion_MP_Emergency,PotionBrewing,10,18,"Herb_Green x3, Herb_Red x3, Herb_Blue x3, Mushroom_White x3, Mushroom_Brown x3, Mushroom_Red x3",FALSE,Emergency MP Potion
+Structure_Wall,Structure_Wall,Handicraft,1,3,"Wood_Hard x1, Ingot_Iron x1, Nail x1",FALSE,Wall
+Structure_Floor,Structure_Floor,Handicraft,1,3,"Wood_Hard x1, Ingot_Iron x1, Nail x1",FALSE,Wall
+Structure_Fireplace,Structure_Floor,Handicraft,3,35,"Wood_Hard x10, Wood_Condensed x5, Nail x5, Ingot_Iron x5, Ingot_Copper x10",FALSE,Wall
+Structure_Campfire,Structure_Floor,Handicraft,2,10,"Wood_Hard x5, Ingot_Stone x5",FALSE,Wall
+Structure_BookShelf,Structure_Floor,Handicraft,4,15,"Wood_Hard x5, Wood_Condensed x5, Nail x5",FALSE,Wall
+Structure_Rug,Structure_Floor,Handicraft,2,15,"Leather x5, Cloth x5, Thread x5",FALSE,Wall
+Structure_Candle,Structure_Floor,Handicraft,3,9,"Wood x3, Nail x3, Ingot_Iron x3",FALSE,Wall
+Structure_StandLamp,Structure_Floor,Handicraft,5,12,"Wood_Condensed x1, Nail x5, Ingot_Iron x3, Ingot_Gold x3",FALSE,Wall
+Structure_DeskLamp,Structure_Floor,Handicraft,4,8,"Wood_Hard x1, Nail x3, Ingot_Iron x2, Ingot_Gold x2",FALSE,Wall
+Structure_Desk,Structure_Floor,Handicraft,3,15,"Wood_Hard x5, Wood_Condensed x5, Nail x5",FALSE,Wall
+Structure_Chair,Structure_Floor,Handicraft,3,9,"Wood_Hard x3, Wood_Condensed x3, Nail x3",FALSE,Wall
+Structure_Cabinet,Structure_Floor,Handicraft,2,18,"Wood_Hard x5, Wood_Condensed x5, Nail x5, Ingot_Iron x3",FALSE,Wall

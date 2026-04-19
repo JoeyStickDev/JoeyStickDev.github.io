@@ -1,0 +1,79 @@
+---,RowName,RequiredSklillName,RequiredCraftLevel,RewardCraftXP,Ingridient,FireRequired
+Armor_Gloves,Armor_Gloves,BlackSmith,1,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Gloves_Hunter,Armor_Gloves_Hunter,BlackSmith,3,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Gloves_Mage,Armor_Gloves_Mage,BlackSmith,4,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Gloves_Warrior,Armor_Gloves_Warrior,BlackSmith,2,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Hat,Armor_Hat,BlackSmith,1,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Hat_Hunter,Armor_Hat_Hunter,BlackSmith,3,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Hat_Mage,Armor_Hat_Mage,BlackSmith,4,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Hat_Warrior,Armor_Hat_Warrior,BlackSmith,2,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Pants,Armor_Pants,BlackSmith,1,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Pants_Hunter,Armor_Pants_Hunter,BlackSmith,3,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Pants_Mage,Armor_Pants_Mage,BlackSmith,4,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Pants_Warrior,Armor_Pants_Warrior,BlackSmith,2,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Shirts,Armor_Shirts,BlackSmith,1,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Shirts_Hunter,Armor_Shirts_Hunter,BlackSmith,3,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Shirts_Mage,Armor_Shirts_Mage,BlackSmith,4,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Shirts_Warrior,Armor_Shirts_Warrior,BlackSmith,2,20,"((""Material_Leather"", 5),(""Material_Cloth"", 10),(""Material_Thread"", 5))",FALSE
+Armor_Shoes,Armor_Shoes,BlackSmith,1,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Shoes_Hunter,Armor_Shoes_Hunter,BlackSmith,3,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Shoes_Mage,Armor_Shoes_Mage,BlackSmith,4,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Armor_Shoes_Warrior,Armor_Shoes_Warrior,BlackSmith,2,10,"((""Material_Leather"", 5),(""Material_Cloth"", 2),(""Material_Thread"", 3))",FALSE
+Weapon_Gun,Weapon_Gun,BlackSmith,3,40,"((""Material_Ingot_Iron"", 20),(""Material_Ingot_Gold"", 15),(""Material_Nail"", 5))",FALSE
+Weapon_Bow,Weapon_Bow,BlackSmith,2,40,"((""Material_Wood"", 20),(""Material_Wood_Hard"", 15),(""Material_Thread"", 5))",FALSE
+Weapon_Orb,Weapon_Orb,BlackSmith,4,20,"((""Material_Ingot_Copper"", 10),(""Material_Ingot_Gold"", 10))",FALSE
+Weapon_Shield,Weapon_Shield,BlackSmith,1,35,"((""Material_Wood"", 10),(""Material_Wood_Hard"", 5),(""Material_Ingot_Stone"", 10),(""Material_Ingot_Iron"", 5),(""Material_Nail"", 5))",FALSE
+Weapon_Sword,Weapon_Sword,BlackSmith,1,45,"((""Material_Wood"", 10),(""Material_Wood_Hard"", 10),(""Material_Ingot_Iron"", 10),(""Material_Ingot_Gold"", 10),(""Material_Nail"", 5))",FALSE
+Tool_Axe,Tool_Axe,BlackSmith,1,20,"((""Material_Wood"", 3),(""Material_Wood_Hard"", 3),(""Material_Ingot_Stone"", 3),(""Material_Ingot_Iron"", 3),(""Material_Nail"", 5))",FALSE
+Tool_FishingRod,Tool_FishingRod,BlackSmith,2,15,"((""Material_Wood"", 3),(""Material_Wood_Hard"", 3),(""Material_Thread"", 5))",FALSE
+Tool_Pickaxe,Tool_Pickaxe,BlackSmith,1,20,"((""Material_Wood"", 3),(""Material_Wood_Hard"", 3),(""Material_Ingot_Stone"", 3),(""Material_Ingot_Iron"", 3),(""Material_Nail"", 5))",FALSE
+Tool_Shovel,Tool_Shovel,BlackSmith,1,20,"((""Material_Wood"", 3),(""Material_Wood_Hard"", 3),(""Material_Ingot_Stone"", 3),(""Material_Ingot_Iron"", 3),(""Material_Nail"", 5))",FALSE
+Tool_Scythe,Tool_Scythe,BlackSmith,2,15,"((""Material_Wood"", 3),(""Material_Wood_Hard"", 3),(""Material_Ingot_Iron"", 3),(""Material_Nail"", 5))",FALSE
+Tool_WateringCan,Tool_WateringCan,BlackSmith,1,10,"((""Material_Ingot_Iron"", 5),(""Material_Nail"", 5))",FALSE
+Tool_Guitar_Acoustic,Tool_Guitar_Acoustic,BlackSmith,3,60,"((""Material_Wood"", 10),(""Material_Wood_Hard"", 10),(""Material_Ingot_Iron"", 5),(""Material_Ingot_Copper"", 5),(""NoneMaterial_Ingot_Gold"", 5),(""Material_Nail"", 10),(""Material_Thread"", 12))",FALSE
+Tool_Guitar_Electic,Tool_Guitar_Electic,BlackSmith,4,60,"((""Material_Wood"", 5),(""Material_Wood_Hard"", 5),(""Material_Ingot_Iron"", 10),(""Material_Ingot_Copper"", 10),(""NoneMaterial_Ingot_Gold"", 5),(""Material_Nail"", 10),(""Material_Thread"", 12))",FALSE
+Drink_HoneyTea,Drink_HoneyTea,BeverageMixing,1,3,"((""Drink_Honey"", 3))",FALSE
+Drink_Coffee,Drink_Coffee,BeverageMixing,3,5,"((""Seed_Coffee"", 5))",FALSE
+Drink_Latte,Drink_Latte,BeverageMixing,4,2,"((""Drink_Coffee"", 1),(""Drink_Milk"", 1))",FALSE
+Drink_PSL,Drink_PSL,BeverageMixing,5,3,"((""Drink_Coffee"", 1),(""Drink_Milk"", 1),(""Food_Jelly_Pumpkin"", 1))",FALSE
+Drink_BlueberryJuice,Drink_BlueberryJuice,BeverageMixing,1,6,"((""Crops_Blueberry"", 5),(""Material_Sugar"", 1))",FALSE
+Drink_StrawberryJuice,Drink_StrawberryJuice,BeverageMixing,1,6,"((""Crops_Strawberry"", 5),(""Material_Sugar"", 1))",FALSE
+Drink_GrapeSoda,Drink_GrapeSoda,BeverageMixing,1,6,"((""Crops_Grape"", 5),(""Material_Sugar"", 1))",FALSE
+Drink_TomatoJuice,Drink_TomatoJuice,BeverageMixing,1,2,"((""Drink_Sauce_Tomato"", 1),(""Material_Sugar"", 1))",FALSE
+Drink_Cocktail,Drink_Cocktail,BeverageMixing,2,3,"((""Drink_Liquor_Potato"", 1),(""Drink_StrawberryJuice"", 1),(""Drink_BlueberryJuice"", 1))",FALSE
+Drink_Sunset,Drink_ChiliSauce,BeverageMixing,3,7,"((""Drink_Cocktail"", 1),(""Crops_Strawberry"", 3),(""Crops_Blueberry"", 3))",FALSE
+Food_CornSoup,Food_CornSoup,Cooking,1,7,"((""Crops_Corn"", 5),(""Material_Salt"", 1),(""Material_Pepper"", 1))",FALSE
+Food_Bread,Food_Bread,Cooking,1,8,"((""Crops_Wheat"", 5),(""Material_Salt"", 1),(""Material_Sugar"", 1),(""Drink_Milk"", 1))",FALSE
+Food_EggCheeseBread,Food_EggCheeseBread,Cooking,4,3,"((""Food_Bread"", 1),(""Food_Cheese"", 1),(""Food_Egg"", 1))",FALSE
+Food_GarlicBread,Food_GarlicBread,Cooking,3,8,"((""Crops_Garlic"", 5),(""Food_Bread"", 1),(""Material_Salt"", 1),(""Material_Pepper"", 1))",FALSE
+Food_JellyToast,Food_JellyToast,Cooking,2,2,"((""Food_Bread"", 1),(""Food_Jelly_Strawberry"", 1))",FALSE
+Food_MushroomSoup,Food_MushroomSoup,Cooking,2,4,"((""Mushroom_White"", 1),(""Mushroom_Brown"", 1),(""Material_Salt"", 1),(""Material_Pepper"", 1))",FALSE
+Food_PumpkinPie,Food_PumpkinPie,Cooking,3,3,"((""Food_Bread"", 1),(""Food_Jelly_Pumpkin"", 1),(""Drink_Milk"", 1))",FALSE
+Food_TomatoSoup,Food_TomatoSoup,Cooking,3,3,"((""Food_Paste_Tomato"", 1),(""Material_Salt"", 1),(""Material_Pepper"", 1))",FALSE
+Food_Salad,Food_Salad,Cooking,2,3,"((""Crops_Tomato"", 1),(""Crops_Corn"", 1),(""Crops_Letus"", 1))",FALSE
+Food_VegieSoup,Food_VegieSoup,Cooking,3,5,"((""Crops_Potato"", 1),(""Crops_Eggplant"", 1),(""Material_Salt"", 1),(""Material_Pepper"", 1),(""Crops_Garlic"", 1))",FALSE
+Food_WhippingCream,Food_WhippingCream,Cooking,1,2,"((""Drink_Milk"", 1),(""Material_Sugar"", 1))",FALSE
+Potion_MP_Emergency,Potion_MP_Emergency,PotionBrewing,1,6,"((""Herb_Green"", 3),(""Herb_Blue"", 3))",FALSE
+Potion_HP_Emergency,Potion_HP_Emergency,PotionBrewing,1,6,"((""Herb_Green"", 3),(""Herb_Red"", 3))",FALSE
+Potion_Agility,Potion_MP_Emergency,PotionBrewing,2,9,"((""Herb_Green"", 3),(""Herb_Red"", 3),(""Herb_Blue"", 3))",FALSE
+Potion_Strength,Potion_MP_Emergency,PotionBrewing,3,9,"((""Herb_Green"", 3),(""Herb_Red"", 3),(""Mushroom_Red"", 3))",FALSE
+Potion_Focus,Potion_MP_Emergency,PotionBrewing,4,9,"((""Herb_Green"", 3),(""Herb_Red"", 3),(""Mushroom_White"", 3))",FALSE
+Potion_Vitality,Potion_MP_Emergency,PotionBrewing,5,9,"((""Herb_Green"", 3),(""Herb_Red"", 3),(""Mushroom_Brown"", 3))",FALSE
+Potion_ManaSurge,Potion_MP_Emergency,PotionBrewing,6,9,"((""Herb_Green"", 3),(""Herb_Blue"", 3),(""Mushroom_White"", 3))",FALSE
+Potion_Invisibility,Potion_MP_Emergency,PotionBrewing,7,9,"((""Herb_Green"", 3),(""Herb_Blue"", 3),(""Mushroom_Brown"", 3))",FALSE
+Potion_FireResitance,Potion_MP_Emergency,PotionBrewing,8,9,"((""Herb_Green"", 3),(""Herb_Blue"", 3),(""Mushroom_Red"", 3))",FALSE
+Potion_FroestResistance,Potion_MP_Emergency,PotionBrewing,9,9,"((""Herb_Green"", 3),(""Mushroom_White"", 3),(""Mushroom_Brown"", 3))",FALSE
+Potion_Harvest,Potion_MP_Emergency,PotionBrewing,10,12,"((""Herb_Green"", 3),(""Mushroom_White"", 3),(""Mushroom_Brown"", 3),(""Mushroom_Red"", 3))",FALSE
+Potion_Fourtune,Potion_MP_Emergency,PotionBrewing,10,18,"((""Herb_Green"", 3),(""Herb_Red"", 3),(""Herb_Blue"", 3),(""Mushroom_White"", 3),(""Mushroom_Brown"", 3),(""Mushroom_Red"", 3))",FALSE
+Structure_Wall,Structure_Wall,Handicraft,1,3,"((""Material_Wood_Hard"", 1),(""Material_Ingot_Iron"", 1),(""Material_Nail"", 1))",FALSE
+Structure_Floor,Structure_Floor,Handicraft,1,3,"((""Material_Wood_Hard"", 1),(""Material_Ingot_Iron"", 1),(""Material_Nail"", 1))",FALSE
+Structure_Fireplace,Structure_Floor,Handicraft,3,35,"((""Material_Wood_Hard"", 10),(""Material_Wood_Condensed"", 5),(""Material_Nail"", 5),(""Material_Ingot_Iron"", 5),(""Material_Ingot_Copper"", 10))",FALSE
+Structure_Campfire,Structure_Floor,Handicraft,2,10,"((""Material_Wood_Hard"", 5),(""Material_Ingot_Stone"", 5))",FALSE
+Structure_BookShelf,Structure_Floor,Handicraft,4,15,"((""Material_Wood_Hard"", 5),(""Material_Wood_Condensed"", 5),(""Material_Nail"", 5))",FALSE
+Structure_Rug,Structure_Floor,Handicraft,2,15,"((""Material_Leather"", 5),(""Material_Cloth"", 5),(""Material_Thread"", 5))",FALSE
+Structure_Candle,Structure_Floor,Handicraft,3,9,"((""Material_Wood"", 3),(""Material_Nail"", 3),(""Material_Ingot_Iron"", 3))",FALSE
+Structure_StandLamp,Structure_Floor,Handicraft,5,12,"((""Material_Wood_Condensed"", 1),(""Material_Nail"", 5),(""Material_Ingot_Iron"", 3),(""Material_Ingot_Gold"", 3))",FALSE
+Structure_DeskLamp,Structure_Floor,Handicraft,4,8,"((""Material_Wood_Hard"", 1),(""Material_Nail"", 3),(""Material_Ingot_Iron"", 2),(""Material_Ingot_Gold"", 2))",FALSE
+Structure_Desk,Structure_Floor,Handicraft,3,15,"((""Material_Wood_Hard"", 5),(""Material_Wood_Condensed"", 5),(""Material_Nail"", 5))",FALSE
+Structure_Chair,Structure_Floor,Handicraft,3,9,"((""Material_Wood_Hard"", 3),(""Material_Wood_Condensed"", 3),(""Material_Nail"", 3))",FALSE
+Structure_Cabinet,Structure_Floor,Handicraft,2,18,"((""Material_Wood_Hard"", 5),(""Material_Wood_Condensed"", 5),(""Material_Nail"", 5),(""Material_Ingot_Iron"", 3))",FALSE

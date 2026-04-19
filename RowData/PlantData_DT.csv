@@ -1,0 +1,13 @@
+---,SeedRowName,PlantRowName,GrouwthHealth,Season,MinHarvestAmount,MaxHarvestAmount,KeepHarvestable
+Seed_Strawberry,"Seed_Strawberry","Crops_Strawberry","8.000000","Spring","3","5","True"
+Seed_Blueberry,"Seed_Blueberry","Crops_Blueberry","7.000000","Summer","3","5","True"
+Seed_Grape,"Seed_Grape","Crops_Grape","9.000000","Fall","3","5","True"
+Seed_Galic,"Seed_Galic","Crops_Galic","4.000000","Spring","1","5","False"
+Seed_Potato,"Seed_Potato","Crops_Potato","14.000000","Spring","1","3","False"
+Seed_ChiliPepper,"Seed_ChiliPepper","Crops_ChiliPepper","7.000000","Summer","1","3","False"
+Seed_Corn,"Seed_Corn","Crops_Corn","14.000000","Summer","1","3","False"
+Seed_Eggplant,"Seed_Eggplant","Crops_Eggplant","7.000000","Fall","1","3","False"
+Seed_Pumpkin,"Seed_Pumpkin","Crops_Pumpkin","14.000000","Fall","1","3","False"
+Seed_Tulip,"Seed_Tulip","Crops_Tulip","10.000000","Spring","1","1","False"
+Seed_Sunflower,"Seed_Sunflower","Crops_Sunflower","10.000000","Summer","1","1","False"
+Seed_Rose,"Seed_Rose","Crops_Rose","10.000000","Fall","1","1","False"

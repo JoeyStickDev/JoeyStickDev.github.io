@@ -19,33 +19,82 @@ layout: default
         
         <!-- 동적 2중 카테고리 필터 영역 -->
         <div id="dict-filters" style="margin-bottom: 30px; display: none;">
-            <div id="primary-filters" class="tabs" style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;">
-            </div>
-            <div id="secondary-filters" class="tabs" style="display: none; padding-bottom: 15px; gap: 10px;">
-            </div>
+            <div id="primary-filters" class="tabs" style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;"></div>
+            <div id="secondary-filters" class="tabs" style="display: none; padding-bottom: 15px; gap: 10px;"></div>
         </div>
 
         {% if items %}
         <div class="dict-grid" id="dict-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
             {% for item in items %}
-            <div class="dict-card" data-category="{{ item.category | escape }}" data-subcategory="{{ item.subcategory | escape }}" data-search="{{ item.name }} {{ item.description }} {{ item.type }} {{ item.category }} {{ item.subcategory }} {{ item.role }}" data-name="{{ item.name | escape }}" data-desc="{{ item.description | escape }}" data-badge="{% if item.subcategory %}{{ item.subcategory }}{% elsif item.category %}{{ item.category }}{% elsif item.type %}{{ item.type }}{% elsif item.role %}{{ item.role }}{% elsif item.reward %}🎁 {{ item.reward }}{% endif %}" data-img="{% if item.image and item.image != '' %}{{ item.image }}{% endif %}" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
-                <div class="dict-img" style="height: 160px; background: {% if item.image and item.image != '' %}url('{{ item.image }}'){% else %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% endif %} center/cover; position: relative;">
+            
+            <!-- Dynamic Key Mapping -->
+            {% assign t_key = page.dict_title_key | default: "name" %}
+            {% assign d_key = page.dict_desc_key | default: "description" %}
+            {% assign img_key = page.dict_img_key | default: "image" %}
+            {% assign cat_key = page.dict_cat_key | default: "category" %}
+            {% assign subcat_key = page.dict_subcat_key | default: "subcategory" %}
+
+            {% assign i_name = item.DisplayName | default: item[t_key] %}
+            {% assign i_desc = item[d_key] %}
+            {% assign i_img = item[img_key] %}
+            {% assign i_img_fn_key = img_key | append: "_Filename" %}
+            {% assign i_img_fn = item[i_img_fn_key] %}
+            {% assign i_img_display = i_img_fn | default: i_img %}
+            
+            {% assign i_cat = item[cat_key] %}
+            {% assign i_subcat = item[subcat_key] %}
+
+            <div class="dict-card" 
+                 data-category="{{ i_cat | escape }}" 
+                 data-subcategory="{{ i_subcat | escape }}" 
+                 data-search="{{ i_name | escape }} {{ i_desc | escape }} {{ i_cat | escape }} {{ i_subcat | escape }}" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                <div class="dict-img" style="height: 160px; background: {% if i_img_display and i_img_display != '' %}url('{{ site.baseurl }}/assets/images/icons/{{ i_img_display }}.png'), linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% else %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% endif %} center/contain no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
-                    {% if item.subcategory and item.subcategory != '' %}
-                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.subcategory }}</span>
-                    {% elsif item.category and item.category != '' %}
-                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.category }}</span>
-                    {% elsif item.type and item.type != '' %}
-                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: var(--accent-color); color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.type }}</span>
-                    {% elsif item.role and item.role != '' %}
-                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e74c3c; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ item.role }}</span>
-                    {% elsif item.reward and item.reward != '' %}
-                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #2ecc71; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">🎁 {{ item.reward }}</span>
+                    {% if i_subcat and i_subcat != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_subcat }}</span>
+                    {% elsif i_cat and i_cat != '' %}
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_cat }}</span>
                     {% endif %}
                 </div>
                 <div class="dict-info" style="padding: 20px;">
-                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">{{ item.name }}</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">{{ item.description }}</p>
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">{{ i_name }}</h3>
+                    {% if i_desc and i_desc != '' %}
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">{{ i_desc }}</p>
+                    {% else %}
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    {% endif %}
+                </div>
+
+                <!-- Hidden Modal Payload for JS to clone -->
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url="{% if i_img_display and i_img_display != '' %}{{ site.baseurl }}/assets/images/icons/{{ i_img_display }}.png{% endif %}"></div>
+                    <div class="payload-badge">{% if i_subcat and i_subcat != '' %}{{ i_subcat }}{% elsif i_cat and i_cat != '' %}{{ i_cat }}{% endif %}</div>
+                    <div class="payload-title">{{ i_name | escape }}</div>
+                    <div class="payload-desc">{{ i_desc | escape | nl2br }}</div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                {% for pair in item %}
+                                    {% assign k = pair[0] %}
+                                    {% assign v = pair[1] %}
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    {% assign is_internal = false %}
+                                    {% if k == t_key or k == d_key or k == img_key or k == cat_key or k == subcat_key or k == "DisplayName" or k contains "_Filename" or k == "ID" or k == "RowName" %}
+                                        {% assign is_internal = true %}
+                                    {% endif %}
+
+                                    {% if is_internal == false and v and v != '' and v != '0' and v != '0.000000' and v != 'None' and v != '()' %}
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">{{ k }}</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">{{ v }}</td>
+                                    </tr>
+                                    {% endif %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -70,8 +119,11 @@ layout: default
         </div>
         
         <div style="padding: 35px;">
-            <h2 id="dict-modal-title" style="color: #fff; font-size: 2rem; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px;">Title</h2>
-            <p id="dict-modal-desc" style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; white-space: pre-line;">Description goes here...</p>
+            <h2 id="dict-modal-title" style="color: #fff; font-size: 2rem; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px;">Title</h2>
+            <p id="dict-modal-desc" style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; white-space: pre-line; margin-bottom: 20px;"></p>
+            <div id="dict-modal-stats-container">
+            <!-- Table will be injected here -->
+            </div>
         </div>
     </div>
 </div>
@@ -213,31 +265,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 모달 로직
+    // 모달 로직 (Payload Architecture)
     const modal = document.getElementById('dict-modal');
     const closeBtn = document.getElementById('dict-modal-close');
 
     if (modal && cards) {
         cards.forEach(card => {
             card.addEventListener('click', () => {
-                document.getElementById('dict-modal-title').innerText = card.getAttribute('data-name');
-                document.getElementById('dict-modal-desc').innerText = card.getAttribute('data-desc');
+                const payload = card.querySelector('.modal-payload-template');
                 
-                const badgeText = card.getAttribute('data-badge');
-                const badgeEl = document.getElementById('dict-modal-badge');
-                if(badgeText && badgeText.trim() !== '') {
-                    badgeEl.innerText = badgeText;
-                    badgeEl.style.display = 'inline-block';
+                // 1. Title
+                const titleEl = payload.querySelector('.payload-title');
+                document.getElementById('dict-modal-title').innerText = titleEl ? titleEl.innerText : '';
+                
+                // 2. Desc
+                const descEl = payload.querySelector('.payload-desc');
+                const modalDesc = document.getElementById('dict-modal-desc');
+                if (descEl && descEl.innerText.trim() !== '') {
+                    modalDesc.innerHTML = descEl.innerHTML;
+                    modalDesc.style.display = 'block';
                 } else {
-                    badgeEl.style.display = 'none';
+                    modalDesc.style.display = 'none';
                 }
                 
-                const imgUrl = card.getAttribute('data-img');
-                const imgEl = document.getElementById('dict-modal-img');
-                if (imgUrl && imgUrl.trim() !== '') {
-                    imgEl.style.backgroundImage = `url('${imgUrl}')`;
+                // 3. Stats Table
+                const statsEl = payload.querySelector('.payload-stats');
+                const modalStats = document.getElementById('dict-modal-stats-container');
+                if (statsEl) {
+                    modalStats.innerHTML = statsEl.innerHTML;
                 } else {
-                    imgEl.style.backgroundImage = `linear-gradient(45deg, var(--secondary-color), var(--primary-color))`;
+                    modalStats.innerHTML = '';
+                }
+                
+                // 4. Badge
+                const badgeEl = payload.querySelector('.payload-badge');
+                const modalBadge = document.getElementById('dict-modal-badge');
+                if(badgeEl && badgeEl.innerText.trim() !== '') {
+                    modalBadge.innerText = badgeEl.innerText;
+                    modalBadge.style.display = 'inline-block';
+                } else {
+                    modalBadge.style.display = 'none';
+                }
+                
+                // 5. Image
+                const imgWrap = payload.querySelector('.payload-img');
+                const imgUrl = imgWrap ? imgWrap.getAttribute('data-img-url') : '';
+                const modalImg = document.getElementById('dict-modal-img');
+                if (imgUrl && imgUrl.trim() !== '') {
+                    modalImg.style.backgroundImage = `url('${imgUrl}')`;
+                } else {
+                    modalImg.style.backgroundImage = `linear-gradient(45deg, var(--secondary-color), var(--primary-color))`;
                 }
                 
                 modal.style.display = 'flex';

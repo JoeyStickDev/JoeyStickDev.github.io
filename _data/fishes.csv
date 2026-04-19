@@ -1,0 +1,11 @@
+ID,FishRowName,Season,CatchingPercent,MineMoveRange,MaxMoveRange,MinMoveTime,MaxMoveTime,DisplayName
+Fish_WaterLilySalmon,Fish_WaterLilySalmon,All,100,30,50,1,3,Water Lily Salmon
+Fish_StoneSeaBass,Fish_StoneSeaBass,All,100,30,50,1,3,Stone Sea Bass
+Fish_SpringlightTrout,Fish_SpringlightTrout,Spring,100,15,30,1,3,Springlight Trout
+Fish_CherryBlossomCarp,Fish_CherryBlossomCarp,Spring,100,50,80,2,3,Cherry Blossom Carp
+Fish_SummerCod,Fish_SummerCod,Summer,100,15,30,1,3,Summer Cod
+Fish_TurquoiseSnapper,Fish_TurquoiseSnapper,Summer,100,30,50,1,3,Turquoise Snapper\t
+Fish_AutumnCatfish,Fish_AutumnCatfish,Fall,100,15,30,1,3,Autumn Catfish
+Fish_CrimsonBass,Fish_CrimsonBass,Fall,100,30,50,1,3,Crimson Bass
+Fish_IcefinTrout,Fish_IcefinTrout,Winter,100,15,30,1,3,Icefin Trout
+Fish_SilverCod,Fish_SilverCod,Winter,100,30,50,1,3,Silver Cod

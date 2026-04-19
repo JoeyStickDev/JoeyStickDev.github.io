@@ -1,0 +1,7 @@
+---,BuffName,BuffShowName,Image,BuffBP,Describe,IsDebuff
+SpeedUp,"SpeedUp","Speed Boost","/Game/Main/Skill/Imge/BuffImage/Buff_Speed_pixel.Buff_Speed_pixel","/Game/Main/Skill/BPS/BuffBP/Buff/BuffSkill_BP_Speed.BuffSkill_BP_Speed_C","","False"
+SpeedDown,"SpeedDown","SpeedDown","/Game/Main/Skill/Imge/BuffImage/Buff_Ice_pixel.Buff_Ice_pixel","/Game/Main/Skill/BPS/BuffBP/DeBuff/BuffSkill_BP_SpeedDown.BuffSkill_BP_SpeedDown_C","","True"
+Restore,"Restore","Restore","/Game/Main/Skill/Imge/BuffImage/Buff_Heal_pixel.Buff_Heal_pixel","/Game/Main/Skill/BPS/BuffBP/Buff/BuffSkill_BP_Restore.BuffSkill_BP_Restore_C","","False"
+Bleeding,"Bleeding","Bleeding","/Game/Main/Skill/Imge/BuffImage/Buff_Blood_pixel.Buff_Blood_pixel","/Game/Main/Skill/BPS/BuffBP/DeBuff/BuffSkill_BP_Bleeding.BuffSkill_BP_Bleeding_C","","True"
+Injury,"Injury","Injury","/Game/Main/Skill/Imge/BuffImage/Buff_Inger_pixel.Buff_Inger_pixel","/Game/Main/Skill/BPS/BuffBP/DeBuff/BuffSkill_BP_Injury.BuffSkill_BP_Injury_C","","True"
+Warmth,"Warmth","Warmth","/Game/Main/Skill/Imge/BuffImage/Buff_Fire_pixel.Buff_Fire_pixel","/Game/Main/Skill/BPS/BuffBP/DeBuff/BuffSkill_BP_Injury.BuffSkill_BP_Injury_C","NSLOCTEXT(""[4B15A7168F01A7A4D40FF1743878DFB3]"", ""37770500439F40132D9570B21882FD85"", ""A gentle heat surrounds your body.Allows you to endure the blizzard within the cave for a limited time."")","False"
