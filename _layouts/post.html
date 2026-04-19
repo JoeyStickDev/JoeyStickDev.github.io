@@ -13,28 +13,25 @@ layout: default
     </div>
     
     <!-- 카테고리 내 이전/다음 글 찾기 -->
-    {% assign related_posts = "" | split: "" %}
-    {% assign match_cat = page.category %}
-    {% if match_cat == nil or match_cat == empty %}
-        {% assign match_cat = page.categories.last %}
-    {% endif %}
-    
-    {% assign related_posts = site.posts | where_exp: "item", "item.category == match_cat or item.categories contains match_cat" %}
+    {% assign match_cat = page.category | default: page.categories.last %}
     
     {% assign prev_post = nil %}
     {% assign next_post = nil %}
     {% assign found_current = false %}
+    {% assign posts_reversed = site.posts | reverse %}
     
-    {% for post in related_posts %}
-        {% if found_current == true and prev_post == nil %}
-            {% assign prev_post = post %}
-        {% endif %}
-        
-        {% if post.url == page.url %}
-            {% assign found_current = true %}
-        {% else %}
-            {% if found_current == false %}
-                {% assign next_post = post %}
+    {% for post in posts_reversed %}
+        {% if post.category == match_cat or post.categories contains match_cat %}
+            {% if found_current == true and prev_post == nil %}
+                {% assign prev_post = post %}
+            {% endif %}
+            
+            {% if post.url == page.url %}
+                {% assign found_current = true %}
+            {% else %}
+                {% if found_current == false %}
+                    {% assign next_post = post %}
+                {% endif %}
             {% endif %}
         {% endif %}
     {% endfor %}
