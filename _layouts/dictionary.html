@@ -50,7 +50,7 @@ layout: default
                  data-search="{{ i_name | escape }} {{ i_desc | escape }} {{ i_cat | escape }} {{ i_subcat | escape }}" 
                  style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
                 
-                <div class="dict-img" style="height: 160px; background: {% if i_img_display and i_img_display != '' %}url('{{ site.baseurl }}/assets/images/icons/{{ i_img_display }}.png'), linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% else %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% endif %} center/contain no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                <div class="dict-img" style="height: 160px; background: {% if i_img_display and i_img_display != '' %}url('{{ site.baseurl }}/assets/images/{{ page.dataset }}/{{ i_cat }}/{{ i_img_display }}.png'), linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% else %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)){% endif %} center/contain no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
                     {% if i_subcat and i_subcat != '' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_subcat }}</span>
@@ -69,7 +69,7 @@ layout: default
 
                 <!-- Hidden Modal Payload for JS to clone -->
                 <div class="modal-payload-template" style="display: none;">
-                    <div class="payload-img" data-img-url="{% if i_img_display and i_img_display != '' %}{{ site.baseurl }}/assets/images/icons/{{ i_img_display }}.png{% endif %}"></div>
+                    <div class="payload-img" data-img-url="{% if i_img_display and i_img_display != '' %}{{ site.baseurl }}/assets/images/{{ page.dataset }}/{{ i_cat }}/{{ i_img_display }}.png{% endif %}"></div>
                     <div class="payload-badge">{% if i_subcat and i_subcat != '' %}{{ i_subcat }}{% elsif i_cat and i_cat != '' %}{{ i_cat }}{% endif %}</div>
                     <div class="payload-title">{{ i_name | escape }}</div>
                     <div class="payload-desc">{{ i_desc | escape | nl2br }}</div>
