@@ -50,13 +50,20 @@ layout: default
             
             {% assign i_name = i_name | replace: 'Name_', '' | split: ')' | first | remove: '"' | strip %}
 
-            {% assign i_desc = item[d_key] %}
             {% assign i_img = item[img_key] %}
             {% assign i_img_fn_key = img_key | append: "_Filename" %}
             {% assign i_img_fn = item[i_img_fn_key] %}
             {% assign i_img_display = i_img_fn | default: i_img %}
             
-            <!-- 2. Custom Classification Logic (Liquid) -->
+            <!-- 2. Image Path Refining -->
+            {% if i_img_display contains '.' %}
+                {% assign i_img_display = i_img_display | split: '.' | last %}
+            {% endif %}
+            {% if i_img_display contains '/' %}
+                {% assign i_img_display = i_img_display | split: '/' | last %}
+            {% endif %}
+            
+            <!-- 3. Custom Classification Logic (Liquid) -->
             {% assign i_cat = item[cat_key] %}
             {% if page.dataset == 'characters' %}
                 <!-- Character Gender Logic -->
@@ -88,13 +95,22 @@ layout: default
 
             {% assign i_subcat = item[subcat_key] %}
 
+            {% assign i_desc = item[d_key] %}
+
             <div class="dict-card" 
                  data-category="{{ i_cat | escape }}" 
                  data-subcategory="{{ i_subcat | escape }}" 
                  data-search="{{ i_name | escape }} {{ i_desc | escape }} {{ i_cat | escape }} {{ i_subcat | escape }}" 
                  style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
                 
-                <div class="dict-img" style="height: 160px; background-image: {% if i_img_display and i_img_display != '' %}url('{{ site.baseurl }}/assets/images/{{ page.dataset }}/{{ i_cat }}/{{ i_img_display }}.png'), {% endif %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                {% assign img_path = site.baseurl | append: '/assets/images/' | append: page.dataset | append: '/' %}
+                {% unless i_img_display contains '.png' or i_img_display contains '.jpg' %}
+                    {% assign i_img_fn_full = i_img_display | append: '.png' %}
+                {% else %}
+                    {% assign i_img_fn_full = i_img_display %}
+                {% endunless %}
+
+                <div class="dict-img" style="height: 160px; background-image: {% if i_img_display and i_img_display != '' %}url('{{ img_path }}{{ i_img_fn_full }}'), url('{{ img_path }}{{ i_cat }}/{{ i_img_fn_full }}'), {% endif %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
                     {% if i_subcat and i_subcat != '' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_subcat }}</span>
