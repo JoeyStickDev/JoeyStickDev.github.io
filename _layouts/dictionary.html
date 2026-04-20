@@ -50,18 +50,20 @@ layout: default
             
             {% assign i_name = i_name | replace: 'Name_', '' | split: ')' | first | remove: '"' | strip %}
 
-            {% assign i_img = item[img_key] %}
-            {% assign i_img_fn_key = img_key | append: "_Filename" %}
-            {% assign i_img_fn = item[i_img_fn_key] %}
-            {% assign i_img_display = i_img_fn | default: i_img %}
+            {% assign i_img_display = item.Pic | default: item.Animation | default: item.image %}
             
             <!-- 2. Image Path Refining -->
-            {% if i_img_display contains '/' %}
-                {% assign i_img_display = i_img_display | split: '/' | last %}
-            {% endif %}
-            {% if i_img_display contains '.' and i_img_display contains '_' %}
-                <!-- If it's an engine path like Name.Action, take the first part -->
-                {% assign i_img_display = i_img_display | split: '.' | first %}
+            {% if i_img_display contains '/Game/' %}
+                <!-- If it's a raw engine path, take only the last part -->
+                {% assign i_img_display = i_img_display | split: '/' | last | split: '.' | first %}
+                {% unless i_img_display contains '.png' or i_img_display contains '.jpg' %}
+                    {% assign i_img_display = i_img_display | append: '.png' %}
+                {% endunless %}
+            {% else %}
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                {% unless i_img_display contains '.png' or i_img_display contains '.jpg' or i_img_display == '' or i_img_display == nil %}
+                    {% assign i_img_display = i_img_display | append: '.png' %}
+                {% endunless %}
             {% endif %}
             
             <!-- 3. Custom Classification Logic (Liquid) -->
@@ -104,12 +106,11 @@ layout: default
                  data-search="{{ i_name | escape }} {{ i_desc | escape }} {{ i_cat | escape }} {{ i_subcat | escape }}" 
                  style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
                 
-                {% assign img_path = site.baseurl | append: '/assets/images/' | append: page.dataset | append: '/' %}
-                {% assign i_img_fn_full = i_img_display %}
+                {% assign img_root_path = site.baseurl | append: '/assets/images/' | append: page.dataset | append: '/' %}
 
                 <div class="dict-img" style="height: 160px; background-image: 
                     {% if i_img_display and i_img_display != '' %}
-                        url('{{ img_path }}{{ i_img_fn_full }}'),
+                        url('{{ img_root_path }}{{ i_img_display }}'),
                     {% endif %}
                     linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
@@ -128,9 +129,8 @@ layout: default
                     {% endif %}
                 </div>
 
-                <!-- Hidden Modal Payload for JS to clone -->
                 <div class="modal-payload-template" style="display: none;">
-                    <div class="payload-img" data-img-url="{% if i_img_display and i_img_display != '' %}{{ site.baseurl }}/assets/images/{{ page.dataset }}/{{ i_cat }}/{{ i_img_display }}.png{% endif %}"></div>
+                    <div class="payload-img" data-img-url="{% if i_img_display and i_img_display != '' %}{{ img_root_path }}{{ i_img_display }}{% endif %}"></div>
                     <div class="payload-badge">{% if i_subcat and i_subcat != '' %}{{ i_subcat }}{% elsif i_cat and i_cat != '' %}{{ i_cat }}{% endif %}</div>
                     <div class="payload-title">{{ i_name | escape }}</div>
                     <div class="payload-desc">{{ i_desc | escape | nl2br }}</div>
