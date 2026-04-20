@@ -1,7 +1,7 @@
-ID,BuffName,BuffShowName,Image_Filename,Image,BuffBP,Describe,IsDebuff
-SpeedUp,SpeedUp,Speed Boost,Buff_Speed_pixel,/Game/Main/Skill/Imge/BuffImage/Buff_Speed_pixel.Buff_Speed_pixel,BuffSkill_BP_Speed_C,,버프
-SpeedDown,SpeedDown,SpeedDown,Buff_Ice_pixel,/Game/Main/Skill/Imge/BuffImage/Buff_Ice_pixel.Buff_Ice_pixel,BuffSkill_BP_SpeedDown_C,,디버프
-Restore,Restore,Restore,Buff_Heal_pixel,/Game/Main/Skill/Imge/BuffImage/Buff_Heal_pixel.Buff_Heal_pixel,BuffSkill_BP_Restore_C,,버프
-Bleeding,Bleeding,Bleeding,Buff_Blood_pixel,/Game/Main/Skill/Imge/BuffImage/Buff_Blood_pixel.Buff_Blood_pixel,BuffSkill_BP_Bleeding_C,,디버프
-Injury,Injury,Injury,Buff_Inger_pixel,/Game/Main/Skill/Imge/BuffImage/Buff_Inger_pixel.Buff_Inger_pixel,BuffSkill_BP_Injury_C,,디버프
-Warmth,Warmth,Warmth,Buff_Fire_pixel,/Game/Main/Skill/Imge/BuffImage/Buff_Fire_pixel.Buff_Fire_pixel,BuffSkill_BP_Injury_C,A gentle heat surrounds your body.Allows you to endure the blizzard within the cave for a limited time.,버프
+ID,BuffName,BuffShowName,Image_Filename,Describe,IsDebuff
+SpeedUp,SpeedUp,Speed Boost,Buff_Speed_pixel,,버프
+SpeedDown,SpeedDown,SpeedDown,Buff_Ice_pixel,,디버프
+Restore,Restore,Restore,Buff_Heal_pixel,,버프
+Bleeding,Bleeding,Bleeding,Buff_Blood_pixel,,디버프
+Injury,Injury,Injury,Buff_Inger_pixel,,디버프
+Warmth,Warmth,Warmth,Buff_Fire_pixel,A gentle heat surrounds your body.Allows you to endure the blizzard within the cave for a limited time.,버프

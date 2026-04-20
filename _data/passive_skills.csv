@@ -1,54 +1,54 @@
-ID,Type,SkillRowName,SkillName,Image_Filename,Image,SkillType,Details,Elemental,PassiveBP,SkillLevel,MaxSkillLevel,PrerequireSkill,IndexRow,IndexColumn,ManaCost,Potential,LevelupCost
-I_Shield,Magic,I_Shield,Fire Resistance,I_Shield,/Game/Main/Skill/Imge/PassiveImage/Int/I_Shield.I_Shield,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),0,0,0.000000,0.000000,0
-I_Power,Magic,I_Power,Orb Power,I_Orb,/Game/Main/Skill/Imge/PassiveImage/Int/I_Orb.I_Orb,Life,Testskill,Blood,PassiveBase_BP_C,0,10,(),0,1,0.000000,0.000000,0
-I_EasyTarget,Magic,I_EasyTarget,Fire Power,I_Accuarcey,/Game/Main/Skill/Imge/PassiveImage/Int/I_Accuarcey.I_Accuarcey,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),0,2,0.000000,0.000000,0
-I_CastingTime,Magic,I_CastingTime,Casting Time,I_CastSpeed,/Game/Main/Skill/Imge/PassiveImage/Int/I_CastSpeed.I_CastSpeed,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),1,0,0.000000,0.000000,0
-I_Speed,Magic,I_SpeedUp,Speed Up,I_Speed,/Game/Main/Skill/Imge/PassiveImage/Int/I_Speed.I_Speed,Life,Testskill,Blood,PassiveBase_BP_C,0,10,(),1,1,0.000000,0.000000,0
-I_Double,Magic,I_Double,Double Shoot,I_Double,/Game/Main/Skill/Imge/PassiveImage/Int/I_Double.I_Double,Attack,Testskill,Fire,PassiveBase_BP_C,0,10,(),1,2,0.000000,0.000000,0
-I_Resistance,Magic,I_Resistance,Fire Resistance,I_Fireresitance,/Game/Main/Skill/Imge/PassiveImage/Int/I_Fireresitance.I_Fireresitance,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),2,0,0.000000,0.000000,0
-I_Copy,Magic,I_Copy,Multy Shoot,I_Multy,/Game/Main/Skill/Imge/PassiveImage/Int/I_Multy.I_Multy,Life,Testskill,Blood,PassiveBase_BP_C,0,10,(),2,1,0.000000,0.000000,0
-I_Triple,Magic,I_Triple,Triple Shoot,I_Tripe,/Game/Main/Skill/Imge/PassiveImage/Int/I_Tripe.I_Tripe,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),2,2,0.000000,0.000000,0
-I_Radius,Magic,I_Radius,ExplorePower,I_ExploxionRange,/Game/Main/Skill/Imge/PassiveImage/Int/I_ExploxionRange.I_ExploxionRange,Life,Testskill,Blood,PassiveBase_BP_C,0,10,(),3,0,0.000000,0.000000,0
-I_TargetNum,Magic,I_TargetNum,Target Increase,I_Target,/Game/Main/Skill/Imge/PassiveImage/Int/I_Target.I_Target,Life,Testskill,Blood,PassiveBase_BP_C,0,10,(),3,1,0.000000,0.000000,0
-I_Quad,Magic,I_Quad,QuadShoot,I_Quad,/Game/Main/Skill/Imge/PassiveImage/Int/I_Quad.I_Quad,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),3,2,0.000000,0.000000,0
-I_Range,Magic,I_Range,Range Increse,I_Range,/Game/Main/Skill/Imge/PassiveImage/Int/I_Range.I_Range,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),4,0,0.000000,0.000000,0
-I_Mastery,Magic,I_Mastery,Magic Master,I_Penta,/Game/Main/Skill/Imge/PassiveImage/Int/I_Penta.I_Penta,Life,Testskill,Fire,PassiveBase_BP_C,0,10,(),4,2,0.000000,0.000000,0
-S_Shield,Sword,S_Shield,Shield Master,STR_Shield,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Shield.STR_Shield,Life,Testskill,Dark,PassiveBase_BP_C,0,10,(),0,0,0.000000,0.000000,0
-S_Power,Sword,S_Power,Solor Eclipse,STR_AttackPower,/Game/Main/Skill/Imge/PassiveImage/STR/STR_AttackPower.STR_AttackPower,Life,Testskill,Lighting,PassiveBase_BP_C,0,10,(),0,1,0.000000,0.000000,0
-S_Defence,Sword,S_Defence,Defence Up,STR_Defence,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Defence.STR_Defence,Life,Testskill,Lighting,PassiveBase_BP_C,0,10,(),1,0,0.000000,0.000000,0
-S_Speed,Sword,S_Speed,Attack Speed Up,STR_AttackSpeed,/Game/Main/Skill/Imge/PassiveImage/STR/STR_AttackSpeed.STR_AttackSpeed,Life,Testskill,Light,PassiveBase_BP_C,0,10,(),1,1,0.000000,0.000000,0
-S_Double,Sword,S_Double,Double Attack,STR_Double,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Double.STR_Double,Life,Testskill,Dark,PassiveBase_BP_C,0,10,(),1,2,0.000000,0.000000,0
-S_Resistance,Sword,S_Resistance,Luna Eclipse,STR_Resistance,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Resistance.STR_Resistance,Life,Testskill,Lighting,PassiveBase_BP_C,0,10,(),2,0,0.000000,0.000000,0
-S_Copy,Sword,S_Copy,Multy Attack,STR_Multy,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Multy.STR_Multy,Life,Testskill,Light,PassiveBase_BP_C,0,10,(),2,1,0.000000,0.000000,0
-S_Triple,Sword,S_Triple,Triple Attack,STR_Triple,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Triple.STR_Triple,Life,Testskill,Dark,PassiveBase_BP_C,0,10,(),2,2,0.000000,0.000000,0
-S_Radius,Sword,S_Radius,Attack Power Up,STR_AttackRadius,/Game/Main/Skill/Imge/PassiveImage/STR/STR_AttackRadius.STR_AttackRadius,Life,Testskill,Light,PassiveBase_BP_C,0,10,(),3,0,0.000000,0.000000,0
-S_TargetNum,Sword,S_TargetNum,Target Increse,STR_TargetIncress,/Game/Main/Skill/Imge/PassiveImage/STR/STR_TargetIncress.STR_TargetIncress,Life,Testskill,Light,PassiveBase_BP_C,0,10,(),3,1,0.000000,0.000000,0
-S_Quad,Sword,S_Quad,Quad Attack,STR_Quad,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Quad.STR_Quad,Life,Testskill,Dark,PassiveBase_BP_C,0,10,(),3,2,0.000000,0.000000,0
-S_Range,Sword,S_Range,Range,STR_AttackRange,/Game/Main/Skill/Imge/PassiveImage/STR/STR_AttackRange.STR_AttackRange,Life,Testskill,Dark,PassiveBase_BP_C,0,10,(),4,0,0.000000,0.000000,0
-S_Mastery,Sword,S_Mastery,SwordMaster,STR_Mastery,/Game/Main/Skill/Imge/PassiveImage/STR/STR_Mastery.STR_Mastery,Life,Testskill,Dark,PassiveBase_BP_C,0,10,(),4,2,0.000000,0.000000,0
-D_Power,Bow,D_Power,Bow Master,D_bow,/Game/Main/Skill/Imge/PassiveImage/DEX/D_bow.D_bow,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),0,1,0.000000,0.000000,0
-D_EasyTarget,Bow,D_EasyTarget,Egle Eyes,D_EasyTarget,/Game/Main/Skill/Imge/PassiveImage/DEX/D_EasyTarget.D_EasyTarget,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),0,2,0.000000,0.000000,0
-D_Speed,Bow,D_Speed,Speed Up,D_Speed,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Speed.D_Speed,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),1,0,0.000000,0.000000,0
-D_ATKS,Bow,D_ATKS,Arrow Speed Up,D_SpeedUp,/Game/Main/Skill/Imge/PassiveImage/DEX/D_SpeedUp.D_SpeedUp,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),1,1,0.000000,0.000000,0
-D_Double,Bow,D_Double,Double Shoot,D_Double,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Double.D_Double,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),1,2,0.000000,0.000000,0
-D_Resistance,Bow,D_Resistance,Ice Resistance,D_Resistance,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Resistance.D_Resistance,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),2,0,0.000000,0.000000,0
-D_Copy,Bow,D_Copy,Multy Shoot,D_Multy,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Multy.D_Multy,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),2,1,0.000000,0.000000,0
-D_Triple,Bow,D_Triple,Triple Shoot,D_Triple,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Triple.D_Triple,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),2,2,0.000000,0.000000,0
-D_Radius,Bow,D_Radius,Arrow Radius,D_PowerShoot,/Game/Main/Skill/Imge/PassiveImage/DEX/D_PowerShoot.D_PowerShoot,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),3,0,0.000000,0.000000,0
-D_TargetNum,Bow,D_TargetNum,Target Increse,D_TargetNum,/Game/Main/Skill/Imge/PassiveImage/DEX/D_TargetNum.D_TargetNum,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),3,1,0.000000,0.000000,0
-D_Quad,Bow,D_Quad,Quad Shoot,D_Quad,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Quad.D_Quad,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),3,2,0.000000,0.000000,0
-D_Range,Bow,D_Range,Range Increse,D_Range,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Range.D_Range,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),4,0,0.000000,0.000000,0
-D_Mastery,Bow,D_Mastery,Arrow Master,D_Penta,/Game/Main/Skill/Imge/PassiveImage/DEX/D_Penta.D_Penta,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),4,2,0.000000,0.000000,0
-L_Power,Gun,L_Power,Gun Master,L_Gun,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Gun.L_Gun,Life,Testskill,Ice,L_P_GunMaster_BP_C,0,10,(),0,1,0.000000,0.000000,0
-L_EasyTarget,Gun,L_EasyTarget,Easy Target,L_Range,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Range.L_Range,Life,Testskill,Ice,L_P_GunMaster_BP_C,0,10,(),0,2,0.000000,0.000000,0
-L_WindShield,Gun,L_WindShield,Wind Shield,L_WindShield,/Game/Main/Skill/Imge/PassiveImage/Luck/L_WindShield.L_WindShield,Life,Testskill,Ice,L_P_WindShield_BP_C,0,10,(),1,0,0.000000,0.000000,0
-L_Speed,Gun,L_Speed,Bullet Speed Up,L_Speed,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Speed.L_Speed,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),1,1,0.000000,0.000000,0
-L_Double,Gun,L_Double,Double Shoot,L_Double,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Double.L_Double,Life,Testskill,Ice,L_P_Double_BP_C,0,10,(),1,2,0.000000,0.000000,0
-L_Resistance,Gun,L_Resistance,Lighting Resistance,L_Resis,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Resis.L_Resis,Life,Testskill,Ice,L_P_Resistance_BP_C,0,10,(),2,0,0.000000,0.000000,0
-L_Copy,Gun,L_Copy,Multy Shoot,L_Multy,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Multy.L_Multy,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),2,1,0.000000,0.000000,0
-L_Triple,Gun,L_Triple,Triple Shoot,L_triple,/Game/Main/Skill/Imge/PassiveImage/Luck/L_triple.L_triple,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),2,2,0.000000,0.000000,0
-L_Radius,Gun,L_Radius,Bullet Power Up,L_Power,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Power.L_Power,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),3,0,0.000000,0.000000,0
-L_TargetNum,Gun,L_TargetNum,Bullet Power Up,L_Target,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Target.L_Target,Life,Testskill,Water,PassiveBase_BP_C,0,10,(),3,1,0.000000,0.000000,0
-L_Quad,Gun,L_Quad,Quad Shoot,L_Quad,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Quad.L_Quad,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),3,2,0.000000,0.000000,0
-L_Range,Gun,L_Range,Range,L_Accuarcy,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Accuarcy.L_Accuarcy,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),4,0,0.000000,0.000000,0
-L_Mastery,Gun,L_Mastery,Bullet Master,L_Penta,/Game/Main/Skill/Imge/PassiveImage/Luck/L_Penta.L_Penta,Life,Testskill,Ice,PassiveBase_BP_C,0,10,(),4,2,0.000000,0.000000,0
+ID,Type,SkillRowName,SkillName,Image_Filename,SkillType,Details,Elemental,MaxSkillLevel,PrerequireSkill,IndexRow,IndexColumn,ManaCost,Potential,LevelupCost
+I_Shield,Magic,I_Shield,Fire Resistance,I_Shield,Life,Testskill,Fire,10,(),0,0,0,0,0
+I_Power,Magic,I_Power,Orb Power,I_Orb,Life,Testskill,Blood,10,(),0,1,0,0,0
+I_EasyTarget,Magic,I_EasyTarget,Fire Power,I_Accuarcey,Life,Testskill,Fire,10,(),0,2,0,0,0
+I_CastingTime,Magic,I_CastingTime,Casting Time,I_CastSpeed,Life,Testskill,Fire,10,(),1,0,0,0,0
+I_Speed,Magic,I_SpeedUp,Speed Up,I_Speed,Life,Testskill,Blood,10,(),1,1,0,0,0
+I_Double,Magic,I_Double,Double Shoot,I_Double,Attack,Testskill,Fire,10,(),1,2,0,0,0
+I_Resistance,Magic,I_Resistance,Fire Resistance,I_Fireresitance,Life,Testskill,Fire,10,(),2,0,0,0,0
+I_Copy,Magic,I_Copy,Multy Shoot,I_Multy,Life,Testskill,Blood,10,(),2,1,0,0,0
+I_Triple,Magic,I_Triple,Triple Shoot,I_Tripe,Life,Testskill,Fire,10,(),2,2,0,0,0
+I_Radius,Magic,I_Radius,ExplorePower,I_ExploxionRange,Life,Testskill,Blood,10,(),3,0,0,0,0
+I_TargetNum,Magic,I_TargetNum,Target Increase,I_Target,Life,Testskill,Blood,10,(),3,1,0,0,0
+I_Quad,Magic,I_Quad,QuadShoot,I_Quad,Life,Testskill,Fire,10,(),3,2,0,0,0
+I_Range,Magic,I_Range,Range Increse,I_Range,Life,Testskill,Fire,10,(),4,0,0,0,0
+I_Mastery,Magic,I_Mastery,Magic Master,I_Penta,Life,Testskill,Fire,10,(),4,2,0,0,0
+S_Shield,Sword,S_Shield,Shield Master,STR_Shield,Life,Testskill,Dark,10,(),0,0,0,0,0
+S_Power,Sword,S_Power,Solor Eclipse,STR_AttackPower,Life,Testskill,Lighting,10,(),0,1,0,0,0
+S_Defence,Sword,S_Defence,Defence Up,STR_Defence,Life,Testskill,Lighting,10,(),1,0,0,0,0
+S_Speed,Sword,S_Speed,Attack Speed Up,STR_AttackSpeed,Life,Testskill,Light,10,(),1,1,0,0,0
+S_Double,Sword,S_Double,Double Attack,STR_Double,Life,Testskill,Dark,10,(),1,2,0,0,0
+S_Resistance,Sword,S_Resistance,Luna Eclipse,STR_Resistance,Life,Testskill,Lighting,10,(),2,0,0,0,0
+S_Copy,Sword,S_Copy,Multy Attack,STR_Multy,Life,Testskill,Light,10,(),2,1,0,0,0
+S_Triple,Sword,S_Triple,Triple Attack,STR_Triple,Life,Testskill,Dark,10,(),2,2,0,0,0
+S_Radius,Sword,S_Radius,Attack Power Up,STR_AttackRadius,Life,Testskill,Light,10,(),3,0,0,0,0
+S_TargetNum,Sword,S_TargetNum,Target Increse,STR_TargetIncress,Life,Testskill,Light,10,(),3,1,0,0,0
+S_Quad,Sword,S_Quad,Quad Attack,STR_Quad,Life,Testskill,Dark,10,(),3,2,0,0,0
+S_Range,Sword,S_Range,Range,STR_AttackRange,Life,Testskill,Dark,10,(),4,0,0,0,0
+S_Mastery,Sword,S_Mastery,SwordMaster,STR_Mastery,Life,Testskill,Dark,10,(),4,2,0,0,0
+D_Power,Bow,D_Power,Bow Master,D_bow,Life,Testskill,Ice,10,(),0,1,0,0,0
+D_EasyTarget,Bow,D_EasyTarget,Egle Eyes,D_EasyTarget,Life,Testskill,Ice,10,(),0,2,0,0,0
+D_Speed,Bow,D_Speed,Speed Up,D_Speed,Life,Testskill,Ice,10,(),1,0,0,0,0
+D_ATKS,Bow,D_ATKS,Arrow Speed Up,D_SpeedUp,Life,Testskill,Water,10,(),1,1,0,0,0
+D_Double,Bow,D_Double,Double Shoot,D_Double,Life,Testskill,Ice,10,(),1,2,0,0,0
+D_Resistance,Bow,D_Resistance,Ice Resistance,D_Resistance,Life,Testskill,Ice,10,(),2,0,0,0,0
+D_Copy,Bow,D_Copy,Multy Shoot,D_Multy,Life,Testskill,Water,10,(),2,1,0,0,0
+D_Triple,Bow,D_Triple,Triple Shoot,D_Triple,Life,Testskill,Ice,10,(),2,2,0,0,0
+D_Radius,Bow,D_Radius,Arrow Radius,D_PowerShoot,Life,Testskill,Water,10,(),3,0,0,0,0
+D_TargetNum,Bow,D_TargetNum,Target Increse,D_TargetNum,Life,Testskill,Ice,10,(),3,1,0,0,0
+D_Quad,Bow,D_Quad,Quad Shoot,D_Quad,Life,Testskill,Ice,10,(),3,2,0,0,0
+D_Range,Bow,D_Range,Range Increse,D_Range,Life,Testskill,Ice,10,(),4,0,0,0,0
+D_Mastery,Bow,D_Mastery,Arrow Master,D_Penta,Life,Testskill,Ice,10,(),4,2,0,0,0
+L_Power,Gun,L_Power,Gun Master,L_Gun,Life,Testskill,Ice,10,(),0,1,0,0,0
+L_EasyTarget,Gun,L_EasyTarget,Easy Target,L_Range,Life,Testskill,Ice,10,(),0,2,0,0,0
+L_WindShield,Gun,L_WindShield,Wind Shield,L_WindShield,Life,Testskill,Ice,10,(),1,0,0,0,0
+L_Speed,Gun,L_Speed,Bullet Speed Up,L_Speed,Life,Testskill,Water,10,(),1,1,0,0,0
+L_Double,Gun,L_Double,Double Shoot,L_Double,Life,Testskill,Ice,10,(),1,2,0,0,0
+L_Resistance,Gun,L_Resistance,Lighting Resistance,L_Resis,Life,Testskill,Ice,10,(),2,0,0,0,0
+L_Copy,Gun,L_Copy,Multy Shoot,L_Multy,Life,Testskill,Water,10,(),2,1,0,0,0
+L_Triple,Gun,L_Triple,Triple Shoot,L_triple,Life,Testskill,Ice,10,(),2,2,0,0,0
+L_Radius,Gun,L_Radius,Bullet Power Up,L_Power,Life,Testskill,Water,10,(),3,0,0,0,0
+L_TargetNum,Gun,L_TargetNum,Bullet Power Up,L_Target,Life,Testskill,Water,10,(),3,1,0,0,0
+L_Quad,Gun,L_Quad,Quad Shoot,L_Quad,Life,Testskill,Ice,10,(),3,2,0,0,0
+L_Range,Gun,L_Range,Range,L_Accuarcy,Life,Testskill,Ice,10,(),4,0,0,0,0
+L_Mastery,Gun,L_Mastery,Bullet Master,L_Penta,Life,Testskill,Ice,10,(),4,2,0,0,0
