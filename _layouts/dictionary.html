@@ -56,11 +56,12 @@ layout: default
             {% assign i_img_display = i_img_fn | default: i_img %}
             
             <!-- 2. Image Path Refining -->
-            {% if i_img_display contains '.' %}
-                {% assign i_img_display = i_img_display | split: '.' | last %}
-            {% endif %}
             {% if i_img_display contains '/' %}
                 {% assign i_img_display = i_img_display | split: '/' | last %}
+            {% endif %}
+            {% if i_img_display contains '.' and i_img_display contains '_' %}
+                <!-- If it's an engine path like Name.Action, take the first part -->
+                {% assign i_img_display = i_img_display | split: '.' | first %}
             {% endif %}
             
             <!-- 3. Custom Classification Logic (Liquid) -->
@@ -68,9 +69,9 @@ layout: default
             {% if page.dataset == 'characters' %}
                 <!-- Character Gender Logic -->
                 {% assign npc_path = item.Pic | default: item.Animation %}
-                {% if npc_path contains 'Women' %}
+                {% if npc_path contains 'Women' or npc_path contains 'G_' %}
                     {% assign i_cat = '여자캐릭터' %}
-                {% elsif npc_path contains 'Male' %}
+                {% elsif npc_path contains 'Male' or npc_path contains 'M_' %}
                     {% assign i_cat = '남자캐릭터' %}
                 {% endif %}
             {% elsif page.dataset == 'creatures' %}
