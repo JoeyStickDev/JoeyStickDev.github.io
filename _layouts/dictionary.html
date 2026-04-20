@@ -63,39 +63,38 @@ layout: default
                 <!-- If it's already a clean relative path from CSV, ensure extension -->
                 {% unless i_img_display contains '.png' or i_img_display contains '.jpg' or i_img_display == '' or i_img_display == nil %}
                     {% assign i_img_display = i_img_display | append: '.png' %}
-                {% endunless %}
-            {% endif %}
-            
-            <!-- 3. Custom Classification Logic (Liquid) -->
-            {% assign i_cat = '기타' %}
-            {% assign i_subcat = '기타' %}
+                            <!-- 3. Dynamic Values from Keys -->
+            {% assign i_cat = item[cat_key] | default: '기타' %}
+            {% assign i_subcat = item[subcat_key] | default: '기타' %}
 
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
             {% if page.dataset == 'characters' %}
                 {% assign npc_path = item.Pic | default: item.Animation | downcase %}
                 
-                <!-- 1. Determine Story vs Base (Check numbers in paths) -->
-                {% if npc_path contains '0_female' or npc_path contains '0_male' %}
+                <!-- 1. Determine Story vs Base -->
+                {% if npc_path == nil or npc_path == '' or npc_path contains '0_female' or npc_path contains '0_male' %}
                     {% assign i_cat = '기본' %}
-                {% elsif npc_path contains '1_winter' or npc_path contains '2_luna' or npc_path contains '3_temple' or npc_path contains '4_city' or npc_path contains '5_forest' or npc_path contains '6_church' or npc_path contains '7_cloud' or npc_path contains '8_ship' or npc_path contains '9_old' or npc_path contains '10_stella' %}
-                    {% assign i_cat = '스토리' %}
                 {% else %}
-                    <!-- Fallback -->
-                    {% if item.EventNPC == 'TRUE' or item.EventNPC == 'True' %} {% assign i_cat = '스토리' %} {% else %} {% assign i_cat = '기본' %} {% endif %}
+                    {% assign i_cat = '스토리' %}
                 {% endif %}
 
-                <!-- 2. Determine Subcategory (Gender or Region) -->
-                {% if npc_path contains '1_winter' %} {% assign i_subcat = '윈터캠프' %}
-                {% elsif npc_path contains '2_luna' %} {% assign i_subcat = '달빛호수' %}
-                {% elsif npc_path contains '3_temple' %} {% assign i_subcat = '신전' %}
-                {% elsif npc_path contains '4_city' %} {% assign i_subcat = '도시' %}
-                {% elsif npc_path contains '5_forest' %} {% assign i_subcat = '오래된숲' %}
-                {% elsif npc_path contains '6_church' %} {% assign i_subcat = '교회' %}
-                {% elsif npc_path contains '7_cloud' %} {% assign i_subcat = '구름' %}
-                {% elsif npc_path contains '8_ship' %} {% assign i_subcat = '함선' %}
-                {% elsif npc_path contains '9_old' %} {% assign i_subcat = '옛마을' %}
-                {% elsif npc_path contains '10_stella' %} {% assign i_subcat = '별자리연회' %}
-                {% elsif npc_path contains 'female' or npc_path contains 'g_' %} {% assign i_subcat = '여성' %}
-                {% elsif npc_path contains 'male' or npc_path contains 'm_' %} {% assign i_subcat = '남성' %}
+                <!-- 2. Determine Subcategory (Gender for Base, Map for Story) -->
+                {% if i_cat == '기본' %}
+                    {% if npc_path contains 'female' or npc_path contains 'g_' %}
+                        {% assign i_subcat = '여성' %}
+                    {% else %}
+                        {% assign i_subcat = '남성' %}
+                    {% endif %}
+                {% else %}
+                    <!-- For Story NPCs, use LocationName or extract from path -->
+                    {% assign i_subcat = item.LocationName | default: '기타' %}
+                    {% if i_subcat == 'Town' or i_subcat == '기타' %}
+                        {% if npc_path contains '1_winter' %} {% assign i_subcat = '윈터캠프' %}
+                        {% elsif npc_path contains '2_luna' %} {% assign i_subcat = '달빛호수' %}
+                        {% elsif npc_path contains '3_temple' %} {% assign i_subcat = '신전' %}
+                        {% endif %}
+                    {% endif %}
+                {% endif %}ale' or npc_path contains 'm_' %} {% assign i_subcat = '남성' %}
                 {% else %} {% assign i_subcat = '일반' %}
                 {% endif %}
 
@@ -119,7 +118,11 @@ layout: default
                 {% endif %}
             {% endif %}
 
-            {% assign i_subcat = item[subcat_key] %}
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            {% if page.dataset != 'characters' and page.dataset != 'creatures' and page.dataset != 'passive_skills' %}
+                {% assign i_cat = item[cat_key] | default: i_cat %}
+                {% assign i_subcat = item[subcat_key] | default: i_subcat %}
+            {% endif %}
 
             {% assign i_desc = item[d_key] %}
 
