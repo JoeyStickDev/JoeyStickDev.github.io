@@ -63,7 +63,10 @@ layout: default
                 <!-- If it's already a clean relative path from CSV, ensure extension -->
                 {% unless i_img_display contains '.png' or i_img_display contains '.jpg' or i_img_display == '' or i_img_display == nil %}
                     {% assign i_img_display = i_img_display | append: '.png' %}
-                            <!-- 3. Dynamic Values from Keys -->
+                {% endunless %}
+            {% endif %}
+            
+            <!-- 3. Dynamic Values from Keys -->
             {% assign i_cat = item[cat_key] | default: '기타' %}
             {% assign i_subcat = item[subcat_key] | default: '기타' %}
 
@@ -94,8 +97,6 @@ layout: default
                         {% elsif npc_path contains '3_temple' %} {% assign i_subcat = '신전' %}
                         {% endif %}
                     {% endif %}
-                {% endif %}ale' or npc_path contains 'm_' %} {% assign i_subcat = '남성' %}
-                {% else %} {% assign i_subcat = '일반' %}
                 {% endif %}
 
             {% elsif page.dataset == 'creatures' %}
