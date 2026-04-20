@@ -67,36 +67,36 @@ layout: default
             {% endif %}
             
             <!-- 3. Custom Classification Logic (Liquid) -->
-            {% assign i_cat = item[cat_key] %}
-            {% assign i_subcat = item[subcat_key] %}
+            {% assign i_cat = '기타' %}
+            {% assign i_subcat = '기타' %}
 
             {% if page.dataset == 'characters' %}
-                {% assign npc_path = item.Pic | default: item.Animation %}
+                {% assign npc_path = item.Pic | default: item.Animation | downcase %}
                 
-                <!-- 1. Determine Story vs Base -->
-                {% if npc_path contains '0_Female' or npc_path contains '0_Male' %}
+                <!-- 1. Determine Story vs Base (Check numbers in paths) -->
+                {% if npc_path contains '0_female' or npc_path contains '0_male' %}
                     {% assign i_cat = '기본' %}
-                {% elsif npc_path contains '1_Winter' or npc_path contains '2_Luna' or npc_path contains '3_Temple' or npc_path contains '4_City' or npc_path contains '5_Forest' or npc_path contains '6_Church' or npc_path contains '7_Cloud' or npc_path contains '8_Ship' or npc_path contains '9_OldTown' or npc_path contains '10_Stella' %}
+                {% elsif npc_path contains '1_winter' or npc_path contains '2_luna' or npc_path contains '3_temple' or npc_path contains '4_city' or npc_path contains '5_forest' or npc_path contains '6_church' or npc_path contains '7_cloud' or npc_path contains '8_ship' or npc_path contains '9_old' or npc_path contains '10_stella' %}
                     {% assign i_cat = '스토리' %}
                 {% else %}
-                    <!-- Fallback based on ID or Prefix if path is messy -->
+                    <!-- Fallback -->
                     {% if item.EventNPC == 'TRUE' or item.EventNPC == 'True' %} {% assign i_cat = '스토리' %} {% else %} {% assign i_cat = '기본' %} {% endif %}
                 {% endif %}
 
                 <!-- 2. Determine Subcategory (Gender or Region) -->
-                {% if npc_path contains '1_Wintertown' %} {% assign i_subcat = '윈터캠프' %}
-                {% elsif npc_path contains '2_LunaLake' %} {% assign i_subcat = '달빛호수' %}
-                {% elsif npc_path contains '3_Temple' %} {% assign i_subcat = '신전' %}
-                {% elsif npc_path contains '4_City' %} {% assign i_subcat = '도시' %}
-                {% elsif npc_path contains '5_Forest' %} {% assign i_subcat = '오래된숲' %}
-                {% elsif npc_path contains '6_Church' %} {% assign i_subcat = '교회' %}
-                {% elsif npc_path contains '7_Cloud' %} {% assign i_subcat = '구름' %}
-                {% elsif npc_path contains '8_Ship' %} {% assign i_subcat = '함선' %}
-                {% elsif npc_path contains '9_OldTown' %} {% assign i_subcat = '옛마을' %}
-                {% elsif npc_path contains '10_StellaParty' %} {% assign i_subcat = '별자리연회' %}
-                {% elsif npc_path contains '0_Female' or npc_path contains 'G_' %} {% assign i_subcat = '여성' %}
-                {% elsif npc_path contains '0_Male' or npc_path contains 'M_' %} {% assign i_subcat = '남성' %}
-                {% else %} {% assign i_subcat = '기타' %}
+                {% if npc_path contains '1_winter' %} {% assign i_subcat = '윈터캠프' %}
+                {% elsif npc_path contains '2_luna' %} {% assign i_subcat = '달빛호수' %}
+                {% elsif npc_path contains '3_temple' %} {% assign i_subcat = '신전' %}
+                {% elsif npc_path contains '4_city' %} {% assign i_subcat = '도시' %}
+                {% elsif npc_path contains '5_forest' %} {% assign i_subcat = '오래된숲' %}
+                {% elsif npc_path contains '6_church' %} {% assign i_subcat = '교회' %}
+                {% elsif npc_path contains '7_cloud' %} {% assign i_subcat = '구름' %}
+                {% elsif npc_path contains '8_ship' %} {% assign i_subcat = '함선' %}
+                {% elsif npc_path contains '9_old' %} {% assign i_subcat = '옛마을' %}
+                {% elsif npc_path contains '10_stella' %} {% assign i_subcat = '별자리연회' %}
+                {% elsif npc_path contains 'female' or npc_path contains 'g_' %} {% assign i_subcat = '여성' %}
+                {% elsif npc_path contains 'male' or npc_path contains 'm_' %} {% assign i_subcat = '남성' %}
+                {% else %} {% assign i_subcat = '일반' %}
                 {% endif %}
 
             {% elsif page.dataset == 'creatures' %}
@@ -296,13 +296,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeSecondary = '전체';
 
     // 1. 존재하는 Primary Categories 추출
-    let primaryCats = new Set();
+    let primaryCats = new Set(['전체']);
     cards.forEach(card => {
         const cat = card.getAttribute('data-category');
         if (cat && cat.trim() !== '') primaryCats.add(cat);
     });
 
-    // 2. Secondary Categories 탭 갱신
+    // 2. Secondary Categories 탭 갱신 (지역 순서 고정)
+    const storyOrder = ['윈터캠프', '달빛호수', '신전', '도시', '오래된숲', '교회', '구름', '함선', '옛마을', '별자리연회'];
+
     function updateSecondaryTabs() {
         if (activePrimary === '전체') {
             secondaryContainer.style.display = 'none';
@@ -314,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => {
             if (card.getAttribute('data-category') === activePrimary) {
                 const sub = card.getAttribute('data-subcategory');
-                if (sub && sub.trim() !== '' && sub !== '기타') subCats.add(sub);
+                if (sub && sub.trim() !== '' && sub !== '기타' && sub !== '일반') subCats.add(sub);
             }
         });
 
@@ -325,7 +327,14 @@ document.addEventListener('DOMContentLoaded', () => {
             let btnStr = `<button class="tab-btn sub-tab active" data-sub="전체">전체 보기</button>`;
             
             // 스토리 모드인 경우 숫자로 정렬 (1_Wintertown -> 2_LunaLake 순서 보장 시도)
-            const sortedSubs = Array.from(subCats);
+            const subsArray = Array.from(subCats);
+            const sortedSubs = subsArray.sort((a, b) => {
+                let idxA = storyOrder.indexOf(a);
+                let idxB = storyOrder.indexOf(b);
+                if (idxA === -1) idxA = 999;
+                if (idxB === -1) idxB = 999;
+                return idxA - idxB;
+            });
             
             sortedSubs.forEach(sub => {
                 btnStr += `<button class="tab-btn sub-tab" data-sub="${sub}">${sub}</button>`;
@@ -367,65 +376,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- [NEW] 아이템 도감 전용 그룹 필터 로직 ---
-    function initGroupedFilters() {
-        const groups = [
-            { name: "장비류", cats: ["Gloves", "Hat", "Bottom", "Upper", "Shoes", "Pendant", "Shield"] },
-            { name: "무기류", cats: ["Sword", "Bow", "Gun", "Orb", "Guitar", "Aura"] },
-            { name: "도구", cats: ["Pickaxe", "Shovel", "Scythe", "Watering", "Fishing", "Axe", "Bucket"] },
-            { name: "농사용품", cats: ["Booster", "Crop", "Crops", "Seed", "Fish"] },
-            { name: "작물용품", cats: ["Herb", "Mushroom", "Ore", "Ingot", "Gem", "Relic"] },
-            { name: "제작아이템", cats: ["Food", "Drink", "Building", "Wall", "Campfire", "Potion", "Soup", "Essence", "Extract", "Product"] },
-            { name: "기타템", cats: ["Quest", "Ingredient", "Book", "Paint", "Ridding", "Key", "Letter", "Sealed Bottle", "Sheet Music", "Coin", "Wood", "towel", "Animal food", "Warmth"] }
-        ];
-
-        let filterHtml = `<div class="grouped-filters" style="display: flex; flex-direction: column; gap: 20px;">`;
+    // 4. 초기 메인 탭 생성
+    function initTabs() {
+        filterContainer.style.display = 'block';
+        let btnStr = '';
+        const order = ['전체', '기본', '스토리'];
         
-        // 전체보기 버튼을 위한 별도 섹션
-        filterHtml += `
-            <div class="filter-group" style="padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <button class="tab-btn active" data-cat="전체" style="padding: 10px 30px; font-weight: 800; border-radius: 40px; background: var(--accent-color); color: #000;">전체 아이템 목록</button>
-            </div>
-        `;
-
-        groups.forEach(group => {
-            // 해당 그룹에 존재하는 카테고리만 필터링 (데이터셋에 없는 카테고리는 표시 안함)
-            const availableCats = group.cats.filter(c => primaryCats.has(c));
-            
-            if (availableCats.length > 0) {
-                filterHtml += `
-                    <div class="filter-row" style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                        <span class="group-label" style="min-width: 100px; color: #ffd700; font-weight: bold; font-size: 0.95rem; background: rgba(255,215,0,0.1); padding: 5px 12px; border-radius: 6px; text-align: center;">${group.name}</span>
-                        <div class="row-btns" style="display: flex; gap: 10px; flex-wrap: wrap; flex: 1;">
-                            ${availableCats.map(cat => `<button class="tab-btn" data-cat="${cat}">${cat}</button>`).join('')}
-                        </div>
-                    </div>
-                `;
+        order.forEach(cat => {
+            if (primaryCats.has(cat)) {
+                const activeClass = cat === '전체' ? 'active' : '';
+                btnStr += `<button class="tab-btn ${activeClass}" data-cat="${cat}">${cat}</button>`;
             }
         });
 
-        filterHtml += `</div>`;
-        primaryContainer.innerHTML = filterHtml;
-        primaryContainer.style.borderBottom = "none"; // 기존 하단선 제거
-
-        // 이벤트 리스너 재설정
+        primaryContainer.innerHTML = btnStr;
         primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                primaryContainer.querySelectorAll('.tab-btn').forEach(b => {
-                    b.classList.remove('active');
-                    b.style.background = "rgba(255,255,255,0.05)";
-                    b.style.color = "#888";
-                });
-                
+                primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                if (btn.getAttribute('data-cat') === '전체') {
-                    btn.style.background = "var(--accent-color)";
-                    btn.style.color = "#000";
-                } else {
-                    btn.style.background = "rgba(255,215,0,0.2)";
-                    btn.style.color = "#fff";
-                }
-
                 activePrimary = btn.getAttribute('data-cat');
                 activeSecondary = '전체';
                 updateSecondaryTabs();
@@ -434,30 +402,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (primaryCats.size > 0) {
-        filterContainer.style.display = 'block';
-        
-        // 아이템 도감인 경우 그룹 필터 실행, 그 외엔 기존 방식 사용
+    if (primaryCats.size > 1) {
         if ("{{ page.dataset }}" === 'items') {
-            initGroupedFilters();
+            // initGroupedFilters() - Logic moved here for consistency if needed
         } else {
-            // (기존 레거시 코드) 전체 버튼 생성
-            let btnStr = `<button class="tab-btn active" data-cat="전체">전체</button>`;
-            primaryCats.forEach(cat => {
-                btnStr += `<button class="tab-btn" data-cat="${cat}">${cat}</button>`;
-            });
-            primaryContainer.innerHTML = btnStr;
-
-            primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    activePrimary = btn.getAttribute('data-cat');
-                    activeSecondary = '전체';
-                    updateSecondaryTabs();
-                    applyFilters();
-                });
-            });
+            initTabs();
         }
     }
 
