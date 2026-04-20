@@ -111,7 +111,18 @@ layout: default
                     {% assign i_img_fn_full = i_img_display %}
                 {% endunless %}
 
-                <div class="dict-img" style="height: 160px; background-image: {% if i_img_display and i_img_display != '' %}url('{{ img_path }}{{ i_img_fn_full }}'), url('{{ img_path }}{{ i_cat }}/{{ i_img_fn_full }}'), {% endif %}linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                <!-- Define possible subfolders for characters -->
+                {% assign regions = "0_Male,0_Female,1_Wintertown,2_LunaLake,3_Temple,4_City,5_Forest,6_Church,7_Cloud,8_Ship,9_OldTown,10_StellaParty" | split: "," %}
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    {% if i_img_display and i_img_display != '' %}
+                        url('{{ img_path }}{{ i_img_fn_full }}'), 
+                        {% for reg in regions %}
+                            url('{{ img_path }}{{ reg }}/{{ i_img_fn_full }}'),
+                        {% endfor %}
+                        url('{{ img_path }}{{ i_cat }}/{{ i_img_fn_full }}'), 
+                    {% endif %}
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
                     {% if i_subcat and i_subcat != '' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_subcat }}</span>
