@@ -57,71 +57,71 @@ Event_Michael_Temple,Event_Michael_Temple,Charon,3_Temple/M_Michael_M3,FALSE,TRU
 Event_Jenny_Temple,Event_Jenny_Temple,Persephone,3_Temple/G_Jenny_M3,FALSE,TRUE,FALSE,That scent... you carry a trace of flowers too.,"(""M_3_2"")","(""M_3_1"")",,,Temple,TRUE
 Event_Kiri_Temple,Event_Kiri_Temple,Demeter,3_Temple/G_Kiri_M3,FALSE,TRUE,FALSE,Is my daughter… Persephone doing well?,"(""M_3_9"",""M_3_10"")","(""M_3_2"",""M_3_8"",""M_3_9"",""M_10_4"")",,,Temple,TRUE
 Event_Vivian_Temple,Event_Vivian_Temple,Hera,3_Temple/G_Vivian_M3,FALSE,TRUE,FALSE,A human wandering the halls of Olympus… how curious.,"(""S_8_4"",""S_8_5"")",,,,Temple,TRUE
-Event_Camila_City,Event_Camila_City,Camila,4_City/G_Camila_M4.png,FALSE,TRUE,FALSE,There are fragments of the past everywhere here.,"(""M_4_9"")",,,,Temple,TRUE
-Event_Fiona_City,Event_Fiona_City,Fiona,4_City/G_Fiona_M4.png,FALSE,TRUE,FALSE,These walls could fall any day.,"(""M_4_3"",""M_4_4"",""M_4_5"")","(""M_4_3"",""M_4_6"")",,,Temple,TRUE
-Event_Syra_City,Event_Syra_City,Syra,4_City/G_Syra_M4.png,TRUE,TRUE,FALSE,If you find medicine or bandages out there... please bring them back.,"(""M_4_6"",""M_4_7"",""M_4_8"",""M_4_10"")","(""M_4_5"",""M_4_9"")","(""Potion_Bandage"",""Potion_EmergencyPotion"",""Potion_MP_Emergency"")",,Temple,TRUE
-Event_Jade_City,Event_Jade_City,Jade,4_City/M_Jade_M4.png,FALSE,TRUE,FALSE,There are still plenty of them nearby.,"(""M_4_1"",""M_4_2"",""M_8_7"")","(""M_4_1"",""M_4_10"",""M_8_7"")",,,Temple,TRUE
-Event_Vincent_City,Event_Vincent_City,Vincent,4_City/M_Vincent_M4.png,FALSE,TRUE,FALSE,"My memories... they’re coming back, slowly.",,,,,Temple,TRUE
-Event_Aiden_Animal,Event_Aiden_Animal,Aiden,5_Forest/M_Aiden_M5.png,FALSE,TRUE,FALSE,The forest seems eager to test you.,,,,,Temple,TRUE
-Event_Blake_Animal,Event_Blake_Animal,Blake,5_Forest/M_Blake_M5.png,FALSE,TRUE,FALSE,"Oh? You look fragile, but your eyes say otherwise.",,"(""M_5_5"",""M_5_7"")",,,Temple,TRUE
-Event_Halen_Animal,Event_Halen_Animal,Halen,5_Forest/G_Halen_M5.png,FALSE,TRUE,FALSE,You carry a gentle presence.,"(""M_8_8"")","(""M_5_3"",""M_5_8"",""M_8_8"")",,,Temple,TRUE
-Event_Jocelyn_Animal,Event_Jocelyn_Animal,Jocelyn,5_Forest/G_Jocelyn_M5.png,FALSE,TRUE,FALSE,"Hmm, a new face.",,,,,Temple,TRUE
-Event_Leon_Animal,Event_Leon_Animal,Leon,5_Forest/M_Leon_M5.png,FALSE,TRUE,FALSE,The flow is shifting...,"(""M_5_1"",""M_5_2"",""M_5_3"",""M_5_4"",""M_5_5"",""M_5_6"",""M_5_7"",""M_5_8"",""M_5_9"",""M_5_10"",""M_5_11"")","(""M_5_1"",""M_5_11"",""M_6_10"",""M_10_6"")",,,Temple,TRUE
-Event_Kelly_Chruch,Event_Kelly_Chruch,Kelly,6_Church/G_Kelly_M6.png,FALSE,TRUE,FALSE,"A human, here of all places... how intriguing.","(""M_6_10"",""M_6_11"",""M_6_12"",""M_8_9"")","(""M_6_4"",""M_6_9"",""M_6_11"",""M_8_9"")",,,Temple,TRUE
-Event_Emily_Chruch,Event_Emily_Chruch,Emily,6_Church/G_Emily_M6.png,TRUE,TRUE,FALSE,Oh... hello. I don’t recognize you.,"(""M_6_0"",""M_6_1"",""M_6_6"",""M_6_7"")","(""M_6_0"",""M_6_6"",""M_6_12"")","(""Potion_Bandage"",""Potion_EmergencyPotion"",""Potion_MP_Emergency"")",,Temple,TRUE
-Event_Nick_Chruch,Event_Nick_Chruch,Nick,6_Church/M_Nick_M6.png,FALSE,TRUE,FALSE,"Sorry, I’m exhausted right now.",,"(""M_6_1"",""M_10_7"")",,,Temple,TRUE
-Event_Leymore_Chruch,Event_Leymore_Chruch,Leymore,6_Church/M_Leymore_M6.png,FALSE,TRUE,FALSE,Wait.,"(""M_6_3"",""M_6_4"",""M_6_5"",""M_6_9"")","(""M_6_3"",""M_6_5"",""M_6_8"")",,,Temple,TRUE
-Event_Rio_Cloud,Event_Rio_Cloud,Rio,7_Cloud/M_Rio_M7.png,FALSE,TRUE,FALSE,The light feels warm... yet the darkness feels comforting.,"(""M_7_1"",""M_8_10"")","(""M_7_1"",""M_7_6"",""M_7_10"",""M_8_10"")",,,Temple,TRUE
-Event_Alex_Cloud,Event_Alex_Cloud,Alex,7_Cloud/M_Alex_M7.png,FALSE,TRUE,FALSE,You don’t need to choose one.,"(""M_7_7"",""M_7_8"",""M_7_9"",""M_7_10"")","(""M_7_7"",""M_7_9"",""M_10_8"")",,,Temple,TRUE
-Event_Angela_Cloud,Event_Angela_Cloud,Angela,7_Cloud/G_Angela_M7.png,FALSE,TRUE,FALSE,Don’t let the darkness stain you.,"(""M_7_11"")","(""M_7_2"",""M_10_11"")",,,Temple,TRUE
-Event_Bella_Cloud,Event_Bella_Cloud,Bella,7_Cloud/G_Bella_M7.png,FALSE,TRUE,FALSE,The light has always pushed me away.,"(""M_7_3"")","(""M_7_3"",""M_7_11"")",,,Temple,TRUE
-Event_Casandra_Gear,Event_Casandra_Gear,Casandra,8_Ship/G_Casandra_M8.png,FALSE,TRUE,FALSE,Not many are allowed aboard this ship.,"(""M_8_1"",""M_8_14"",""M_9_11"")","(""M_8_0"",""M_8_1"",""M_8_14"",""M_8_15"",""M_9_6"",""M_9_7"",""M_9_10"")",,,Temple,TRUE
-Event_Lilis_Gear,Event_Lilis_Gear,Lilis,8_Ship/G_Lilis_M8.png,FALSE,TRUE,FALSE,Wait… stay still.,"(""M_8_2"",""M_8_3"",""M_8_12"",""M_8_13"",""M_8_15"")","(""M_8_2"",""M_8_11"",""M_8_13"")",,,Temple,TRUE
-Event_Erik_Gear,Event_Erik_Gear,Erik,8_Ship/M_Erik_M8.png,TRUE,TRUE,FALSE,What-how did you even...,"(""M_8_0"")",,"(""Potion_Bandage"",""Potion_EmergencyPotion"",""Potion_MP_Emergency"")",,Temple,TRUE
-Event_Erica_Gear,Event_Erica_Gear,Erica,8_Ship/G_Erica_M8.png,FALSE,FALSE,FALSE,"If I’m not Hunting, I’m either dreaming about it or lying about the one that got away",,,,,FishHouse,FALSE
-Event_Fergus_Gear,Event_Fergus_Gear,Fergus,8_Ship/M_Fergus_M8.png,FALSE,TRUE,FALSE,Machines don’t lie.,"(""M_8_11"")",,,,Temple,TRUE
-Event_Iris_OldTown,Event_Iris_OldTown,Iris,9_OldTown/Iris_M9.png,TRUE,TRUE,FALSE,Have you seen any trace of my brother?,"(""M_9_0"",""M_9_1"",""M_9_6"",""M_9_15"")","(""M_9_0"",""M_9_5"",""M_9_14"",""M_9_15"")","(""Food_FriedEgg"")",,Temple,TRUE
-Event_Jun_OldTown,Event_Jun_OldTown,Jun,9_OldTown/M_Jun_M9.png,FALSE,TRUE,FALSE,The flow of the heavens never deceives.,"(""M_9_2"",""M_9_3"",""M_9_4"")","(""M_9_2"",""M_9_3"")",,,Temple,TRUE
-Event_Joey_OldTown,Event_Joey_OldTown,Joey,9_OldTown/M_Joey_M9.png,FALSE,TRUE,FALSE,The stars have always been calling to me...,"(""M_9_8"",""M_9_9"",""M_9_10"",""M_9_13"",""M_9_14"")","(""M_9_8"",""M_9_9"",""M_9_12"",""M_10_10"")",,,Temple,TRUE
-Event_Nora_OldTown,Event_Nora_OldTown,Nora,9_OldTown/Nora_M9.png,FALSE,TRUE,FALSE,A human reaching this gate? Impressive.,"(""M_9_5"",""M_9_EX_0_0"")",,,,Temple,TRUE
-Event_Aiden_StellaParty,Event_Aiden_StellaParty,Aiden,10_StellaParty/M_Aiden_M10.png,FALSE,TRUE,FALSE,Your flame...,,,,,Community center,TRUE
-Event_Alex_StellaParty,Event_Alex_StellaParty,Alex,10_StellaParty/M_Alex_M10.png,FALSE,TRUE,FALSE,Oh! A living presence-how refreshing.,"(""M_10_11"")",,,,Community center,TRUE
-Event_Blake_StellaParty,Event_Blake_StellaParty,Blake,10_StellaParty/M_Blake_M10.png,FALSE,TRUE,FALSE,"Heh, you look like you fought through worse than flames. Respect.","(""M_10_6"")",,,,Community center,TRUE
-Event_Daniel_StellaParty,Event_Daniel_StellaParty,Daniel,10_StellaParty/M_Daniel_M10.png,FALSE,TRUE,FALSE,"Keep your breathing steady. Even in spirit halls, grounding yourself matters.",,,,,Community center,TRUE
-Event_Darius_StellaParty,Event_Darius_StellaParty,Darius,10_StellaParty/M_Dariuss_M10.png,FALSE,TRUE,FALSE,"I’ve tended many seeds, but none sprout as wildly as your destiny seems to.",,,,,Community center,TRUE
-Event_Erik_StellaParty,Event_Erik_StellaParty,Erik,10_StellaParty/M_Erik_M10.png,FALSE,TRUE,FALSE,"Ah! A newcomer with a pulse! Rare sight here-welcome aboard, traveler.","(""M_10_5"")",,,,Community center,TRUE
-Event_Fergus_StellaParty,Event_Fergus_StellaParty,Fergus,10_StellaParty/M_Fergus_M10.png,FALSE,TRUE,FALSE,"If this realm feels unstable, tell me. I’ll reinforce the cracks in its structure.","(""M_10_3"")",,,,Community center,TRUE
-Event_Jade_StellaParty,Event_Jade_StellaParty,Jade,10_StellaParty/M_Jade_M10.png,FALSE,TRUE,FALSE,You’re the only one here that casts a real shadow. Interesting.,,,,,Community center,TRUE
-Event_Joey_StellaParty,Event_Joey_StellaParty,Joey,10_StellaParty/M_Joey_M10.png,FALSE,TRUE,FALSE,Huh? A living visitor? Hold on-I wanna check how your energy circulates.,"(""M_10_1"",""M_10_10"")","(""M_10_1"")",,,Community center,TRUE
-Event_Jun_StellaParty,Event_Jun_StellaParty,Jun,10_StellaParty/M_Jun_M10.png,FALSE,TRUE,FALSE,"Good, your essence is stable. Traveling between stories can be... disorienting.","(""M_10_12"")",,,,Community center,TRUE
-Event_Kai_StellaParty,Event_Kai_StellaParty,Kai,10_StellaParty/M_Kai_M10.png,FALSE,TRUE,FALSE,Stay close. Real travelers tend to attract unwanted attention from loose spirits.,,,,,Community center,TRUE
-Event_Leon_StellaParty,Event_Leon_StellaParty,Leon,10_StellaParty/M_Leon_M10.png,FALSE,TRUE,FALSE,"Ah, the Storykeeper finally arrives. The hall has been waiting.",,,,,Community center,TRUE
-Event_Michael_StellaParty,Event_Michael_StellaParty,Michael,10_StellaParty/M_Michael_M10.png,FALSE,TRUE,FALSE,Good timing. Paths shift here-easy to get lost if you’re not anchored.,,,,,Community center,TRUE
-Event_Nick_StellaParty,Event_Nick_StellaParty,Nick,10_StellaParty/M_Nick_M10.png,FALSE,TRUE,FALSE,"A human guest? Fascinating. What’s your poison-ink, memory, or something stronger?",,,,,Community center,TRUE
-Event_Leymore_StellaParty,Event_Leymore_StellaParty,Leymore,10_StellaParty/M_Raymore_M10.png,FALSE,TRUE,FALSE,Your soul... it’s heavy with story ore. Want me to refine a bit of it?,,,,,Community center,TRUE
-Event_Rio_StellaParty,Event_Rio_StellaParty,Rio,10_StellaParty/M_Rio_M10.png,FALSE,TRUE,FALSE,You shine differently from the rest. Must be nice being alive.,,,,,Community center,TRUE
-Event_Samuel_StellaParty,Event_Samuel_StellaParty,Samuel,10_StellaParty/M_Samuel_M10.png,FALSE,TRUE,FALSE,Your story is still unfolding-your outfit should match that.,,,,,Community center,TRUE
-Event_Sebastian_StellaParty,Event_Sebastian_StellaParty,Sebastian,10_StellaParty/M_Sebastian_M10.png,FALSE,TRUE,FALSE,"ou smell like earth, rain, and... fate. Good sign.",,,,,Community center,TRUE
-Event_Vincent_StellaParty,Event_Vincent_StellaParty,Vincent,10_StellaParty/M_Vincent_M10.png,FALSE,TRUE,FALSE,“Relax. No hostile spirits nearby... yet.,"(""M_10_13"")",,,,Community center,TRUE
-Event_Angela_StellaParty,Event_Angela_StellaParty,Angela,10_StellaParty/G_Angela_M10_M10.png,FALSE,TRUE,FALSE,"Welcome, Storykeeper. Want a cup of light-roasted serenity?","(""M_10_8"")",,,,Community center,TRUE
-Event_Aria_StellaParty,Event_Aria_StellaParty,Aria,10_StellaParty/G_Aria_M10.png,FALSE,TRUE,FALSE,You crossed worlds to get here... impressive.,,,,,Community center,TRUE
-Event_Bella_StellaParty,Event_Bella_StellaParty,Bella,10_StellaParty/G_Bella_M10.png,FALSE,TRUE,FALSE,I can hear the rhythm around you.,,,,,Community center,TRUE
-Event_Camila_StellaParty,Event_Camila_StellaParty,Camila,10_StellaParty/G_Camila_M10.png,FALSE,TRUE,FALSE,"“If you have unfinished business, bring it to me. Even spirits appreciate good management.","(""M_10_4"")",,,,Community center,TRUE
-Event_Casandra_StellaParty,Event_Casandra_StellaParty,Casandra,10_StellaParty/G_Casandra_M10.png,FALSE,TRUE,FALSE,"Well, look who stepped out of reality. Need something reforged?","(""M_10_9"")",,,,Community center,TRUE
-Event_Celine_StellaParty,Event_Celine_StellaParty,Celine,10_StellaParty/G_Ceilne_M10.png,FALSE,TRUE,FALSE,You arrived safely-good. Many don’t handle the shift between worlds this smoothly.,,,,,Community center,TRUE
-Event_Emily_StellaParty,Event_Emily_StellaParty,Emily,10_StellaParty/G_Emily_M10.png,FALSE,TRUE,FALSE,Oh... you’re warm. Souls from outside usually feel cold. Interesting.,"(""M_10_7"")",,,,Community center,TRUE
-Event_Erica_StellaParty,Event_Erica_StellaParty,Erica,10_StellaParty/G_Erica_M10.png,FALSE,TRUE,FALSE,"You’re new here. Don’t worry, even spirits drift before finding their tide.",,,,,Community center,TRUE
-Event_Fiona_StellaParty,Event_Fiona_StellaParty,Fiona,10_StellaParty/G_Fiona_M10.png,FALSE,TRUE,FALSE,Oh! A real human? Lovely. Most of us here are... echoes.,,,,,Community center,TRUE
-Event_Halen_StellaParty,Event_Halen_StellaParty,Halen,10_StellaParty/G_Halen_M10.png,FALSE,TRUE,FALSE,Your presence has been logged.,,,,,Community center,TRUE
-Event_Iris_StellaParty,Event_Iris_StellaParty,Iris,10_StellaParty/G_Iris_M10.png,FALSE,TRUE,FALSE,You carry the scent of many stories...,,,,,Community center,TRUE
-Event_Ivy_StellaParty,Event_Ivy_StellaParty,Ivy,10_StellaParty/G_Ivy_M10.png,FALSE,TRUE,FALSE,Your aura is alive-how refreshing.,,,,,Community center,TRUE
-Event_Jenny_StellaParty,Event_Jenny_StellaParty,Jenny,10_StellaParty/G_Jenny_M10.png,FALSE,TRUE,FALSE,"Oh! A protagonist who isn’t confined by pages-rare, but delightful.",,,,,Community center,TRUE
-Event_Jocelyn_StellaParty,Event_Jocelyn_StellaParty,Jocelyn,10_StellaParty/G_Jocelyn_M10.png,FALSE,TRUE,FALSE,"Your thread isn’t from this realm... I can feel it. Lovely texture, though.",,,,,Community center,TRUE
-Event_Kelly_StellaParty,Event_Kelly_StellaParty,Kelly,10_StellaParty/G_Kelly_M10.png,FALSE,TRUE,FALSE,You’re alive?,,,,,Community center,TRUE
-Event_Kiri_StellaParty,Event_Kiri_StellaParty,Kiri,10_StellaParty/G_Kiri_M10.png,FALSE,TRUE,FALSE,Oh! Your spirit is fierce. I like that. Care for a quick spar?,,,,,Community center,TRUE
-Event_Lilis_StellaParty,Event_Lilis_StellaParty,Lilis,10_StellaParty/G_Lilis_M10.png,FALSE,TRUE,FALSE,You carry so many artifacts... I can almost hear them hum.,,,,,Community center,TRUE
-Event_Mia_StellaParty,Event_Mia_StellaParty,Mia,10_StellaParty/G_Mia_M10.png,FALSE,TRUE,FALSE,Oh... such vivid colors around you! Mortals are fun to look at.,,,,,Community center,TRUE
-Event_Nora_StellaParty,Event_Nora_StellaParty,Nora,10_StellaParty/G_Nora_M10.png,FALSE,TRUE,FALSE,"Smells like a living being wandered in. Don’t worry, I don’t cook humans.",,,,,Community center,TRUE
-Event_Reina_StellaParty,Event_Reina_StellaParty,Reina,10_StellaParty/G_Reina_M10.png,FALSE,TRUE,FALSE,"Oh! A fresh, warm face! Spirits get dull-let me admire you for a second.",,,,,Community center,TRUE
-Event_Syra_StellaParty,Event_Syra_StellaParty,Syra,10_StellaParty/G_Syra_M10.png,FALSE,TRUE,FALSE,"If the shifting realms hurt your head, tell me. I can soothe more than wounds.",,,,,Community center,TRUE
-Event_Vivian_StellaParty,Event_Vivian_StellaParty,Vivian,10_StellaParty/G_Vivian_M10.png,FALSE,TRUE,FALSE,Oh hey! A warm-blood in a cold hall. Stay close to the fire.,,,,,Community center,TRUE
+Event_Camila_City,Event_Camila_City,Camila,4_City/G_Camila_M4.png,FALSE,TRUE,FALSE,There are fragments of the past everywhere here.,"(""M_4_9"")",,,,City,TRUE
+Event_Fiona_City,Event_Fiona_City,Fiona,4_City/G_Fiona_M4.png,FALSE,TRUE,FALSE,These walls could fall any day.,"(""M_4_3"",""M_4_4"",""M_4_5"")","(""M_4_3"",""M_4_6"")",,,City,TRUE
+Event_Syra_City,Event_Syra_City,Syra,4_City/G_Syra_M4.png,TRUE,TRUE,FALSE,If you find medicine or bandages out there... please bring them back.,"(""M_4_6"",""M_4_7"",""M_4_8"",""M_4_10"")","(""M_4_5"",""M_4_9"")","(""Potion_Bandage"",""Potion_EmergencyPotion"",""Potion_MP_Emergency"")",,City,TRUE
+Event_Jade_City,Event_Jade_City,Jade,4_City/M_Jade_M4.png,FALSE,TRUE,FALSE,There are still plenty of them nearby.,"(""M_4_1"",""M_4_2"",""M_8_7"")","(""M_4_1"",""M_4_10"",""M_8_7"")",,,City,TRUE
+Event_Vincent_City,Event_Vincent_City,Vincent,4_City/M_Vincent_M4.png,FALSE,TRUE,FALSE,"My memories... they’re coming back, slowly.",,,,,City,TRUE
+Event_Aiden_Animal,Event_Aiden_Animal,Aiden,5_Forest/M_Aiden_M5.png,FALSE,TRUE,FALSE,The forest seems eager to test you.,,,,,Forest,TRUE
+Event_Blake_Animal,Event_Blake_Animal,Blake,5_Forest/M_Blake_M5.png,FALSE,TRUE,FALSE,"Oh? You look fragile, but your eyes say otherwise.",,"(""M_5_5"",""M_5_7"")",,,Forest,TRUE
+Event_Halen_Animal,Event_Halen_Animal,Halen,5_Forest/G_Halen_M5.png,FALSE,TRUE,FALSE,You carry a gentle presence.,"(""M_8_8"")","(""M_5_3"",""M_5_8"",""M_8_8"")",,,Forest,TRUE
+Event_Jocelyn_Animal,Event_Jocelyn_Animal,Jocelyn,5_Forest/G_Jocelyn_M5.png,FALSE,TRUE,FALSE,"Hmm, a new face.",,,,,Forest,TRUE
+Event_Leon_Animal,Event_Leon_Animal,Leon,5_Forest/M_Leon_M5.png,FALSE,TRUE,FALSE,The flow is shifting...,"(""M_5_1"",""M_5_2"",""M_5_3"",""M_5_4"",""M_5_5"",""M_5_6"",""M_5_7"",""M_5_8"",""M_5_9"",""M_5_10"",""M_5_11"")","(""M_5_1"",""M_5_11"",""M_6_10"",""M_10_6"")",,,Forest,TRUE
+Event_Kelly_Chruch,Event_Kelly_Chruch,Kelly,6_Church/G_Kelly_M6.png,FALSE,TRUE,FALSE,"A human, here of all places... how intriguing.","(""M_6_10"",""M_6_11"",""M_6_12"",""M_8_9"")","(""M_6_4"",""M_6_9"",""M_6_11"",""M_8_9"")",,,Church,TRUE
+Event_Emily_Chruch,Event_Emily_Chruch,Emily,6_Church/G_Emily_M6.png,TRUE,TRUE,FALSE,Oh... hello. I don’t recognize you.,"(""M_6_0"",""M_6_1"",""M_6_6"",""M_6_7"")","(""M_6_0"",""M_6_6"",""M_6_12"")","(""Potion_Bandage"",""Potion_EmergencyPotion"",""Potion_MP_Emergency"")",,Church,TRUE
+Event_Nick_Chruch,Event_Nick_Chruch,Nick,6_Church/M_Nick_M6.png,FALSE,TRUE,FALSE,"Sorry, I’m exhausted right now.",,"(""M_6_1"",""M_10_7"")",,,Church,TRUE
+Event_Leymore_Chruch,Event_Leymore_Chruch,Leymore,6_Church/M_Leymore_M6.png,FALSE,TRUE,FALSE,Wait.,"(""M_6_3"",""M_6_4"",""M_6_5"",""M_6_9"")","(""M_6_3"",""M_6_5"",""M_6_8"")",,,Church,TRUE
+Event_Rio_Cloud,Event_Rio_Cloud,Rio,7_Cloud/M_Rio_M7.png,FALSE,TRUE,FALSE,The light feels warm... yet the darkness feels comforting.,"(""M_7_1"",""M_8_10"")","(""M_7_1"",""M_7_6"",""M_7_10"",""M_8_10"")",,,Cloud,TRUE
+Event_Alex_Cloud,Event_Alex_Cloud,Alex,7_Cloud/M_Alex_M7.png,FALSE,TRUE,FALSE,You don’t need to choose one.,"(""M_7_7"",""M_7_8"",""M_7_9"",""M_7_10"")","(""M_7_7"",""M_7_9"",""M_10_8"")",,,Cloud,TRUE
+Event_Angela_Cloud,Event_Angela_Cloud,Angela,7_Cloud/G_Angela_M7.png,FALSE,TRUE,FALSE,Don’t let the darkness stain you.,"(""M_7_11"")","(""M_7_2"",""M_10_11"")",,,Cloud,TRUE
+Event_Bella_Cloud,Event_Bella_Cloud,Bella,7_Cloud/G_Bella_M7.png,FALSE,TRUE,FALSE,The light has always pushed me away.,"(""M_7_3"")","(""M_7_3"",""M_7_11"")",,,Cloud,TRUE
+Event_Casandra_Gear,Event_Casandra_Gear,Casandra,8_Ship/G_Casandra_M8.png,FALSE,TRUE,FALSE,Not many are allowed aboard this ship.,"(""M_8_1"",""M_8_14"",""M_9_11"")","(""M_8_0"",""M_8_1"",""M_8_14"",""M_8_15"",""M_9_6"",""M_9_7"",""M_9_10"")",,,Ship,TRUE
+Event_Lilis_Gear,Event_Lilis_Gear,Lilis,8_Ship/G_Lilis_M8.png,FALSE,TRUE,FALSE,Wait… stay still.,"(""M_8_2"",""M_8_3"",""M_8_12"",""M_8_13"",""M_8_15"")","(""M_8_2"",""M_8_11"",""M_8_13"")",,,Ship,TRUE
+Event_Erik_Gear,Event_Erik_Gear,Erik,8_Ship/M_Erik_M8.png,TRUE,TRUE,FALSE,What-how did you even...,"(""M_8_0"")",,"(""Potion_Bandage"",""Potion_EmergencyPotion"",""Potion_MP_Emergency"")",,Ship,TRUE
+Event_Erica_Gear,Event_Erica_Gear,Erica,8_Ship/G_Erica_M8.png,FALSE,FALSE,FALSE,"If I’m not Hunting, I’m either dreaming about it or lying about the one that got away",,,,,Ship,FALSE
+Event_Fergus_Gear,Event_Fergus_Gear,Fergus,8_Ship/M_Fergus_M8.png,FALSE,TRUE,FALSE,Machines don’t lie.,"(""M_8_11"")",,,,Ship,TRUE
+Event_Iris_OldTown,Event_Iris_OldTown,Iris,9_OldTown/Iris_M9.png,TRUE,TRUE,FALSE,Have you seen any trace of my brother?,"(""M_9_0"",""M_9_1"",""M_9_6"",""M_9_15"")","(""M_9_0"",""M_9_5"",""M_9_14"",""M_9_15"")","(""Food_FriedEgg"")",,OldTown,TRUE
+Event_Jun_OldTown,Event_Jun_OldTown,Jun,9_OldTown/M_Jun_M9.png,FALSE,TRUE,FALSE,The flow of the heavens never deceives.,"(""M_9_2"",""M_9_3"",""M_9_4"")","(""M_9_2"",""M_9_3"")",,,OldTown,TRUE
+Event_Joey_OldTown,Event_Joey_OldTown,Joey,9_OldTown/M_Joey_M9.png,FALSE,TRUE,FALSE,The stars have always been calling to me...,"(""M_9_8"",""M_9_9"",""M_9_10"",""M_9_13"",""M_9_14"")","(""M_9_8"",""M_9_9"",""M_9_12"",""M_10_10"")",,,OldTown,TRUE
+Event_Nora_OldTown,Event_Nora_OldTown,Nora,9_OldTown/Nora_M9.png,FALSE,TRUE,FALSE,A human reaching this gate? Impressive.,"(""M_9_5"",""M_9_EX_0_0"")",,,,OldTown,TRUE
+Event_Aiden_StellaParty,Event_Aiden_StellaParty,Aiden,10_StellaParty/M_Aiden_M10.png,FALSE,TRUE,FALSE,Your flame...,,,,,Stella Party,TRUE
+Event_Alex_StellaParty,Event_Alex_StellaParty,Alex,10_StellaParty/M_Alex_M10.png,FALSE,TRUE,FALSE,Oh! A living presence-how refreshing.,"(""M_10_11"")",,,,Stella Party,TRUE
+Event_Blake_StellaParty,Event_Blake_StellaParty,Blake,10_StellaParty/M_Blake_M10.png,FALSE,TRUE,FALSE,"Heh, you look like you fought through worse than flames. Respect.","(""M_10_6"")",,,,Stella Party,TRUE
+Event_Daniel_StellaParty,Event_Daniel_StellaParty,Daniel,10_StellaParty/M_Daniel_M10.png,FALSE,TRUE,FALSE,"Keep your breathing steady. Even in spirit halls, grounding yourself matters.",,,,,Stella Party,TRUE
+Event_Darius_StellaParty,Event_Darius_StellaParty,Darius,10_StellaParty/M_Dariuss_M10.png,FALSE,TRUE,FALSE,"I’ve tended many seeds, but none sprout as wildly as your destiny seems to.",,,,,Stella Party,TRUE
+Event_Erik_StellaParty,Event_Erik_StellaParty,Erik,10_StellaParty/M_Erik_M10.png,FALSE,TRUE,FALSE,"Ah! A newcomer with a pulse! Rare sight here-welcome aboard, traveler.","(""M_10_5"")",,,,Stella Party,TRUE
+Event_Fergus_StellaParty,Event_Fergus_StellaParty,Fergus,10_StellaParty/M_Fergus_M10.png,FALSE,TRUE,FALSE,"If this realm feels unstable, tell me. I’ll reinforce the cracks in its structure.","(""M_10_3"")",,,,Stella Party,TRUE
+Event_Jade_StellaParty,Event_Jade_StellaParty,Jade,10_StellaParty/M_Jade_M10.png,FALSE,TRUE,FALSE,You’re the only one here that casts a real shadow. Interesting.,,,,,Stella Party,TRUE
+Event_Joey_StellaParty,Event_Joey_StellaParty,Joey,10_StellaParty/M_Joey_M10.png,FALSE,TRUE,FALSE,Huh? A living visitor? Hold on-I wanna check how your energy circulates.,"(""M_10_1"",""M_10_10"")","(""M_10_1"")",,,Stella Party,TRUE
+Event_Jun_StellaParty,Event_Jun_StellaParty,Jun,10_StellaParty/M_Jun_M10.png,FALSE,TRUE,FALSE,"Good, your essence is stable. Traveling between stories can be... disorienting.","(""M_10_12"")",,,,Stella Party,TRUE
+Event_Kai_StellaParty,Event_Kai_StellaParty,Kai,10_StellaParty/M_Kai_M10.png,FALSE,TRUE,FALSE,Stay close. Real travelers tend to attract unwanted attention from loose spirits.,,,,,Stella Party,TRUE
+Event_Leon_StellaParty,Event_Leon_StellaParty,Leon,10_StellaParty/M_Leon_M10.png,FALSE,TRUE,FALSE,"Ah, the Storykeeper finally arrives. The hall has been waiting.",,,,,Stella Party,TRUE
+Event_Michael_StellaParty,Event_Michael_StellaParty,Michael,10_StellaParty/M_Michael_M10.png,FALSE,TRUE,FALSE,Good timing. Paths shift here-easy to get lost if you’re not anchored.,,,,,Stella Party,TRUE
+Event_Nick_StellaParty,Event_Nick_StellaParty,Nick,10_StellaParty/M_Nick_M10.png,FALSE,TRUE,FALSE,"A human guest? Fascinating. What’s your poison-ink, memory, or something stronger?",,,,,Stella Party,TRUE
+Event_Leymore_StellaParty,Event_Leymore_StellaParty,Leymore,10_StellaParty/M_Raymore_M10.png,FALSE,TRUE,FALSE,Your soul... it’s heavy with story ore. Want me to refine a bit of it?,,,,,Stella Party,TRUE
+Event_Rio_StellaParty,Event_Rio_StellaParty,Rio,10_StellaParty/M_Rio_M10.png,FALSE,TRUE,FALSE,You shine differently from the rest. Must be nice being alive.,,,,,Stella Party,TRUE
+Event_Samuel_StellaParty,Event_Samuel_StellaParty,Samuel,10_StellaParty/M_Samuel_M10.png,FALSE,TRUE,FALSE,Your story is still unfolding-your outfit should match that.,,,,,Stella Party,TRUE
+Event_Sebastian_StellaParty,Event_Sebastian_StellaParty,Sebastian,10_StellaParty/M_Sebastian_M10.png,FALSE,TRUE,FALSE,"ou smell like earth, rain, and... fate. Good sign.",,,,,Stella Party,TRUE
+Event_Vincent_StellaParty,Event_Vincent_StellaParty,Vincent,10_StellaParty/M_Vincent_M10.png,FALSE,TRUE,FALSE,“Relax. No hostile spirits nearby... yet.,"(""M_10_13"")",,,,Stella Party,TRUE
+Event_Angela_StellaParty,Event_Angela_StellaParty,Angela,10_StellaParty/G_Angela_M10_M10.png,FALSE,TRUE,FALSE,"Welcome, Storykeeper. Want a cup of light-roasted serenity?","(""M_10_8"")",,,,Stella Party,TRUE
+Event_Aria_StellaParty,Event_Aria_StellaParty,Aria,10_StellaParty/G_Aria_M10.png,FALSE,TRUE,FALSE,You crossed worlds to get here... impressive.,,,,,Stella Party,TRUE
+Event_Bella_StellaParty,Event_Bella_StellaParty,Bella,10_StellaParty/G_Bella_M10.png,FALSE,TRUE,FALSE,I can hear the rhythm around you.,,,,,Stella Party,TRUE
+Event_Camila_StellaParty,Event_Camila_StellaParty,Camila,10_StellaParty/G_Camila_M10.png,FALSE,TRUE,FALSE,"“If you have unfinished business, bring it to me. Even spirits appreciate good management.","(""M_10_4"")",,,,Stella Party,TRUE
+Event_Casandra_StellaParty,Event_Casandra_StellaParty,Casandra,10_StellaParty/G_Casandra_M10.png,FALSE,TRUE,FALSE,"Well, look who stepped out of reality. Need something reforged?","(""M_10_9"")",,,,Stella Party,TRUE
+Event_Celine_StellaParty,Event_Celine_StellaParty,Celine,10_StellaParty/G_Ceilne_M10.png,FALSE,TRUE,FALSE,You arrived safely-good. Many don’t handle the shift between worlds this smoothly.,,,,,Stella Party,TRUE
+Event_Emily_StellaParty,Event_Emily_StellaParty,Emily,10_StellaParty/G_Emily_M10.png,FALSE,TRUE,FALSE,Oh... you’re warm. Souls from outside usually feel cold. Interesting.,"(""M_10_7"")",,,,Stella Party,TRUE
+Event_Erica_StellaParty,Event_Erica_StellaParty,Erica,10_StellaParty/G_Erica_M10.png,FALSE,TRUE,FALSE,"You’re new here. Don’t worry, even spirits drift before finding their tide.",,,,,Stella Party,TRUE
+Event_Fiona_StellaParty,Event_Fiona_StellaParty,Fiona,10_StellaParty/G_Fiona_M10.png,FALSE,TRUE,FALSE,Oh! A real human? Lovely. Most of us here are... echoes.,,,,,Stella Party,TRUE
+Event_Halen_StellaParty,Event_Halen_StellaParty,Halen,10_StellaParty/G_Halen_M10.png,FALSE,TRUE,FALSE,Your presence has been logged.,,,,,Stella Party,TRUE
+Event_Iris_StellaParty,Event_Iris_StellaParty,Iris,10_StellaParty/G_Iris_M10.png,FALSE,TRUE,FALSE,You carry the scent of many stories...,,,,,Stella Party,TRUE
+Event_Ivy_StellaParty,Event_Ivy_StellaParty,Ivy,10_StellaParty/G_Ivy_M10.png,FALSE,TRUE,FALSE,Your aura is alive-how refreshing.,,,,,Stella Party,TRUE
+Event_Jenny_StellaParty,Event_Jenny_StellaParty,Jenny,10_StellaParty/G_Jenny_M10.png,FALSE,TRUE,FALSE,"Oh! A protagonist who isn’t confined by pages-rare, but delightful.",,,,,Stella Party,TRUE
+Event_Jocelyn_StellaParty,Event_Jocelyn_StellaParty,Jocelyn,10_StellaParty/G_Jocelyn_M10.png,FALSE,TRUE,FALSE,"Your thread isn’t from this realm... I can feel it. Lovely texture, though.",,,,,Stella Party,TRUE
+Event_Kelly_StellaParty,Event_Kelly_StellaParty,Kelly,10_StellaParty/G_Kelly_M10.png,FALSE,TRUE,FALSE,You’re alive?,,,,,Stella Party,TRUE
+Event_Kiri_StellaParty,Event_Kiri_StellaParty,Kiri,10_StellaParty/G_Kiri_M10.png,FALSE,TRUE,FALSE,Oh! Your spirit is fierce. I like that. Care for a quick spar?,,,,,Stella Party,TRUE
+Event_Lilis_StellaParty,Event_Lilis_StellaParty,Lilis,10_StellaParty/G_Lilis_M10.png,FALSE,TRUE,FALSE,You carry so many artifacts... I can almost hear them hum.,,,,,Stella Party,TRUE
+Event_Mia_StellaParty,Event_Mia_StellaParty,Mia,10_StellaParty/G_Mia_M10.png,FALSE,TRUE,FALSE,Oh... such vivid colors around you! Mortals are fun to look at.,,,,,Stella Party,TRUE
+Event_Nora_StellaParty,Event_Nora_StellaParty,Nora,10_StellaParty/G_Nora_M10.png,FALSE,TRUE,FALSE,"Smells like a living being wandered in. Don’t worry, I don’t cook humans.",,,,,Stella Party,TRUE
+Event_Reina_StellaParty,Event_Reina_StellaParty,Reina,10_StellaParty/G_Reina_M10.png,FALSE,TRUE,FALSE,"Oh! A fresh, warm face! Spirits get dull-let me admire you for a second.",,,,,Stella Party,TRUE
+Event_Syra_StellaParty,Event_Syra_StellaParty,Syra,10_StellaParty/G_Syra_M10.png,FALSE,TRUE,FALSE,"If the shifting realms hurt your head, tell me. I can soothe more than wounds.",,,,,Stella Party,TRUE
+Event_Vivian_StellaParty,Event_Vivian_StellaParty,Vivian,10_StellaParty/G_Vivian_M10.png,FALSE,TRUE,FALSE,Oh hey! A warm-blood in a cold hall. Stay close to the fire.,,,,,Stella Party,TRUE
