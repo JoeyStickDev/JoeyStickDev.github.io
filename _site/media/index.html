@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="active-nav">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="main-content page-media" style="padding-top: 100px; min-height: 80vh;">
+    <div style="max-width: 1200px; margin: 0 auto; display: block;">
+        
+        <div class="media-header" style="margin-bottom: 40px; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+                <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;"><span style="color: var(--accent-color);">미디어</span> 갤러리</h1>
+                <p style="color: var(--text-muted); font-size: 1.15rem;">Shards of the Library의 인게임 스크린샷과 팬아트를 확인하세요.</p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="btn-play-small" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: var(--text-main);">스팀 스크린샷 ↗</a>
+                <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" class="btn-play-small" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: var(--text-main);">스팀 아트워크 ↗</a>
+            </div>
+        </div>
+
+        <!-- 탭 네비게이션 -->
+        <div class="tabs" style="margin-bottom: 30px; display: flex; gap: 15px; justify-content: center;">
+            <button class="tab-btn active" data-target="tab-screenshots" style="font-size: 1.2rem; padding: 10px 40px; border-radius: 30px;">스크린샷</button>
+            <button class="tab-btn" data-target="tab-artwork" style="font-size: 1.2rem; padding: 10px 40px; border-radius: 30px;">아트워크</button>
+        </div>
+
+        <div class="tab-content-container">
+            <!-- 스크린샷 탭 -->
+            <div class="tab-content active" id="tab-screenshots">
+                <div class="media-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+                    
+                    <!-- 샘플 스크린샷 아이템 : 실제 스팀 이미지 주소와 링크 주소로 교체 가능 -->
+                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="media-card" style="display: block; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); transition: transform 0.3s;">
+                        <div class="media-img" style="height: 200px; background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3702320/capsule_616x353.jpg') center/cover;"></div>
+                        <div class="media-info" style="padding: 15px;">
+                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">도서관 전경</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">클릭하여 스팀 커뮤니티에서 보기</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="media-card" style="display: block; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); transition: transform 0.3s;">
+                        <div class="media-img" style="height: 200px; background: linear-gradient(45deg, var(--primary-color), #2c3e50);"></div>
+                        <div class="media-info" style="padding: 15px;">
+                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">플레이 스크린샷 2</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">클릭하여 스팀 커뮤니티에서 보기</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">스팀에서 더 많은 스크린샷 보기 +</a>
+                </div>
+            </div>
+
+            <!-- 아트워크 탭 -->
+            <div class="tab-content" id="tab-artwork">
+                <div class="media-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+                    
+                    <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" class="media-card" style="display: block; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); transition: transform 0.3s;">
+                        <div class="media-img" style="height: 200px; background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));"></div>
+                        <div class="media-info" style="padding: 15px;">
+                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">공식 컨셉 아트</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">클릭하여 스팀 커뮤니티에서 보기</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">스팀에서 더 많은 아트워크 보기 +</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<style>
+.media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-color: var(--accent-color);
+}
+.media-card:hover h3 {
+    color: var(--accent-color) !important;
+}
+.media-img {
+    transition: transform 0.5s ease;
+}
+.media-card:hover .media-img {
+    transform: scale(1.05); /* 약간의 줌인 효과 */
+}
+</style>
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "4916CAE74C7A5CF89236B3AFA8300F76", "Sealed Bottle"
+title: "4916CAE74C7A5CF89236B3AFA8300F76, Sealed Bottle"
 quest_id: "S_5_1"
 category: "sub-quests"
 ---

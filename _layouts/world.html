@@ -1,0 +1,153 @@
+---
+layout: default
+---
+
+<div class="world-container">
+    <div class="world-header">
+        <a href="{{ '/lorebook/world/' | relative_url }}" class="btn-back">← 세계관 목록으로</a>
+        <h1 class="world-article-title">{{ page.title }}</h1>
+        <div class="world-meta">
+            {% if page.category %}
+            <span class="world-tag">{{ page.category }}</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <article class="world-content">
+        {{ content }}
+    </article>
+
+    <div class="world-footer">
+        <div class="world-navigation">
+            <a href="{{ '/lorebook/world/' | relative_url }}" class="nav-btn-home">
+                <span class="nav-label">목록으로 돌아가기</span>
+                <span class="nav-title">세계관 및 배경</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+.world-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+    color: #e0e0e0;
+}
+
+.world-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 30px;
+}
+
+.btn-back {
+    display: inline-block;
+    color: #ffd700;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.btn-back:hover {
+    transform: translateX(-5px);
+}
+
+.world-article-title {
+    font-size: 3rem;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, #fff 0%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.world-tag {
+    background: rgba(255, 215, 0, 0.1);
+    color: #ffd700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.world-content {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    color: #bbb;
+}
+
+.world-content h2 {
+    color: #fff;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-family: 'Outfit', sans-serif;
+    border-left: 4px solid #ffd700;
+    padding-left: 15px;
+}
+
+.world-content h3 {
+    color: #ffd700;
+    margin-top: 2em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.world-content p {
+    margin-bottom: 1.6em;
+}
+
+.world-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2em 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.world-footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-btn-home {
+    display: block;
+    background: rgba(255,255,255,0.03);
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+}
+
+.nav-btn-home:hover {
+    background: rgba(255,215,0,0.08);
+    border-color: rgba(255,215,0,0.3);
+    transform: translateY(-5px);
+}
+
+.nav-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.nav-title {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .world-container { padding: 0 20px; }
+    .world-article-title { font-size: 2.2rem; }
+}
+</style>

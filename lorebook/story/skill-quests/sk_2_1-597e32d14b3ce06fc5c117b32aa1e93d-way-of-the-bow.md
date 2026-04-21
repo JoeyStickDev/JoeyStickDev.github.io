@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "597E32D14B3CE06FC5C117B32AA1E93D", "Way of the Bow"
+title: "597E32D14B3CE06FC5C117B32AA1E93D, Way of the Bow"
 quest_id: "SK_2_1"
 category: "skill-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "1B7C89A148974C714C92F5A40F3E40FC", "What Lies at the End of the Labyrinth?"
+title: "1B7C89A148974C714C92F5A40F3E40FC, What Lies at the End of the Labyrinth?"
 quest_id: "S_0_3"
 category: "sub-quests"
 ---

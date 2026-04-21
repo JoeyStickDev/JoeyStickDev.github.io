@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "5745448A4880977ACC5EE3A44843CA7C", "Will of the Flame"
+title: "5745448A4880977ACC5EE3A44843CA7C, Will of the Flame"
 quest_id: "SK_4_1"
 category: "skill-quests"
 ---

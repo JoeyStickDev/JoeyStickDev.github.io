@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "D94BC4D34DCCA37C7B7F1B8D42D547E3", "Firearm Authorization Test"
+title: "D94BC4D34DCCA37C7B7F1B8D42D547E3, Firearm Authorization Test"
 quest_id: "SK_2_4"
 category: "skill-quests"
 ---

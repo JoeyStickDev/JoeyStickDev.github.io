@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "1C63BEC144B839C7150E58BA1EFEF969", "The Libra’s Curse"
+title: "1C63BEC144B839C7150E58BA1EFEF969, The Libra’s Curse"
 quest_id: "S_8_2"
 category: "sub-quests"
 ---

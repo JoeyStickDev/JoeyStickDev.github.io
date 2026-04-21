@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "EE62A29444BADD72B0BEF8B420AA97BC", "Note in the Ground"
+title: "EE62A29444BADD72B0BEF8B420AA97BC, Note in the Ground"
 quest_id: "S_5_5"
 category: "sub-quests"
 ---

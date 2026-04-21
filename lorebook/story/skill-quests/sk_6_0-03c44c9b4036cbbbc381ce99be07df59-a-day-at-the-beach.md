@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "03C44C9B4036CBBBC381CE99BE07DF59", "A Day at the Beach"
+title: "03C44C9B4036CBBBC381CE99BE07DF59, A Day at the Beach"
 quest_id: "SK_6_0"
 category: "skill-quests"
 ---

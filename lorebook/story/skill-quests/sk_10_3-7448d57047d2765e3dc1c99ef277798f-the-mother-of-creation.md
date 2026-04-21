@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "7448D57047D2765E3DC1C99EF277798F", "The Mother of Creation"
+title: "7448D57047D2765E3DC1C99EF277798F, The Mother of Creation"
 quest_id: "SK_10_3"
 category: "skill-quests"
 ---

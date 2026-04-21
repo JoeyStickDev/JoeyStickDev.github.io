@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "CDA8ADD34EA6DDB20E94B29999787178", "Stock the Warehouse I"
+title: "CDA8ADD34EA6DDB20E94B29999787178, Stock the Warehouse I"
 quest_id: "S_6_3"
 category: "sub-quests"
 ---

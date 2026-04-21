@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "5A4D123D4DC2A990D2D6DEB263490846", "The Essential Meat"
+title: "5A4D123D4DC2A990D2D6DEB263490846, The Essential Meat"
 quest_id: "S_9_2"
 category: "sub-quests"
 ---

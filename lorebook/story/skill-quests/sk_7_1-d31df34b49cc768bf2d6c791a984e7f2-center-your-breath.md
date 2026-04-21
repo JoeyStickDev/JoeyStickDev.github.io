@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "D31DF34B49CC768BF2D6C791A984E7F2", "Center Your Breath"
+title: "D31DF34B49CC768BF2D6C791A984E7F2, Center Your Breath"
 quest_id: "SK_7_1"
 category: "skill-quests"
 ---

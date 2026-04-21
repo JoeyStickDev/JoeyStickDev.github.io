@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "B7C633404E13E6547B786395F3CE3E6B", "Fresh Appetizer"
+title: "B7C633404E13E6547B786395F3CE3E6B, Fresh Appetizer"
 quest_id: "S_9_1"
 category: "sub-quests"
 ---

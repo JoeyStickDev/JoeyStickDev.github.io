@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "497EC7D444F86A5EDF3B1C8058A9E528", "A Contribution for the Village"
+title: "497EC7D444F86A5EDF3B1C8058A9E528, A Contribution for the Village"
 quest_id: "S_0_4"
 category: "sub-quests"
 ---

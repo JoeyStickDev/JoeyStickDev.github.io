@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "5A95214A4BDDBBBE1E4D66B73CD46B0A", "The Rumored Ghost"
+title: "5A95214A4BDDBBBE1E4D66B73CD46B0A, The Rumored Ghost"
 quest_id: "S_11_2"
 category: "sub-quests"
 ---

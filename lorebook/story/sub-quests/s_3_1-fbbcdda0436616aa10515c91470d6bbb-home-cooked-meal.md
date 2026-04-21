@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "FBBCDDA0436616AA10515C91470D6BBB", "Home Cooked Meal"
+title: "FBBCDDA0436616AA10515C91470D6BBB, Home Cooked Meal"
 quest_id: "S_3_1"
 category: "sub-quests"
 ---

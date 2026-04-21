@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "F02B8E4B44E099301AB676A442DA35E2", "Flow of the Constellations"
+title: "F02B8E4B44E099301AB676A442DA35E2, Flow of the Constellations"
 quest_id: "SK_17_0"
 category: "skill-quests"
 ---

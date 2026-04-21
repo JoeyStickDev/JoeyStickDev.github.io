@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "CAC6BE0C4B59BBE316B016ABEA4E4B46", "Finding the Truth"
+title: "CAC6BE0C4B59BBE316B016ABEA4E4B46, Finding the Truth"
 quest_id: "S_5_8"
 category: "sub-quests"
 ---

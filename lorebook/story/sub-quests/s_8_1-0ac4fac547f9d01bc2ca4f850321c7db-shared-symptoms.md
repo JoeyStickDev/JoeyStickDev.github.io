@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "0AC4FAC547F9D01BC2CA4F850321C7DB", "Shared Symptoms"
+title: "0AC4FAC547F9D01BC2CA4F850321C7DB, Shared Symptoms"
 quest_id: "S_8_1"
 category: "sub-quests"
 ---

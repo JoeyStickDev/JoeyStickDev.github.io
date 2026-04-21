@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "67D22F4246E2D6E1B17CB1AC92219A36", "Fire Safety, Always and Forever"
+title: "67D22F4246E2D6E1B17CB1AC92219A36, Fire Safety, Always and Forever"
 quest_id: "SK_4_0"
 category: "skill-quests"
 ---

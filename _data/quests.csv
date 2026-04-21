@@ -219,17 +219,17 @@ M_14_5,M_14_5,Talking,Blurred Consciousness,(),0,2000,"(""M_14_4"")",메인
 M_14_6,M_14_6,Explore,A Vivid Dream,(),0,2000,"(""M_14_5"")",메인
 M_14_7,M_14_7,Talking,Resonance of the Soul,(),0,2000,"(""M_14_6"")",메인
 M_14_8,M_14_8,Explore,A Moment of Choice,(),0,2000,"(""M_14_7"")",메인
-M_14_9,M_14_,Talking,Essence of Blood,(),0,2000,"(""M_14_8"")",서브
-M_14_10,M_14_,Talking,The Experience of Humanity,(),0,2000,"(""M_14_9"")",서브
-M_14_11,M_14_,Talking,A Toast to a New Beginning,(),0,2000,"(""M_14_10"")",서브
-M_14_12,M_14_,Talking,Feast of Reconciliation,(),0,2000,"(""M_14_11"")",서브
-M_14_13,M_14_,Talking,The Returning Meteor,(),0,2000,"(""M_14_12"")",서브
+M_14_9,M_14_,Talking,Essence of Blood,(),0,2000,"(""M_14_8"")",메인
+M_14_10,M_14_,Talking,The Experience of Humanity,(),0,2000,"(""M_14_9"")",메인
+M_14_11,M_14_,Talking,A Toast to a New Beginning,(),0,2000,"(""M_14_10"")",메인
+M_14_12,M_14_,Talking,Feast of Reconciliation,(),0,2000,"(""M_14_11"")",메인
+M_14_13,M_14_,Talking,The Returning Meteor,(),0,2000,"(""M_14_12"")",메인
 M_15_0,M_15_0,Explore,A Strange Frequency,(),0,2000,"(""M_14_13"")",메인
-M_15_1,M_15_,Talking,A Peculiar Relic,(),0,2000,"(""M_15_"")",서브
+M_15_1,M_15_,Talking,A Peculiar Relic,(),0,2000,"(""M_15_"")",메인
 M_15_2,M_15_2,Talking,A Peculiar Relic,(),0,2000,"(""M_15_1"")",메인
 M_15_3,M_15_3,Talking,Ancient and Modern,(),0,2000,"(""M_15_2"")",메인
-M_15_4,M_15_,Talking,A Familiar Blueprint,(),0,2000,"(""M_15_"")",서브
-M_15_5,M_15_,Talking,Memory Extraction Device,(),0,2000,"(""M_15_"")",서브
+M_15_4,M_15_,Talking,A Familiar Blueprint,(),0,2000,"(""M_15_"")",메인
+M_15_5,M_15_,Talking,Memory Extraction Device,(),0,2000,"(""M_15_"")",메인
 M_15_6,M_15_6,Talking,Transmission,(),0,2000,"(""M_15_5"")",메인
 M_15_7,M_15_7,Talking,The Cost of Memory,(),0,2000,"(""M_15_6"")",메인
 M_15_8,M_15_8,Delivery,Reset,(),0,2000,"(""M_15_7"")",메인
@@ -252,8 +252,8 @@ M_17_3,M_17_3,Talking,The Crow’s Path,(),0,2000,"(""M_17_2"")",메인
 M_17_4,M_17_4,Talking,Two Feathers,(),0,2000,"(""M_17_3"")",메인
 M_17_5,M_17_5,Talking,Shadow Doppelgänger,(),0,2000,"(""M_17_4"")",메인
 M_17_6,M_17_4,Talking,The Ojakgyo,(),0,2000,"(""M_17_5"")",메인
-M_17_7,M_17_,Collect,Everywhere Yet Nowhere,(),0,2000,"(""M_17_"")",서브
-M_17_8,M_17_,Talking,The Recorder,(),0,2000,"(""M_17_"")",서브
+M_17_7,M_17_,Collect,Everywhere Yet Nowhere,(),0,2000,"(""M_17_"")",메인
+M_17_8,M_17_,Talking,The Recorder,(),0,2000,"(""M_17_"")",메인
 M_17_9,M_17_9,Talking,Collapse of the Worldline,(),0,2000,"(""M_17_8"")",메인
 M_18_0,M_18_0,Talking,Twisting the Story,(),0,2000,"(""M_17_9"")",메인
 M_18_1,M_18_1,Talking,Searching for an Old Tale,(),0,2000,"(""M_18_0"")",메인
@@ -271,167 +271,167 @@ M_19_1,M_19_1,Talking,Recognition of the True Self,(),0,2000,"(""M_19_0"")",메�
 M_19_2,M_19_2,Talking,A New Divinity,(),0,2000,"(""M_19_1"")",메인
 M_19_3,M_19_3,Talking,Storykeeper and Recorder,(),0,2000,"(""M_19_2"")",메인
 M_19_4,M_19_4,Talking,Beyond the Void,(),0,2000,"(""M_19_3"")",메인
-M_20_0,M_20_,Collect,A Message from Nowhere,(),0,2000,"(""M_20_"")",서브
-M_20_1,M_20_,Collect,Into the Silent Gap,(),0,2000,"(""M_20_"")",서브
-M_20_2,M_20_,Collect,The One Who Returned,(),0,2000,"(""M_20_"")",서브
-M_20_3,M_20_,Collect,Footprints of Chronos,(),0,2000,"(""M_20_"")",서브
-M_20_4,M_20_,Collect,The Compass That Trembles,(),0,2000,"(""M_20_"")",서브
-M_20_5,M_20_,Collect,Shards of Reflection,(),0,2000,"(""M_20_"")",서브
-M_20_6,M_20_,Collect,Memory in His Hand,(),0,2000,"(""M_20_"")",서브
-M_20_7,M_20_,Collect,Return to the Chronos,(),0,2000,"(""M_20_"")",서브
-M_20_8,M_20_,Collect,The Captain’s Suspicion,(),0,2000,"(""M_20_"")",서브
-M_20_9,M_20_,Collect,The Hidden Chamber,(),0,2000,"(""M_20_"")",서브
-M_21_0,M_21_,Collect,The Captain’s Examination,(),0,2000,"(""M_21_"")",서브
-M_21_1,M_21_,Collect,Resonance Ignited,(),0,2000,"(""M_21_"")",서브
-M_21_2,M_21_,Collect,Log of a Forgotten Voyage,(),0,2000,"(""M_21_"")",서브
-M_21_3,M_21_,Collect,A Question of Origin,(),0,2000,"(""M_21_"")",서브
-M_21_4,M_21_,Collect,The Compass Points… Elsewhere,(),0,2000,"(""M_21_"")",서브
-M_21_5,M_21_,Collect,Ascend to Stella Party,(),0,2000,"(""M_21_"")",서브
-M_21_6,M_21_,Collect,The Librarian’s Silence,(),0,2000,"(""M_21_"")",서브
-M_21_7,M_21_,Collect,"Sean answers briefly, “Every window is opened for someone.”",(),0,2000,"(""M_21_"")",서브
-M_21_8,M_21_,Collect,Words That Shouldn’t Exist,(),0,2000,"(""M_21_"")",서브
-M_21_9,M_21_,Collect,The Name Beneath Time,(),0,2000,"(""M_21_"")",서브
-M_22_0,M_22_,Collect,Dust Between the Pages,(),0,2000,"(""M_22_"")",서브
-M_22_1,M_22_,Collect,The Rewritten Childhood,(),0,2000,"(""M_22_"")",서브
-M_22_2,M_22_,Collect,Sean’s Unease,(),0,2000,"(""M_22_"")",서브
-M_22_3,M_22_,Collect,Dan’s Fragment,(),0,2000,"(""M_22_"")",서브
-M_22_4,M_22_,Collect,The Hollow Grandfather,(),0,2000,"(""M_22_"")",서브
-M_22_5,M_22_,Collect,Echo of an Architect,(),0,2000,"(""M_22_"")",서브
-M_22_6,M_22_,Collect,Mirror of the Self,(),0,2000,"(""M_22_"")",서브
-M_22_7,M_22_,Collect,Cracks in the Timeline,(),0,2000,"(""M_22_"")",서브
-M_22_8,M_22_,Collect,A Story That Designed You,(),0,2000,"(""M_22_"")",서브
-M_22_9,M_22_,Collect,The Question Unanswered,(),0,2000,"(""M_22_"")",서브
-M_23_0,M_23_,Collect,Return to Winter,(),0,2000,"(""M_23_"")",서브
-M_23_1,M_23_,Collect,The Season That Shouldn’t Be,(),0,2000,"(""M_23_"")",서브
-M_23_2,M_23_,Collect,Voice of the Ice Spirit,(),0,2000,"(""M_23_"")",서브
-M_23_3,M_23_,Collect,Fracture of Summer,(),0,2000,"(""M_23_"")",서브
-M_23_4,M_23_,Collect,Witnesses Above,(),0,2000,"(""M_23_"")",서브
-M_23_5,M_23_,Collect,The Watchers Speak,(),0,2000,"(""M_23_"")",서브
-M_23_6,M_23_,Collect,The Flow Resumes,(),0,2000,"(""M_23_"")",서브
-M_23_7,M_23_,Collect,The Compass Awakens,(),0,2000,"(""M_23_"")",서브
-M_23_8,M_23_,Collect,The First Disturbance,(),0,2000,"(""M_23_"")",서브
-M_23_9,M_23_,Collect,Chronos Remembered,(),0,2000,"(""M_23_"")",서브
-M_24_0,M_23_,Collect,Before the Mirror,(),0,2000,"(""M_23_"")",서브
-M_24_1,M_23_,Collect,Distorted Reflection,(),0,2000,"(""M_23_"")",서브
-M_24_2,M_23_,Collect,Words of Joey,(),0,2000,"(""M_23_"")",서브
-M_24_3,M_23_,Collect,“We Are Being Read”,(),0,2000,"(""M_23_"")",서브
-M_24_4,M_23_,Collect,The Silent Audience,(),0,2000,"(""M_23_"")",서브
-M_24_5,M_23_,Collect,Pages That Breathe,(),0,2000,"(""M_23_"")",서브
-M_24_6,M_23_,Collect,A Compass Without North,(),0,2000,"(""M_23_"")",서브
-M_24_7,M_23_,Collect,Joey’s Realization,(),0,2000,"(""M_23_"")",서브
-M_24_8,M_23_,Collect,Archive of Design,(),0,2000,"(""M_23_"")",서브
-M_24_9,M_23_,Collect,The Weight of Watching,(),0,2000,"(""M_23_"")",서브
-M_25_0,M_24_,Collect,A World Without Pain,(),0,2000,"(""M_24_"")",서브
-M_25_1,M_24_,Collect,Frozen Utopia,(),0,2000,"(""M_24_"")",서브
-M_25_2,M_24_,Collect,Stillness That Suffocates,(),0,2000,"(""M_24_"")",서브
-M_25_3,M_24_,Collect,The Immortal Pause,(),0,2000,"(""M_24_"")",서브
-M_25_4,M_24_,Collect,Echoes of Absence,(),0,2000,"(""M_24_"")",서브
-M_25_5,M_24_,Collect,The Price of Perfection,(),0,2000,"(""M_24_"")",서브
-M_25_6,M_24_,Collect,Joey’s Doubt,(),0,2000,"(""M_24_"")",서브
-M_25_7,M_24_,Collect,Cracks in the Ideal,(),0,2000,"(""M_24_"")",서브
-M_25_8,M_24_,Collect,Blueprint of Stillness,(),0,2000,"(""M_24_"")",서브
-M_25_9,M_24_,Collect,Would You Choose This?,(),0,2000,"(""M_24_"")",서브
-M_26_0,M_26_,Collect,Traces of the Designer,(),0,2000,"(""M_26_"")",서브
-M_26_1,M_26_,Collect,The Librarians’ Confession,(),0,2000,"(""M_26_"")",서브
-M_26_2,M_26_,Collect,“You Made This World”,(),0,2000,"(""M_26_"")",서브
-M_26_3,M_26_,Collect,Compass Locked Forward,(),0,2000,"(""M_26_"")",서브
-M_26_4,M_26_,Collect,The Mirror Restored,(),0,2000,"(""M_26_"")",서브
-M_26_5,M_26_,Collect,Reflection of the Reader,(),0,2000,"(""M_26_"")",서브
-M_26_6,M_26_,Collect,Joey’s Awakening,(),0,2000,"(""M_26_"")",서브
-M_26_7,M_26_,Collect,The Final Page Approaches,(),0,2000,"(""M_26_"")",서브
-M_26_8,M_26_,Collect,The Unwritten Ending,(),0,2000,"(""M_26_"")",서브
-M_26_9,M_26_,Collect,Ready to Close the Book,(),0,2000,"(""M_26_"")",서브
-M_27_0,M_27_,Collect,A Quiet Conversation,(),0,2000,"(""M_27_"")",서브
-M_27_1,M_27_,Collect,Return to Stella Party,(),0,2000,"(""M_27_"")",서브
-M_27_2,M_27_,Collect,Farewell Among Stars,(),0,2000,"(""M_27_"")",서브
-M_27_3,M_27_,Collect,Twelve Shards Gathered,(),0,2000,"(""M_27_"")",서브
-M_27_4,M_27_,Collect,A completed storybook takes physical form.,(),0,2000,"(""M_27_"")",서브
-M_27_5,M_27_,Collect,The Book Complete,(),0,2000,"(""M_27_"")",서브
-M_27_6,M_27_,Collect,Ink in the Air,(),0,2000,"(""M_27_"")",서브
-M_27_7,M_27_,Collect,The Compass Falls Silent,(),0,2000,"(""M_27_"")",서브
-M_27_8,M_27_,Collect,The Cover Descends,(),0,2000,"(""M_27_"")",서브
-M_27_9,M_27_,Collect,Until You Open It Again,(),0,2000,"(""M_27_"")",서브
-M_28_0,M_28_,Collect,The Final Question,(),0,2000,"(""M_28_"")",서브
-M_28_1,M_28_,Collect,Walk into the Void,(),0,2000,"(""M_28_"")",서브
-M_28_2,M_28_,Collect,Words Unrecorded,(),0,2000,"(""M_28_"")",서브
-M_28_3,M_28_,Collect,The Stars Dim,(),0,2000,"(""M_28_"")",서브
-M_28_4,M_28_,Collect,A Fragment Left Behind,(),0,2000,"(""M_28_"")",서브
-M_28_5,M_28_,Collect,The Recorder’s Distance,(),0,2000,"(""M_28_"")",서브
-M_28_6,M_28_,Collect,The Disappearing Name,(),0,2000,"(""M_28_"")",서브
-M_28_7,M_28_,Collect,A World Left Behind,(),0,2000,"(""M_28_"")",서브
-M_29_0,M_29_,Collect,Return to the Library,(),0,2000,"(""M_29_"")",서브
-M_29_1,M_29_,Collect,A Quiet Hall,(),0,2000,"(""M_29_"")",서브
-M_29_2,M_29_,Collect,Sean’s Gentle Nod,(),0,2000,"(""M_29_"")",서브
-M_29_3,M_29_,Collect,Dan’s Last Line,(),0,2000,"(""M_29_"")",서브
-M_29_4,M_29_,Collect,The Unmoving Mirror,(),0,2000,"(""M_29_"")",서브
-M_29_5,M_29_,Collect,The Resting Compass,(),0,2000,"(""M_29_"")",서브
-M_29_6,M_29_,Collect,Trace of a Recorder,(),0,2000,"(""M_29_"")",서브
-M_29_7,M_29_,Collect,A Voice in the Margins,(),0,2000,"(""M_29_"")",서브
-M_29_8,M_29_,Collect,“Think of Us Sometimes.”,(),0,2000,"(""M_29_"")",서브
-M_29_9,M_29_,Collect,Free to Read Again,(),0,2000,"(""M_29_"")",서브
+M_20_0,M_20_,Collect,A Message from Nowhere,(),0,2000,"(""M_20_"")",메인
+M_20_1,M_20_,Collect,Into the Silent Gap,(),0,2000,"(""M_20_"")",메인
+M_20_2,M_20_,Collect,The One Who Returned,(),0,2000,"(""M_20_"")",메인
+M_20_3,M_20_,Collect,Footprints of Chronos,(),0,2000,"(""M_20_"")",메인
+M_20_4,M_20_,Collect,The Compass That Trembles,(),0,2000,"(""M_20_"")",메인
+M_20_5,M_20_,Collect,Shards of Reflection,(),0,2000,"(""M_20_"")",메인
+M_20_6,M_20_,Collect,Memory in His Hand,(),0,2000,"(""M_20_"")",메인
+M_20_7,M_20_,Collect,Return to the Chronos,(),0,2000,"(""M_20_"")",메인
+M_20_8,M_20_,Collect,The Captain’s Suspicion,(),0,2000,"(""M_20_"")",메인
+M_20_9,M_20_,Collect,The Hidden Chamber,(),0,2000,"(""M_20_"")",메인
+M_21_0,M_21_,Collect,The Captain’s Examination,(),0,2000,"(""M_21_"")",메인
+M_21_1,M_21_,Collect,Resonance Ignited,(),0,2000,"(""M_21_"")",메인
+M_21_2,M_21_,Collect,Log of a Forgotten Voyage,(),0,2000,"(""M_21_"")",메인
+M_21_3,M_21_,Collect,A Question of Origin,(),0,2000,"(""M_21_"")",메인
+M_21_4,M_21_,Collect,The Compass Points… Elsewhere,(),0,2000,"(""M_21_"")",메인
+M_21_5,M_21_,Collect,Ascend to Stella Party,(),0,2000,"(""M_21_"")",메인
+M_21_6,M_21_,Collect,The Librarian’s Silence,(),0,2000,"(""M_21_"")",메인
+M_21_7,M_21_,Collect,"Sean answers briefly, “Every window is opened for someone.”",(),0,2000,"(""M_21_"")",메인
+M_21_8,M_21_,Collect,Words That Shouldn’t Exist,(),0,2000,"(""M_21_"")",메인
+M_21_9,M_21_,Collect,The Name Beneath Time,(),0,2000,"(""M_21_"")",메인
+M_22_0,M_22_,Collect,Dust Between the Pages,(),0,2000,"(""M_22_"")",메인
+M_22_1,M_22_,Collect,The Rewritten Childhood,(),0,2000,"(""M_22_"")",메인
+M_22_2,M_22_,Collect,Sean’s Unease,(),0,2000,"(""M_22_"")",메인
+M_22_3,M_22_,Collect,Dan’s Fragment,(),0,2000,"(""M_22_"")",메인
+M_22_4,M_22_,Collect,The Hollow Grandfather,(),0,2000,"(""M_22_"")",메인
+M_22_5,M_22_,Collect,Echo of an Architect,(),0,2000,"(""M_22_"")",메인
+M_22_6,M_22_,Collect,Mirror of the Self,(),0,2000,"(""M_22_"")",메인
+M_22_7,M_22_,Collect,Cracks in the Timeline,(),0,2000,"(""M_22_"")",메인
+M_22_8,M_22_,Collect,A Story That Designed You,(),0,2000,"(""M_22_"")",메인
+M_22_9,M_22_,Collect,The Question Unanswered,(),0,2000,"(""M_22_"")",메인
+M_23_0,M_23_,Collect,Return to Winter,(),0,2000,"(""M_23_"")",메인
+M_23_1,M_23_,Collect,The Season That Shouldn’t Be,(),0,2000,"(""M_23_"")",메인
+M_23_2,M_23_,Collect,Voice of the Ice Spirit,(),0,2000,"(""M_23_"")",메인
+M_23_3,M_23_,Collect,Fracture of Summer,(),0,2000,"(""M_23_"")",메인
+M_23_4,M_23_,Collect,Witnesses Above,(),0,2000,"(""M_23_"")",메인
+M_23_5,M_23_,Collect,The Watchers Speak,(),0,2000,"(""M_23_"")",메인
+M_23_6,M_23_,Collect,The Flow Resumes,(),0,2000,"(""M_23_"")",메인
+M_23_7,M_23_,Collect,The Compass Awakens,(),0,2000,"(""M_23_"")",메인
+M_23_8,M_23_,Collect,The First Disturbance,(),0,2000,"(""M_23_"")",메인
+M_23_9,M_23_,Collect,Chronos Remembered,(),0,2000,"(""M_23_"")",메인
+M_24_0,M_23_,Collect,Before the Mirror,(),0,2000,"(""M_23_"")",메인
+M_24_1,M_23_,Collect,Distorted Reflection,(),0,2000,"(""M_23_"")",메인
+M_24_2,M_23_,Collect,Words of Joey,(),0,2000,"(""M_23_"")",메인
+M_24_3,M_23_,Collect,“We Are Being Read”,(),0,2000,"(""M_23_"")",메인
+M_24_4,M_23_,Collect,The Silent Audience,(),0,2000,"(""M_23_"")",메인
+M_24_5,M_23_,Collect,Pages That Breathe,(),0,2000,"(""M_23_"")",메인
+M_24_6,M_23_,Collect,A Compass Without North,(),0,2000,"(""M_23_"")",메인
+M_24_7,M_23_,Collect,Joey’s Realization,(),0,2000,"(""M_23_"")",메인
+M_24_8,M_23_,Collect,Archive of Design,(),0,2000,"(""M_23_"")",메인
+M_24_9,M_23_,Collect,The Weight of Watching,(),0,2000,"(""M_23_"")",메인
+M_25_0,M_24_,Collect,A World Without Pain,(),0,2000,"(""M_24_"")",메인
+M_25_1,M_24_,Collect,Frozen Utopia,(),0,2000,"(""M_24_"")",메인
+M_25_2,M_24_,Collect,Stillness That Suffocates,(),0,2000,"(""M_24_"")",메인
+M_25_3,M_24_,Collect,The Immortal Pause,(),0,2000,"(""M_24_"")",메인
+M_25_4,M_24_,Collect,Echoes of Absence,(),0,2000,"(""M_24_"")",메인
+M_25_5,M_24_,Collect,The Price of Perfection,(),0,2000,"(""M_24_"")",메인
+M_25_6,M_24_,Collect,Joey’s Doubt,(),0,2000,"(""M_24_"")",메인
+M_25_7,M_24_,Collect,Cracks in the Ideal,(),0,2000,"(""M_24_"")",메인
+M_25_8,M_24_,Collect,Blueprint of Stillness,(),0,2000,"(""M_24_"")",메인
+M_25_9,M_24_,Collect,Would You Choose This?,(),0,2000,"(""M_24_"")",메인
+M_26_0,M_26_,Collect,Traces of the Designer,(),0,2000,"(""M_26_"")",메인
+M_26_1,M_26_,Collect,The Librarians’ Confession,(),0,2000,"(""M_26_"")",메인
+M_26_2,M_26_,Collect,“You Made This World”,(),0,2000,"(""M_26_"")",메인
+M_26_3,M_26_,Collect,Compass Locked Forward,(),0,2000,"(""M_26_"")",메인
+M_26_4,M_26_,Collect,The Mirror Restored,(),0,2000,"(""M_26_"")",메인
+M_26_5,M_26_,Collect,Reflection of the Reader,(),0,2000,"(""M_26_"")",메인
+M_26_6,M_26_,Collect,Joey’s Awakening,(),0,2000,"(""M_26_"")",메인
+M_26_7,M_26_,Collect,The Final Page Approaches,(),0,2000,"(""M_26_"")",메인
+M_26_8,M_26_,Collect,The Unwritten Ending,(),0,2000,"(""M_26_"")",메인
+M_26_9,M_26_,Collect,Ready to Close the Book,(),0,2000,"(""M_26_"")",메인
+M_27_0,M_27_,Collect,A Quiet Conversation,(),0,2000,"(""M_27_"")",메인
+M_27_1,M_27_,Collect,Return to Stella Party,(),0,2000,"(""M_27_"")",메인
+M_27_2,M_27_,Collect,Farewell Among Stars,(),0,2000,"(""M_27_"")",메인
+M_27_3,M_27_,Collect,Twelve Shards Gathered,(),0,2000,"(""M_27_"")",메인
+M_27_4,M_27_,Collect,A completed storybook takes physical form.,(),0,2000,"(""M_27_"")",메인
+M_27_5,M_27_,Collect,The Book Complete,(),0,2000,"(""M_27_"")",메인
+M_27_6,M_27_,Collect,Ink in the Air,(),0,2000,"(""M_27_"")",메인
+M_27_7,M_27_,Collect,The Compass Falls Silent,(),0,2000,"(""M_27_"")",메인
+M_27_8,M_27_,Collect,The Cover Descends,(),0,2000,"(""M_27_"")",메인
+M_27_9,M_27_,Collect,Until You Open It Again,(),0,2000,"(""M_27_"")",메인
+M_28_0,M_28_,Collect,The Final Question,(),0,2000,"(""M_28_"")",메인
+M_28_1,M_28_,Collect,Walk into the Void,(),0,2000,"(""M_28_"")",메인
+M_28_2,M_28_,Collect,Words Unrecorded,(),0,2000,"(""M_28_"")",메인
+M_28_3,M_28_,Collect,The Stars Dim,(),0,2000,"(""M_28_"")",메인
+M_28_4,M_28_,Collect,A Fragment Left Behind,(),0,2000,"(""M_28_"")",메인
+M_28_5,M_28_,Collect,The Recorder’s Distance,(),0,2000,"(""M_28_"")",메인
+M_28_6,M_28_,Collect,The Disappearing Name,(),0,2000,"(""M_28_"")",메인
+M_28_7,M_28_,Collect,A World Left Behind,(),0,2000,"(""M_28_"")",메인
+M_29_0,M_29_,Collect,Return to the Library,(),0,2000,"(""M_29_"")",메인
+M_29_1,M_29_,Collect,A Quiet Hall,(),0,2000,"(""M_29_"")",메인
+M_29_2,M_29_,Collect,Sean’s Gentle Nod,(),0,2000,"(""M_29_"")",메인
+M_29_3,M_29_,Collect,Dan’s Last Line,(),0,2000,"(""M_29_"")",메인
+M_29_4,M_29_,Collect,The Unmoving Mirror,(),0,2000,"(""M_29_"")",메인
+M_29_5,M_29_,Collect,The Resting Compass,(),0,2000,"(""M_29_"")",메인
+M_29_6,M_29_,Collect,Trace of a Recorder,(),0,2000,"(""M_29_"")",메인
+M_29_7,M_29_,Collect,A Voice in the Margins,(),0,2000,"(""M_29_"")",메인
+M_29_8,M_29_,Collect,“Think of Us Sometimes.”,(),0,2000,"(""M_29_"")",메인
+M_29_9,M_29_,Collect,Free to Read Again,(),0,2000,"(""M_29_"")",메인
 M_29_EX_0,M_29_EX_,Collect,A Flicker in the Menu,(),0,0,"(""M_29_EX_"")",메인서브
 M_29_EX_1,M_29_EX_,Collect,Collect the System Fragments,(),0,0,"(""M_29_EX_"")",메인서브
 M_29_EX_2,M_29_EX_,Collect,Interface Room,(),0,0,"(""M_29_EX_"")",메인서브
 M_29_EX_3,M_29_EX_,Collect,System Shutdown,(),0,0,"(""M_29_EX_"")",메인서브
 M_29_EX_4,M_29_EX_,Collect,The Last Window,(),0,0,"(""M_29_EX_"")",메인서브
 M_29_EX_5,M_29_EX_,Collect,Manual Close,(),0,0,"(""M_29_EX_"")",메인서브
-SK_0_0,SK_0_0,Explore,Achieve Blacksmith,(),0,500,,서브
-SK_0_1,SK_0_1,Talking,News from Fergus,(),0,500,"(""SK_0_0"")",서브
-SK_0_2,SK_0_2,Collect,Hammer Upgrade,"((""Quest_SK0_Hammer"", 1),(""Material_Gem_Diamond"", 1))",0,500,"(""SK_0_1"")",서브
-SK_0_3,SK_0_3,Explore,Enhance,(),0,500,"(""SK_0_2"")",서브
-SK_1_0,SK_1_0,Explore,New Friend,(),0,100,,서브
-SK_1_1,SK_1_1,Collect,Faster Than the Eye,(),0,100,"(""SK_1_0"")",서브
-SK_1_2,SK_1_2,Collect,Fresh Milk,(),0,100,"(""SK_1_1"")",서브
-SK_2_0,SK_2_0,Kill,Outside Joivillage Is Dangerous,(),100,500,,서브
-SK_2_1,SK_2_1,Kill,Way of the Bow,(),100,500,"(""SK_2_0"")",서브
-SK_2_2,SK_2_2,Talking,If You’re Interested in Guns,(),0,100,"(""SK_2_1"")",서브
-SK_2_3,SK_2_3,Talking,You’ll Need Authorization,(),100,500,"(""SK_2_2"")",서브
-SK_2_4,SK_2_4,Kill,Firearm Authorization Test,(),100,500,"(""SK_2_3"")",서브
-SK_2_5,SK_2_5,Talking,Show the License,(),100,500,"(""SK_2_4"")",서브
-SK_2_6,SK_2_6,Kill,The Real Hunter’s Trial,(),100,500,"(""SK_2_5"")",서브
-SK_3_0,SK_3_0,Talking,The Start of Combat Training,(),0,100,"(""SK_2_6"")",서브
-SK_3_1,SK_3_1,Explore,The Start of Combat Training,(),0,1000,"(""SK_3_0"")",서브
-SK_3_2,SK_3_2,Talking,Meeting Aria,(),0,100,"(""SK_3_1"")",서브
-SK_3_3,SK_3_3,Explore,The Start of dodge Training,(),0,1000,"(""SK_3_2"")",서브
-SK_4_0,SK_4_0,Collect,"Fire Safety, Always and Forever",(),500,500,,서브
-SK_4_1,SK_4_1,Explore,Will of the Flame,(),0,100,"(""SK_4_0"")",서브
-SK_5_0,SK_5_0,Kill,Crabby Trouble at the Shore,(),5000,5000,,서브
-SK_5_1,SK_5_1,Talking,A Slight Mishap,(),0,100,"(""SK_5_0"")",서브
-SK_5_2,SK_5_2,Collect,First Aid,(),0,100,"(""SK_5_1"")",서브
-SK_6_0,SK_6_0,Collect,A Day at the Beach,(),1000,1000,,서브
-SK_6_1,SK_6_1,Explore,Golden Hour,(),0,100,"(""SK_6_0"")",서브
-SK_7_0,SK_7_0,Collect,Warm Your Mind,(),0,5000,,서브
-SK_7_1,SK_7_1,Explore,Center Your Breath,(),0,5000,"(""SK_7_0"")",서브
-SK_8_0,SK_8_0,Explore,The Final Combat Training,(),0,100,"(""SK_3_3"")",서브
-SK_8_1,SK_8_1,Collect,Quick Recovery,(),0,100,"(""SK_8_0"")",서브
-SK_9_0,SK_9_0,Explore,Beginning of Sound,(),0,100,,서브
-SK_9_1,SK_9_1,Collect,Birth of a Melody,(),0,100,"(""SK_9_0"")",서브
-SK_10_0,SK_10_0,Talking,The Beginning of Creation,(),0,100,,서브
-SK_10_1,SK_10_1,Talking,The Struggle of Creation,(),0,100,"(""SK_10_0"")",서브
-SK_10_2,SK_10_2,Collect,The Father of Creation,"((""Material_Paint"", 1))",0,100,"(""SK_10_1"")",서브
-SK_10_3,SK_10_3,Collect,The Mother of Creation,(),0,100,"(""SK_10_2"")",서브
-SK_10_4,SK_10_4,Collect,A Tale Well Told,(),0,100,"(""SK_10_3"")",서브
-SK_11_0,SK_11_0,Collect,Nature\'s Gift,(),0,100,,서브
-SK_11_1,SK_11_1,Collect,Herbal Studies,(),0,100,"(""SK_11_0"")",서브
-SK_12_0,SK_12_0,Explore,Toward Adventure,(),0,100,,서브
-SK_12_1,SK_12_1,Collect,Relic Appraisal,(),0,100,,서브
-SK_12_2,SK_12_2,Collect,Unexpected Fortune,(),0,100,,서브
-SK_13_0,SK_13_0,Explore,Road Driving Practice,(),0,100,,서브
-SK_13_1,SK_13_1,Explore,Real Training,(),0,100,"(""SK_13_0"")",서브
-SK_14_0,SK_14_0,Collect,Potion Research,"((""Potion_Experimental"", 1))",0,100,,서브
-SK_14_1,SK_14_1,Use,Clinical Trial,(),0,100,"(""SK_14_0"")",서브
-SK_14_2,SK_14_2,Collect,Side Effects,(),0,100,"(""SK_14_1"")",서브
-SK_15_0,SK_15_0,Collect,Donation,(),0,100,,서브
-SK_15_1,SK_15_1,Collect,Appearance of Wealth,(),0,100,,서브
-SK_16_0,SK_16_0,Talking,Unlucky Day,(),0,100,,서브
-SK_16_1,SK_16_1,Talking,Flow of Fortune,(),0,100,"(""SK_16_0"")",서브
-SK_16_2,SK_16_2,Explore,Master of Luck,(),0,100,"(""SK_16_1"")",서브
-SK_16_3,SK_16_3,Collect,Luck Hates Fools,"((""Quest_SK16_LuckyCharm"", 1))",0,100,"(""SK_16_2"")",서브
-SK_16_4,SK_16_4,Delivery,Totally Lucky Vibes,(),0,100,"(""SK_16_3"")",서브
-SK_17_0,SK_17_0,Collect,Flow of the Constellations,(),0,100,"(""M_2_1"")",서브
-SK_17_1,SK_17_1,Explore,Between Fiction and Reality,"((""Weapon_Orb"", 1))",0,100,"(""SK_17_0"")",서브
-SK_17_2,SK_17_2,Explore,Beyond Fiction,(),0,100,"(""SK_17_1"")",서브
-SK_17_3,SK_17_3,Explore,The Voyage of Stars,(),0,100,"(""SK_17_2"")",서브
+SK_0_0,SK_0_0,Explore,Achieve Blacksmith,(),0,500,,스킬
+SK_0_1,SK_0_1,Talking,News from Fergus,(),0,500,"(""SK_0_0"")",스킬
+SK_0_2,SK_0_2,Collect,Hammer Upgrade,"((""Quest_SK0_Hammer"", 1),(""Material_Gem_Diamond"", 1))",0,500,"(""SK_0_1"")",스킬
+SK_0_3,SK_0_3,Explore,Enhance,(),0,500,"(""SK_0_2"")",스킬
+SK_1_0,SK_1_0,Explore,New Friend,(),0,100,,스킬
+SK_1_1,SK_1_1,Collect,Faster Than the Eye,(),0,100,"(""SK_1_0"")",스킬
+SK_1_2,SK_1_2,Collect,Fresh Milk,(),0,100,"(""SK_1_1"")",스킬
+SK_2_0,SK_2_0,Kill,Outside Joivillage Is Dangerous,(),100,500,,스킬
+SK_2_1,SK_2_1,Kill,Way of the Bow,(),100,500,"(""SK_2_0"")",스킬
+SK_2_2,SK_2_2,Talking,If You’re Interested in Guns,(),0,100,"(""SK_2_1"")",스킬
+SK_2_3,SK_2_3,Talking,You’ll Need Authorization,(),100,500,"(""SK_2_2"")",스킬
+SK_2_4,SK_2_4,Kill,Firearm Authorization Test,(),100,500,"(""SK_2_3"")",스킬
+SK_2_5,SK_2_5,Talking,Show the License,(),100,500,"(""SK_2_4"")",스킬
+SK_2_6,SK_2_6,Kill,The Real Hunter’s Trial,(),100,500,"(""SK_2_5"")",스킬
+SK_3_0,SK_3_0,Talking,The Start of Combat Training,(),0,100,"(""SK_2_6"")",스킬
+SK_3_1,SK_3_1,Explore,The Start of Combat Training,(),0,1000,"(""SK_3_0"")",스킬
+SK_3_2,SK_3_2,Talking,Meeting Aria,(),0,100,"(""SK_3_1"")",스킬
+SK_3_3,SK_3_3,Explore,The Start of dodge Training,(),0,1000,"(""SK_3_2"")",스킬
+SK_4_0,SK_4_0,Collect,"Fire Safety, Always and Forever",(),500,500,,스킬
+SK_4_1,SK_4_1,Explore,Will of the Flame,(),0,100,"(""SK_4_0"")",스킬
+SK_5_0,SK_5_0,Kill,Crabby Trouble at the Shore,(),5000,5000,,스킬
+SK_5_1,SK_5_1,Talking,A Slight Mishap,(),0,100,"(""SK_5_0"")",스킬
+SK_5_2,SK_5_2,Collect,First Aid,(),0,100,"(""SK_5_1"")",스킬
+SK_6_0,SK_6_0,Collect,A Day at the Beach,(),1000,1000,,스킬
+SK_6_1,SK_6_1,Explore,Golden Hour,(),0,100,"(""SK_6_0"")",스킬
+SK_7_0,SK_7_0,Collect,Warm Your Mind,(),0,5000,,스킬
+SK_7_1,SK_7_1,Explore,Center Your Breath,(),0,5000,"(""SK_7_0"")",스킬
+SK_8_0,SK_8_0,Explore,The Final Combat Training,(),0,100,"(""SK_3_3"")",스킬
+SK_8_1,SK_8_1,Collect,Quick Recovery,(),0,100,"(""SK_8_0"")",스킬
+SK_9_0,SK_9_0,Explore,Beginning of Sound,(),0,100,,스킬
+SK_9_1,SK_9_1,Collect,Birth of a Melody,(),0,100,"(""SK_9_0"")",스킬
+SK_10_0,SK_10_0,Talking,The Beginning of Creation,(),0,100,,스킬
+SK_10_1,SK_10_1,Talking,The Struggle of Creation,(),0,100,"(""SK_10_0"")",스킬
+SK_10_2,SK_10_2,Collect,The Father of Creation,"((""Material_Paint"", 1))",0,100,"(""SK_10_1"")",스킬
+SK_10_3,SK_10_3,Collect,The Mother of Creation,(),0,100,"(""SK_10_2"")",스킬
+SK_10_4,SK_10_4,Collect,A Tale Well Told,(),0,100,"(""SK_10_3"")",스킬
+SK_11_0,SK_11_0,Collect,Nature\'s Gift,(),0,100,,스킬
+SK_11_1,SK_11_1,Collect,Herbal Studies,(),0,100,"(""SK_11_0"")",스킬
+SK_12_0,SK_12_0,Explore,Toward Adventure,(),0,100,,스킬
+SK_12_1,SK_12_1,Collect,Relic Appraisal,(),0,100,,스킬
+SK_12_2,SK_12_2,Collect,Unexpected Fortune,(),0,100,,스킬
+SK_13_0,SK_13_0,Explore,Road Driving Practice,(),0,100,,스킬
+SK_13_1,SK_13_1,Explore,Real Training,(),0,100,"(""SK_13_0"")",스킬
+SK_14_0,SK_14_0,Collect,Potion Research,"((""Potion_Experimental"", 1))",0,100,,스킬
+SK_14_1,SK_14_1,Use,Clinical Trial,(),0,100,"(""SK_14_0"")",스킬
+SK_14_2,SK_14_2,Collect,Side Effects,(),0,100,"(""SK_14_1"")",스킬
+SK_15_0,SK_15_0,Collect,Donation,(),0,100,,스킬
+SK_15_1,SK_15_1,Collect,Appearance of Wealth,(),0,100,,스킬
+SK_16_0,SK_16_0,Talking,Unlucky Day,(),0,100,,스킬
+SK_16_1,SK_16_1,Talking,Flow of Fortune,(),0,100,"(""SK_16_0"")",스킬
+SK_16_2,SK_16_2,Explore,Master of Luck,(),0,100,"(""SK_16_1"")",스킬
+SK_16_3,SK_16_3,Collect,Luck Hates Fools,"((""Quest_SK16_LuckyCharm"", 1))",0,100,"(""SK_16_2"")",스킬
+SK_16_4,SK_16_4,Delivery,Totally Lucky Vibes,(),0,100,"(""SK_16_3"")",스킬
+SK_17_0,SK_17_0,Collect,Flow of the Constellations,(),0,100,"(""M_2_1"")",스킬
+SK_17_1,SK_17_1,Explore,Between Fiction and Reality,"((""Weapon_Orb"", 1))",0,100,"(""SK_17_0"")",스킬
+SK_17_2,SK_17_2,Explore,Beyond Fiction,(),0,100,"(""SK_17_1"")",스킬
+SK_17_3,SK_17_3,Explore,The Voyage of Stars,(),0,100,"(""SK_17_2"")",스킬
 AC_0_0,AC_0_0,Kill,Conqueror,(),0,0,,서브
 AC_0_1,AC_0_1,Explore,CreativeSoul,(),0,0,,서브
 AC_0_2,AC_0_2,Explore,Donator,(),0,0,,서브

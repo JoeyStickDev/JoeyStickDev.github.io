@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "CCC0EC094B1F70AED70EA4B855F34134", "Engineering"
+title: "CCC0EC094B1F70AED70EA4B855F34134, Engineering"
 quest_id: "S_2_3"
 category: "sub-quests"
 ---

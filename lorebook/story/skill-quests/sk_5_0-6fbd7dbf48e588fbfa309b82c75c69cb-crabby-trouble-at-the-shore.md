@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "6FBD7DBF48E588FBFA309B82C75C69CB", "Crabby Trouble at the Shore"
+title: "6FBD7DBF48E588FBFA309B82C75C69CB, Crabby Trouble at the Shore"
 quest_id: "SK_5_0"
 category: "skill-quests"
 ---

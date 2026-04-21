@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "B1764C8941281BB1FCF39B9804377FDC", "Toward Adventure"
+title: "B1764C8941281BB1FCF39B9804377FDC, Toward Adventure"
 quest_id: "SK_12_0"
 category: "skill-quests"
 ---

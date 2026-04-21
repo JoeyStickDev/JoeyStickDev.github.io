@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "D19EFB2242A1EDDB66E6B0932F427E5F", "Dried Waterlily Salmon"
+title: "D19EFB2242A1EDDB66E6B0932F427E5F, Dried Waterlily Salmon"
 quest_id: "S_1_2"
 category: "sub-quests"
 ---

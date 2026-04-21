@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "957600D84B8114FCA640829AAEC23E8F", "The Struggle of Creation"
+title: "957600D84B8114FCA640829AAEC23E8F, The Struggle of Creation"
 quest_id: "SK_10_1"
 category: "skill-quests"
 ---

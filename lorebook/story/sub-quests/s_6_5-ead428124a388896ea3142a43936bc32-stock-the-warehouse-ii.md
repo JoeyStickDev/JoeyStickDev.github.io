@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "EAD428124A388896EA3142A43936BC32", "Stock the Warehouse II"
+title: "EAD428124A388896EA3142A43936BC32, Stock the Warehouse II"
 quest_id: "S_6_5"
 category: "sub-quests"
 ---

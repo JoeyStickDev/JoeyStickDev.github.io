@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "EF12B15141AAEE971E83B39283E0E3DE", "Village Restoration"
+title: "EF12B15141AAEE971E83B39283E0E3DE, Village Restoration"
 quest_id: "S_0_1"
 category: "sub-quests"
 ---

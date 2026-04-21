@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "0AF58818487C9DCBDB1516B0C5FBBB1E", "Veggies on the Grill"
+title: "0AF58818487C9DCBDB1516B0C5FBBB1E, Veggies on the Grill"
 quest_id: "S_4_3"
 category: "sub-quests"
 ---

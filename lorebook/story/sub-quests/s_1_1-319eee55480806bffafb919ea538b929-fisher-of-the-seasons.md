@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "319EEE55480806BFFAFB919EA538B929", "Fisher of the Seasons"
+title: "319EEE55480806BFFAFB919EA538B929, Fisher of the Seasons"
 quest_id: "S_1_1"
 category: "sub-quests"
 ---

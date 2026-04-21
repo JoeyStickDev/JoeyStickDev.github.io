@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "14DD806A4FECC62632152A99986B0F82", "News from Fergus"
+title: "14DD806A4FECC62632152A99986B0F82, News from Fergus"
 quest_id: "SK_0_1"
 category: "skill-quests"
 ---

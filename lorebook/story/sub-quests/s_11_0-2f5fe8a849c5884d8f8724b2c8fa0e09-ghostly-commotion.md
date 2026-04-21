@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "2F5FE8A849C5884D8F8724B2C8FA0E09", "Ghostly Commotion"
+title: "2F5FE8A849C5884D8F8724B2C8FA0E09, Ghostly Commotion"
 quest_id: "S_11_0"
 category: "sub-quests"
 ---

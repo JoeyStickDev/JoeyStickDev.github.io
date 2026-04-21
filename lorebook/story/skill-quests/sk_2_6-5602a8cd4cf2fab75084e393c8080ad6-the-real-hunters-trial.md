@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "5602A8CD4CF2FAB75084E393C8080AD6", "The Real Hunter’s Trial"
+title: "5602A8CD4CF2FAB75084E393C8080AD6, The Real Hunter’s Trial"
 quest_id: "SK_2_6"
 category: "skill-quests"
 ---

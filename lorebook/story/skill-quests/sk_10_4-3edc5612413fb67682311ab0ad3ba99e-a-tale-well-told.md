@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "3EDC5612413FB67682311AB0AD3BA99E", "A Tale Well Told"
+title: "3EDC5612413FB67682311AB0AD3BA99E, A Tale Well Told"
 quest_id: "SK_10_4"
 category: "skill-quests"
 ---

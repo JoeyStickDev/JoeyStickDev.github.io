@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "F0C9F8324B04AF1FC8F0809F9FBB49A5", "Nature's Gift"
+title: "F0C9F8324B04AF1FC8F0809F9FBB49A5, Nature's Gift"
 quest_id: "SK_11_0"
 category: "skill-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "D8DFC061441E69646C1820B8EA50D2AD", "The Missing Book"
+title: "D8DFC061441E69646C1820B8EA50D2AD, The Missing Book"
 quest_id: "S_7_1"
 category: "sub-quests"
 ---

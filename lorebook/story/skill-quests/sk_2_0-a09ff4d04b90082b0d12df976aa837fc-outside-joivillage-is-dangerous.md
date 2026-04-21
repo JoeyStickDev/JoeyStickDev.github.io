@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "A09FF4D04B90082B0D12DF976AA837FC", "Outside Joivillage Is Dangerous"
+title: "A09FF4D04B90082B0D12DF976AA837FC, Outside Joivillage Is Dangerous"
 quest_id: "SK_2_0"
 category: "skill-quests"
 ---

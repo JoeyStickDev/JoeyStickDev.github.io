@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "121F84AE4CDB8D7F842A97917F2C71CF", "Luck in the Journey"
+title: "121F84AE4CDB8D7F842A97917F2C71CF, Luck in the Journey"
 quest_id: "S_7_5"
 category: "sub-quests"
 ---

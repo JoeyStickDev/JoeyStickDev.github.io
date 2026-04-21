@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "B8A501E749FC01F9D86403BD06033149", "Unexpected Fortune"
+title: "B8A501E749FC01F9D86403BD06033149, Unexpected Fortune"
 quest_id: "SK_12_2"
 category: "skill-quests"
 ---

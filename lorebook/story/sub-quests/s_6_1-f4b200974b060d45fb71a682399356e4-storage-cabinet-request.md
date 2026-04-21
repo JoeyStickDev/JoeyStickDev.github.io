@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "F4B200974B060D45FB71A682399356E4", "Storage Cabinet Request"
+title: "F4B200974B060D45FB71A682399356E4, Storage Cabinet Request"
 quest_id: "S_6_1"
 category: "sub-quests"
 ---

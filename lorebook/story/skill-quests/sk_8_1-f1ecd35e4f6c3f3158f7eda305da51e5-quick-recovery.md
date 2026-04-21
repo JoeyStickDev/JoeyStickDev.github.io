@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "F1ECD35E4F6C3F3158F7EDA305DA51E5", "Quick Recovery"
+title: "F1ECD35E4F6C3F3158F7EDA305DA51E5, Quick Recovery"
 quest_id: "SK_8_1"
 category: "skill-quests"
 ---

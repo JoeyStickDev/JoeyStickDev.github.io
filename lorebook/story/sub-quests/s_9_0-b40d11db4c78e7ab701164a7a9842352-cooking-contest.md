@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "B40D11DB4C78E7AB701164A7A9842352", "Cooking Contest"
+title: "B40D11DB4C78E7AB701164A7A9842352, Cooking Contest"
 quest_id: "S_9_0"
 category: "sub-quests"
 ---

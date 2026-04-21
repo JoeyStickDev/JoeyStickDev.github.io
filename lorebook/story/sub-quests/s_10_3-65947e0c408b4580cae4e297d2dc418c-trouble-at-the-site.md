@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "65947E0C408B4580CAE4E297D2DC418C", "Trouble at the Site"
+title: "65947E0C408B4580CAE4E297D2DC418C, Trouble at the Site"
 quest_id: "S_10_3"
 category: "sub-quests"
 ---

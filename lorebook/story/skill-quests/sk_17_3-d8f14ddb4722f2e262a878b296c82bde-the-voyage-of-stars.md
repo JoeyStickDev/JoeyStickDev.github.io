@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "D8F14DDB4722F2E262A878B296C82BDE", "The Voyage of Stars"
+title: "D8F14DDB4722F2E262A878B296C82BDE, The Voyage of Stars"
 quest_id: "SK_17_3"
 category: "skill-quests"
 ---

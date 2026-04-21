@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생물 도감 - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="active-nav">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="main-content dictionary-page" style="padding-top: 100px; min-height: 80vh;">
+    <div style="max-width: 1200px; margin: 0 auto; display: block;">
+        
+        <div class="media-header" style="margin-bottom: 40px; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; display: flex; align-items: flex-end; justify-content: space-between;">
+            <div>
+                <a href="/lorebook/" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px; display: inline-block; transition: color 0.3s;">← 설정집 홈으로 돌아가기</a>
+                <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;"><span style="color: var(--accent-color);">생물 도감</span></h1>
+                <p style="color: var(--text-muted); font-size: 1.15rem;">방치된 서고와 마법의 파편 속에서 태어난 몬스터들.</p>
+            </div>
+            <div class="search-box" style="position: relative;">
+                <input type="text" id="dict-search" placeholder="도감 내용 검색..." style="padding: 10px 20px; border-radius: 30px; border: 1px solid var(--border-color); background: var(--bg-card); color: #fff; width: 280px; font-family: inherit; font-size: 1rem; outline: none; transition: border-color 0.3s;">
+            </div>
+        </div>
+
+        
+        
+        <!-- 동적 2중 카테고리 필터 영역 -->
+        <div id="dict-filters" style="margin-bottom: 30px; display: none;">
+            <div id="primary-filters" class="tabs" style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; display: flex; flex-wrap: wrap; gap: 8px;"></div>
+            <div id="secondary-filters" class="tabs" style="display: none; padding-bottom: 15px; gap: 8px; flex-wrap: wrap;"></div>
+        </div>
+
+        
+        <div class="dict-grid" id="dict-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
+            
+            
+            <!-- Dynamic Key Mapping -->
+            
+            
+            
+            
+            
+
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            
+            
+            
+            
+            
+            
+
+            
+            
+            <!-- 2. Image Path Refining -->
+            
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                
+            
+            
+            <!-- 3. Dynamic Values from Keys -->
+            
+            
+
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
+            
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                
+                
+            
+
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            
+
+            
+
+            <div class="dict-card" 
+                 data-category="비선공" 
+                 data-subcategory="기타" 
+                 data-search="Test1  비선공 기타" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">비선공</span>
+                    
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Test1</h3>
+                    
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    
+                </div>
+
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url=""></div>
+                    <div class="payload-badge">기타</div>
+                    <div class="payload-title">Test1</div>
+                    <div class="payload-desc"></div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">---</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">Test1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Health</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Mana</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Damage</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Armor</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">EXP</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Gold</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">50</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ItemReward</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(("HP", 80.000000),("MP", 60.000000),("XP", 28.000000))</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">IsAttackFirst</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">FALSE</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Dynamic Key Mapping -->
+            
+            
+            
+            
+            
+
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            
+            
+            
+            
+            
+            
+
+            
+            
+            <!-- 2. Image Path Refining -->
+            
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                
+            
+            
+            <!-- 3. Dynamic Values from Keys -->
+            
+            
+
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
+            
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                
+                
+            
+
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            
+
+            
+
+            <div class="dict-card" 
+                 data-category="비선공" 
+                 data-subcategory="기타" 
+                 data-search="Test2  비선공 기타" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">비선공</span>
+                    
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Test2</h3>
+                    
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    
+                </div>
+
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url=""></div>
+                    <div class="payload-badge">기타</div>
+                    <div class="payload-title">Test2</div>
+                    <div class="payload-desc"></div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">---</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">Test2</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackTypePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(66.000000,66.000000,100.000000)</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">SkillPercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Health</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">500</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Mana</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Damage</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Armor</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">WalkSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ChaseSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">EXP</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Gold</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">50</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ItemReward</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(("HP", 80.000000),("MP", 60.000000),("XP", 28.000000))</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">IsAttackFirst</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">FALSE</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">MeleeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Dynamic Key Mapping -->
+            
+            
+            
+            
+            
+
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            
+            
+            
+            
+            
+            
+
+            
+            
+            <!-- 2. Image Path Refining -->
+            
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                
+            
+            
+            <!-- 3. Dynamic Values from Keys -->
+            
+            
+
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
+            
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                
+                
+            
+
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            
+
+            
+
+            <div class="dict-card" 
+                 data-category="비선공" 
+                 data-subcategory="기타" 
+                 data-search="Rabbit  비선공 기타" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">비선공</span>
+                    
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Rabbit</h3>
+                    
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    
+                </div>
+
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url=""></div>
+                    <div class="payload-badge">기타</div>
+                    <div class="payload-title">Rabbit</div>
+                    <div class="payload-desc"></div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">---</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">Animal_Rabbit</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackTypePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(66.000000,66.000000,100.000000)</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">SkillPercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Health</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">500</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Mana</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Damage</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Armor</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">WalkSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ChaseSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">EXP</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Gold</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">50</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ItemReward</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(("HP", 80.000000),("MP", 60.000000),("XP", 28.000000))</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">IsAttackFirst</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">FALSE</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">MeleeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Dynamic Key Mapping -->
+            
+            
+            
+            
+            
+
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            
+            
+            
+            
+            
+            
+
+            
+            
+            <!-- 2. Image Path Refining -->
+            
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                
+            
+            
+            <!-- 3. Dynamic Values from Keys -->
+            
+            
+
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
+            
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                
+                
+            
+
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            
+
+            
+
+            <div class="dict-card" 
+                 data-category="비선공" 
+                 data-subcategory="기타" 
+                 data-search="Deer  비선공 기타" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">비선공</span>
+                    
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Deer</h3>
+                    
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    
+                </div>
+
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url=""></div>
+                    <div class="payload-badge">기타</div>
+                    <div class="payload-title">Deer</div>
+                    <div class="payload-desc"></div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">---</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">Animal_Deer</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackTypePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(66.000000,66.000000,100.000000)</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">SkillPercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Health</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">500</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Mana</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Damage</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Armor</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">WalkSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ChaseSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">EXP</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Gold</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">50</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ItemReward</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(("HP", 80.000000),("MP", 60.000000),("XP", 28.000000))</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">IsAttackFirst</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">FALSE</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">MeleeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Dynamic Key Mapping -->
+            
+            
+            
+            
+            
+
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            
+            
+            
+            
+            
+            
+
+            
+            
+            <!-- 2. Image Path Refining -->
+            
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                
+            
+            
+            <!-- 3. Dynamic Values from Keys -->
+            
+            
+
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
+            
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                
+                
+            
+
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            
+
+            
+
+            <div class="dict-card" 
+                 data-category="선공" 
+                 data-subcategory="기타" 
+                 data-search="Wolf  선공 기타" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">선공</span>
+                    
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Wolf</h3>
+                    
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    
+                </div>
+
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url=""></div>
+                    <div class="payload-badge">기타</div>
+                    <div class="payload-title">Wolf</div>
+                    <div class="payload-desc"></div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">---</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">Animal_Wolf</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackTypePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(66.000000,66.000000,100.000000)</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">SkillPercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Health</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">500</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Mana</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Damage</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Armor</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">WalkSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ChaseSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">EXP</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Gold</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">50</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ItemReward</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(("HP", 80.000000),("MP", 60.000000),("XP", 28.000000))</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">IsAttackFirst</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">TRUE</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">MeleeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Dynamic Key Mapping -->
+            
+            
+            
+            
+            
+
+            <!-- 1. Name Cleaning Logic (Liquid) -->
+            
+            
+            
+            
+            
+            
+
+            
+            
+            <!-- 2. Image Path Refining -->
+            
+                <!-- If it's already a clean relative path from CSV, ensure extension -->
+                
+            
+            
+            <!-- 3. Dynamic Values from Keys -->
+            
+            
+
+            <!-- 4. Custom Classification Logic (Hardcoded Overrides) -->
+            
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                
+                
+            
+
+            <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
+            
+
+            
+
+            <div class="dict-card" 
+                 data-category="비선공" 
+                 data-subcategory="기타" 
+                 data-search="Rat  비선공 기타" 
+                 style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                
+                
+
+                <div class="dict-img" style="height: 160px; background-image: 
+                    
+                    linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
+                    <!-- 카드 우측 상단 뱃지 동적 생성 -->
+                    
+                    <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">비선공</span>
+                    
+                </div>
+                <div class="dict-info" style="padding: 20px;">
+                    <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Rat</h3>
+                    
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">클릭 시 상세 정보 확인</p>
+                    
+                </div>
+
+                <div class="modal-payload-template" style="display: none;">
+                    <div class="payload-img" data-img-url=""></div>
+                    <div class="payload-badge">기타</div>
+                    <div class="payload-title">Rat</div>
+                    <div class="payload-desc"></div>
+                    <div class="payload-stats">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                            <tbody>
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">---</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">Animal_Rat</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackTypePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(66.000000,66.000000,100.000000)</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangePercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">SkillPercent</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">-100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Health</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">500</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Mana</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Damage</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">AttackSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">1</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Armor</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">10</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">WalkSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ChaseSpeed</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">EXP</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">100</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">Gold</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">50</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">ItemReward</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">(("HP", 80.000000),("MP", 60.000000),("XP", 28.000000))</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">IsAttackFirst</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">FALSE</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">MeleeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">150</td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    
+                                    <!-- 내부에서 쓰이지 않거나 이미 사용된 핵심 키들은 표에서 생략 가능 -->
+                                    
+                                    
+
+                                    
+                                    <tr style="transition: background 0.2s;">
+                                        <td style="padding: 10px 15px; color: var(--text-muted); font-weight: bold; width: 40%; background: rgba(0,0,0,0.2); border-radius: 8px 0 0 8px;">RangeAttackRange</td>
+                                        <td style="padding: 10px 15px; color: #fff; background: rgba(255,255,255,0.02); border-radius: 0 8px 8px 0; font-family: monospace;">300</td>
+                                    </tr>
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+<!-- Dictionary Detail Modal -->
+<div id="dict-modal" class="dict-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); z-index: 9999; align-items: center; justify-content: center; padding: 20px;">
+    <div class="dict-modal-content" style="background: var(--bg-card); border: 2px solid var(--border-color); border-radius: 12px; width: 100%; max-width: 600px; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+        <button id="dict-modal-close" style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: var(--text-muted); font-size: 2rem; cursor: pointer; transition: color 0.3s; z-index: 10;">&times;</button>
+        
+        <div id="dict-modal-img" style="height: 250px; background: center/cover; position: relative;">
+            <span id="dict-modal-badge" style="position: absolute; top: 15px; left: 15px; background: var(--accent-color); color: #fff; font-size: 0.9rem; padding: 5px 15px; border-radius: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">Badge</span>
+        </div>
+        
+        <div style="padding: 35px;">
+            <h2 id="dict-modal-title" style="color: #fff; font-size: 2rem; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px;">Title</h2>
+            <p id="dict-modal-desc" style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; white-space: pre-line; margin-bottom: 20px;"></p>
+            <div id="dict-modal-stats-container">
+            <!-- Table will be injected here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+.tab-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-color);
+    color: #888;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.tab-btn:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-color: rgba(252, 163, 17, 0.5);
+}
+.tab-btn.active {
+    background: var(--accent-color);
+    color: #000;
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 15px rgba(252, 163, 17, 0.3);
+}
+.sub-tab {
+    font-size: 0.85rem;
+    padding: 6px 15px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    border-color: rgba(255,255,255,0.05);
+}
+.dict-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-color: var(--accent-color);
+}
+.dict-card:hover h3 {
+    color: var(--accent-color) !important;
+}
+#dict-search:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(252, 163, 17, 0.2);
+}
+#dict-modal-close:hover {
+    color: #fff !important;
+}
+.search-hidden {
+    display: none !important;
+}
+</style>
+
+<script>
+// 간단한 실시간 검색 스크립트
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('dict-search');
+    const cards = document.querySelectorAll('.dict-card');
+
+    if(searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            cards.forEach(card => {
+                const searchData = card.getAttribute('data-search').toLowerCase();
+                const currentDisplay = card.style.display;
+                
+                // If it passes search query, show it (rely on JS filter to hide it later if needed)
+                if(searchData.includes(query)) {
+                    card.classList.remove('search-hidden');
+                } else {
+                    card.classList.add('search-hidden');
+                }
+                applyFilters();
+            });
+        });
+    }
+
+    // --- 동적 2중 필터 생성 로직 ---
+    const filterContainer = document.getElementById('dict-filters');
+    const primaryContainer = document.getElementById('primary-filters');
+    const secondaryContainer = document.getElementById('secondary-filters');
+    
+    let activePrimary = '전체';
+    let activeSecondary = '전체';
+
+    // 1. 존재하는 Primary Categories 추출
+    let primaryCats = new Set(['전체']);
+    cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (cat && cat.trim() !== '') primaryCats.add(cat);
+    });
+
+    // 2. Secondary Categories 탭 갱신 (지역 순서 고정)
+    const storyOrder = ['윈터캠프', '달빛호수', '신전', '도시', '오래된숲', '교회', '구름', '함선', '옛마을', '별자리연회'];
+
+    function updateSecondaryTabs() {
+        if (activePrimary === '전체') {
+            secondaryContainer.style.display = 'none';
+            secondaryContainer.innerHTML = '';
+            return;
+        }
+
+        let subCats = new Set();
+        cards.forEach(card => {
+            if (card.getAttribute('data-category') === activePrimary) {
+                const sub = card.getAttribute('data-subcategory');
+                if (sub && sub.trim() !== '' && sub !== '기타' && sub !== '일반') subCats.add(sub);
+            }
+        });
+
+        if (subCats.size > 0) {
+            secondaryContainer.style.display = 'flex';
+            secondaryContainer.style.flexWrap = 'wrap';
+            
+            let btnStr = `<button class="tab-btn sub-tab active" data-sub="전체">전체 보기</button>`;
+            
+            // 스토리 모드인 경우 숫자로 정렬 (1_Wintertown -> 2_LunaLake 순서 보장 시도)
+            const subsArray = Array.from(subCats);
+            const sortedSubs = subsArray.sort((a, b) => {
+                // 숫자 포함 카테고리 정렬 (챕터, 서브, 스킬 등 번호 순 정렬)
+                const numA = parseInt(a.replace(/[^0-9]/g, ''));
+                const numB = parseInt(b.replace(/[^0-9]/g, ''));
+
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    return numA - numB;
+                }
+
+                let idxA = storyOrder.indexOf(a);
+                let idxB = storyOrder.indexOf(b);
+                if (idxA === -1) idxA = 999;
+                if (idxB === -1) idxB = 999;
+                return idxA - idxB;
+            });
+            
+            sortedSubs.forEach(sub => {
+                btnStr += `<button class="tab-btn sub-tab" data-sub="${sub}">${sub}</button>`;
+            });
+            secondaryContainer.innerHTML = btnStr;
+
+            secondaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    secondaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeSecondary = btn.getAttribute('data-sub');
+                    applyFilters();
+                });
+            });
+        } else {
+            secondaryContainer.style.display = 'none';
+            secondaryContainer.innerHTML = '';
+        }
+    }
+
+    // 3. 필터 및 검색 적용
+    function applyFilters() {
+        cards.forEach(card => {
+            if (card.classList.contains('search-hidden')) {
+                card.style.display = 'none';
+                return;
+            }
+
+            const cat = card.getAttribute('data-category');
+            const sub = card.getAttribute('data-subcategory');
+
+            let show = true;
+            if (activePrimary !== '전체') {
+                if (cat !== activePrimary) show = false;
+                else if (activeSecondary !== '전체' && sub !== activeSecondary) show = false;
+            }
+
+            card.style.display = show ? 'block' : 'none';
+        });
+    }
+
+    // 4. 초기 메인 탭 생성
+    function initTabs() {
+        filterContainer.style.display = 'block';
+        let btnStr = '';
+        
+        const foundCats = Array.from(primaryCats);
+        const predefinedOrder = ['전체', '장비', '소비', '농사용품', '퀘스트용품', '기타용품',
+                                  '메인', '메인서브', '서브', '스킬', '기본', '스토리', '선공', '비선공', '힘', '덱스', '지능', '행운'];
+        
+        let finalOrder = [];
+        predefinedOrder.forEach(p => { if (foundCats.includes(p)) finalOrder.push(p); });
+        foundCats.forEach(f => { if (!finalOrder.includes(f)) finalOrder.push(f); });
+
+        finalOrder.forEach(cat => {
+            const activeClass = cat === '전체' ? 'active' : '';
+            btnStr += `<button class="tab-btn ${activeClass}" data-cat="${cat}">${cat}</button>`;
+        });
+
+        primaryContainer.innerHTML = btnStr;
+        primaryContainer.style.display = 'flex';
+        primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activePrimary = btn.getAttribute('data-cat');
+                activeSecondary = '전체';
+                updateSecondaryTabs();
+                applyFilters();
+            });
+        });
+    }
+
+    if (primaryCats.size > 1 && !false) {
+        initTabs();
+    }
+
+    // 모달 로직 (Payload Architecture)
+    const modal = document.getElementById('dict-modal');
+    const closeBtn = document.getElementById('dict-modal-close');
+
+    if (modal && cards) {
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const payload = card.querySelector('.modal-payload-template');
+                
+                // 1. Title
+                const titleEl = payload.querySelector('.payload-title');
+                document.getElementById('dict-modal-title').innerText = titleEl ? titleEl.innerText : '';
+                
+                // 2. Desc
+                const descEl = payload.querySelector('.payload-desc');
+                const modalDesc = document.getElementById('dict-modal-desc');
+                if (descEl && descEl.innerText.trim() !== '') {
+                    modalDesc.innerHTML = descEl.innerHTML;
+                    modalDesc.style.display = 'block';
+                } else {
+                    modalDesc.style.display = 'none';
+                }
+                
+                // 3. Stats Table
+                const statsEl = payload.querySelector('.payload-stats');
+                const modalStats = document.getElementById('dict-modal-stats-container');
+                if (statsEl) {
+                    modalStats.innerHTML = statsEl.innerHTML;
+                } else {
+                    modalStats.innerHTML = '';
+                }
+                
+                // 4. Badge
+                const badgeEl = payload.querySelector('.payload-badge');
+                const modalBadge = document.getElementById('dict-modal-badge');
+                if(badgeEl && badgeEl.innerText.trim() !== '') {
+                    modalBadge.innerText = badgeEl.innerText;
+                    modalBadge.style.display = 'inline-block';
+                } else {
+                    modalBadge.style.display = 'none';
+                }
+                
+                // 5. Image
+                const imgWrap = payload.querySelector('.payload-img');
+                const imgUrl = imgWrap ? imgWrap.getAttribute('data-img-url') : '';
+                const modalImg = document.getElementById('dict-modal-img');
+                if (imgUrl && imgUrl.trim() !== '') {
+                    modalImg.style.backgroundImage = `url('${imgUrl}')`;
+                } else {
+                    modalImg.style.backgroundImage = `linear-gradient(45deg, var(--secondary-color), var(--primary-color))`;
+                }
+                
+                modal.style.display = 'flex';
+                modal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: 'forwards'});
+                modal.querySelector('.dict-modal-content').animate([{transform: 'translateY(20px)', opacity: 0}, {transform: 'translateY(0)', opacity: 1}], {duration: 400, delay: 50, fill: 'both', easing: 'ease-out'});
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.animate([{opacity: 1}, {opacity: 0}], {duration: 200, fill: 'forwards'}).onfinish = () => {
+                modal.style.display = 'none';
+            };
+        });
+
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) {
+                closeBtn.click();
+            }
+        });
+    }
+});
+</script>
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "D77401F34C4C583B75FA04A25FD011E7", "I’ve Got the Meat"
+title: "D77401F34C4C583B75FA04A25FD011E7, I’ve Got the Meat"
 quest_id: "S_4_2"
 category: "sub-quests"
 ---

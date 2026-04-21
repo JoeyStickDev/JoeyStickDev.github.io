@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "72542EF9444ED0BF7B898896B61E239A", "Joey’s Materials"
+title: "72542EF9444ED0BF7B898896B61E239A, Joey’s Materials"
 quest_id: "S_6_7"
 category: "sub-quests"
 ---

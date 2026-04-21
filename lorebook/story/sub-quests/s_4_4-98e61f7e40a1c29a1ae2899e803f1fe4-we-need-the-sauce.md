@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "98E61F7E40A1C29A1AE2899E803F1FE4", "We Need the Sauce!"
+title: "98E61F7E40A1C29A1AE2899E803F1FE4, We Need the Sauce!"
 quest_id: "S_4_4"
 category: "sub-quests"
 ---

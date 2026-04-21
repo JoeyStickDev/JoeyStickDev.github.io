@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="active-nav">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <!-- Hero Section (Maplestory Style big banner) -->
+<section class="hero-section">
+    <!-- Hero Background Image -->
+    <div class="hero-bg" style="background-image: url('/assets/images/home/hero_bg.png') !important;"></div>
+    <div class="hero-content">
+        <!-- Welcome Message -->
+        <p class="welcome-greeting">도서관에 오신걸 환영합니다</p>
+        
+        <!-- Game Logo Image -->
+        <img src="/assets/images/home/logo.png" alt="Shards of the Library" class="game-logo-img">
+        
+        <p class="game-subtitle">수수께끼의 도서관에서 펼쳐지는 이야기</p>
+        
+        <div class="hero-actions">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-hero-play">
+                <span class="btn-text">스팀 상점 바로가기</span>
+                <span class="btn-icon">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Content Layout (Maplestory Style: Notice Board with Tabs + Quick Links) -->
+<section class="main-content">
+    <div class="content-container">
+        
+        <!-- News & Notice Board -->
+        <div class="notice-board">
+            <div class="board-header">
+                <h2>새로운 소식</h2>
+                <a href="/news" class="btn-more">더보기 +</a>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-target="tab-all">전체</button>
+                <button class="tab-btn" data-target="tab-notice">공지</button>
+                <button class="tab-btn" data-target="tab-update">업데이트</button>
+                <button class="tab-btn" data-target="tab-devlog">개발일지</button>
+            </div>
+            
+            <div class="tab-content-container">
+                <!-- All Tab -->
+                <div class="tab-content active" id="tab-all">
+                    <ul class="post-list">
+                        
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-update">
+                                            업데이트
+                                        </span>
+                                        <a href="/%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/2026/04/19/update-v1/" class="post-title">v1.0.2 패치 노트 - 시스템 안정화</a>
+                                        <span class="post-date">2026.04.19</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-notice">
+                                            공지
+                                        </span>
+                                        <a href="/%EA%B3%B5%EC%A7%80/2026/04/19/notice-open/" class="post-title">Shards of the Library 공식 블로그 오픈 안내</a>
+                                        <span class="post-date">2026.04.19</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-devlog">
+                                            개발일지
+                                        </span>
+                                        <a href="/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/2026/04/19/devlog-1/" class="post-title">영웅 디자인 변경사항 - 겨울 테마</a>
+                                        <span class="post-date">2026.04.19</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-notice">
+                                            공지
+                                        </span>
+                                        <a href="/%EA%B3%B5%EC%A7%80/2026/04/18/steam-announcements/" class="post-title">최근 개발 및 업데이트 현황 안내</a>
+                                        <span class="post-date">2026.04.18</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                    </ul>
+                </div>
+                
+                <!-- Notice Tab -->
+                <div class="tab-content" id="tab-notice">
+                    <ul class="post-list">
+                        
+                        
+                            
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-notice">공지</span>
+                                        <a href="/%EA%B3%B5%EC%A7%80/2026/04/19/notice-open/" class="post-title">Shards of the Library 공식 블로그 오픈 안내</a>
+                                        <span class="post-date">2026.04.19</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                            
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-notice">공지</span>
+                                        <a href="/%EA%B3%B5%EC%A7%80/2026/04/18/steam-announcements/" class="post-title">최근 개발 및 업데이트 현황 안내</a>
+                                        <span class="post-date">2026.04.18</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                    </ul>
+                </div>
+                
+                <!-- Update Tab -->
+                <div class="tab-content" id="tab-update">
+                    <ul class="post-list">
+                        
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-update">업데이트</span>
+                                        <a href="/%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/2026/04/19/update-v1/" class="post-title">v1.0.2 패치 노트 - 시스템 안정화</a>
+                                        <span class="post-date">2026.04.19</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </ul>
+                </div>
+                
+                <!-- Devlog Tab -->
+                <div class="tab-content" id="tab-devlog">
+                    <ul class="post-list">
+                        
+                        
+                            
+                        
+                            
+                        
+                            
+                                
+                                    <li>
+                                        <span class="post-category cat-devlog">개발일지</span>
+                                        <a href="/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/2026/04/19/devlog-1/" class="post-title">영웅 디자인 변경사항 - 겨울 테마</a>
+                                        <span class="post-date">2026.04.19</span>
+                                    </li>
+                                    
+                                
+                            
+                        
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Media / Quick Links Grid -->
+        <div class="feature-grid">
+            <a href="/guide" class="feature-card feature-game-info">
+                <div class="card-overlay">
+                    <h3>게임 가이드</h3>
+                    <p>시스템과 세계관 알아보기</p>
+                </div>
+            </a>
+            <a href="/media" class="feature-card feature-media">
+                <div class="card-overlay">
+                    <h3>미디어 갤러리</h3>
+                    <p>인게임 영상과 스크린샷</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

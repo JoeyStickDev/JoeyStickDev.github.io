@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "7057A4CE4AD24C702274A9B6FE5EB355", "Luck Hates Fools"
+title: "7057A4CE4AD24C702274A9B6FE5EB355, Luck Hates Fools"
 quest_id: "SK_16_3"
 category: "skill-quests"
 ---

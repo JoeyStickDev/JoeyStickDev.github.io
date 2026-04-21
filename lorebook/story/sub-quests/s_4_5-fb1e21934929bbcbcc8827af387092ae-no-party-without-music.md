@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "FB1E21934929BBCBCC8827AF387092AE", "No Party Without Music"
+title: "FB1E21934929BBCBCC8827AF387092AE, No Party Without Music"
 quest_id: "S_4_5"
 category: "sub-quests"
 ---

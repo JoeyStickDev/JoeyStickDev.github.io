@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "15DE34DF49F12BE15F25C9AAD5843C2B", "Cooling Tech"
+title: "15DE34DF49F12BE15F25C9AAD5843C2B, Cooling Tech"
 quest_id: "S_6_6"
 category: "sub-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "ED5D23FD402C5A2439387E9A9D9538BF", "Fracture of Memory"
+title: "ED5D23FD402C5A2439387E9A9D9538BF, Fracture of Memory"
 quest_id: "S_5_7"
 category: "sub-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "4C4D1BCC493A8116BBE43490F8915688", "You’ll Need Authorization"
+title: "4C4D1BCC493A8116BBE43490F8915688, You’ll Need Authorization"
 quest_id: "SK_2_3"
 category: "skill-quests"
 ---

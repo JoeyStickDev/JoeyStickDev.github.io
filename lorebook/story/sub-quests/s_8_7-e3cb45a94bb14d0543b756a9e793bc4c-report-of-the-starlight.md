@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "E3CB45A94BB14D0543B756A9E793BC4C", "Report of the Starlight"
+title: "E3CB45A94BB14D0543B756A9E793BC4C, Report of the Starlight"
 quest_id: "S_8_7"
 category: "sub-quests"
 ---

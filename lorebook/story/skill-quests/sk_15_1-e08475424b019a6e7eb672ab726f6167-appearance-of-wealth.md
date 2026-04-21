@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "E08475424B019A6E7EB672AB726F6167", "Appearance of Wealth"
+title: "E08475424B019A6E7EB672AB726F6167, Appearance of Wealth"
 quest_id: "SK_15_1"
 category: "skill-quests"
 ---

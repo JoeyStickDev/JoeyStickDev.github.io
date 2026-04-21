@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "835A15AB41AE903D0F368CAA44950ADA", "The Broken Balance"
+title: "835A15AB41AE903D0F368CAA44950ADA, The Broken Balance"
 quest_id: "S_8_4"
 category: "sub-quests"
 ---

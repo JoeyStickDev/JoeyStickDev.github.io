@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "5DF8CA754687FB57DC18BF9F2CC3E7B8", "Unlucky Day"
+title: "5DF8CA754687FB57DC18BF9F2CC3E7B8, Unlucky Day"
 quest_id: "SK_16_0"
 category: "skill-quests"
 ---

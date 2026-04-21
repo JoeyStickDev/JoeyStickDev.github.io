@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "40EAC2D94A2530DA4866359D8A7EED78", "Achieve Blacksmith"
+title: "40EAC2D94A2530DA4866359D8A7EED78, Achieve Blacksmith"
 quest_id: "SK_0_0"
 category: "skill-quests"
 ---

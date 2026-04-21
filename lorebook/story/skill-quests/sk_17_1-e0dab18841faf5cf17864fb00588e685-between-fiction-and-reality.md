@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "E0DAB18841FAF5CF17864FB00588E685", "Between Fiction and Reality"
+title: "E0DAB18841FAF5CF17864FB00588E685, Between Fiction and Reality"
 quest_id: "SK_17_1"
 category: "skill-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "8D8843134E7A5B50AC65C9888CA6A9A4", "Decoded Letter"
+title: "8D8843134E7A5B50AC65C9888CA6A9A4, Decoded Letter"
 quest_id: "S_5_6"
 category: "sub-quests"
 ---

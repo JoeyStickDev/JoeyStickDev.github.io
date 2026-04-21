@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "3AC5DD244748C8C96436CC9E3AC0A5B5", "Flow of Fortune"
+title: "3AC5DD244748C8C96436CC9E3AC0A5B5, Flow of Fortune"
 quest_id: "SK_16_1"
 category: "skill-quests"
 ---

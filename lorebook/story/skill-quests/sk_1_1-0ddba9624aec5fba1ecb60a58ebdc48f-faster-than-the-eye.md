@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "0DDBA9624AEC5FBA1ECB60A58EBDC48F", "Faster Than the Eye"
+title: "0DDBA9624AEC5FBA1ECB60A58EBDC48F, Faster Than the Eye"
 quest_id: "SK_1_1"
 category: "skill-quests"
 ---

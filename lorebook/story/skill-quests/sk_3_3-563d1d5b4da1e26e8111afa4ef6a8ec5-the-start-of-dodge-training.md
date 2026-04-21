@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "563D1D5B4DA1E26E8111AFA4EF6A8EC5", "The Start of dodge Training"
+title: "563D1D5B4DA1E26E8111AFA4EF6A8EC5, The Start of dodge Training"
 quest_id: "SK_3_3"
 category: "skill-quests"
 ---

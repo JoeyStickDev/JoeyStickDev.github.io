@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "6F77AE0B473147CDA48EA796EAE0F733", "The Beginning of Creation"
+title: "6F77AE0B473147CDA48EA796EAE0F733, The Beginning of Creation"
 quest_id: "SK_10_0"
 category: "skill-quests"
 ---

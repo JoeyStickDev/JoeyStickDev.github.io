@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "0823B59B4A6EF1D0B8ED048C019D1258", "The Three Blind Prophets"
+title: "0823B59B4A6EF1D0B8ED048C019D1258, The Three Blind Prophets"
 quest_id: "S_8_3"
 category: "sub-quests"
 ---

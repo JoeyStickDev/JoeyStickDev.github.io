@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "6A25EDAF46C74FB83EF9468A0C762ED8", "The Father of Creation"
+title: "6A25EDAF46C74FB83EF9468A0C762ED8, The Father of Creation"
 quest_id: "SK_10_2"
 category: "skill-quests"
 ---

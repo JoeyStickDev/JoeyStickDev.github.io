@@ -19,8 +19,8 @@ layout: default
         
         <!-- 동적 2중 카테고리 필터 영역 -->
         <div id="dict-filters" style="margin-bottom: 30px; display: none;">
-            <div id="primary-filters" class="tabs" style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;"></div>
-            <div id="secondary-filters" class="tabs" style="display: none; padding-bottom: 15px; gap: 10px;"></div>
+            <div id="primary-filters" class="tabs" style="margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; display: flex; flex-wrap: wrap; gap: 8px;"></div>
+            <div id="secondary-filters" class="tabs" style="display: none; padding-bottom: 15px; gap: 8px; flex-wrap: wrap;"></div>
         </div>
 
         {% if items %}
@@ -100,27 +100,109 @@ layout: default
                 {% endif %}
 
             {% elsif page.dataset == 'creatures' %}
-                <!-- Creature Hostility Logic -->
-                {% if item.IsAttackFirst == 'True' %}
-                    {% assign i_cat = '선공' %}
-                {% else %}
-                    {% assign i_cat = '비선공' %}
-                {% endif %}
+                <!-- Creature Hostility Logic (Robust Key Search) -->
+                {% assign i_cat = '비선공' %}
+                {% for pair in item %}
+                    {% if pair[0] contains 'IsAttackFirst' %}
+                        {% assign val = pair[1] | downcase | strip %}
+                        {% if val == 'true' or pair[1] == true %}
+                            {% assign i_cat = '선공' %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
             {% elsif page.dataset == 'passive_skills' %}
                 <!-- Passive Skill Stat Logic -->
                 {% if item.Type == 'Sword' %}
                     {% assign i_cat = '힘' %}
                 {% elsif item.Type == 'Bow' %}
                     {% assign i_cat = '덱스' %}
-                {% elsif item.Type == 'Magic' %}
-                    {% assign i_cat = '지능' %}
-                {% elsif item.Type == 'Gun' %}
-                    {% assign i_cat = '행운' %}
+                {% endif %}
+            {% elsif page.dataset == 'quests' %}
+                <!-- Quest Category & Chapter Logic -->
+                {% assign id_parts = item.ID | split: '_' %}
+                {% assign prefix = id_parts[0] %}
+                
+                {% if prefix == 'M' %}
+                    {% assign i_subcat = '챕터 ' | append: id_parts[1] %}
+                    {% if i_cat != '메인서브' %}
+                        {% assign i_cat = '메인' %}
+                    {% endif %}
+                {% elsif prefix == 'S' %}
+                    {% assign i_cat = '서브' %}
+                    {% assign i_subcat = '서브 ' | append: id_parts[1] %}
+                {% elsif prefix == 'SK' %}
+                    {% assign i_cat = '스킬' %}
+                    {% assign i_subcat = '스킬 ' | append: id_parts[1] %}
                 {% endif %}
             {% endif %}
 
             <!-- Overwrite from Front Matter keys if NOT already handled by custom logic -->
-            {% if page.dataset != 'characters' and page.dataset != 'creatures' and page.dataset != 'passive_skills' %}
+            {% if page.dataset == 'items' %}
+                {% assign raw_type = item.ItemType | downcase | strip %}
+                {% assign raw_cat  = item.Category  | downcase | strip %}
+
+                {% if raw_type == 'armor' or raw_type == 'weapon' or raw_type == 'build' %}
+                    {% assign i_cat = '장비' %}
+                    {% assign i_subcat = item.Category | default: '기타' %}
+                {% elsif raw_type == 'quest' %}
+                    {% assign i_cat = '퀘스트용품' %}
+                    {% assign i_subcat = item.Category | default: '기타' %}
+                {% elsif raw_cat == 'seed' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '씨앗' %}
+                {% elsif raw_cat == 'crop' or raw_cat == 'crops' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '농작물' %}
+                {% elsif raw_cat == 'mushroom' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '버섯' %}
+                {% elsif raw_cat == 'fish' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '물고기' %}
+                {% elsif raw_cat == 'ore' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '광석' %}
+                {% elsif raw_cat == 'ingot' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '주괴' %}
+                {% elsif raw_cat == 'wood' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '목재' %}
+                {% elsif raw_cat == 'gem' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '보석' %}
+                {% elsif raw_cat == 'ingredient' %}
+                    {% assign i_cat = '농사용품' %}
+                    {% assign i_subcat = '재료' %}
+                {% elsif raw_cat == 'relic' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '유물' %}
+                {% elsif raw_cat == 'potion' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '포션' %}
+                {% elsif raw_cat == 'booster' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '부스터' %}
+                {% elsif raw_cat == 'herb' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '허브' %}
+                {% elsif raw_cat == 'food' or raw_cat == 'animal food' or raw_cat == 'soup' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '음식' %}
+                {% elsif raw_cat == 'drink' or raw_cat == 'product' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '음료' %}
+                {% elsif raw_cat == 'coin' %}
+                    {% assign i_cat = '소비' %}
+                    {% assign i_subcat = '화폐' %}
+                {% elsif raw_cat == 'campfire' or raw_cat == 'ridding' %}
+                    {% assign i_cat = '기타용품' %}
+                    {% assign i_subcat = item.Category | default: '기타' %}
+                {% else %}
+                    {% assign i_cat = '기타용품' %}
+                    {% assign i_subcat = item.Category | default: '기타' %}
+                {% endif %}
+            {% elsif page.dataset != 'characters' and page.dataset != 'creatures' and page.dataset != 'passive_skills' and page.dataset != 'quests' %}
                 {% assign i_cat = item[cat_key] | default: i_cat %}
                 {% assign i_subcat = item[subcat_key] | default: i_subcat %}
             {% endif %}
@@ -141,9 +223,9 @@ layout: default
                     {% endif %}
                     linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
-                    {% if i_subcat and i_subcat != '' %}
+                    {% if i_subcat and i_subcat != '' and i_subcat != '기타' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #e67e22; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_subcat }}</span>
-                    {% elsif i_cat and i_cat != '' %}
+                    {% elsif i_cat and i_cat != '' and i_cat != '기타' %}
                     <span class="dict-badge" style="position: absolute; top: 12px; right: 12px; background: #9b59b6; color: #fff; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">{{ i_cat }}</span>
                     {% endif %}
                 </div>
@@ -333,6 +415,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // 스토리 모드인 경우 숫자로 정렬 (1_Wintertown -> 2_LunaLake 순서 보장 시도)
             const subsArray = Array.from(subCats);
             const sortedSubs = subsArray.sort((a, b) => {
+                // 숫자 포함 카테고리 정렬 (챕터, 서브, 스킬 등 번호 순 정렬)
+                const numA = parseInt(a.replace(/[^0-9]/g, ''));
+                const numB = parseInt(b.replace(/[^0-9]/g, ''));
+
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    return numA - numB;
+                }
+
                 let idxA = storyOrder.indexOf(a);
                 let idxB = storyOrder.indexOf(b);
                 if (idxA === -1) idxA = 999;
@@ -384,16 +474,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function initTabs() {
         filterContainer.style.display = 'block';
         let btnStr = '';
-        const order = ['전체', '기본', '스토리'];
         
-        order.forEach(cat => {
-            if (primaryCats.has(cat)) {
-                const activeClass = cat === '전체' ? 'active' : '';
-                btnStr += `<button class="tab-btn ${activeClass}" data-cat="${cat}">${cat}</button>`;
-            }
+        const foundCats = Array.from(primaryCats);
+        const predefinedOrder = ['전체', '장비', '소비', '농사용품', '퀘스트용품', '기타용품',
+                                  '메인', '메인서브', '서브', '스킬', '기본', '스토리', '선공', '비선공', '힘', '덱스', '지능', '행운'];
+        
+        let finalOrder = [];
+        predefinedOrder.forEach(p => { if (foundCats.includes(p)) finalOrder.push(p); });
+        foundCats.forEach(f => { if (!finalOrder.includes(f)) finalOrder.push(f); });
+
+        finalOrder.forEach(cat => {
+            const activeClass = cat === '전체' ? 'active' : '';
+            btnStr += `<button class="tab-btn ${activeClass}" data-cat="${cat}">${cat}</button>`;
         });
 
         primaryContainer.innerHTML = btnStr;
+        primaryContainer.style.display = 'flex';
         primaryContainer.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 primaryContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -406,12 +502,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (primaryCats.size > 1) {
-        if ("{{ page.dataset }}" === 'items') {
-            // initGroupedFilters() - Logic moved here for consistency if needed
-        } else {
-            initTabs();
-        }
+    if (primaryCats.size > 1 && !{{ page.hide_filters | default: false }}) {
+        initTabs();
     }
 
     // 모달 로직 (Payload Architecture)

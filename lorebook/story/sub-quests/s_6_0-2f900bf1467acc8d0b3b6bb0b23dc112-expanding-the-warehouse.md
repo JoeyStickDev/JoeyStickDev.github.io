@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "2F900BF1467ACC8D0B3B6BB0B23DC112", "Expanding the Warehouse"
+title: "2F900BF1467ACC8D0B3B6BB0B23DC112, Expanding the Warehouse"
 quest_id: "S_6_0"
 category: "sub-quests"
 ---

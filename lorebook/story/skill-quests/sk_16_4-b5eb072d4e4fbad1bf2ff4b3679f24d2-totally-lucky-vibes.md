@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "B5EB072D4E4FBAD1BF2FF4B3679F24D2", "Totally Lucky Vibes"
+title: "B5EB072D4E4FBAD1BF2FF4B3679F24D2, Totally Lucky Vibes"
 quest_id: "SK_16_4"
 category: "skill-quests"
 ---

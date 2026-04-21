@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "01335B334E7BB529D4E843AF03C14232", "Village Development"
+title: "01335B334E7BB529D4E843AF03C14232, Village Development"
 quest_id: "S_10_0"
 category: "sub-quests"
 ---

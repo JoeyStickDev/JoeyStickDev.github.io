@@ -20,19 +20,64 @@ permalink: /lorebook/story/
     </div>
 
     <div class="story-grid">
-        {% assign stories = site.pages | where: "layout", "story" | sort: "chapter_num" %}
-        {% for story in stories %}
-        {% assign cat = "main" %}
-        {% if story.category %}{% assign cat = story.category %}{% endif %}
-        <a href="{{ story.url | relative_url }}" class="story-card" data-category="{{ cat }}">
-            <div class="card-num">
-                {% if story.chapter_num %}Chapter {{ story.chapter_num }}{% else %}{{ story.quest_id }}{% endif %}
+
+        {% comment %}== 1. 메인 챕터 카드 (chapter_num 있는 것만) =={% endcomment %}
+        {% assign main_stories = site.pages | where: "layout", "story" | where_exp: "p", "p.chapter_num" | sort: "chapter_num" %}
+        {% for story in main_stories %}
+        <a href="{{ story.url | relative_url }}" class="story-card" data-category="main">
+            <div>
+                <div class="card-num">Chapter {{ story.chapter_num }}</div>
+                <h2 class="card-title">{{ story.title }}</h2>
+                <div class="card-type">메인 스토리</div>
             </div>
-            <h2 class="card-title">{{ story.title }}</h2>
-            <div class="card-type">{{ cat | replace: 'sub-quests', '서브 퀘스트' | replace: 'skill-quests', '스킬 퀘스트' | replace: 'main', '메인 스토리' }}</div>
             <div class="read-more">이야기 읽기 →</div>
         </a>
         {% endfor %}
+
+        {% comment %}== 2. 서브 퀘스트 그룹 카드 =={% endcomment %}
+        {% assign sub_stories = site.pages | where: "layout", "story" | where: "category", "sub-quests" | sort: "quest_id" %}
+        {% assign sub_groups_seen = "" %}
+        {% for story in sub_stories %}
+            {% assign qid = story.quest_id %}
+            {% assign qid_parts = qid | split: "_" %}
+            {% assign group_key = qid_parts[0] | append: "_" | append: qid_parts[1] %}
+            {% unless sub_groups_seen contains group_key %}
+                {% assign sub_groups_seen = sub_groups_seen | append: group_key | append: "," %}
+                {% assign group_num = qid_parts[1] %}
+                {% assign sub_count = sub_stories | where_exp: "s", "s.quest_id contains group_key" | size %}
+                <a href="{{ story.url | relative_url }}" class="story-card" data-category="sub-quests">
+                    <div>
+                        <div class="card-num">서브 퀘스트 {{ group_num }}</div>
+                        <h2 class="card-title">서브 퀘스트 {{ group_num }}번 이야기</h2>
+                        <div class="card-type">서브 퀘스트 · {{ sub_count }}개 챕터</div>
+                    </div>
+                    <div class="read-more">퀘스트 보기 →</div>
+                </a>
+            {% endunless %}
+        {% endfor %}
+
+        {% comment %}== 3. 스킬 퀘스트 그룹 카드 =={% endcomment %}
+        {% assign skill_stories = site.pages | where: "layout", "story" | where: "category", "skill-quests" | sort: "quest_id" %}
+        {% assign skill_groups_seen = "" %}
+        {% for story in skill_stories %}
+            {% assign qid = story.quest_id %}
+            {% assign qid_parts = qid | split: "_" %}
+            {% assign group_key = qid_parts[0] | append: "_" | append: qid_parts[1] %}
+            {% unless skill_groups_seen contains group_key %}
+                {% assign skill_groups_seen = skill_groups_seen | append: group_key | append: "," %}
+                {% assign group_num = qid_parts[1] %}
+                {% assign sk_count = skill_stories | where_exp: "s", "s.quest_id contains group_key" | size %}
+                <a href="{{ story.url | relative_url }}" class="story-card" data-category="skill-quests">
+                    <div>
+                        <div class="card-num">스킬 퀘스트 {{ group_num }}</div>
+                        <h2 class="card-title">스킬 퀘스트 {{ group_num }}번 이야기</h2>
+                        <div class="card-type">스킬 퀘스트 · {{ sk_count }}개 챕터</div>
+                    </div>
+                    <div class="read-more">퀘스트 보기 →</div>
+                </a>
+            {% endunless %}
+        {% endfor %}
+
     </div>
 </section>
 
@@ -42,6 +87,7 @@ permalink: /lorebook/story/
     justify-content: center;
     gap: 15px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .story-tab-btn {
@@ -153,11 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.addEventListener('click', () => {
             const target = tab.getAttribute('data-target');
 
-            // Update active tab
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            // Filter cards
             cards.forEach(card => {
                 if (target === 'all' || card.getAttribute('data-category') === target) {
                     card.style.display = 'flex';

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "0E639A19456E68CDCD1607A2C748CFE5", "A Page of Story"
+title: "0E639A19456E68CDCD1607A2C748CFE5, A Page of Story"
 quest_id: "S_5_2"
 category: "sub-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "9D3FBEA14D805E1B047AA28373648A74", "Chasing Rumors"
+title: "9D3FBEA14D805E1B047AA28373648A74, Chasing Rumors"
 quest_id: "S_0_2"
 category: "sub-quests"
 ---

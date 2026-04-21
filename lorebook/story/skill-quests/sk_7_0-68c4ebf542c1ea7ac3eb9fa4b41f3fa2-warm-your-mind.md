@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "68C4EBF542C1EA7AC3EB9FA4B41F3FA2", "Warm Your Mind"
+title: "68C4EBF542C1EA7AC3EB9FA4B41F3FA2, Warm Your Mind"
 quest_id: "SK_7_0"
 category: "skill-quests"
 ---

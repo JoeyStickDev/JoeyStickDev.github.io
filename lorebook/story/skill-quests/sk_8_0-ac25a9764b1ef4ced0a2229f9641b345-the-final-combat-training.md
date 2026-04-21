@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "AC25A9764B1EF4CED0A2229F9641B345", "The Final Combat Training"
+title: "AC25A9764B1EF4CED0A2229F9641B345, The Final Combat Training"
 quest_id: "SK_8_0"
 category: "skill-quests"
 ---

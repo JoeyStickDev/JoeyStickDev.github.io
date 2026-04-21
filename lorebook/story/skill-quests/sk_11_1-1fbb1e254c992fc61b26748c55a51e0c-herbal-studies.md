@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "1FBB1E254C992FC61B26748C55A51E0C", "Herbal Studies"
+title: "1FBB1E254C992FC61B26748C55A51E0C, Herbal Studies"
 quest_id: "SK_11_1"
 category: "skill-quests"
 ---

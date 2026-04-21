@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세계관 및 배경 - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="active-nav">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="world-index-section">
+    <div class="world-index-header">
+        <h1>World &amp; Background</h1>
+        <p>망각된 도서관과 그 주변 세계에 대한 기록들입니다.</p>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="world-tabs">
+        <button class="world-tab-btn active" data-target="all">전체</button>
+        <button class="world-tab-btn" data-target="역사">역사</button>
+        <button class="world-tab-btn" data-target="지리">지리</button>
+        <button class="world-tab-btn" data-target="종족">종족</button>
+        <button class="world-tab-btn" data-target="설정">설정</button>
+    </div>
+
+    <div class="world-grid">
+        
+        
+        <a href="/lorebook/world/origins/" class="world-card" data-category="역사">
+            <div class="card-category">역사</div>
+            <h2 class="card-title">도서관의 기원</h2>
+            <p class="card-desc">아주 먼 옛날, 세계의 모든 지식이 모였다고 전해지는 대도서관의 시작과 몰락에 대한 이야기입니다.</p>
+            <div class="read-more">자세히 보기 →</div>
+        </a>
+        
+        <a href="/lorebook/world/village/" class="world-card" data-category="지리">
+            <div class="card-category">지리</div>
+            <h2 class="card-title">조이빌리지 (Joy Village)</h2>
+            <p class="card-desc">도서관 위에 세워진 평화로운 시골 마을. 하지만 이곳의 안개 속에는 비밀이 숨겨져 있습니다.</p>
+            <div class="read-more">자세히 보기 →</div>
+        </a>
+        
+        <a href="/lorebook/world/library/" class="world-card" data-category="설정">
+            <div class="card-category">설정</div>
+            <h2 class="card-title">대도서관의 구조</h2>
+            <p class="card-desc">끝을 알 수 없는 층계와 살아있는 책들이 가득한 지하 도서관의 내부 설정입니다.</p>
+            <div class="read-more">자세히 보기 →</div>
+        </a>
+        
+        
+        
+    </div>
+</section>
+
+<style>
+.world-index-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.world-index-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.world-index-header h1 {
+    font-size: 3.5rem;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fff 0%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.world-index-header p {
+    color: #888;
+    font-size: 1.1rem;
+}
+
+.world-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.world-tab-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.world-tab-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.world-tab-btn.active {
+    background: #ffd700;
+    color: #000;
+    border-color: #ffd700;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+.world-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.world-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.world-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ffd700, transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.world-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 215, 0, 0.4);
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.world-card:hover::before {
+    opacity: 1;
+}
+
+.card-category {
+    font-size: 0.75rem;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 15px;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    color: #999;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.read-more {
+    font-size: 0.9rem;
+    color: #ffd700;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.no-content {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 100px 0;
+    color: #666;
+    border: 2px dashed rgba(255,255,255,0.05);
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .world-index-header h1 { font-size: 2.5rem; }
+    .world-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.world-tab-btn');
+    const cards = document.querySelectorAll('.world-card');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.getAttribute('data-target');
+
+            // Update active tab
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            // Filter cards
+            cards.forEach(card => {
+                if (target === 'all' || card.getAttribute('data-category') === target) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "91EDF8B14C56CD52CB68C3A1183F02B8", "Golden Hour"
+title: "91EDF8B14C56CD52CB68C3A1183F02B8, Golden Hour"
 quest_id: "SK_6_1"
 category: "skill-quests"
 ---

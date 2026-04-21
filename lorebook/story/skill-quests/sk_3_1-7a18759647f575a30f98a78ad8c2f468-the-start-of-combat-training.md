@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "7A18759647F575A30F98A78AD8C2F468", "The Start of Combat Training"
+title: "7A18759647F575A30F98A78AD8C2F468, The Start of Combat Training"
 quest_id: "SK_3_1"
 category: "skill-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "386C880C4F41B6EA594C5786688C43EA", "Unknown Ailment"
+title: "386C880C4F41B6EA594C5786688C43EA, Unknown Ailment"
 quest_id: "S_8_0"
 category: "sub-quests"
 ---

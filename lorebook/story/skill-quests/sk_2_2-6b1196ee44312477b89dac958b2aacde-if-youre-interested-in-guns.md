@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "6B1196EE44312477B89DAC958B2AACDE", "If You’re Interested in Guns"
+title: "6B1196EE44312477B89DAC958B2AACDE, If You’re Interested in Guns"
 quest_id: "SK_2_2"
 category: "skill-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "2DFED4E34BE12FB693E4658FC177B5A3", "Beginning of Sound"
+title: "2DFED4E34BE12FB693E4658FC177B5A3, Beginning of Sound"
 quest_id: "SK_9_0"
 category: "skill-quests"
 ---

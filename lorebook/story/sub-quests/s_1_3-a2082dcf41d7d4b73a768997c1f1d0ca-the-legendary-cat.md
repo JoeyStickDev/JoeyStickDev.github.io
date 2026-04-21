@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "A2082DCF41D7D4B73A768997C1F1D0CA", "The Legendary Cat"
+title: "A2082DCF41D7D4B73A768997C1F1D0CA, The Legendary Cat"
 quest_id: "S_1_3"
 category: "sub-quests"
 ---

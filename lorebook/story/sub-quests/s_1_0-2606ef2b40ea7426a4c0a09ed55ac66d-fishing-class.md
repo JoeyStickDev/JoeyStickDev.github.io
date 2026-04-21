@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "2606EF2B40EA7426A4C0A09ED55AC66D", "Fishing Class"
+title: "2606EF2B40EA7426A4C0A09ED55AC66D, Fishing Class"
 quest_id: "S_1_0"
 category: "sub-quests"
 ---

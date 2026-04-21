@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "8C592FBB47E2FC4BDC5CD4925EDF58CC", "Emily’s Problem"
+title: "8C592FBB47E2FC4BDC5CD4925EDF58CC, Emily’s Problem"
 quest_id: "S_7_2"
 category: "sub-quests"
 ---

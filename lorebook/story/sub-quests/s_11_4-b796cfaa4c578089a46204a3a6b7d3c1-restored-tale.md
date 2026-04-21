@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "B796CFAA4C578089A46204A3A6B7D3C1", "Restored Tale"
+title: "B796CFAA4C578089A46204A3A6B7D3C1, Restored Tale"
 quest_id: "S_11_4"
 category: "sub-quests"
 ---

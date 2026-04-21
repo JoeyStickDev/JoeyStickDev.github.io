@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "C78717F346657755AFA0A686CEBFD0CE", "Celestial Medicine"
+title: "C78717F346657755AFA0A686CEBFD0CE, Celestial Medicine"
 quest_id: "S_8_6"
 category: "sub-quests"
 ---

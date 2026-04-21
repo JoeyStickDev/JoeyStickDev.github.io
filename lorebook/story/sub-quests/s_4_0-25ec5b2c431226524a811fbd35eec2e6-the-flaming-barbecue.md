@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "25EC5B2C431226524A811FBD35EEC2E6", "The Flaming Barbecue"
+title: "25EC5B2C431226524A811FBD35EEC2E6, The Flaming Barbecue"
 quest_id: "S_4_0"
 category: "sub-quests"
 ---

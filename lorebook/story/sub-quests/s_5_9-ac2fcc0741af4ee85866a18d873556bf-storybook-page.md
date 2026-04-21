@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "AC2FCC0741AF4EE85866A18D873556BF", "Storybook Page"
+title: "AC2FCC0741AF4EE85866A18D873556BF, Storybook Page"
 quest_id: "S_5_9"
 category: "sub-quests"
 ---

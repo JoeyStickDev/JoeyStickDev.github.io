@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "2E21D42C40B3D1A05463FDB280FEE01C", "Path of Astronomy"
+title: "2E21D42C40B3D1A05463FDB280FEE01C, Path of Astronomy"
 quest_id: "S_8_5"
 category: "sub-quests"
 ---

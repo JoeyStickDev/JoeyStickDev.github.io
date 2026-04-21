@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "62C648494C0592A4C5B91FA5918D052F", "Population Control"
+title: "62C648494C0592A4C5B91FA5918D052F, Population Control"
 quest_id: "S_0_0"
 category: "sub-quests"
 ---

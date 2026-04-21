@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "F826A9F74E9C7C3A203D99B0B92FC579", "Road Driving Practice"
+title: "F826A9F74E9C7C3A203D99B0B92FC579, Road Driving Practice"
 quest_id: "SK_13_0"
 category: "skill-quests"
 ---

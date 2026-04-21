@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "EA5AF53B4E6DA093E36808B9A64CD243", "Secret Letter"
+title: "EA5AF53B4E6DA093E36808B9A64CD243, Secret Letter"
 quest_id: "S_5_3"
 category: "sub-quests"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "5A7BA77C4DAC6075380570B34F67820E", "Forgotten Rules"
+title: "5A7BA77C4DAC6075380570B34F67820E, Forgotten Rules"
 quest_id: "S_5_4"
 category: "sub-quests"
 ---

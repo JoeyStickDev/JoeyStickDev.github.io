@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "ED4988694E8D79828BFE4A890D1FAFB4", "Hammer Upgrade"
+title: "ED4988694E8D79828BFE4A890D1FAFB4, Hammer Upgrade"
 quest_id: "SK_0_2"
 category: "skill-quests"
 ---

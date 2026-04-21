@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "4DAF87524591F21FC5B5D88B3FEE51EB", "New Friend"
+title: "4DAF87524591F21FC5B5D88B3FEE51EB, New Friend"
 quest_id: "SK_1_0"
 category: "skill-quests"
 ---

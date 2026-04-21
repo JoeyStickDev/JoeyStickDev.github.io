@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "3B7401B348CE889CA7BD08A25F4D55DA", "Collaboration"
+title: "3B7401B348CE889CA7BD08A25F4D55DA, Collaboration"
 quest_id: "S_10_2"
 category: "sub-quests"
 ---

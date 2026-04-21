@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "8AD220024FF2C62B4036C08171309C13", "Moment of Serendipity"
+title: "8AD220024FF2C62B4036C08171309C13, Moment of Serendipity"
 quest_id: "S_7_6"
 category: "sub-quests"
 ---
