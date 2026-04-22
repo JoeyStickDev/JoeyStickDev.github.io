@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인과율 - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="active-nav">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <div class="world-container">
+    <div class="world-header">
+        <a href="/lorebook/world/" class="btn-back">← 세계관 목록으로</a>
+        <h1 class="world-article-title">인과율</h1>
+        <div class="world-meta">
+            
+            <span class="world-tag">설정</span>
+            
+        </div>
+    </div>
+
+    <article class="world-content">
+        <p>세계의 균형을 거스르는 힘을 사용할 때 발생하는 필연적인 대가.
+강력한 존재일수록 이 세계에 직접적으로 개입하기 위해서는 막대한 인과율을 지불해야 하며, 이를 어길 시 시스템의 거대한 폭풍(추방, 소멸 등)을 맞이하게 된다.</p>
+
+    </article>
+
+    <div class="world-footer">
+        <div class="world-navigation">
+            <a href="/lorebook/world/" class="nav-btn-home">
+                <span class="nav-label">목록으로 돌아가기</span>
+                <span class="nav-title">세계관 및 배경</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+.world-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+    color: #e0e0e0;
+}
+
+.world-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 30px;
+}
+
+.btn-back {
+    display: inline-block;
+    color: #ffd700;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.btn-back:hover {
+    transform: translateX(-5px);
+}
+
+.world-article-title {
+    font-size: 3rem;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, #fff 0%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.world-tag {
+    background: rgba(255, 215, 0, 0.1);
+    color: #ffd700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.world-content {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    color: #bbb;
+}
+
+.world-content h2 {
+    color: #fff;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-family: 'Outfit', sans-serif;
+    border-left: 4px solid #ffd700;
+    padding-left: 15px;
+}
+
+.world-content h3 {
+    color: #ffd700;
+    margin-top: 2em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.world-content p {
+    margin-bottom: 1.6em;
+}
+
+.world-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2em 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.world-footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-btn-home {
+    display: block;
+    background: rgba(255,255,255,0.03);
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+}
+
+.nav-btn-home:hover {
+    background: rgba(255,215,0,0.08);
+    border-color: rgba(255,215,0,0.3);
+    transform: translateY(-5px);
+}
+
+.nav-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.nav-title {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .world-container { padding: 0 20px; }
+    .world-article-title { font-size: 2.2rem; }
+}
+</style>
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
