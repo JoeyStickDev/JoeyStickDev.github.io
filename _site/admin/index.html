@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="main-content page-admin" style="padding-top: 100px; min-height: 80vh;">
+    <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+        
+        <div class="admin-header" style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+            <h1 style="color: #fff; font-size: 2.2rem; margin-bottom: 10px;">🛠️ Admin Testing Console</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">웹개발 테스팅 및 UI 실험 전용 페이지입니다.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            
+            <!-- UI 컴포넌트 테스트 영역 -->
+            <div style="background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px dashed var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 20px; font-family: var(--font-heading);">UI Component Test Area</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <button style="padding: 10px 20px; background: var(--accent-color); color: #000; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                        Test Button
+                    </button>
+                </div>
+
+                <div style="padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h4 style="color: #fff; margin-bottom: 10px;">Sample Card</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">이곳에서 각종 마크업, CSS 스타일, 자바스크립트 동작을 자유롭게 테스트할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- 스크립트/콘솔 아웃풋 영역 -->
+            <div style="background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px dashed var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 20px; font-family: var(--font-heading);">Console Output</h3>
+                
+                <div id="test-console" style="background: #111; padding: 15px; border-radius: 8px; height: 200px; overflow-y: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; color: #4af626; border: 1px solid #333;">
+                    > Admin mode initialized...<br>
+                    > System ready for testing.<br>
+                </div>
+                
+                <div style="margin-top: 15px; display: flex; gap: 10px;">
+                    <input type="text" id="test-input" placeholder="Enter test script..." style="flex: 1; padding: 8px 12px; background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: #fff; border-radius: 4px;">
+                    <button onclick="logTest()" style="padding: 8px 15px; background: #333; color: #fff; border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer;">Run</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<script>
+    // 테스팅용 스크립트 작성 공간
+    console.log("Admin page loaded successfully.");
+
+    function logTest() {
+        const input = document.getElementById('test-input');
+        const consoleDiv = document.getElementById('test-console');
+        const text = input.value;
+        
+        if (text) {
+            consoleDiv.innerHTML += `> ${text}<br>`;
+            input.value = '';
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
+    }
+</script>
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 layout: world
 title: 도깨비
 category: 종족
-order: 15
+order: 28
 description: 옛 신격을 얻은 존재들.
 ---
 

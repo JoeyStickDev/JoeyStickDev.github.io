@@ -1,0 +1,66 @@
+---
+layout: default
+title: Admin Console
+permalink: /admin/
+---
+<section class="main-content page-admin" style="padding-top: 100px; min-height: 80vh;">
+    <div class="content-container" style="max-width: 1200px; margin: 0 auto;">
+        
+        <div class="admin-header" style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+            <h1 style="color: #fff; font-size: 2.2rem; margin-bottom: 10px;">🛠️ Admin Testing Console</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">웹개발 테스팅 및 UI 실험 전용 페이지입니다.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            
+            <!-- UI 컴포넌트 테스트 영역 -->
+            <div style="background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px dashed var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 20px; font-family: var(--font-heading);">UI Component Test Area</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <button style="padding: 10px 20px; background: var(--accent-color); color: #000; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                        Test Button
+                    </button>
+                </div>
+
+                <div style="padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h4 style="color: #fff; margin-bottom: 10px;">Sample Card</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">이곳에서 각종 마크업, CSS 스타일, 자바스크립트 동작을 자유롭게 테스트할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- 스크립트/콘솔 아웃풋 영역 -->
+            <div style="background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px dashed var(--border-color);">
+                <h3 style="color: var(--accent-color); margin-bottom: 20px; font-family: var(--font-heading);">Console Output</h3>
+                
+                <div id="test-console" style="background: #111; padding: 15px; border-radius: 8px; height: 200px; overflow-y: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; color: #4af626; border: 1px solid #333;">
+                    > Admin mode initialized...<br>
+                    > System ready for testing.<br>
+                </div>
+                
+                <div style="margin-top: 15px; display: flex; gap: 10px;">
+                    <input type="text" id="test-input" placeholder="Enter test script..." style="flex: 1; padding: 8px 12px; background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: #fff; border-radius: 4px;">
+                    <button onclick="logTest()" style="padding: 8px 15px; background: #333; color: #fff; border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer;">Run</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<script>
+    // 테스팅용 스크립트 작성 공간
+    console.log("Admin page loaded successfully.");
+
+    function logTest() {
+        const input = document.getElementById('test-input');
+        const consoleDiv = document.getElementById('test-console');
+        const text = input.value;
+        
+        if (text) {
+            consoleDiv.innerHTML += `> ${text}<br>`;
+            input.value = '';
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
+    }
+</script>

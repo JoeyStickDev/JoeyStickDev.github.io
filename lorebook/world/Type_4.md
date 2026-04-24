@@ -2,7 +2,7 @@
 layout: world
 title: 순수체
 category: 종족
-order: 15
+order: 25
 description: 그 무엇보다 순수하기에 선하기도 악하기도 한 존재.
 ---
 

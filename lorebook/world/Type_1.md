@@ -2,7 +2,7 @@
 layout: world
 title: 인간
 category: 종족
-order: 13
+order: 22
 description: 이야기를 소비하는 존재
 ---
 

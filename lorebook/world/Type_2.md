@@ -2,7 +2,7 @@
 layout: world
 title: 관찰자
 category: 종족
-order: 14
+order: 23
 description: 이야기를 관찰하는 존재
 ---
 
