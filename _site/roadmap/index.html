@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - Shards of the Library</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Fonts: Noto Sans for Korean, Cinzel for Fantasy English Titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="global-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-text">Shards of the Library</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/" class="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="/news/" class="">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/news/">전체</a>
+                        <a href="/news/#tab-notice">공지사항</a>
+                        <a href="/news/#tab-update">업데이트</a>
+                        <a href="/news/#tab-devlog">개발일지</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="/guide/" class="">Guide ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/guide/">게임 가이드</a>
+                        <a href="/lorebook/story/">스토리북</a>
+                        <a href="/lorebook/">설정집</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/media/" class="">Media ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/media/#tab-screenshots">스크린샷</a>
+                        <a href="/media/#tab-artwork">아트워크</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="/roadmap/" class="active-nav">Roadmap</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-action">
+            <a href="https://store.steampowered.com/app/3702320/Shards_of_the_library/" target="_blank" class="btn-play-small">스팀페이지</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <style>
+.roadmap-container {
+    padding: 100px 20px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    min-height: 80vh;
+}
+
+.roadmap-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.roadmap-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #bb86fc;
+}
+
+.timeline-wrapper {
+    overflow-x: auto;
+    padding: 40px 0;
+}
+
+/* Custom Scrollbar for horizontal scrolling */
+.timeline-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+.timeline-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+.timeline-wrapper::-webkit-scrollbar-thumb {
+    background: #bb86fc;
+    border-radius: 5px;
+}
+
+.timeline {
+    display: flex;
+    position: relative;
+    padding: 60px 20px;
+    min-width: 900px;
+}
+
+/* Horizontal Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 4px;
+    background: #444;
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+}
+
+/* Dot on the timeline */
+.timeline-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #222;
+    border: 4px solid #444;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.timeline-item.completed .timeline-dot {
+    background: #bb86fc;
+    border-color: #bb86fc;
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.8);
+}
+
+.timeline-item.in-progress .timeline-dot {
+    background: #03dac6;
+    border-color: #03dac6;
+    box-shadow: 0 0 15px rgba(3, 218, 198, 0.8);
+}
+
+.timeline-content {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Zig-zag arrangement */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-bottom: 60px;
+    transform: translateY(-20px);
+}
+.timeline-item:nth-child(even) .timeline-content {
+    margin-top: 60px;
+    transform: translateY(20px);
+}
+
+/* Arrows pointing to the line */
+.timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: rgba(30, 30, 30, 0.9) transparent transparent transparent;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent rgba(30, 30, 30, 0.9) transparent;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: #bb86fc;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.timeline-item.in-progress .timeline-date {
+    color: #03dac6;
+}
+
+.timeline-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.timeline-detail {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.timeline-progress {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.completed .timeline-progress {
+    background: rgba(187, 134, 252, 0.2);
+    color: #bb86fc;
+}
+
+.in-progress .timeline-progress {
+    background: rgba(3, 218, 198, 0.2);
+    color: #03dac6;
+}
+
+.planned .timeline-progress {
+    background: rgba(255, 255, 255, 0.1);
+    color: #aaa;
+}
+</style>
+
+<section class="roadmap-container">
+    <div class="roadmap-header">
+        <h1>개발 로드맵 (Roadmap)</h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem;">Shards of the Library의 주요 개발 일정과 진행 상황입니다.</p>
+    </div>
+
+    <div class="timeline-wrapper">
+        <div class="timeline">
+            
+            <div class="timeline-item completed">
+                <div class="timeline-content">
+                    <div class="timeline-date">2026. 03</div>
+                    <div class="timeline-title">기본 시스템 구현</div>
+                    <div class="timeline-detail">캐릭터 이동, 인벤토리 구조, 기초 맵 디자인 및 상호작용 시스템 등 코어 시스템 구축.</div>
+                    <div class="timeline-progress">완료</div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item in-progress">
+                <div class="timeline-content">
+                    <div class="timeline-date">2026. 04</div>
+                    <div class="timeline-title">비주얼 고도화 및 편의성</div>
+                    <div class="timeline-detail">남성 캐릭터 모델링 개선, 메인 마을 시네마틱 컷신 추가, 플레이어 커스터마이징(머리카락) 확장 및 네비게이션/CC 버그 수정.</div>
+                    <div class="timeline-progress">진행 중</div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item planned">
+                <div class="timeline-content">
+                    <div class="timeline-date">2026. 05 (예상)</div>
+                    <div class="timeline-title">한글 패치 & 추가 에셋</div>
+                    <div class="timeline-detail">여성 캐릭터 메시(Mesh) 업데이트 및 인게임 주요 UI, 시나리오 스크립트 한글화 작업 완료.</div>
+                    <div class="timeline-progress">예정</div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item planned">
+                <div class="timeline-content">
+                    <div class="timeline-date">2026. 07 (예상)</div>
+                    <div class="timeline-title">얼리 액세스 빌드 완성</div>
+                    <div class="timeline-detail">초기 스팀 얼리 액세스를 목표로 게임 밸런스 조정 및 튜토리얼 최적화.</div>
+                    <div class="timeline-progress">예정</div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="global-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2 class="footer-logo">Shards of the Library</h2>
+            <p class="copyright">© 2026 JoeyStickDev. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">고객센터</a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
