@@ -50,7 +50,7 @@ layout: default
             
             {% assign i_name = i_name | replace: 'Name_', '' | split: ')' | first | remove: '"' | strip %}
 
-            {% assign i_img_display = item.Pic | default: item.Animation | default: item.image %}
+            {% assign i_img_display = item.Pic | default: item.Animation | default: item.image | default: item[img_key] | default: item.ItemImage_Filename %}
             
             <!-- 2. Image Path Refining -->
             {% if i_img_display contains '/Game/' %}
@@ -216,6 +216,10 @@ layout: default
                  style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
                 
                 {% assign img_root_path = site.baseurl | append: '/assets/images/' | append: page.dataset | append: '/' %}
+                {% if page.dataset == 'items' and item.Category and item.Category != '' %}
+                    {% assign clean_cat = item.Category | strip %}
+                    {% assign img_root_path = img_root_path | append: clean_cat | append: '/' %}
+                {% endif %}
 
                 <div class="dict-img" style="height: 160px; background-image: 
                     {% if i_img_display and i_img_display != '' %}

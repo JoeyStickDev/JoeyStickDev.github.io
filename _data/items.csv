@@ -37,7 +37,7 @@ Consumable_Boost_Q_B,Consumable_Boost_Q_B,Boost Q,Boost_Quality_IMG,Useable,Boos
 Consumable_Boost_S_B,Consumable_Boost_S_B,Boost S,Boost_Speed_IMG,Useable,Booster,Poor,0,99999,50,0,A small consumable that temporarily boosts strength and power.,100,FALSE,0,Boost S
 Consumable_Boost_W_B,Consumable_Boost_W_B,Boost W,Boost_Water_IMG,Useable,Booster,Poor,0,99999,50,0,A small consumable that temporarily boosts intelligence and magic power.,100,FALSE,0,Boost W
 Crops_Strawberry,Crops_Strawberry,Strawberry,Strawberry_IMG,resource,Crop,Poor,0,9999,10,0,A sweet red fruit harvested for food and trade.,80,FALSE,0,Strawberry
-Crops_Blueberry,Crops_Blueberry,Blueberry,Blueberry_pixel,resource,Crop,Normal,0,9999,10,0,"A small, sweet, and nutritious berry often used in cooking and medicine.",120,FALSE,0,Blueberry
+Crops_Blueberry,Crops_Blueberry,Blueberry,Blueberry_pixel.png,resource,Crop,Normal,0,9999,10,0,"A small, sweet, and nutritious berry often used in cooking and medicine.",120,FALSE,0,Blueberry
 Crops_ChiliPepper,Crops_ChiliPepper,Chili Pepper,peper_pixel,resource,Food,Normal,0,9999,10,0,A spicy fruit used in cooking to add heat and flavor.,180,FALSE,0,Chili Pepper
 Crops_Corn,Crops_Corn,Corn,Corn_pixel,resource,Food,Normal,0,9999,10,0,"A tall cereal plant producing edible kernels, commonly used for food and fodder.",400,FALSE,0,Corn
 Crops_Eggplant,Crops_Eggplant,Eggplant,Eggplant_pixel,resource,Crop,Normal,0,9999,10,0,A purple vegetable used in various dishes for its rich texture and flavor.,180,FALSE,0,Eggplant

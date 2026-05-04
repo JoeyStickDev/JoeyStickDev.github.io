@@ -66,6 +66,8 @@ permalink: /roadmap/
     flex: 1;
     min-width: 250px;
     padding: 0 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 /* Dot on the timeline */
@@ -104,16 +106,26 @@ permalink: /roadmap/
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Zig-zag arrangement */
+.timeline-content:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Zig-zag arrangement using CSS Grid */
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-bottom: 60px;
-    transform: translateY(-20px);
+    grid-row: 1;
+    align-self: end;
+    margin-bottom: 30px;
+    transform: none; /* 이전 transform 제거 */
 }
 .timeline-item:nth-child(even) .timeline-content {
-    margin-top: 60px;
-    transform: translateY(20px);
+    grid-row: 2;
+    align-self: start;
+    margin-top: 30px;
+    transform: none; /* 이전 transform 제거 */
 }
 
 /* Arrows pointing to the line */
@@ -156,6 +168,20 @@ permalink: /roadmap/
     font-weight: 600;
     margin-bottom: 12px;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-title::after {
+    content: '▼';
+    font-size: 0.8rem;
+    color: #888;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content.expanded .timeline-title::after {
+    transform: rotate(180deg);
 }
 
 .timeline-detail {
@@ -163,6 +189,16 @@ permalink: /roadmap/
     color: #ccc;
     line-height: 1.5;
     margin-bottom: 15px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.timeline-content.expanded .timeline-detail {
+    max-height: 500px; /* 큰 값으로 설정하여 내용물이 다 보이게 함 */
+    opacity: 1;
+    margin-top: 15px;
 }
 
 .timeline-progress {
@@ -199,10 +235,18 @@ permalink: /roadmap/
         <div class="timeline">
             {% for item in site.data.roadmap %}
             <div class="timeline-item {{ item.status }}">
-                <div class="timeline-content">
+                <div class="timeline-content" onclick="this.classList.toggle('expanded')">
                     <div class="timeline-date">{{ item.date }}</div>
                     <div class="timeline-title">{{ item.title }}</div>
-                    <div class="timeline-detail">{{ item.detail }}</div>
+                    <div class="timeline-detail">
+                        <ul style="padding-left: 20px; margin: 0; list-style-type: disc;">
+                        {% assign sentences = item.detail | split: ". " %}
+                        {% for sentence in sentences %}
+                            {% assign clean_sentence = sentence | remove: "." %}
+                            <li style="margin-bottom: 5px;">{{ clean_sentence }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
                     <div class="timeline-progress">{{ item.progress_text }}</div>
                 </div>
                 <div class="timeline-dot"></div>
