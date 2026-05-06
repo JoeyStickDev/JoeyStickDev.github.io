@@ -37,7 +37,7 @@ Consumable_Boost_Q_B,Consumable_Boost_Q_B,Boost Q,Boost_Quality_IMG,Useable,Boos
 Consumable_Boost_S_B,Consumable_Boost_S_B,Boost S,Boost_Speed_IMG,Useable,Booster,Poor,0,99999,50,0,A small consumable that temporarily boosts strength and power.,100,FALSE,0,Boost S
 Consumable_Boost_W_B,Consumable_Boost_W_B,Boost W,Boost_Water_IMG,Useable,Booster,Poor,0,99999,50,0,A small consumable that temporarily boosts intelligence and magic power.,100,FALSE,0,Boost W
 Crops_Strawberry,Crops_Strawberry,Strawberry,Strawberry_IMG,resource,Crop,Poor,0,9999,10,0,A sweet red fruit harvested for food and trade.,80,FALSE,0,Strawberry
-Crops_Blueberry,Crops_Blueberry,Blueberry,Blueberry_pixel.png,resource,Crop,Normal,0,9999,10,0,"A small, sweet, and nutritious berry often used in cooking and medicine.",120,FALSE,0,Blueberry
+Crops_Blueberry,Crops_Blueberry,Blueberry,Blueberry_pixel,resource,Crop,Normal,0,9999,10,0,"A small, sweet, and nutritious berry often used in cooking and medicine.",120,FALSE,0,Blueberry
 Crops_ChiliPepper,Crops_ChiliPepper,Chili Pepper,peper_pixel,resource,Food,Normal,0,9999,10,0,A spicy fruit used in cooking to add heat and flavor.,180,FALSE,0,Chili Pepper
 Crops_Corn,Crops_Corn,Corn,Corn_pixel,resource,Food,Normal,0,9999,10,0,"A tall cereal plant producing edible kernels, commonly used for food and fodder.",400,FALSE,0,Corn
 Crops_Eggplant,Crops_Eggplant,Eggplant,Eggplant_pixel,resource,Crop,Normal,0,9999,10,0,A purple vegetable used in various dishes for its rich texture and flavor.,180,FALSE,0,Eggplant
@@ -268,13 +268,13 @@ Quest_M3_UnderFlower,Quest_M3_UnderFlower,Under Flower,Quest_DeathFlower,resourc
 Quest_M3_Letter,Quest_M3_Letter,Hades’ Letter,M3_Letter,Quest,Letter,Uniqe,0,1,0,0,"A heartfelt letter written by Hades himself. Ancient runes of powerful sorcery are etched between the lines, and the deep scent of the Under Flower lingers in the parchment. Yet, the bright glow of the Luna Flower gently wraps around it—light embracing the darkness, as if even death wished to speak of love.",0,FALSE,0,Hades’ Letter
 Quest_M5_Mugwort,Quest_M5_Mugwort,Mugwort,Mugwort_pixel,resource,Crops,Poor,0,9999,0,0,Mugwort,0,FALSE,0,Mugwort
 Quest_M6_OldBook,Quest_M6_OldBook,Ancient record,M_6_OldBook,Quest,Book,Poor,0,9999,0,0,Ancient record,0,FALSE,0,Ancient record
-Quest_SK0_Hammer,Quest_SK0_Hammer,Hammer,ItemImage,Quest,Pendant,Poor,0,1,0,0,"A pendant crafted from an Ice Crystal infused with the lingering essence of a spirit.While carrying this pendant, using Warmth Essence will grant you the Warmth buff—a protective heat that allows you to withstand the harsh blizzard within the cave.",0,TRUE,0,Hammer
+Quest_SK0_Hammer,Quest_SK0_Hammer,Hammer,Hammer_pixel,Quest,Pendant,Poor,0,1,0,0,"A pendant crafted from an Ice Crystal infused with the lingering essence of a spirit.While carrying this pendant, using Warmth Essence will grant you the Warmth buff—a protective heat that allows you to withstand the harsh blizzard within the cave.",0,TRUE,0,Hammer
 Quest_SK3_WindmillBook,Quest_SK3_WindmillBook,Windmill Training Manual,Windmill_pixel,Quest,Book,Poor,0,1,0,0,A temporary combat manual that grants access to the Windmill skill within the training room.Use it to unleash a powerful spinning attack that strikes all enemies nearby.Only usable inside the training facility. The effect wears off after leaving.,0,TRUE,0,Windmill Training Manual
 Quest_SK4_Waterbucket,Quest_SK4_Waterbucket,Water bucket,SK4_Waterbucket,Quest,Bucket,Poor,0,1,0,0,Filied with water.,0,TRUE,0,Water bucket
-Quest_SK6_BeachTowel,Quest_SK6_BeachTowel,Syra\'s Beach Tower.,Tower,Quest,towel,Poor,0,1,0,0,Syra\'s Beach Tower.,0,TRUE,0,Syra\'s Beach Tower.
+Quest_SK6_BeachTowel,Quest_SK6_BeachTowel,Syra\'s Beach Tower.,BeachTowel_pixel,Quest,towel,Poor,0,1,0,0,Syra\'s Beach Tower.,0,TRUE,0,Syra\'s Beach Tower.
 Quest_SK16_LuckyCharm,Quest_SK16_LuckyCharm,LuckyCharm,LuckyCharm,Quest,towel,Poor,0,1,0,0,Lucky Charm. Casandra made for Jocelyn,0,TRUE,0,LuckyCharm
-Quest_S5_SealedBottle,Quest_S5_SealedBottle,Sealed Bottle,Milk_pixel,Quest,Sealed Bottle,Poor,0,1,0,0,"Sealed Bottle. Celine found it.,",0,TRUE,0,Sealed Bottle
-Quest_S5_OceansBack,Quest_S5_OceansBack,Ocean\'s Back,Book_pixel,Quest,Book,Poor,0,1,0,0,Ocean\'s Back,0,TRUE,0,Ocean\'s Back
+Quest_S5_SealedBottle,Quest_S5_SealedBottle,Sealed Bottle,SealedBottle_pixel,Quest,Sealed Bottle,Poor,0,1,0,0,"Sealed Bottle. Celine found it.,",0,TRUE,0,Sealed Bottle
+Quest_S5_OceansBack,Quest_S5_OceansBack,Ocean\'s Back,OceansBack_Book,Quest,Book,Poor,0,1,0,0,Ocean\'s Back,0,TRUE,0,Ocean\'s Back
 Quest_M8_Essence_M1,Quest_M8_Essence_M1,Luna Flower Extract,Essence_M_1,Quest,Essence,Uniqe,0,9999,0,0,Luna Flower Extract,0,FALSE,0,Luna Flower Extract
 Quest_M8_Essence_M2,Quest_M8_Essence_M2,Ember Scent,Essence_M_2,Quest,Essence,Uniqe,0,9999,0,0,Ember Scent,0,FALSE,0,Ember Scent
 Quest_M8_Essence_M3,Quest_M8_Essence_M3,Underworld Bloom,Essence_M_3,Quest,Essence,Uniqe,0,9999,0,0,Underworld Bloom,0,FALSE,0,Underworld Bloom
