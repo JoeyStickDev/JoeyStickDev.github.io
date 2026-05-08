@@ -78,7 +78,7 @@ Material_Paper,Material_Paper,Paper,Paper_pixel,resource,Ingredient,Poor,0,9999,
 Material_Ink,Material_Ink,Ink,Ink_pixel,resource,Ingredient,Poor,0,9999,0,0,"A liquid used for writing, drawing, or magical inscriptions.",100,FALSE,0,Ink
 Material_Salt,Material_Salt,Salt,Salt_pixel,resource,Ingredient,Normal,0,9999,0,0,"A common mineral used for cooking, preservation, or alchemical processes.",10,FALSE,0,Salt
 Material_Sugar,Material_Sugar,Sugar,Sugar_pixel,resource,Ingredient,Normal,0,9999,0,0,"A sweet substance used in cooking, potion-making, or as an energy booster.",50,FALSE,0,Sugar
-Material_Pepper,Material_Pepper,Pepper,Paper_pixel,resource,Ingredient,Normal,0,9999,0,0,A spicy seasoning used in cooking to enhance flavor.,50,FALSE,0,Pepper
+Material_Pepper,Material_Pepper,Pepper,Pepper_pixel,resource,Ingredient,Normal,0,9999,0,0,A spicy seasoning used in cooking to enhance flavor.,50,FALSE,0,Pepper
 Material_Wood,Material_Wood,Wood,Wood_Hard_IMG,resource,Wood,Poor,0,9999,0,0,A natural resource used for crafting and construction.,100,FALSE,0,Wood
 Material_Wood_Hard,Material_Wood_Hard,Hardwood,Wood_Week,resource,Wood,Poor,0,9999,0,0,A stronger type of wood used for durable constructions.,300,FALSE,0,Hardwood
 Material_Wood_Condensed,Material_Wood_Condensed,Condensed wood,Wood_IMG,resource,Wood,Poor,0,9999,0,0,A condencsed wood.,300,FALSE,0,Condensed wood
@@ -87,7 +87,7 @@ Material_Essence_Tulip,Material_Essence_Tulip,Tulip Essence,Material_Extract_Tul
 Material_Essence_Rose,Material_Essence_Rose,Rose Essence,Material_Extract_Rose_pixel,resource,Ingredient,Normal,0,9999,0,0,It is an essence extracted from flowers.,10,FALSE,0,Rose Essence
 Material_Essence_Sunflower,Material_Essence_Sunflower,Sunflower Essence,Material_Extract_Sunflower_pixel,resource,Ingredient,Normal,0,9999,0,0,It is an essence extracted from flowers.,10,FALSE,0,Sunflower Essence
 Material_Thread,Material_Thread,Thread,threed_pixel,resource,Ingredient,Poor,0,9999,0,0,"A basic crafting material spun from fiber.Used to create fabric, clothing, or light accessories.",700,FALSE,0,Thread
-Material_Flour,Material_Flour,Flour,Salt_pixel,resource,Ingredient,Normal,0,9999,0,0,"A common mineral used for cooking, preservation, or alchemical processes.",10,FALSE,0,Flour
+Material_Flour,Material_Flour,Flour,Flour_pixel,resource,Ingredient,Normal,0,9999,0,0,"A common mineral used for cooking, preservation, or alchemical processes.",10,FALSE,0,Flour
 Material_RawMeat,Material_RawMeat,Raw Meat,RawMeat,resource,Ingredient,Poor,0,9999,0,0,Freshly cut meat from a hunted animal.Can be cooked or used as an ingredient in various recipes.,700,FALSE,0,Raw Meat
 Material_Gem_Diamond,Material_Gem_Diamond,Diamond,Gem_Diamond_img,resource,Gem,Poor,0,9999,0,0,It is a White gem.,10000,FALSE,0,Diamond
 Material_Gem_BlackDiamond,Material_Gem_BlackDiamond,Black Diamond,Gem_BlackDiamond_img,resource,Gem,Poor,0,9999,0,0,It is a Black gem.,10000,FALSE,0,Black Diamond
@@ -143,13 +143,13 @@ Structure_Fireplace,Structure_Fireplace,Fireplace,Structure_Fireplace_pixel,Buil
 Structure_Rug,Structure_Rug,Rug,Structure_Rug_pixel,Build,Wall,Poor,0,9999,10,0,A soft rug that brings warmth and texture to any floor it touches.,100,TRUE,0,Rug
 Structure_Chair,Structure_Chair,Stool,Structure_Chair_pixel,Build,Wall,Poor,0,9999,10,0,"A solid wooden chair. It’s not the most comfortable, but it gets the job done.",100,TRUE,0,Stool
 Structure_DeskLamp,Structure_DeskLamp,Desk Lamp,Structure_DeskLamp_pixel,Build,Wall,Poor,0,9999,10,0,A small but focused light source—perfect for late-night writing.,100,TRUE,0,Desk Lamp
-Tool_Axe,Tool_Axe,Axe,Axe,Weapon,Axe,Poor,0,1,10,0,A tool used for cutting down trees and chopping wood.,1000,FALSE,0,Axe
-Tool_Pickaxe,Tool_Pickaxe,Pickaxe,Pickaxe,Weapon,Pickaxe,Poor,0,1,10,0,A tool used for mining rocks and extracting ores.,1000,FALSE,0,Pickaxe
-Tool_Shovel,Tool_Shovel,Shovel,shavel,Weapon,Shovel,Poor,0,1,10,0,A tool used for digging soil and unearthing buried items.,2000,FALSE,0,Shovel
-Tool_Scythe,Tool_Scythe,Scythe,Side,Weapon,Scythe,Poor,0,1,10,0,A structural element that forms the edge of a building or area.,1000,FALSE,0,Scythe
-Tool_WateringCan,Tool_WateringCan,Watering Can,WateringCan,Weapon,Watering,Poor,0,1,10,0,A tool used to water crops and keep them hydrated.,1000,FALSE,0,Watering Can
+Tool_Axe,Tool_Axe,Axe,Axe_pixel,Weapon,Axe,Poor,0,1,10,0,A tool used for cutting down trees and chopping wood.,1000,FALSE,0,Axe
+Tool_Pickaxe,Tool_Pickaxe,Pickaxe,Pickaxe_pixel,Weapon,Pickaxe,Poor,0,1,10,0,A tool used for mining rocks and extracting ores.,1000,FALSE,0,Pickaxe
+Tool_Shovel,Tool_Shovel,Shovel,Shovel_pixel,Weapon,Shovel,Poor,0,1,10,0,A tool used for digging soil and unearthing buried items.,2000,FALSE,0,Shovel
+Tool_Scythe,Tool_Scythe,Scythe,Scythe_pixel,Weapon,Scythe,Poor,0,1,10,0,A structural element that forms the edge of a building or area.,1000,FALSE,0,Scythe
+Tool_WateringCan,Tool_WateringCan,Watering Can,WateringCan_pixel,Weapon,Watering,Poor,0,1,10,0,A tool used to water crops and keep them hydrated.,1000,FALSE,0,Watering Can
 Tool_AED,Tool_AED,Automated External Defibrillator,System_HP_IMG_pixel,resource,Tool,Poor,0,1,10,0,"At the moment of death, you get one more chance.",1000,FALSE,0,Automated External Defibrillator
-Tool_FishingRod,Tool_FishingRod,Fishing Rod,fishing,Weapon,Fishing,Poor,0,1,10,0,A tool used for catching fish from bodies of water.,1000,FALSE,0,Fishing Rod
+Tool_FishingRod,Tool_FishingRod,Fishing Rod,FishingRod_pixel,Weapon,Fishing,Poor,0,1,10,0,A tool used for catching fish from bodies of water.,1000,FALSE,0,Fishing Rod
 Tool_Guitar_Acoustic,Tool_Guitar_Acoustic,Acoustic Guitar,Guitar_pixel,Weapon,Guitar,Poor,0,1,10,0,An acoustic guitar,1500,FALSE,0,Acoustic Guitar
 Tool_Guitar_Electic,Tool_Guitar_Electic,Electic Guitar,Tool_Guitar_Electic_pixel,Weapon,Guitar,Poor,0,1,10,0,An electic guitar,1500,FALSE,0,Electic Guitar
 Weapon_Sword,Weapon_Sword,Sword,Sword,Weapon,Sword,Poor,0,1,10,0,A melee weapon used for close-range combat and dealing damage.,2000,FALSE,10,Sword
