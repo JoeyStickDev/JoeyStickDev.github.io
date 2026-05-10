@@ -3,32 +3,32 @@ Armor_Gloves,Armor_Gloves,Gloves,Glove_Brown_pixel,Armor,Gloves,Poor,0,1,10,0,Ha
 Armor_Gloves_Hunter,Armor_Gloves_Hunter,Hunter Gloves,Gloves_Bow_pixel,Armor,Gloves,Poor,0,1,10,0,Flexible gloves that enhance dexterity and provide a better grip for handling bows and traps.,1500,FALSE,10,Hunter Gloves
 Armor_Gloves_Mage,Armor_Gloves_Mage,Mage Gloves,Glove_Magic_pixel,Armor,Gloves,Poor,0,1,10,0,Lightweight gloves infused with magic to improve spellcasting efficiency and mana control.,1500,FALSE,10,Mage Gloves
 Armor_Gloves_Warrior,Armor_Gloves_Warrior,Warrior Gloves,Gloves_Worrior_pixel,Armor,Gloves,Poor,0,1,10,0,Sturdy gloves designed to enhance a warrior?s grip and provide extra protection in combat.,1500,FALSE,10,Warrior Gloves
-Armor_Hat_Basic,Armor_Hat_Basic,Hat,Hat_Gentlmen_pixel,Armor,Hat,Poor,0,1,10,0,A headgear that provides protection or boosts magical abilities.,700,FALSE,10,Hat
-Armor_Hat_FarmerHat,Armor_Hat_FarmerHat,Farmer Hat,Hat_Gentlmen_pixel,Armor,Hat,Poor,0,1,10,0,A headgear that provides protection or boosts magical abilities.,700,FALSE,10,Farmer Hat
-Armor_Hat_Beanie,Armor_Hat_Beanie,Beanie,Hat_Gentlmen_pixel,Armor,Hat,Poor,0,1,10,0,A headgear that provides protection.,700,FALSE,10,Beanie
-Armor_Hat_Warrior,Armor_Hat_Warrior,Warrior Hat,Hat_Worrior_pixel,Armor,Hat,Poor,0,1,10,0,A reinforced helmet that offers superior head protection during battles.,1200,FALSE,10,Warrior Hat
-Armor_Hat_Warrior_Expert,Armor_Hat_Warrior_Expert,Expert Warrior Hat,Hat_Worrior_pixel,Armor,Hat,Poor,0,1,30,0,A reinforced helmet that offers superior head protection during battles.,3000,FALSE,10,Expert Warrior Hat
-Armor_Hat_Warrior_Master,Armor_Hat_Warrior_Master,Master Warrior Hat,Hat_Worrior_pixel,Armor,Hat,Poor,0,1,50,0,A reinforced helmet that offers superior head protection during battles.,8000,FALSE,10,Master Warrior Hat
-Armor_Hat_Hunter,Armor_Hat_Hunter,Hunter Hat,Hat_Bow_pixel,Armor,Hat,Poor,0,1,10,0,"A durable, lightweight hat that provides shade and enhances awareness in the wild.",1200,FALSE,10,Hunter Hat
-Armor_Hat_Hunter_Expert,Armor_Hat_Hunter_Expert,Expert Hunter Hat,Hat_Bow_pixel,Armor,Hat,Poor,0,1,30,0,"A durable, lightweight hat that provides shade and enhances awareness in the wild.",3000,FALSE,10,Expert Hunter Hat
-Armor_Hat_Hunter_Master,Armor_Hat_Hunter_Master,Master Hunter Hat,Hat_Bow_pixel,Armor,Hat,Poor,0,1,50,0,"A durable, lightweight hat that provides shade and enhances awareness in the wild.",8000,FALSE,10,Master Hunter Hat
-Armor_Hat_Mage,Armor_Hat_Mage,Mage Hat,Hat_Magic_pixel,Armor,Hat,Poor,0,1,10,0,A mystical hat enchanted to boost magical power and spell resistance.,1200,FALSE,10,Mage Hat
-Armor_Hat_Mage_Expert,Armor_Hat_Mage_Expert,Expert Mage Hat,Hat_Magic_pixel,Armor,Hat,Poor,0,1,30,0,A mystical hat enchanted to boost magical power and spell resistance.,3000,FALSE,10,Expert Mage Hat
-Armor_Hat_Mage_Master,Armor_Hat_Mage_Master,Master Mage Hat,Hat_Magic_pixel,Armor,Hat,Poor,0,1,50,0,A mystical hat enchanted to boost magical power and spell resistance.,8000,FALSE,10,Master Mage Hat
+Armor_Hat_Basic,Armor_Hat_Basic,Hat,Armor_Hat_Basic,Armor,Hat,Poor,0,1,10,0,A headgear that provides protection or boosts magical abilities.,700,FALSE,10,Hat
+Armor_Hat_FarmerHat,Armor_Hat_FarmerHat,Farmer Hat,Hat_Farmer,Armor,Hat,Poor,0,1,10,0,A headgear that provides protection or boosts magical abilities.,700,FALSE,10,Farmer Hat
+Armor_Hat_Beanie,Armor_Hat_Beanie,Beanie,Hat_Beanie,Armor,Hat,Poor,0,1,10,0,A headgear that provides protection.,700,FALSE,10,Beanie
+Armor_Hat_Warrior,Armor_Hat_Warrior,Warrior Hat,Hat_Worrior_1,Armor,Hat,Poor,0,1,10,0,A reinforced helmet that offers superior head protection during battles.,1200,FALSE,10,Warrior Hat
+Armor_Hat_Warrior_Expert,Armor_Hat_Warrior_Expert,Expert Warrior Hat,Hat_Worrior_2,Armor,Hat,Poor,0,1,30,0,A reinforced helmet that offers superior head protection during battles.,3000,FALSE,10,Expert Warrior Hat
+Armor_Hat_Warrior_Master,Armor_Hat_Warrior_Master,Master Warrior Hat,Hat_Worrior_3,Armor,Hat,Poor,0,1,50,0,A reinforced helmet that offers superior head protection during battles.,8000,FALSE,10,Master Warrior Hat
+Armor_Hat_Hunter,Armor_Hat_Hunter,Hunter Hat,Hat_Hunter_1,Armor,Hat,Poor,0,1,10,0,"A durable, lightweight hat that provides shade and enhances awareness in the wild.",1200,FALSE,10,Hunter Hat
+Armor_Hat_Hunter_Expert,Armor_Hat_Hunter_Expert,Expert Hunter Hat,Hat_Hunter_2,Armor,Hat,Poor,0,1,30,0,"A durable, lightweight hat that provides shade and enhances awareness in the wild.",3000,FALSE,10,Expert Hunter Hat
+Armor_Hat_Hunter_Master,Armor_Hat_Hunter_Master,Master Hunter Hat,Hat_Hunter_3,Armor,Hat,Poor,0,1,50,0,"A durable, lightweight hat that provides shade and enhances awareness in the wild.",8000,FALSE,10,Master Hunter Hat
+Armor_Hat_Mage,Armor_Hat_Mage,Mage Hat,Hat_Mage_1,Armor,Hat,Poor,0,1,10,0,A mystical hat enchanted to boost magical power and spell resistance.,1200,FALSE,10,Mage Hat
+Armor_Hat_Mage_Expert,Armor_Hat_Mage_Expert,Expert Mage Hat,Hat_Mage_2,Armor,Hat,Poor,0,1,30,0,A mystical hat enchanted to boost magical power and spell resistance.,3000,FALSE,10,Expert Mage Hat
+Armor_Hat_Mage_Master,Armor_Hat_Mage_Master,Master Mage Hat,Hat_Mage_3,Armor,Hat,Poor,0,1,50,0,A mystical hat enchanted to boost magical power and spell resistance.,8000,FALSE,10,Master Mage Hat
 Armor_Pants,Armor_Pants,Pants,Pants_Jeans_pixel,Armor,Bottom,Poor,0,1,10,0,Lower body clothing that provides defense and comfort.,1600,FALSE,10,Pants
-Armor_Pants_Hunter,Armor_Pants_Hunter,Hunter Pants,Pants_Bow_pixel,Armor,Bottom,Poor,0,1,10,0,"Sturdy pants designed for agility and flexibility, ideal for tracking and hunting.",2500,FALSE,10,Hunter Pants
-Armor_Pants_Mage,Armor_Pants_Mage,Mage Pants,Pants_Magic_pixel,Armor,Bottom,Poor,0,1,10,0,Loose-fitting pants imbued with magic to allow ease of movement and spellcasting.,2500,FALSE,10,Mage Pants
-Armor_Pants_Warrior,Armor_Pants_Warrior,Warrior Pants,Pants_Worrior_pixel,Armor,Bottom,Poor,0,1,10,0,Heavy-duty pants designed to endure intense physical combat and offer strong defense.,2500,FALSE,10,Warrior Pants
+Armor_Pants_Hunter,Armor_Pants_Hunter,Hunter Pants,Pants_Hunter_1,Armor,Bottom,Poor,0,1,10,0,"Sturdy pants designed for agility and flexibility, ideal for tracking and hunting.",2500,FALSE,10,Hunter Pants
+Armor_Pants_Mage,Armor_Pants_Mage,Mage Pants,Pants_Mage_1,Armor,Bottom,Poor,0,1,10,0,Loose-fitting pants imbued with magic to allow ease of movement and spellcasting.,2500,FALSE,10,Mage Pants
+Armor_Pants_Warrior,Armor_Pants_Warrior,Warrior Pants,Pants_Worrior_1,Armor,Bottom,Poor,0,1,10,0,Heavy-duty pants designed to endure intense physical combat and offer strong defense.,2500,FALSE,10,Warrior Pants
 Armor_Shirts,Armor_Shirts,Shirts,Top_Shirts_pixel,Armor,Upper,Poor,0,1,10,0,Upper body clothing that offers protection or enhances abilities.,1000,FALSE,10,Shirts
-Armor_Shirts_Warrior,Armor_Shirts_Warrior,Warrior Shirts,Top_Worrior_pixel,Armor,Upper,Poor,0,1,10,0,A reinforced battle shirt that provides excellent defense without restricting movement.,3000,FALSE,10,Warrior Shirts
-Armor_Shirts_Warrior_Expert,Armor_Shirts_Warrior_Expert,Expert Warrior Shirts,Top_Worrior_pixel,Armor,Upper,Poor,0,1,50,0,A reinforced battle shirt that provides excellent defense without restricting movement.,6000,FALSE,10,Expert Warrior Shirts
-Armor_Shirts_Warrior_Master,Armor_Shirts_Warrior_Master,Master Warrior Shirts,Top_Worrior_pixel,Armor,Upper,Poor,0,1,100,0,A reinforced battle shirt that provides excellent defense without restricting movement.,10000,FALSE,10,Master Warrior Shirts
-Armor_Shirts_Hunter,Armor_Shirts_Hunter,Hunter Shirts,Top_Bow_pixel,Armor,Upper,Poor,0,1,10,0,"A lightweight, breathable shirt designed for stealth and long-distance travel.",3000,FALSE,10,Hunter Shirts
-Armor_Shirts_Hunter_Expert,Armor_Shirts_Hunter_Expert,Expert Hunter Shirts,Top_Bow_pixel,Armor,Upper,Poor,0,1,50,0,"A lightweight, breathable shirt designed for stealth and long-distance travel.",6000,FALSE,10,Expert Hunter Shirts
-Armor_Shirts_Hunter_Master,Armor_Shirts_Hunter_Master,Master Hunter Shirts,Top_Bow_pixel,Armor,Upper,Poor,0,1,100,0,"A lightweight, breathable shirt designed for stealth and long-distance travel.",10000,FALSE,10,Master Hunter Shirts
-Armor_Shirts_Mage,Armor_Shirts_Mage,Mage Shirts,Top_Magic_pixel,Armor,Upper,Poor,0,1,10,0,A robe-like shirt enchanted with runes to enhance magical abilities.,3000,FALSE,10,Mage Shirts
-Armor_Shirts_Mage_Expert,Armor_Shirts_Mage_Expert,Expert Mage Shirts,Top_Magic_pixel,Armor,Upper,Poor,0,1,50,0,A robe-like shirt enchanted with runes to enhance magical abilities.,6000,FALSE,10,Expert Mage Shirts
-Armor_Shirts_Mage_Master,Armor_Shirts_Mage_Master,Master Mage Shirts,Top_Magic_pixel,Armor,Upper,Poor,0,1,100,0,A robe-like shirt enchanted with runes to enhance magical abilities.,10000,FALSE,10,Master Mage Shirts
+Armor_Shirts_Warrior,Armor_Shirts_Warrior,Warrior Shirts,Top_Worrior_1,Armor,Upper,Poor,0,1,10,0,A reinforced battle shirt that provides excellent defense without restricting movement.,3000,FALSE,10,Warrior Shirts
+Armor_Shirts_Warrior_Expert,Armor_Shirts_Warrior_Expert,Expert Warrior Shirts,Top_Worrior_2,Armor,Upper,Poor,0,1,50,0,A reinforced battle shirt that provides excellent defense without restricting movement.,6000,FALSE,10,Expert Warrior Shirts
+Armor_Shirts_Warrior_Master,Armor_Shirts_Warrior_Master,Master Warrior Shirts,Top_Worrior_3,Armor,Upper,Poor,0,1,100,0,A reinforced battle shirt that provides excellent defense without restricting movement.,10000,FALSE,10,Master Warrior Shirts
+Armor_Shirts_Hunter,Armor_Shirts_Hunter,Hunter Shirts,Top_Hunter_1,Armor,Upper,Poor,0,1,10,0,"A lightweight, breathable shirt designed for stealth and long-distance travel.",3000,FALSE,10,Hunter Shirts
+Armor_Shirts_Hunter_Expert,Armor_Shirts_Hunter_Expert,Expert Hunter Shirts,Top_Hunter_2,Armor,Upper,Poor,0,1,50,0,"A lightweight, breathable shirt designed for stealth and long-distance travel.",6000,FALSE,10,Expert Hunter Shirts
+Armor_Shirts_Hunter_Master,Armor_Shirts_Hunter_Master,Master Hunter Shirts,Top_Hunter_3,Armor,Upper,Poor,0,1,100,0,"A lightweight, breathable shirt designed for stealth and long-distance travel.",10000,FALSE,10,Master Hunter Shirts
+Armor_Shirts_Mage,Armor_Shirts_Mage,Mage Shirts,Top_Magic_1,Armor,Upper,Poor,0,1,10,0,A robe-like shirt enchanted with runes to enhance magical abilities.,3000,FALSE,10,Mage Shirts
+Armor_Shirts_Mage_Expert,Armor_Shirts_Mage_Expert,Expert Mage Shirts,Top_Magic_2,Armor,Upper,Poor,0,1,50,0,A robe-like shirt enchanted with runes to enhance magical abilities.,6000,FALSE,10,Expert Mage Shirts
+Armor_Shirts_Mage_Master,Armor_Shirts_Mage_Master,Master Mage Shirts,Top_Magic_3,Armor,Upper,Poor,0,1,100,0,A robe-like shirt enchanted with runes to enhance magical abilities.,10000,FALSE,10,Master Mage Shirts
 Armor_Shoes,Armor_Shoes,Shoes,Shoese_Canvas_pixel,Armor,Shoes,Poor,0,1,10,0,Footwear that enhances movement speed and provides protection.,1500,FALSE,10,Shoes
 Armor_Shoes_Hunter,Armor_Shoes_Hunter,Hunter Shoes,Shoese_Bow_pixel,Armor,Shoes,Poor,0,1,10,0,"Durable, quiet shoes designed for silent movement and better traction in rough terrain.",2500,FALSE,10,Hunter Shoes
 Armor_Shoes_Mage,Armor_Shoes_Mage,Mage Shoes,Shoes_Magic_pixel,Armor,Shoes,Poor,0,1,10,0,"Soft-soled shoes imbued with magic, allowing smooth movement and increased mana flow.",2500,FALSE,10,Mage Shoes
@@ -48,15 +48,16 @@ Crops_Pumpkin,Crops_Pumpkin,Pumpkin,Pumpkin_pixel,resource,Crop,Normal,0,9999,10
 Crops_Tomato,Crops_Tomato,Tomato,Tomato,resource,Crop,Poor,0,9999,10,0,A starchy vegetable commonly used for cooking.,130,FALSE,0,Tomato
 Crops_Letus,Crops_Letus,Letus,Letus_pixel,resource,Crop,Poor,0,9999,10,0,A starchy vegetable commonly used for cooking.,130,FALSE,0,Letus
 Crops_Wheat,Crops_Wheat,Wheat,Wheat,resource,Crop,Poor,0,9999,10,0,A starchy vegetable commonly used for cooking.,130,FALSE,0,Wheat
-Crops_Rose,Crops_Rose,Rose,Rose_pixel,resource,Crop,Normal,0,9999,10,0,A fragrant flowering plant valued for its beauty and use in perfumes and gifts.,350,FALSE,0,Rose
-Crops_Sunflower,Crops_Sunflower,Sunflower,SumFlower_pixel,resource,Crop,Normal,0,9999,10,0,"A tall plant with large yellow flowers, known for producing edible seeds and oil.",400,FALSE,0,Sunflower
 Crops_Tulip,Crops_Tulip,Tulip,Tulip_pixel,resource,Crop,Normal,0,9999,10,0,A brightly colored flowering plant often grown for decoration or gifting.,380,FALSE,0,Tulip
+Crops_Sunflower,Crops_Sunflower,Sunflower,SumFlower_pixel,resource,Crop,Normal,0,9999,10,0,"A tall plant with large yellow flowers, known for producing edible seeds and oil.",400,FALSE,0,Sunflower
+Crops_Rose,Crops_Rose,Rose,Rose_pixel,resource,Crop,Normal,0,9999,10,0,A fragrant flowering plant valued for its beauty and use in perfumes and gifts.,350,FALSE,0,Rose
 Mushroom_White,Mushroom_White,White Mushroom,Mushroom_Blue_pixel,resource,Mushroom,Poor,0,9999,10,0,"A type of fungi that can be used as food, medicine, or potion ingredients.",150,FALSE,0,White Mushroom
 Mushroom_Brown,Mushroom_Brown,Brown Mushroom,Mushroom_Brown_pixel,resource,Mushroom,Poor,0,9999,10,0,"A type of fungi that can be used as food, medicine, or potion ingredients.",150,FALSE,0,Brown Mushroom
 Mushroom_Red,Mushroom_Red,Red Mushroom,Mushroom_Red_pixel,resource,Mushroom,Poor,0,9999,10,0,"A type of fungi that can be used as food, medicine, or potion ingredients.",150,FALSE,0,Red Mushroom
-Herb_Green,Herb_Green,Green Herb,Herb_IMG,Useable,Herb,Poor,0,9999,0,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Green Herb
-Herb_Blue,Herb_Blue,Blue Herb,Herb_Blue_pixel,Useable,Herb,Poor,0,9999,0,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Blue Herb
-Herb_Red,Herb_Red,Red Herb,Herb_Red_pixel,Useable,Herb,Poor,0,9999,0,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Red Herb
+Herb_Green,Herb_Green,Green Herb,Herb_IMG,Useable,Herb,Poor,0,9999,10,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Green Herb
+Herb_Blue,Herb_Blue,Blue Herb,Herb_Blue_pixel,Useable,Herb,Poor,0,9999,10,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Blue Herb
+Herb_Red,Herb_Red,Red Herb,Herb_Red_pixel,Useable,Herb,Poor,0,9999,10,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Red Herb
+Herb_Sakura,Herb_Sakura,Herb_Sakura,SakiraPetal,Useable,Herb,Poor,0,9999,30,0,A medicinal plant used for healing and potion-making.,170,FALSE,0,Herb_Sakura
 Itembag,Itembag,Item Bag,ItemImage,Quest,Quest,Poor,0,9999,0,0,Simple Pickup Item Bag. If you have in your Inventory. Congratulations.You have Bug Item..,0,FALSE,0,Item Bag
 Itembags,Itembags,Item Bags,Chest,Quest,Quest,Poor,0,9999,0,0,Simple Container. If you have in your Inventory. Congratulations.You have Bug Item..,0,FALSE,0,Item Bags
 Key_GolfCart,Key_GolfCart,Golf Cart Key,Key,Useable,Ridding,Normal,0,9999,700,0,A key used to operate a golf cart for transportation.,10000,TRUE,0,Golf Cart Key
@@ -78,16 +79,17 @@ Material_Paper,Material_Paper,Paper,Paper_pixel,resource,Ingredient,Poor,0,9999,
 Material_Ink,Material_Ink,Ink,Ink_pixel,resource,Ingredient,Poor,0,9999,0,0,"A liquid used for writing, drawing, or magical inscriptions.",100,FALSE,0,Ink
 Material_Salt,Material_Salt,Salt,Salt_pixel,resource,Ingredient,Normal,0,9999,0,0,"A common mineral used for cooking, preservation, or alchemical processes.",10,FALSE,0,Salt
 Material_Sugar,Material_Sugar,Sugar,Sugar_pixel,resource,Ingredient,Normal,0,9999,0,0,"A sweet substance used in cooking, potion-making, or as an energy booster.",50,FALSE,0,Sugar
-Material_Pepper,Material_Pepper,Pepper,Pepper_pixel,resource,Ingredient,Normal,0,9999,0,0,A spicy seasoning used in cooking to enhance flavor.,50,FALSE,0,Pepper
+Material_Pepper,Material_Pepper,Pepper,Paper_pixel,resource,Ingredient,Normal,0,9999,0,0,A spicy seasoning used in cooking to enhance flavor.,50,FALSE,0,Pepper
 Material_Wood,Material_Wood,Wood,Wood_Hard_IMG,resource,Wood,Poor,0,9999,0,0,A natural resource used for crafting and construction.,100,FALSE,0,Wood
 Material_Wood_Hard,Material_Wood_Hard,Hardwood,Wood_Week,resource,Wood,Poor,0,9999,0,0,A stronger type of wood used for durable constructions.,300,FALSE,0,Hardwood
 Material_Wood_Condensed,Material_Wood_Condensed,Condensed wood,Wood_IMG,resource,Wood,Poor,0,9999,0,0,A condencsed wood.,300,FALSE,0,Condensed wood
 Material_Wood_Winter,Material_Wood_Winter,Winter Wood,Wood_Winter,resource,Wood,Poor,0,9999,0,0,A winter natural resource used for construction.,10,FALSE,0,Winter Wood
+Material_Wood_Sakura,Material_Wood_Sakura,Material_Wood_Sakura,Tree_Sakura,resource,Wood,Normal,0,9999,0,0,A Sakura Wood,10,FALSE,0,Material_Wood_Sakura
 Material_Essence_Tulip,Material_Essence_Tulip,Tulip Essence,Material_Extract_Tulipe_pixel,resource,Ingredient,Normal,0,9999,0,0,It is an essence extracted from flowers.,10,FALSE,0,Tulip Essence
 Material_Essence_Rose,Material_Essence_Rose,Rose Essence,Material_Extract_Rose_pixel,resource,Ingredient,Normal,0,9999,0,0,It is an essence extracted from flowers.,10,FALSE,0,Rose Essence
 Material_Essence_Sunflower,Material_Essence_Sunflower,Sunflower Essence,Material_Extract_Sunflower_pixel,resource,Ingredient,Normal,0,9999,0,0,It is an essence extracted from flowers.,10,FALSE,0,Sunflower Essence
 Material_Thread,Material_Thread,Thread,threed_pixel,resource,Ingredient,Poor,0,9999,0,0,"A basic crafting material spun from fiber.Used to create fabric, clothing, or light accessories.",700,FALSE,0,Thread
-Material_Flour,Material_Flour,Flour,Flour_pixel,resource,Ingredient,Normal,0,9999,0,0,"A common mineral used for cooking, preservation, or alchemical processes.",10,FALSE,0,Flour
+Material_Flour,Material_Flour,Flour,Salt_pixel,resource,Ingredient,Normal,0,9999,0,0,"A common mineral used for cooking, preservation, or alchemical processes.",10,FALSE,0,Flour
 Material_RawMeat,Material_RawMeat,Raw Meat,RawMeat,resource,Ingredient,Poor,0,9999,0,0,Freshly cut meat from a hunted animal.Can be cooked or used as an ingredient in various recipes.,700,FALSE,0,Raw Meat
 Material_Gem_Diamond,Material_Gem_Diamond,Diamond,Gem_Diamond_img,resource,Gem,Poor,0,9999,0,0,It is a White gem.,10000,FALSE,0,Diamond
 Material_Gem_BlackDiamond,Material_Gem_BlackDiamond,Black Diamond,Gem_BlackDiamond_img,resource,Gem,Poor,0,9999,0,0,It is a Black gem.,10000,FALSE,0,Black Diamond
@@ -104,22 +106,25 @@ Material_Relic_LUK,Material_Relic_LUK,Luck Relics,Relics_Luck_img,Useable,Relic,
 Material_Book,Material_Book,Book,Book_pixel,Useable,Book,Poor,0,1,0,0,Enemy get Damage by Physical,100,TRUE,0,Book
 Material_Paint,Material_Paint,Paint,Paint,Useable,Paint,Poor,0,1,0,0,Paint that you draw,100,TRUE,0,Paint
 Material_SheetMusic,Material_SheetMusic,Sheet Music,SheetMusic,resource,Sheet Music,Poor,0,1,0,0,You can play it using your instrument playing skills.,800,FALSE,0,Sheet Music
-Seed_Strawberry,Seed_Strawberry,Strawberry Seed,Seed_Strawberry_IMG,Useable,Seed,Poor,0,9999,10,0,A seed used to grow strawberry plants.Grows during spring and takes 8 days to mature.Can be harvested repeatedly after the first harvest.,40,FALSE,0,Strawberry Seed
-Seed_Garlic,Seed_Garlic,Garlic Seed,Seed_Galic_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow galic crops. Grows during spring and takes 4 days to mature.,80,FALSE,0,Garlic Seed
+Material_FoxOrb,Material_FoxOrb,Material_FoxOrb,FoxOrb,resource,Ingredient,Poor,0,9999,0,0,The orb the fox carried,50,FALSE,0,Material_FoxOrb
+Material_RatTail,Material_RatTail,Material_RatTail,Mousetail,resource,Ingredient,Poor,0,9999,0,0,The Rat tail,50,FALSE,0,Material_RatTail
+Material_WolfClaws,Material_WolfClaws,Material_WolfClaws,WolfClaw,resource,Ingredient,Poor,0,9999,0,0,The wolf\'s cloaw,50,FALSE,0,Material_WolfClaws
+Seed_Strawberry,Seed_Strawberry,Strawberry Seed,Seed_Strawberry_IMG,Useable,Seed,Poor,0,99999,10,0,A seed used to grow strawberry plants.Grows during spring and takes 8 days to mature.Can be harvested repeatedly after the first harvest.,40,FALSE,0,Strawberry Seed
+Seed_Garlic,Seed_Garlic,Garlic Seed,Seed_Galic_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow galic crops. Grows during spring and takes 4 days to mature.,80,FALSE,0,Garlic Seed
 Seed_Potato,Seed_Potato,Potato Seed,Seed_Potato_IMG,Useable,Seed,Poor,0,99999,10,0,A seed used to grow potato plants. It grows during the spring season and takes 14 days.,75,FALSE,0,Potato Seed
 Seed_Letus,Seed_Letus,Letus Seed,Seed_Letus_IMG,Useable,Seed,Poor,0,99999,10,0,A seed used to grow Letus plants. Grows during spring and takes 10 days to mature. Can be harvested repeatedly after the first harvest.,75,FALSE,0,Letus Seed
-Seed_Tulip,Seed_Tulip,Tulip Seed,Seed_Tulip_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow tulip flowers. Grows during spring and takes 10 days to mature.,150,FALSE,0,Tulip Seed
-Seed_Blueberry,Seed_Blueberry,Blueberry Seed,Seed_Blueberry_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow blueberry bushes. Grows during summer and takes 14 days to mature. Can be harvested repeatedly after the first harvest.,40,FALSE,0,Blueberry Seed
-Seed_ChilliPepper,Seed_ChilliPepper,Chili Pepper Seed,Seed_Chili_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow chili pepper plants. Grows during summer and takes 7 days to mature.,80,FALSE,0,Chili Pepper Seed
-Seed_Corn,Seed_Corn,Corn Seed,Seed_Corn_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow corn crops. Grows during summer and takes 14 days to mature.,120,FALSE,0,Corn Seed
-Seed_Sunflower,Seed_Sunflower,Sunflower Seed,Seed_Sunflower_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow sunflower plants. Grows during summer and takes 10 days to mature.,150,FALSE,0,Sunflower Seed
+Seed_Tulip,Seed_Tulip,Tulip Seed,Seed_Tulip_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow tulip flowers. Grows during spring and takes 10 days to mature.,150,FALSE,0,Tulip Seed
+Seed_Blueberry,Seed_Blueberry,Blueberry Seed,Seed_Blueberry_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow blueberry bushes. Grows during summer and takes 14 days to mature. Can be harvested repeatedly after the first harvest.,40,FALSE,0,Blueberry Seed
+Seed_ChilliPepper,Seed_ChilliPepper,Chili Pepper Seed,Seed_Chili_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow chili pepper plants. Grows during summer and takes 7 days to mature.,80,FALSE,0,Chili Pepper Seed
+Seed_Corn,Seed_Corn,Corn Seed,Seed_Corn_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow corn crops. Grows during summer and takes 14 days to mature.,120,FALSE,0,Corn Seed
+Seed_Sunflower,Seed_Sunflower,Sunflower Seed,Seed_Sunflower_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow sunflower plants. Grows during summer and takes 10 days to mature.,150,FALSE,0,Sunflower Seed
 Seed_Tomato,Seed_Tomato,Tomato Seed,Seed_Tomato_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow Tomato plants. Grows during summer and takes 10 days to mature. Can be harvested repeatedly after the first harvest.,75,FALSE,0,Tomato Seed
-Seed_Grape,Seed_Grape,Grape Seed,Seed_Grape_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow grapevines. Grows during fall and takes 9 days to mature. Can be harvested repeatedly after the first harvest.,40,FALSE,0,Grape Seed
-Seed_Eggplant,Seed_Eggplant,Eggplant Seed,Seed_EggPlant_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow eggplant crops. Grows during fall and takes 7 days to mature.,80,FALSE,0,Eggplant Seed
-Seed_Pumpkin,Seed_Pumpkin,Pumpkin Seed,Seed_Pumpkin_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow pumpkin plants. Grows during fall and takes 14 days to mature.,120,FALSE,0,Pumpkin Seed
-Seed_Rose,Seed_Rose,Rose Seed,Seed_Rose_pixel,Useable,Seed,Poor,0,1,10,0,A seed used to grow rose flowers. Grows during fall and takes 10 days to mature.,150,FALSE,0,Rose Seed
+Seed_Grape,Seed_Grape,Grape Seed,Seed_Grape_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow grapevines. Grows during fall and takes 9 days to mature. Can be harvested repeatedly after the first harvest.,40,FALSE,0,Grape Seed
+Seed_Eggplant,Seed_Eggplant,Eggplant Seed,Seed_EggPlant_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow eggplant crops. Grows during fall and takes 7 days to mature.,80,FALSE,0,Eggplant Seed
+Seed_Pumpkin,Seed_Pumpkin,Pumpkin Seed,Seed_Pumpkin_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow pumpkin plants. Grows during fall and takes 14 days to mature.,120,FALSE,0,Pumpkin Seed
+Seed_Rose,Seed_Rose,Rose Seed,Seed_Rose_pixel,Useable,Seed,Poor,0,99999,10,0,A seed used to grow rose flowers. Grows during fall and takes 10 days to mature.,150,FALSE,0,Rose Seed
 Seed_Wheat,Seed_Wheat,Wheat Seed,Seed_wheat_IMG,Useable,Seed,Poor,0,99999,10,0,A seed used to grow Wheat plants. Grows during fall and takes 10 days to mature. Can be harvested repeatedly after the first harvest.,75,FALSE,0,Wheat Seed
-Seed_Coffee,Seed_Coffee,Coffee Seed,Seed_Coffee,Useable,Seed,Poor,0,1,10,0,A raw coffee bean harvested from tropical shrubs.Can be roasted and ground to brew energizing coffee. Grows during all season and takes 10 days to mature.Can be harvested repeatedly after the first harvest.,150,FALSE,0,Coffee Seed
+Seed_Coffee,Seed_Coffee,Coffee Seed,Seed_Coffee,Useable,Seed,Poor,0,99999,10,0,A raw coffee bean harvested from tropical shrubs.Can be roasted and ground to brew energizing coffee. Grows during all season and takes 10 days to mature.Can be harvested repeatedly after the first harvest.,150,FALSE,0,Coffee Seed
 Structure_Bed,Structure_Bed,Bed,Bed_IMG,Build,Building,Poor,0,9999,10,0,A furniture piece used for sleeping and resting.,5000,TRUE,0,Bed
 Structure_Container,Structure_Container,Container,System_Box_pixel,Build,Building,Poor,0,9999,10,0,A heating device used for smelting ores into ingots.,1000,TRUE,0,Container
 Structure_Chicken_Nest,Structure_Chicken_Nest,Chicken Nest,Chicken_Nest_IMG,Build,Building,Poor,0,9999,0,0,A structure where chickens lay eggs and rest.,3000,TRUE,0,Chicken Nest
@@ -131,6 +136,7 @@ Structure_Dehydrator,Structure_Dehydrator,Dehydrator,Sturcture_Dihydred,Build,Bu
 Structure_OilExtractor,Structure_OilExtractor,Oil Extractor,Structure_Oil_pixel,Build,Building,Poor,0,9999,10,0,Produces oil from various ingredients.,9000,TRUE,0,Oil Extractor
 Structure_PreservesJar,Structure_PreservesJar,Preserves Jar,Structure_Jar_pixel,Build,Building,Poor,0,9999,10,0,"A container used to pickle crops, turning them into preserved foods.",10000,TRUE,0,Preserves Jar
 Structure_Sprinkler,Structure_Sprinkler,Sprinkler,Sprinkler_IMG,Build,Building,Poor,0,9999,10,0,An automatic watering device used for irrigating multiple crops.,1000,TRUE,0,Sprinkler
+Structure_Scarecrow,Structure_Scarecrow,Structure_Scarecrow,Structure_Scarecrow_pixel,Build,Building,Poor,0,9999,10,0,A scarecrow for combat practice.,0,TRUE,0,Structure_Scarecrow
 Structure_Wall,Structure_Wall,Wall,Wall_PNG,Build,Wall,Poor,0,9999,10,0,A solid structure used for defense or building enclosures.,100,TRUE,0,Wall
 Structure_Candle,Structure_Candle,Candle Stand,Structure_Candle_pixel,Build,Wall,Poor,0,9999,10,0,A small holder with a flickering candle. Adds warmth and a vintage touch.,100,TRUE,0,Candle Stand
 Structure_Floor,Structure_Floor,Wall,Floor_IMG,Build,Wall,Poor,0,9999,10,0,A solid structure used for defense or building enclosures.,100,TRUE,0,Wall
@@ -143,36 +149,38 @@ Structure_Fireplace,Structure_Fireplace,Fireplace,Structure_Fireplace_pixel,Buil
 Structure_Rug,Structure_Rug,Rug,Structure_Rug_pixel,Build,Wall,Poor,0,9999,10,0,A soft rug that brings warmth and texture to any floor it touches.,100,TRUE,0,Rug
 Structure_Chair,Structure_Chair,Stool,Structure_Chair_pixel,Build,Wall,Poor,0,9999,10,0,"A solid wooden chair. It’s not the most comfortable, but it gets the job done.",100,TRUE,0,Stool
 Structure_DeskLamp,Structure_DeskLamp,Desk Lamp,Structure_DeskLamp_pixel,Build,Wall,Poor,0,9999,10,0,A small but focused light source—perfect for late-night writing.,100,TRUE,0,Desk Lamp
-Tool_Axe,Tool_Axe,Axe,Axe_pixel,Weapon,Axe,Poor,0,1,10,0,A tool used for cutting down trees and chopping wood.,1000,FALSE,0,Axe
-Tool_Pickaxe,Tool_Pickaxe,Pickaxe,Pickaxe_pixel,Weapon,Pickaxe,Poor,0,1,10,0,A tool used for mining rocks and extracting ores.,1000,FALSE,0,Pickaxe
-Tool_Shovel,Tool_Shovel,Shovel,Shovel_pixel,Weapon,Shovel,Poor,0,1,10,0,A tool used for digging soil and unearthing buried items.,2000,FALSE,0,Shovel
-Tool_Scythe,Tool_Scythe,Scythe,Scythe_pixel,Weapon,Scythe,Poor,0,1,10,0,A structural element that forms the edge of a building or area.,1000,FALSE,0,Scythe
-Tool_WateringCan,Tool_WateringCan,Watering Can,WateringCan_pixel,Weapon,Watering,Poor,0,1,10,0,A tool used to water crops and keep them hydrated.,1000,FALSE,0,Watering Can
-Tool_AED,Tool_AED,Automated External Defibrillator,System_HP_IMG_pixel,resource,Tool,Poor,0,1,10,0,"At the moment of death, you get one more chance.",1000,FALSE,0,Automated External Defibrillator
-Tool_FishingRod,Tool_FishingRod,Fishing Rod,FishingRod_pixel,Weapon,Fishing,Poor,0,1,10,0,A tool used for catching fish from bodies of water.,1000,FALSE,0,Fishing Rod
+Tool_Axe,Tool_Axe,Axe,axe,Weapon,Axe,Poor,0,1,10,0,A tool used for cutting down trees and chopping wood.,1000,FALSE,0,Axe
+Tool_Pickaxe,Tool_Pickaxe,Pickaxe,pickaxe,Weapon,Pickaxe,Poor,0,1,10,0,A tool used for mining rocks and extracting ores.,1000,FALSE,0,Pickaxe
+Tool_Shovel,Tool_Shovel,Shovel,shavel,Weapon,Shovel,Poor,0,1,10,0,A tool used for digging soil and unearthing buried items.,2000,FALSE,0,Shovel
+Tool_Scythe,Tool_Scythe,Scythe,Side,Weapon,Scythe,Poor,0,1,10,0,A structural element that forms the edge of a building or area.,1000,FALSE,0,Scythe
+Tool_WateringCan,Tool_WateringCan,Watering Can,WateringCan,Weapon,Watering,Poor,0,1,10,0,A tool used to water crops and keep them hydrated.,1000,FALSE,0,Watering Can
+Tool_AED,Tool_AED,Automated External Defibrillator,Tool_AED,resource,Tool,Poor,0,1,10,0,"At the moment of death, you get one more chance.",1000,FALSE,0,Automated External Defibrillator
+Tool_Bomb_Basic,Tool_Bomb_Basic,Tool_Bomb_Basic,BombBasic,Useable,Tool,Poor,0,99999,500,0,"With a brief explosion,the surroundings are cleared in an instant.Upon use,collects resources around the character.",100,FALSE,0,Tool_Bomb_Basic
+Tool_Bomb_Throwable,Tool_Bomb_Throwable,Tool_Bomb_Throwable,BombTarget,Useable,Tool,Poor,0,99999,500,0,"The moment it is thrown,the collection area shifts.Upon use,collects resources around the mouse cursor location.",500,FALSE,0,Tool_Bomb_Throwable
+Tool_FishingRod,Tool_FishingRod,Fishing Rod,fishing,Weapon,Fishing,Poor,0,1,10,0,A tool used for catching fish from bodies of water.,1000,FALSE,0,Fishing Rod
 Tool_Guitar_Acoustic,Tool_Guitar_Acoustic,Acoustic Guitar,Guitar_pixel,Weapon,Guitar,Poor,0,1,10,0,An acoustic guitar,1500,FALSE,0,Acoustic Guitar
 Tool_Guitar_Electic,Tool_Guitar_Electic,Electic Guitar,Tool_Guitar_Electic_pixel,Weapon,Guitar,Poor,0,1,10,0,An electic guitar,1500,FALSE,0,Electic Guitar
-Weapon_Sword,Weapon_Sword,Sword,Sword,Weapon,Sword,Poor,0,1,10,0,A melee weapon used for close-range combat and dealing damage.,2000,FALSE,10,Sword
-Weapon_Sword_Expert,Weapon_Sword_Expert,Expert Sword,Sword,Weapon,Sword,Poor,0,1,50,0,A melee weapon used for close-range combat and dealing damage.,5000,FALSE,10,Expert Sword
-Weapon_Sword_Master,Weapon_Sword_Master,Master Sword,Sword,Weapon,Sword,Poor,0,1,100,0,A melee weapon used for close-range combat and dealing damage.,10000,FALSE,10,Master Sword
-Weapon_Bow,Weapon_Bow,Bow,Bow,Weapon,Bow,Poor,0,1,10,0,A ranged weapon used to shoot arrows at enemies from a distance.,2000,FALSE,10,Bow
-Weapon_Bow_Expert,Weapon_Bow_Expert,Expert Bow,Bow,Weapon,Bow,Poor,0,1,50,0,A ranged weapon used to shoot arrows at enemies from a distance.,8000,FALSE,10,Expert Bow
-Weapon_Bow_Master,Weapon_Bow_Master,Master Bow,Bow,Weapon,Bow,Poor,0,1,100,0,A ranged weapon used to shoot arrows at enemies from a distance.,10000,FALSE,10,Master Bow
-Weapon_Gun,Weapon_Gun,Gun,Gun,Weapon,Gun,Poor,0,1,10,0,"A firearm used for ranged combat, dealing high damage.",2000,FALSE,10,Gun
-Weapon_Gun_Expert,Weapon_Gun_Expert,Expert Gun,Gun,Weapon,Gun,Poor,0,1,50,0,"A firearm used for ranged combat, dealing high damage.",5000,FALSE,10,Expert Gun
-Weapon_Gun_Master,Weapon_Gun_Master,Master Gun,Gun,Weapon,Gun,Poor,0,1,100,0,"A firearm used for ranged combat, dealing high damage.",10000,FALSE,10,Master Gun
-Weapon_Orb,Weapon_Orb,Orb,Orb,Weapon,Orb,Poor,0,1,10,0,A magical sphere used for casting spells or enhancing abilities.,4000,FALSE,10,Orb
-Weapon_Orb_Expert,Weapon_Orb_Expert,Expert Orb,Orb,Weapon,Orb,Poor,0,1,50,0,A magical sphere used for casting spells or enhancing abilities.,5000,FALSE,10,Expert Orb
-Weapon_Orb_Master,Weapon_Orb_Master,Master Orb,Orb,Weapon,Orb,Poor,0,1,100,0,A magical sphere used for casting spells or enhancing abilities.,10000,FALSE,10,Master Orb
+Weapon_Sword,Weapon_Sword,Sword,Weapon_Sword_1,Weapon,Sword,Poor,0,1,10,0,A melee weapon used for close-range combat and dealing damage.,2000,FALSE,10,Sword
+Weapon_Sword_Expert,Weapon_Sword_Expert,Expert Sword,Weapon_Sword_2,Weapon,Sword,Poor,0,1,50,0,A melee weapon used for close-range combat and dealing damage.,5000,FALSE,10,Expert Sword
+Weapon_Sword_Master,Weapon_Sword_Master,Master Sword,Weapon_Sword_3,Weapon,Sword,Poor,0,1,100,0,A melee weapon used for close-range combat and dealing damage.,10000,FALSE,10,Master Sword
+Weapon_Bow,Weapon_Bow,Bow,Weapon_Bow_1,Weapon,Bow,Poor,0,1,10,0,A ranged weapon used to shoot arrows at enemies from a distance.,2000,FALSE,10,Bow
+Weapon_Bow_Expert,Weapon_Bow_Expert,Expert Bow,Weapon_Bow_2,Weapon,Bow,Poor,0,1,50,0,A ranged weapon used to shoot arrows at enemies from a distance.,8000,FALSE,10,Expert Bow
+Weapon_Bow_Master,Weapon_Bow_Master,Master Bow,Weapon_Bow_3,Weapon,Bow,Poor,0,1,100,0,A ranged weapon used to shoot arrows at enemies from a distance.,10000,FALSE,10,Master Bow
+Weapon_Gun,Weapon_Gun,Gun,Weapon_Gun_1,Weapon,Gun,Poor,0,1,10,0,"A firearm used for ranged combat, dealing high damage.",2000,FALSE,10,Gun
+Weapon_Gun_Expert,Weapon_Gun_Expert,Expert Gun,Weapon_Gun_2,Weapon,Gun,Poor,0,1,50,0,"A firearm used for ranged combat, dealing high damage.",5000,FALSE,10,Expert Gun
+Weapon_Gun_Master,Weapon_Gun_Master,Master Gun,Weapon_Gun_3,Weapon,Gun,Poor,0,1,100,0,"A firearm used for ranged combat, dealing high damage.",10000,FALSE,10,Master Gun
+Weapon_Orb,Weapon_Orb,Orb,Weapon_Orb_1,Weapon,Orb,Poor,0,1,10,0,A magical sphere used for casting spells or enhancing abilities.,4000,FALSE,10,Orb
+Weapon_Orb_Expert,Weapon_Orb_Expert,Expert Orb,Weapon_Orb_2,Weapon,Orb,Poor,0,1,50,0,A magical sphere used for casting spells or enhancing abilities.,5000,FALSE,10,Expert Orb
+Weapon_Orb_Master,Weapon_Orb_Master,Master Orb,Weapon_Orb_3,Weapon,Orb,Poor,0,1,100,0,A magical sphere used for casting spells or enhancing abilities.,10000,FALSE,10,Master Orb
 Weapon_Shield,Weapon_Shield,Shield,Shield,Weapon,Shield,Poor,0,1,10,0,A defensive piece of equipment used to block attacks.,1500,FALSE,10,Shield
 Fish_WaterLilySalmon,Fish_WaterLilySalmon,Water Lily Salmon,Water_Lily_Salmon_pixel,resource,Fish,Poor,0,9999,10,0,A graceful salmon seen near calm ponds across all seasons.,150,FALSE,0,Water Lily Salmon
 Fish_StoneSeaBass,Fish_StoneSeaBass,Stone Sea Bass,Stone_Sea_Bass_pixel,resource,Fish,Poor,0,9999,10,0,"A tough sea bass lurking among rocky shores, year-round.",150,FALSE,0,Stone Sea Bass
-Fish_CherryBlossomCarp,Fish_CherryBlossomCarp,Cherry Blossom Carp,_Cherry_Blossom_Carp_pixel,resource,Fish,Poor,0,9999,10,0,A beautiful carp that swims gracefully beneath falling blossoms.,150,FALSE,0,Cherry Blossom Carp
+Fish_CherryBlossomCarp,Fish_CherryBlossomCarp,Cherry Blossom Carp,Cherry_Blossom_Carp_pixel,resource,Fish,Poor,0,9999,10,0,A beautiful carp that swims gracefully beneath falling blossoms.,150,FALSE,0,Cherry Blossom Carp
 Fish_SpringlightTrout,Fish_SpringlightTrout,Springlight Trout,Springlight_Trout_pixel,resource,Fish,Poor,0,9999,10,0,A small trout shimmering with the soft glow of spring waters.,150,FALSE,0,Springlight Trout
 Fish_SummerCod,Fish_SummerCod,Summer Cod,Summer_Cod_pixel,resource,Fish,Poor,0,9999,10,0,A hearty fish thriving in the warm currents of summer.,150,FALSE,0,Summer Cod
-Fish_TurquoiseSnapper,Fish_TurquoiseSnapper,Turquoise Snapper\t,_Turquoise_Snapper_pixel,resource,Fish,Poor,0,9999,10,0,A vibrant blue-green snapper found near sunlit reefs.,150,FALSE,0,Turquoise Snapper\t
+Fish_TurquoiseSnapper,Fish_TurquoiseSnapper,Turquoise Snapper\t,Turquoise_Snapper_pixel,resource,Fish,Poor,0,9999,10,0,A vibrant blue-green snapper found near sunlit reefs.,150,FALSE,0,Turquoise Snapper\t
 Fish_CrimsonBass,Fish_CrimsonBass,Crimson Bass,Crimson_Bass_pixel,resource,Fish,Poor,0,9999,10,0,"A bass known for its fiery red back, a symbol of autumn\'s flame.",150,FALSE,0,Crimson Bass
-Fish_AutumnCatfish,Fish_AutumnCatfish,Autumn Catfish,_Autumn_Catfish_pixel,resource,Fish,Poor,0,9999,10,0,A plump catfish hiding under fallen leaves in cool rivers.,150,FALSE,0,Autumn Catfish
+Fish_AutumnCatfish,Fish_AutumnCatfish,Autumn Catfish,Autumn_Catfish_pixel,resource,Fish,Poor,0,9999,10,0,A plump catfish hiding under fallen leaves in cool rivers.,150,FALSE,0,Autumn Catfish
 Fish_IcefinTrout,Fish_IcefinTrout,Icefin Trout,Icefin_Trout_pixel,resource,Fish,Poor,0,9999,10,0,A resilient trout that glides under frozen river surfaces.,150,FALSE,0,Icefin Trout
 Fish_SilverCod,Fish_SilverCod,Silver Cod,Silver_Cod_pixel,resource,Fish,Poor,0,9999,10,0,A rare cod whose shimmering scales blend with winter snows.,150,FALSE,0,Silver Cod
 Drink_Milk,Drink_Milk,Milk,Milk_pixel,resource,Drink,Normal,0,9999,10,0,"A nutritious liquid produced by cows, commonly used for drinking, cooking, and crafting dairy products such as cheese and butter.",700,FALSE,0,Milk
@@ -182,7 +190,7 @@ Drink_HoneyTea,Drink_HoneyTea,Honey Tea,HoneyTea_pixel,Useable,Drink,Normal,0,99
 Drink_Honey,Drink_Honey,Honey,Honey_pixel,resource,Drink,Normal,0,9999,10,0,"A natural sweetener made by bees, often used for cooking, healing, or potion-making.",150,FALSE,0,Honey
 Drink_Wine,Drink_Wine,Wine,Wine_IMG_pixel,resource,Drink,Poor,0,9999,10,0,An alcoholic beverage made from fermented fruits.,1200,FALSE,0,Wine
 Drink_Wine_Blueberry,Drink_Wine_Blueberry,Blueberry wine,Drink_Wine_BlueBerry_pixel,resource,Drink,Poor,0,9999,10,0,An alcoholic beverage made from fermented fruits.,1200,FALSE,0,Blueberry wine
-Drink_Wine_Strawberry,Drink_Wine_Strawberry,Strawberry wine,Drink_Wine_Strawbery_pixel,resource,Drink,Poor,0,9999,10,0,An alcoholic beverage made from fermented fruits.,1200,FALSE,0,Strawberry wine
+Drink_Sauce_Tomato,Drink_Wine_Strawberry,Strawberry wine,TomatoSauce,resource,Drink,Poor,0,9999,10,0,An alcoholic beverage made from fermented fruits.,1200,FALSE,0,Strawberry wine
 Drink_Wine_Grape,Drink_Wine_Grape,Grape wine,Drink_Wine_Grape_pixel,resource,Drink,Poor,0,9999,10,0,An alcoholic beverage made from fermented fruits.,1200,FALSE,0,Grape wine
 Drink_Extract_Garlic,Drink_Extract_Garlic,Garlic Extract,Drink_Extract_Galic_pixel,resource,Drink,Poor,0,9999,10,0,A pungent extract packed with the sharp flavor of garlic.,1200,FALSE,0,Garlic Extract
 Drink_Liquor_Potato,Drink_Liquor_Potato,Potato Liquor,Drink_liquor_Potato_pixel,resource,Drink,Poor,0,9999,10,0,A strong spirit distilled from earthy potatoes.,1200,FALSE,0,Potato Liquor
@@ -241,8 +249,8 @@ Food_CrabSoup,Food_CrabSoup,Crab Soup,CrapSoup,Useable,Soup,Poor,0,9999,10,60,A 
 Potion_XP_Testing,Potion_XP_Testing,Testing XP Potion,Potion_Green,Quest,Potion,Epic,0,9999,30,15,"Represents experience points gained from activities, allowing level progression.",1000,FALSE,0,Testing XP Potion
 Potion_Bandage,Potion_Bandage,Bandage,Bandage,Useable,Potion,Poor,0,9999,5,0,A strip of cloth used to wrap wounds and stop bleeding.,50,FALSE,0,Bandage
 Potion_EmergencyPotion,Potion_EmergencyPotion,Emergency Potion,Potion_Red,Useable,Potion,Poor,0,9999,10,0,A quick-use potion that restores health or provides immediate relief in critical situations.,100,FALSE,0,Emergency Potion
-Potion_HP_Emergency,Potion_HP_Emergency,Emergency HP Potion,HPImage,Useable,Potion,Poor,0,9999,20,0,"Represents the player\'s health points, determining their survivability in combat.",200,FALSE,0,Emergency HP Potion
-Potion_MP_Emergency,Potion_MP_Emergency,Emergency MP Potion,ManaImage,Useable,Potion,Normal,0,9999,20,0,"Represents the player\'s mana points, used for casting spells and abilities.",300,FALSE,0,Emergency MP Potion
+Potion_HP_Emergency,Potion_HP_Emergency,Emergency HP Potion,HPImage,Useable,Potion,Poor,0,9999,50,0,"Represents the player\'s health points, determining their survivability in combat.",200,FALSE,0,Emergency HP Potion
+Potion_MP_Emergency,Potion_MP_Emergency,Emergency MP Potion,ManaImage,Useable,Potion,Normal,0,9999,50,0,"Represents the player\'s mana points, used for casting spells and abilities.",300,FALSE,0,Emergency MP Potion
 Potion_Agility,Potion_Agility,Potion of Agility,Potion_Agility_pixel,Useable,Potion,Poor,0,9999,10,60,"Represents the player\'s health points, determining their survivability in combat.",200,FALSE,0,Potion of Agility
 Potion_Strength,Potion_Strength,Potion of Strength,Potion_Strength_pixel,Useable,Potion,Poor,0,9999,10,60,"Represents the player\'s health points, determining their survivability in combat.",200,FALSE,0,Potion of Strength
 Potion_Focus,Potion_Focus,Potion of Focus,Potion_Focus_pixel,Useable,Potion,Poor,0,9999,10,60,"Represents the player\'s health points, determining their survivability in combat.",200,FALSE,0,Potion of Focus
@@ -268,20 +276,20 @@ Quest_M3_UnderFlower,Quest_M3_UnderFlower,Under Flower,Quest_DeathFlower,resourc
 Quest_M3_Letter,Quest_M3_Letter,Hades’ Letter,M3_Letter,Quest,Letter,Uniqe,0,1,0,0,"A heartfelt letter written by Hades himself. Ancient runes of powerful sorcery are etched between the lines, and the deep scent of the Under Flower lingers in the parchment. Yet, the bright glow of the Luna Flower gently wraps around it—light embracing the darkness, as if even death wished to speak of love.",0,FALSE,0,Hades’ Letter
 Quest_M5_Mugwort,Quest_M5_Mugwort,Mugwort,Mugwort_pixel,resource,Crops,Poor,0,9999,0,0,Mugwort,0,FALSE,0,Mugwort
 Quest_M6_OldBook,Quest_M6_OldBook,Ancient record,M_6_OldBook,Quest,Book,Poor,0,9999,0,0,Ancient record,0,FALSE,0,Ancient record
-Quest_SK0_Hammer,Quest_SK0_Hammer,Hammer,Hammer_pixel,Quest,Pendant,Poor,0,1,0,0,"A pendant crafted from an Ice Crystal infused with the lingering essence of a spirit.While carrying this pendant, using Warmth Essence will grant you the Warmth buff—a protective heat that allows you to withstand the harsh blizzard within the cave.",0,TRUE,0,Hammer
-Quest_SK3_WindmillBook,Quest_SK3_WindmillBook,Windmill Training Manual,Windmill_pixel,Quest,Book,Poor,0,1,0,0,A temporary combat manual that grants access to the Windmill skill within the training room.Use it to unleash a powerful spinning attack that strikes all enemies nearby.Only usable inside the training facility. The effect wears off after leaving.,0,TRUE,0,Windmill Training Manual
+Quest_SK0_Hammer,Quest_SK0_Hammer,Hammer,Tools_Hammer,Quest,Pendant,Poor,0,1,0,0,"A pendant crafted from an Ice Crystal infused with the lingering essence of a spirit.While carrying this pendant, using Warmth Essence will grant you the Warmth buff—a protective heat that allows you to withstand the harsh blizzard within the cave.",0,TRUE,0,Hammer
+Quest_SK3_WindmillBook,Quest_SK3_WindmillBook,Windmill Training Manual,Book_Skill_Windmill,Quest,Book,Poor,0,1,0,0,A temporary combat manual that grants access to the Windmill skill within the training room.Use it to unleash a powerful spinning attack that strikes all enemies nearby.Only usable inside the training facility. The effect wears off after leaving.,0,TRUE,0,Windmill Training Manual
 Quest_SK4_Waterbucket,Quest_SK4_Waterbucket,Water bucket,SK4_Waterbucket,Quest,Bucket,Poor,0,1,0,0,Filied with water.,0,TRUE,0,Water bucket
-Quest_SK6_BeachTowel,Quest_SK6_BeachTowel,Syra\'s Beach Tower.,BeachTowel_pixel,Quest,towel,Poor,0,1,0,0,Syra\'s Beach Tower.,0,TRUE,0,Syra\'s Beach Tower.
+Quest_SK6_BeachTowel,Quest_SK6_BeachTowel,Syra's Beach Tower.,Towel,Quest,towel,Poor,0,1,0,0,Syra\'s Beach Tower.,0,TRUE,0,Syra\'s Beach Tower.
 Quest_SK16_LuckyCharm,Quest_SK16_LuckyCharm,LuckyCharm,LuckyCharm,Quest,towel,Poor,0,1,0,0,Lucky Charm. Casandra made for Jocelyn,0,TRUE,0,LuckyCharm
-Quest_S5_SealedBottle,Quest_S5_SealedBottle,Sealed Bottle,SealedBottle_pixel,Quest,Sealed Bottle,Poor,0,1,0,0,"Sealed Bottle. Celine found it.,",0,TRUE,0,Sealed Bottle
-Quest_S5_OceansBack,Quest_S5_OceansBack,Ocean\'s Back,OceansBack_Book,Quest,Book,Poor,0,1,0,0,Ocean\'s Back,0,TRUE,0,Ocean\'s Back
-Quest_M8_Essence_M1,Quest_M8_Essence_M1,Luna Flower Extract,Essence_M_1,Quest,Essence,Uniqe,0,9999,0,0,Luna Flower Extract,0,FALSE,0,Luna Flower Extract
-Quest_M8_Essence_M2,Quest_M8_Essence_M2,Ember Scent,Essence_M_2,Quest,Essence,Uniqe,0,9999,0,0,Ember Scent,0,FALSE,0,Ember Scent
-Quest_M8_Essence_M3,Quest_M8_Essence_M3,Underworld Bloom,Essence_M_3,Quest,Essence,Uniqe,0,9999,0,0,Underworld Bloom,0,FALSE,0,Underworld Bloom
-Quest_M8_Essence_M4,Quest_M8_Essence_M4,Survivor’s Spirit,Essence_M_4,Quest,Essence,Uniqe,0,9999,0,0,Survivor’s Spirit,0,FALSE,0,Survivor’s Spirit
+Quest_S5_SealedBottle,Quest_S5_SealedBottle,Sealed Bottle,Milk_pixel,Quest,Sealed Bottle,Poor,0,1,0,0,"Sealed Bottle. Celine found it.,",0,TRUE,0,Sealed Bottle
+Quest_S5_OceansBack,Quest_S5_OceansBack,Ocean's Back,Book_pixel,Quest,Book,Poor,0,1,0,0,Ocean\'s Back,0,TRUE,0,Ocean\'s Back
+Quest_M8_Essence_M1,Quest_M8_Essence_M1,Luna Flower Extract,Essence_M_1,Quest,Essence,Uniqe,0,9999,0,0,Ember Scent,0,FALSE,0,Luna Flower Extract
+Quest_M8_Essence_M2,Quest_M8_Essence_M2,Ember Scent,Essence_M_2,Quest,Essence,Uniqe,0,9999,0,0,Luna Scent,0,FALSE,0,Ember Scent
+Quest_M8_Essence_M3,Quest_M8_Essence_M3,Underworld Bloom,Essence_M_3,Quest,Essence,Uniqe,0,9999,0,0,Underworld Scent ,0,FALSE,0,Underworld Bloom
+Quest_M8_Essence_M4,Quest_M8_Essence_M4,Survivor’s Spirit,Essence_M_4,Quest,Essence,Uniqe,0,9999,0,0,Survivor’s Scent,0,FALSE,0,Survivor’s Spirit
 Quest_M8_Essence_M5,Quest_M8_Essence_M5,Totem Scent,Essence_M_5,Quest,Essence,Uniqe,0,9999,0,0,Totem Scent,0,FALSE,0,Totem Scent
-Quest_M8_Essence_M6,Quest_M8_Essence_M6,Blood of Promise,Essence_M_6,Quest,Essence,Uniqe,0,9999,0,0,Blood of Promise,0,FALSE,0,Blood of Promise
-Quest_M8_Essence_M7,Quest_M8_Essence_M7,Equilibrium Essence,Essence_M_7,Quest,Essence,Uniqe,0,9999,0,0,Equilibrium Essence,0,FALSE,0,Equilibrium Essence
+Quest_M8_Essence_M6,Quest_M8_Essence_M6,Blood of Promise,Essence_M_6,Quest,Essence,Uniqe,0,9999,0,0,Blood Scent,0,FALSE,0,Blood of Promise
+Quest_M8_Essence_M7,Quest_M8_Essence_M7,Equilibrium Essence,Essence_M_7,Quest,Essence,Uniqe,0,9999,0,0,Equilibrium Scent,0,FALSE,0,Equilibrium Essence
 Quest_M10_Jodiac_Aquarius,Quest_M10_Jodiac_Aquarius,Aquarius Fragment,Jodiac_Aquarius,Quest,Essence,Uniqe,0,9999,0,0,Aquarius Fragment,0,FALSE,0,Aquarius Fragment
 Quest_M10_Jodiac_Aries,Quest_M10_Jodiac_Aries,Aries Fragment,Jodiac_Aries,Quest,Essence,Uniqe,0,9999,0,0,Aries Fragment,0,FALSE,0,Aries Fragment
 Quest_M10_Jodiac_Cancer,Quest_M10_Jodiac_Cancer,Cancer Fragment,Jodiac_Cancer,Quest,Essence,Uniqe,0,9999,0,0,Cancer Fragment,0,FALSE,0,Cancer Fragment
@@ -294,3 +302,14 @@ Quest_M10_Jodiac_Sagittarius,Quest_M10_Jodiac_Sagittarius,Sagittarius Fragment,J
 Quest_M10_Jodiac_Scorpio,Quest_M10_Jodiac_Scorpio,Scorpio Fragment,Jodiac_Scorpio,Quest,Essence,Uniqe,0,9999,0,0,Scorpio Fragment,0,FALSE,0,Scorpio Fragment
 Quest_M10_Jodiac_Taurus,Quest_M10_Jodiac_Taurus,Taurus Fragment,Jodiac_Taurus,Quest,Essence,Uniqe,0,9999,0,0,Taurus Fragment,0,FALSE,0,Taurus Fragment
 Quest_M10_Jodiac_Virgo,Quest_M10_Jodiac_Virgo,Virgo Fragment,Jodiac_Virgo,Quest,Essence,Uniqe,0,9999,0,0,Virgo Fragment,0,FALSE,0,Virgo Fragment
+Quest_Festival_Music,Quest_Festival_Music,Quest_Festival_Music,MusicNote_Festival_IMG,Quest,Essence,Epic,0,1,0,0,CherryBlossom\' note,0,FALSE,0,Quest_Festival_Music
+Quest_M20_VoidsTraces,Quest_M20_VoidsTraces,Quest_M20_VoidsTraces,VoidTrace_IMG,Quest,Traces,Uniqe,0,1,0,0,A trace discovered by Joey within the Void.,0,FALSE,0,Quest_M20_VoidsTraces
+Quest_M20_Compass,Quest_M20_Compass,Quest_M20_Compass,Compass_IMG,Quest,Compass,Uniqe,0,1,0,0,"A golden compass fused with a mirror, combining both into a single artifact.",0,TRUE,0,Quest_M20_Compass
+Quest_M21_USB1,Quest_M21_USB1,Quest_M21_USB1,M_21_USB1_IMG,Quest,USB,Uniqe,0,1,0,0,Information from another world. It cannot be opened with just one.,0,FALSE,0,Quest_M21_USB1
+Quest_M21_USB2,Quest_M21_USB2,Quest_M21_USB2,M_21_USB2_IMG,Quest,USB,Uniqe,0,1,0,0,Information from another world. It cannot be opened with just one.,0,FALSE,0,Quest_M21_USB2
+Quest_M21_USB3,Quest_M21_USB3,Quest_M21_USB3,M_21_USB3_IMG,Quest,USB,Uniqe,0,1,0,0,Information from another world. It cannot be opened with just one.,0,FALSE,0,Quest_M21_USB3
+Quest_M22_GoldenKey,Quest_M22_GoldenKey,Quest_M22_GoldenKey,GoldenKey_IMG,Quest,Key,Uniqe,0,1,0,0,The legendary master key known as the Golden Key.,0,FALSE,0,Quest_M22_GoldenKey
+Quest_M21_Diary,Quest_M21_Diary,Quest_M21_Diary,Diary_IMG,Quest,Book,Uniqe,0,1,0,0,A diary containing someone\'s untold story.,0,TRUE,0,Quest_M21_Diary
+Quest_M26_Note1,Quest_M26_Note1,Quest_M26_Note1,M_6_OldPage,Quest,Note,Poor,0,1,0,0,A note left behind by the Story Keeper of another dimension.,0,FALSE,0,Quest_M26_Note1
+Quest_M26_Note2,Quest_M26_Note2,Quest_M26_Note2,M_6_OldPage,Quest,Note,Poor,0,1,0,0,A second note left behind by the Story Keeper of another dimension.,0,FALSE,0,Quest_M26_Note2
+Quest_M27_MoonlightMirror,Quest_M27_MoonlightMirror,Quest_M27_MoonlightMirror,MoonMirror_IMG,Quest,Mirror,Uniqe,0,1,0,0,A crescent moon-shaped mirror framed with silver ornamentation.,0,TRUE,0,Quest_M27_MoonlightMirror

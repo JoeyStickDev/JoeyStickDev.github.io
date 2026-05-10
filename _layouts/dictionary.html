@@ -215,15 +215,37 @@ layout: default
                  data-search="{{ i_name | escape }} {{ i_desc | escape }} {{ i_cat | escape }} {{ i_subcat | escape }}" 
                  style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
                 
-                {% assign img_root_path = site.baseurl | append: '/assets/images/' | append: page.dataset | append: '/' %}
-                {% if page.dataset == 'items' and item.Category and item.Category != '' %}
-                    {% assign clean_cat = item.Category | strip %}
-                    {% assign img_root_path = img_root_path | append: clean_cat | append: '/' %}
+                {% assign final_img_url = '' %}
+                {% if i_img_display and i_img_display != '' %}
+                    {% if page.dataset == 'items' %}
+                        {% for static_file in site.static_files %}
+                            {% if static_file.path contains '/assets/images/items/' %}
+                                {% assign file_basename = static_file.path | split: '/' | last %}
+                                {% if file_basename == i_img_display %}
+                                    {% assign final_img_url = site.baseurl | append: static_file.path %}
+                                    {% break %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        <!-- Fallback if not found -->
+                        {% if final_img_url == '' %}
+                            {% assign img_root_path = site.baseurl | append: '/assets/images/items/' %}
+                            {% if item.Category and item.Category != '' %}
+                                {% assign clean_cat = item.Category | strip %}
+                                {% assign img_root_path = img_root_path | append: clean_cat | append: '/' %}
+                            {% endif %}
+                            {% assign final_img_url = img_root_path | append: i_img_display %}
+                        {% endif %}
+                    {% else %}
+                        {% assign img_root_path = site.baseurl | append: '/assets/images/' | append: page.dataset | append: '/' %}
+                        {% assign final_img_url = img_root_path | append: i_img_display %}
+                    {% endif %}
                 {% endif %}
 
                 <div class="dict-img" style="height: 160px; background-image: 
-                    {% if i_img_display and i_img_display != '' %}
-                        url('{{ img_root_path }}{{ i_img_display }}'),
+                    {% if final_img_url != '' %}
+                        url('{{ final_img_url }}'),
                     {% endif %}
                     linear-gradient(45deg, var(--secondary-color), var(--primary-color)); background-position: center; background-size: contain, cover; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3); position: relative;">
                     <!-- 카드 우측 상단 뱃지 동적 생성 -->
