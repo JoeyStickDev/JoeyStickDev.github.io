@@ -78,6 +78,8 @@
                         시스템</a></li>
                 <li><a href="#world" class="nav-link" style="color: var(--text-muted); transition: color 0.3s;">도서관 탐험
                         기초</a></li>
+                <li><a href="#calendar" class="nav-link" style="color: var(--text-muted); transition: color 0.3s;">도서관 달력
+                        (일정표)</a></li>
             </ul>
         </aside>
 
@@ -159,6 +161,67 @@
                 </p>
             </div>
 
+            <!-- Calendar Section -->
+            <div id="calendar" class="guide-section"
+                style="margin-top: 60px; padding-top: 50px; border-top: 1px dashed var(--border-color);">
+                <h2 style="color: #fff; font-size: 1.6rem; margin-bottom: 25px;"><span
+                        style="color: var(--accent-color); margin-right: 10px;">📅</span>도서관 달력 (일정표)</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px;">
+                    사계절의 변화에 따라 도서관과 마을의 모습이 달라집니다. 각 계절은 4주, 28일로 이루어져 있습니다. 아래 달력에서 마을 사람들의 생일, 별자리 시작일, 축제를 확인하고, 하단에서 시즌별 주요 농작물과 낚시 가능한 물고기를 확인하세요.
+                </p>
+                
+                <style>
+                    .cal-tab { background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: #888; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; transition: all 0.3s ease; }
+                    .cal-tab:hover { background: rgba(255,255,255,0.1); color: #fff; }
+                    .cal-tab.active { background: var(--accent-color); color: #000; border-color: var(--accent-color); box-shadow: 0 4px 15px rgba(252, 163, 17, 0.3); }
+                    .cal-cell { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 10px; min-height: 80px; position: relative; transition: all 0.2s; cursor: pointer; }
+                    .cal-cell:hover { background: rgba(252, 163, 17, 0.1); border-color: var(--accent-color); transform: translateY(-3px); }
+                    .cal-day-num { position: absolute; top: 8px; left: 10px; color: #fff; font-weight: bold; font-size: 1.1rem; }
+                    .cal-event-badge { display: block; font-size: 0.75rem; padding: 3px 6px; border-radius: 4px; margin-top: 25px; margin-bottom: 3px; font-weight: bold; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+                    .badge-bday { background: #9b59b6; color: #fff; }
+                    .badge-fest { background: #e74c3c; color: #fff; }
+                    .badge-zodiac { background: #3498db; color: #fff; }
+                    
+                    /* Tooltip Animation */
+                    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+                </style>
+
+                <!-- 캘린더 탭 -->
+                <div class="calendar-tabs" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                    <button class="cal-tab active" data-season="Spring">🌸 봄</button>
+                    <button class="cal-tab" data-season="Summer">☀️ 여름</button>
+                    <button class="cal-tab" data-season="Fall">🍂 가을</button>
+                    <button class="cal-tab" data-season="Winter">❄️ 겨울</button>
+                </div>
+                
+                <!-- 캘린더 본문 컨테이너 -->
+                <div id="calendar-container" style="background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); padding: 20px;">
+                    <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 10px; text-align: center; color: var(--text-muted); font-weight: bold;">
+                        <div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div><div>일</div>
+                    </div>
+                    <div class="cal-grid" id="cal-grid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px;"></div>
+                </div>
+
+                <!-- 이벤트 정보 패널 -->
+                <div id="cal-event-panel" style="margin-top: 20px; padding: 20px; background: rgba(252, 163, 17, 0.05); border-left: 4px solid var(--accent-color); border-radius: 4px; display: none; animation: fadeIn 0.3s ease-out;">
+                    <h3 id="event-title" style="color: var(--accent-color); margin-bottom: 10px; font-size: 1.2rem;"></h3>
+                    <p id="event-desc" style="color: #fff; line-height: 1.6; font-size: 1rem;"></p>
+                </div>
+                
+                <!-- 시즌별 작물/물고기 정보 -->
+                <div class="season-info" style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div style="background: var(--bg-dark); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 style="color: var(--accent-color); margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">🌾 이번 계절의 작물</h4>
+                        <ul id="season-crops" style="color: var(--text-muted); list-style: none; padding-left: 0; line-height: 2;"></ul>
+                    </div>
+                    <div style="background: var(--bg-dark); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h4 style="color: var(--accent-color); margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">🎣 이번 계절의 어종</h4>
+                        <ul id="season-fishes" style="color: var(--text-muted); list-style: none; padding-left: 0; line-height: 2;"></ul>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </section>
@@ -185,6 +248,121 @@
                 if (link.style.fontWeight !== 'bold') link.style.color = 'var(--text-muted)';
             });
         });
+
+        // ==========================================
+        // 캘린더 및 계절 데이터 로직
+        // ==========================================
+        const calEvents = [{"season":"Summer","day":7,"type":"birthday","name":"Aiden 생일","desc":"직업: Fire Fighter / 별자리: Taurs\nAiden의 생일입니다."},{"season":"Winter","day":21,"type":"birthday","name":"Alex 생일","desc":"직업: Nurse / 별자리: Capricorn\nAlex의 생일입니다."},{"season":"Summer","day":21,"type":"birthday","name":"Angela 생일","desc":"직업: Barista / 별자리: Libra\nAngela의 생일입니다."},{"season":"Fall","day":2,"type":"birthday","name":"Aria 생일","desc":"직업: Police / 별자리: Leo\nAria의 생일입니다."},{"season":"Spring","day":3,"type":"birthday","name":"Bella 생일","desc":"직업: Musician / 별자리: Aquarius\nBella의 생일입니다."},{"season":"Fall","day":9,"type":"birthday","name":"Blake 생일","desc":"직업: Fire Fighter / 별자리: Leo\nBlake의 생일입니다."},{"season":"Winter","day":27,"type":"birthday","name":"Camila 생일","desc":"직업: Commission Manager / 별자리: Taurus\nCamila의 생일입니다."},{"season":"Winter","day":5,"type":"birthday","name":"Casandra 생일","desc":"직업: Accessory Crafter / 별자리: Scorpio\nCasandra의 생일입니다."},{"season":"Fall","day":28,"type":"birthday","name":"Celine 생일","desc":"직업: Lifeguard / 별자리: Scorpio\nCeline의 생일입니다."},{"season":"Summer","day":15,"type":"birthday","name":"Chronos 생일","desc":"직업: Bard / 별자리: Gemini\nChronos의 생일입니다."},{"season":"Summer","day":14,"type":"birthday","name":"Dan 생일","desc":"직업: Reader / 별자리: Gemini\nDan의 생일입니다."},{"season":"Winter","day":2,"type":"birthday","name":"Daniel 생일","desc":"직업: Lifeguard / 별자리: Scorpio\nDaniel의 생일입니다."},{"season":"Spring","day":9,"type":"birthday","name":"Darius 생일","desc":"직업: Gardner / 별자리: Aquarius\nDarius의 생일입니다."},{"season":"Fall","day":25,"type":"birthday","name":"Emily 생일","desc":"직업: Server / 별자리: Virgo\nEmily의 생일입니다."},{"season":"Fall","day":7,"type":"birthday","name":"Erica 생일","desc":"직업: Fisher / 별자리: Leo\nErica의 생일입니다."},{"season":"Summer","day":23,"type":"birthday","name":"Erik 생일","desc":"직업: Sailor / 별자리: Cancer\nErik의 생일입니다."},{"season":"Spring","day":25,"type":"birthday","name":"Fergus 생일","desc":"직업: Carpenter / 별자리: Aries\nFergus의 생일입니다."},{"season":"Spring","day":10,"type":"birthday","name":"Fiona 생일","desc":"직업: Carpenter / 별자리: Aquarius\nFiona의 생일입니다."},{"season":"Winter","day":19,"type":"birthday","name":"Halen 생일","desc":"직업: Secretary / 별자리: Capricorn\nHalen의 생일입니다."},{"season":"Spring","day":22,"type":"birthday","name":"Iris 생일","desc":"직업: Librarian / 별자리: Aries\nIris의 생일입니다."},{"season":"Summer","day":25,"type":"birthday","name":"Ivy 생일","desc":"직업: Herbalist / 별자리: Cancer\nIvy의 생일입니다."},{"season":"Fall","day":12,"type":"birthday","name":"Jade 생일","desc":"직업: Hunter / 별자리: Virgo\nJade의 생일입니다."},{"season":"Winter","day":14,"type":"birthday","name":"Jenny 생일","desc":"직업: Author / 별자리: Sagittarius\nJenny의 생일입니다."},{"season":"Fall","day":5,"type":"birthday","name":"Jocelyn 생일","desc":"직업: Tailor / 별자리: Leo\nJocelyn의 생일입니다."},{"season":"Winter","day":11,"type":"birthday","name":"Joey 생일","desc":"직업: Mechanic / 별자리: Sagittarius\nJoey의 생일입니다."},{"season":"Spring","day":5,"type":"birthday","name":"Jun 생일","desc":"직업: Doctor / 별자리: Aquarius\nJun의 생일입니다."},{"season":"Winter","day":17,"type":"birthday","name":"Kai 생일","desc":"직업: Police / 별자리: Sagittarius\nKai의 생일입니다."},{"season":"Summer","day":22,"type":"birthday","name":"Kelly 생일","desc":"직업: Hunter / 별자리: Libra\nKelly의 생일입니다."},{"season":"Spring","day":15,"type":"birthday","name":"Kiri 생일","desc":"직업: Trainer / 별자리: Pisces\nKiri의 생일입니다."},{"season":"Spring","day":21,"type":"birthday","name":"Leon 생일","desc":"직업: Mayor / 별자리: Aries\nLeon의 생일입니다."},{"season":"Summer","day":3,"type":"birthday","name":"Lilis 생일","desc":"직업: Artifact Donor / 별자리: Taurs\nLilis의 생일입니다."},{"season":"Spring","day":11,"type":"birthday","name":"Mia 생일","desc":"직업: Painter / 별자리: Pisces\nMia의 생일입니다."},{"season":"Spring","day":17,"type":"birthday","name":"Michael 생일","desc":"직업: Driver / 별자리: Pisces\nMichael의 생일입니다."},{"season":"Fall","day":17,"type":"birthday","name":"Nick 생일","desc":"직업: Bartender / 별자리: Virgo\nNick의 생일입니다."},{"season":"Winter","day":22,"type":"birthday","name":"Nora 생일","desc":"직업: Chef / 별자리: Capricorn\nNora의 생일입니다."},{"season":"Summer","day":27,"type":"birthday","name":"Raymor 생일","desc":"직업: Miner / 별자리: Cancer\nRaymor의 생일입니다."},{"season":"Summer","day":26,"type":"birthday","name":"Reina 생일","desc":"직업: Makeup Artist / 별자리: Cancer\nReina의 생일입니다."},{"season":"Winter","day":23,"type":"birthday","name":"Rio 생일","desc":"직업: Jeweler / 별자리: Capricorn\nRio의 생일입니다."},{"season":"Fall","day":4,"type":"birthday","name":"Samuel 생일","desc":"직업: Tailor / 별자리: Leo\nSamuel의 생일입니다."},{"season":"Summer","day":21,"type":"birthday","name":"Sean 생일","desc":"직업: Reader / 별자리: Gemini\nSean의 생일입니다."},{"season":"Fall","day":25,"type":"birthday","name":"Sebastian 생일","desc":"직업: Farmer / 별자리: Libra\nSebastian의 생일입니다."},{"season":"Fall","day":14,"type":"birthday","name":"Syra 생일","desc":"직업: Nurse / 별자리: Virgo\nSyra의 생일입니다."},{"season":"Spring","day":14,"type":"birthday","name":"Vincent 생일","desc":"직업: Police / 별자리: Pisces\nVincent의 생일입니다."},{"season":"Summer","day":10,"type":"birthday","name":"Vivian 생일","desc":"직업: Fire Fighter / 별자리: Taurus\nVivian의 생일입니다."},{"season":"Spring","day":1,"type":"zodiac","name":"물병자리 시작","desc":"물병자리의 기운이 시작됩니다."},{"season":"Spring","day":11,"type":"zodiac","name":"물고기자리 시작","desc":"물고기자리의 기운이 시작됩니다."},{"season":"Spring","day":21,"type":"zodiac","name":"양자리 시작","desc":"양자리의 기운이 시작됩니다."},{"season":"Summer","day":3,"type":"zodiac","name":"황소자리 시작","desc":"황소자리의 기운이 시작됩니다."},{"season":"Summer","day":13,"type":"zodiac","name":"쌍둥이자리 시작","desc":"쌍둥이자리의 기운이 시작됩니다."},{"season":"Summer","day":22,"type":"zodiac","name":"게자리 시작","desc":"게자리의 기운이 시작됩니다."},{"season":"Fall","day":1,"type":"zodiac","name":"사자자리 시작","desc":"사자자리의 기운이 시작됩니다."},{"season":"Fall","day":10,"type":"zodiac","name":"처녀자리 시작","desc":"처녀자리의 기운이 시작됩니다."},{"season":"Fall","day":19,"type":"zodiac","name":"천칭자리 시작","desc":"천칭자리의 기운이 시작됩니다."},{"season":"Fall","day":28,"type":"zodiac","name":"전갈자리 시작","desc":"전갈자리의 기운이 시작됩니다."},{"season":"Winter","day":9,"type":"zodiac","name":"사수자리 시작","desc":"사수자리의 기운이 시작됩니다."},{"season":"Winter","day":19,"type":"zodiac","name":"염소자리 시작","desc":"염소자리의 기운이 시작됩니다."},{"season":"Winter","day":28,"type":"zodiac","name":"물병자리 시작","desc":"물병자리의 기운이 시작됩니다."},{"season":"Spring","day":8,"type":"festival","name":"벚꽃놀이","desc":"봄을 알리는 벚꽃 축제입니다."},{"season":"Spring","day":9,"type":"festival","name":"벚꽃놀이","desc":"봄을 알리는 벚꽃 축제입니다."},{"season":"Spring","day":10,"type":"festival","name":"벚꽃놀이","desc":"봄을 알리는 벚꽃 축제입니다."},{"season":"Spring","day":11,"type":"festival","name":"벚꽃놀이","desc":"봄을 알리는 벚꽃 축제입니다."},{"season":"Spring","day":12,"type":"festival","name":"벚꽃놀이","desc":"봄을 알리는 벚꽃 축제입니다."},{"season":"Spring","day":13,"type":"festival","name":"벚꽃놀이","desc":"봄을 알리는 벚꽃 축제입니다."},{"season":"Spring","day":26,"type":"festival","name":"로맨스 축제","desc":"사랑을 고백하는 축제입니다."},{"season":"Spring","day":27,"type":"festival","name":"로맨스 축제","desc":"사랑을 고백하는 축제입니다."},{"season":"Spring","day":28,"type":"festival","name":"로맨스 축제","desc":"사랑을 고백하는 축제입니다."},{"season":"Summer","day":8,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":9,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":10,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":11,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":12,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":13,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":14,"type":"festival","name":"바다 축제","desc":"여름 바다를 즐기는 축제입니다."},{"season":"Summer","day":26,"type":"festival","name":"불꽃놀이","desc":"밤하늘을 수놓는 불꽃 축제입니다."},{"season":"Summer","day":27,"type":"festival","name":"불꽃놀이","desc":"밤하늘을 수놓는 불꽃 축제입니다."},{"season":"Summer","day":28,"type":"festival","name":"불꽃놀이","desc":"밤하늘을 수놓는 불꽃 축제입니다."},{"season":"Fall","day":8,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":9,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":10,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":11,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":12,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":13,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":14,"type":"festival","name":"수확제","desc":"풍성한 작물을 기념하는 축제입니다."},{"season":"Fall","day":26,"type":"festival","name":"유령 축제","desc":"가을 밤의 미스터리한 축제입니다."},{"season":"Fall","day":27,"type":"festival","name":"유령 축제","desc":"가을 밤의 미스터리한 축제입니다."},{"season":"Fall","day":28,"type":"festival","name":"유령 축제","desc":"가을 밤의 미스터리한 축제입니다."},{"season":"Winter","day":8,"type":"festival","name":"온천 여행","desc":"따뜻한 온천에서 몸을 녹이는 축제입니다."},{"season":"Winter","day":9,"type":"festival","name":"온천 여행","desc":"따뜻한 온천에서 몸을 녹이는 축제입니다."},{"season":"Winter","day":10,"type":"festival","name":"온천 여행","desc":"따뜻한 온천에서 몸을 녹이는 축제입니다."},{"season":"Winter","day":11,"type":"festival","name":"온천 여행","desc":"따뜻한 온천에서 몸을 녹이는 축제입니다."},{"season":"Winter","day":12,"type":"festival","name":"온천 여행","desc":"따뜻한 온천에서 몸을 녹이는 축제입니다."},{"season":"Winter","day":13,"type":"festival","name":"온천 여행","desc":"따뜻한 온천에서 몸을 녹이는 축제입니다."},{"season":"Winter","day":24,"type":"festival","name":"겨울 축제","desc":"한 해를 마무리하는 눈꽃 축제입니다."},{"season":"Winter","day":25,"type":"festival","name":"겨울 축제","desc":"한 해를 마무리하는 눈꽃 축제입니다."},{"season":"Winter","day":26,"type":"festival","name":"겨울 축제","desc":"한 해를 마무리하는 눈꽃 축제입니다."},{"season":"Winter","day":27,"type":"festival","name":"겨울 축제","desc":"한 해를 마무리하는 눈꽃 축제입니다."},{"season":"Winter","day":28,"type":"festival","name":"겨울 축제","desc":"한 해를 마무리하는 눈꽃 축제입니다."}];
+        const cropsData = [{"ID":"Seed_Strawberry","SeedRowName":"Seed_Strawberry","PlantRowName":"Crops_Strawberry","GrouwthHealth":"8.000000","Season":"Spring","MinHarvestAmount":"3","MaxHarvestAmount":"5","KeepHarvestable":"True","DisplayName":"Strawberry"},{"ID":"Seed_Blueberry","SeedRowName":"Seed_Blueberry","PlantRowName":"Crops_Blueberry","GrouwthHealth":"7.000000","Season":"Summer","MinHarvestAmount":"3","MaxHarvestAmount":"5","KeepHarvestable":"True","DisplayName":"Blueberry"},{"ID":"Seed_Grape","SeedRowName":"Seed_Grape","PlantRowName":"Crops_Grape","GrouwthHealth":"9.000000","Season":"Fall","MinHarvestAmount":"3","MaxHarvestAmount":"5","KeepHarvestable":"True","DisplayName":"Grape"},{"ID":"Seed_Galic","SeedRowName":"Seed_Galic","PlantRowName":"Crops_Galic","GrouwthHealth":"4.000000","Season":"Spring","MinHarvestAmount":"1","MaxHarvestAmount":"5","KeepHarvestable":"False","DisplayName":null},{"ID":"Seed_Potato","SeedRowName":"Seed_Potato","PlantRowName":"Crops_Potato","GrouwthHealth":"14.000000","Season":"Spring","MinHarvestAmount":"1","MaxHarvestAmount":"3","KeepHarvestable":"False","DisplayName":"Potato"},{"ID":"Seed_ChiliPepper","SeedRowName":"Seed_ChiliPepper","PlantRowName":"Crops_ChiliPepper","GrouwthHealth":"7.000000","Season":"Summer","MinHarvestAmount":"1","MaxHarvestAmount":"3","KeepHarvestable":"False","DisplayName":"Chili Pepper"},{"ID":"Seed_Corn","SeedRowName":"Seed_Corn","PlantRowName":"Crops_Corn","GrouwthHealth":"14.000000","Season":"Summer","MinHarvestAmount":"1","MaxHarvestAmount":"3","KeepHarvestable":"False","DisplayName":"Corn"},{"ID":"Seed_Eggplant","SeedRowName":"Seed_Eggplant","PlantRowName":"Crops_Eggplant","GrouwthHealth":"7.000000","Season":"Fall","MinHarvestAmount":"1","MaxHarvestAmount":"3","KeepHarvestable":"False","DisplayName":"Eggplant"},{"ID":"Seed_Pumpkin","SeedRowName":"Seed_Pumpkin","PlantRowName":"Crops_Pumpkin","GrouwthHealth":"14.000000","Season":"Fall","MinHarvestAmount":"1","MaxHarvestAmount":"3","KeepHarvestable":"False","DisplayName":"Pumpkin"},{"ID":"Seed_Tulip","SeedRowName":"Seed_Tulip","PlantRowName":"Crops_Tulip","GrouwthHealth":"10.000000","Season":"Spring","MinHarvestAmount":"1","MaxHarvestAmount":"1","KeepHarvestable":"False","DisplayName":"Tulip"},{"ID":"Seed_Sunflower","SeedRowName":"Seed_Sunflower","PlantRowName":"Crops_Sunflower","GrouwthHealth":"10.000000","Season":"Summer","MinHarvestAmount":"1","MaxHarvestAmount":"1","KeepHarvestable":"False","DisplayName":"Sunflower"},{"ID":"Seed_Rose","SeedRowName":"Seed_Rose","PlantRowName":"Crops_Rose","GrouwthHealth":"10.000000","Season":"Fall","MinHarvestAmount":"1","MaxHarvestAmount":"1","KeepHarvestable":"False","DisplayName":"Rose"}];
+        const fishesData = [{"ID":"Fish_WaterLilySalmon","FishRowName":"Fish_WaterLilySalmon","Season":"All","CatchingPercent":"100","MineMoveRange":"30","MaxMoveRange":"50","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Water Lily Salmon"},{"ID":"Fish_StoneSeaBass","FishRowName":"Fish_StoneSeaBass","Season":"All","CatchingPercent":"100","MineMoveRange":"30","MaxMoveRange":"50","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Stone Sea Bass"},{"ID":"Fish_SpringlightTrout","FishRowName":"Fish_SpringlightTrout","Season":"Spring","CatchingPercent":"100","MineMoveRange":"15","MaxMoveRange":"30","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Springlight Trout"},{"ID":"Fish_CherryBlossomCarp","FishRowName":"Fish_CherryBlossomCarp","Season":"Spring","CatchingPercent":"100","MineMoveRange":"50","MaxMoveRange":"80","MinMoveTime":"2","MaxMoveTime":"3","DisplayName":"Cherry Blossom Carp"},{"ID":"Fish_SummerCod","FishRowName":"Fish_SummerCod","Season":"Summer","CatchingPercent":"100","MineMoveRange":"15","MaxMoveRange":"30","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Summer Cod"},{"ID":"Fish_TurquoiseSnapper","FishRowName":"Fish_TurquoiseSnapper","Season":"Summer","CatchingPercent":"100","MineMoveRange":"30","MaxMoveRange":"50","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Turquoise Snapper\\t"},{"ID":"Fish_AutumnCatfish","FishRowName":"Fish_AutumnCatfish","Season":"Fall","CatchingPercent":"100","MineMoveRange":"15","MaxMoveRange":"30","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Autumn Catfish"},{"ID":"Fish_CrimsonBass","FishRowName":"Fish_CrimsonBass","Season":"Fall","CatchingPercent":"100","MineMoveRange":"30","MaxMoveRange":"50","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Crimson Bass"},{"ID":"Fish_IcefinTrout","FishRowName":"Fish_IcefinTrout","Season":"Winter","CatchingPercent":"100","MineMoveRange":"15","MaxMoveRange":"30","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Icefin Trout"},{"ID":"Fish_SilverCod","FishRowName":"Fish_SilverCod","Season":"Winter","CatchingPercent":"100","MineMoveRange":"30","MaxMoveRange":"50","MinMoveTime":"1","MaxMoveTime":"3","DisplayName":"Silver Cod"}];
+
+        const calTabs = document.querySelectorAll('.cal-tab');
+        const calGrid = document.getElementById('cal-grid');
+        const eventPanel = document.getElementById('cal-event-panel');
+        const eventTitle = document.getElementById('event-title');
+        const eventDesc = document.getElementById('event-desc');
+        
+        const cropsList = document.getElementById('season-crops');
+        const fishesList = document.getElementById('season-fishes');
+
+        function renderCalendar(season) {
+            calGrid.innerHTML = '';
+            eventPanel.style.display = 'none';
+
+            // Filter data
+            const seasonEvents = calEvents.filter(e => e.season === season);
+            
+            // Generate 28 days
+            for(let i = 1; i <= 28; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'cal-cell';
+                
+                const numStr = document.createElement('span');
+                numStr.className = 'cal-day-num';
+                numStr.innerText = i;
+                cell.appendChild(numStr);
+
+                // Add events for this day
+                const daysEvents = seasonEvents.filter(e => e.day === i);
+                let htmlEvents = '';
+                
+                daysEvents.forEach(ev => {
+                    let badgeClass = '';
+                    if(ev.type === 'birthday') badgeClass = 'badge-bday';
+                    else if(ev.type === 'festival') badgeClass = 'badge-fest';
+                    else if(ev.type === 'zodiac') badgeClass = 'badge-zodiac';
+
+                    htmlEvents += `<span class="cal-event-badge ${badgeClass}">${ev.name}</span>`;
+                });
+                
+                if(htmlEvents !== '') {
+                    // Inject badges
+                    cell.insertAdjacentHTML('beforeend', htmlEvents);
+                }
+
+                // Interaction
+                cell.addEventListener('click', () => {
+                    if(daysEvents.length > 0) {
+                        eventTitle.innerHTML = `📅 ${season} ${i}일의 주요 일정`;
+                        let descHtml = '';
+                        daysEvents.forEach(ev => {
+                            descHtml += `<strong>[${ev.name}]</strong><br>${ev.desc.replace(/\n/g, '<br>')}<br><br>`;
+                        });
+                        eventDesc.innerHTML = descHtml;
+                        eventPanel.style.display = 'block';
+                        
+                        // Restart animation
+                        eventPanel.style.animation = 'none';
+                        eventPanel.offsetHeight; // trigger reflow
+                        eventPanel.style.animation = null;
+                    } else {
+                        eventTitle.innerHTML = `📅 ${season} ${i}일`;
+                        eventDesc.innerHTML = '특별한 일정이 없습니다.';
+                        eventPanel.style.display = 'block';
+                    }
+                });
+
+                calGrid.appendChild(cell);
+            }
+
+            // Update Crops & Fishes info
+            cropsList.innerHTML = '';
+            fishesList.innerHTML = '';
+            
+            const seasonCrops = cropsData.filter(c => c.Season && c.Season.includes(season));
+            if(seasonCrops.length > 0) {
+                seasonCrops.forEach(c => {
+                    if (c.DisplayName && c.DisplayName.trim() !== '') {
+                        cropsList.innerHTML += `<li>🌱 <strong style="color:#fff;">${c.DisplayName}</strong> <span style="font-size:0.85em;">(${c.MinHarvestAmount}~${c.MaxHarvestAmount}개 수확)</span></li>`;
+                    }
+                });
+            } else {
+                cropsList.innerHTML = '<li>이번 계절에 자라는 주요 작물이 없습니다.</li>';
+            }
+
+            const seasonFishes = fishesData.filter(f => f.Season && (f.Season.includes(season) || f.Season.includes('All')));
+            if(seasonFishes.length > 0) {
+                seasonFishes.forEach(f => {
+                    if (f.DisplayName && f.DisplayName.trim() !== '') {
+                        fishesList.innerHTML += `<li>🐟 <strong style="color:#fff;">${f.DisplayName}</strong></li>`;
+                    }
+                });
+            } else {
+                fishesList.innerHTML = '<li>이번 계절에 낚이는 주요 물고기가 없습니다.</li>';
+            }
+        }
+
+        // Tab Listeners
+        calTabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                calTabs.forEach(t => t.classList.remove('active'));
+                e.target.classList.add('active');
+                renderCalendar(e.target.getAttribute('data-season'));
+            });
+        });
+
+        // Initial render
+        renderCalendar('Spring');
     });
 </script>
     </main>
