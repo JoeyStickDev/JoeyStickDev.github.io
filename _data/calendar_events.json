@@ -1,178 +1,10 @@
 [
   {
-    "season": "Summer",
-    "day": 7,
-    "type": "birthday",
-    "name": "Aiden 생일",
-    "desc": "직업: Fire Fighter / 별자리: Taurs\nAiden의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 21,
-    "type": "birthday",
-    "name": "Alex 생일",
-    "desc": "직업: Nurse / 별자리: Capricorn\nAlex의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 21,
-    "type": "birthday",
-    "name": "Angela 생일",
-    "desc": "직업: Barista / 별자리: Libra\nAngela의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 2,
-    "type": "birthday",
-    "name": "Aria 생일",
-    "desc": "직업: Police / 별자리: Leo\nAria의 생일입니다."
-  },
-  {
     "season": "Spring",
     "day": 3,
     "type": "birthday",
     "name": "Bella 생일",
     "desc": "직업: Musician / 별자리: Aquarius\nBella의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 9,
-    "type": "birthday",
-    "name": "Blake 생일",
-    "desc": "직업: Fire Fighter / 별자리: Leo\nBlake의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 27,
-    "type": "birthday",
-    "name": "Camila 생일",
-    "desc": "직업: Commission Manager / 별자리: Taurus\nCamila의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 5,
-    "type": "birthday",
-    "name": "Casandra 생일",
-    "desc": "직업: Accessory Crafter / 별자리: Scorpio\nCasandra의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 28,
-    "type": "birthday",
-    "name": "Celine 생일",
-    "desc": "직업: Lifeguard / 별자리: Scorpio\nCeline의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 15,
-    "type": "birthday",
-    "name": "Chronos 생일",
-    "desc": "직업: Bard / 별자리: Gemini\nChronos의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 14,
-    "type": "birthday",
-    "name": "Dan 생일",
-    "desc": "직업: Reader / 별자리: Gemini\nDan의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 2,
-    "type": "birthday",
-    "name": "Daniel 생일",
-    "desc": "직업: Lifeguard / 별자리: Scorpio\nDaniel의 생일입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 9,
-    "type": "birthday",
-    "name": "Darius 생일",
-    "desc": "직업: Gardner / 별자리: Aquarius\nDarius의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 25,
-    "type": "birthday",
-    "name": "Emily 생일",
-    "desc": "직업: Server / 별자리: Virgo\nEmily의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 7,
-    "type": "birthday",
-    "name": "Erica 생일",
-    "desc": "직업: Fisher / 별자리: Leo\nErica의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 23,
-    "type": "birthday",
-    "name": "Erik 생일",
-    "desc": "직업: Sailor / 별자리: Cancer\nErik의 생일입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 25,
-    "type": "birthday",
-    "name": "Fergus 생일",
-    "desc": "직업: Carpenter / 별자리: Aries\nFergus의 생일입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 10,
-    "type": "birthday",
-    "name": "Fiona 생일",
-    "desc": "직업: Carpenter / 별자리: Aquarius\nFiona의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 19,
-    "type": "birthday",
-    "name": "Halen 생일",
-    "desc": "직업: Secretary / 별자리: Capricorn\nHalen의 생일입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 22,
-    "type": "birthday",
-    "name": "Iris 생일",
-    "desc": "직업: Librarian / 별자리: Aries\nIris의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 25,
-    "type": "birthday",
-    "name": "Ivy 생일",
-    "desc": "직업: Herbalist / 별자리: Cancer\nIvy의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 12,
-    "type": "birthday",
-    "name": "Jade 생일",
-    "desc": "직업: Hunter / 별자리: Virgo\nJade의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 14,
-    "type": "birthday",
-    "name": "Jenny 생일",
-    "desc": "직업: Author / 별자리: Sagittarius\nJenny의 생일입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 5,
-    "type": "birthday",
-    "name": "Jocelyn 생일",
-    "desc": "직업: Tailor / 별자리: Leo\nJocelyn의 생일입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 11,
-    "type": "birthday",
-    "name": "Joey 생일",
-    "desc": "직업: Mechanic / 별자리: Sagittarius\nJoey의 생일입니다."
   },
   {
     "season": "Spring",
@@ -182,39 +14,18 @@
     "desc": "직업: Doctor / 별자리: Aquarius\nJun의 생일입니다."
   },
   {
-    "season": "Winter",
-    "day": 17,
+    "season": "Spring",
+    "day": 9,
     "type": "birthday",
-    "name": "Kai 생일",
-    "desc": "직업: Police / 별자리: Sagittarius\nKai의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 22,
-    "type": "birthday",
-    "name": "Kelly 생일",
-    "desc": "직업: Hunter / 별자리: Libra\nKelly의 생일입니다."
+    "name": "Darius 생일",
+    "desc": "직업: Gardner / 별자리: Aquarius\nDarius의 생일입니다."
   },
   {
     "season": "Spring",
-    "day": 15,
+    "day": 10,
     "type": "birthday",
-    "name": "Kiri 생일",
-    "desc": "직업: Trainer / 별자리: Pisces\nKiri의 생일입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 21,
-    "type": "birthday",
-    "name": "Leon 생일",
-    "desc": "직업: Mayor / 별자리: Aries\nLeon의 생일입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 3,
-    "type": "birthday",
-    "name": "Lilis 생일",
-    "desc": "직업: Artifact Donor / 별자리: Taurs\nLilis의 생일입니다."
+    "name": "Fiona 생일",
+    "desc": "직업: Carpenter / 별자리: Aquarius\nFiona의 생일입니다."
   },
   {
     "season": "Spring",
@@ -225,31 +36,101 @@
   },
   {
     "season": "Spring",
+    "day": 14,
+    "type": "birthday",
+    "name": "Vincent 생일",
+    "desc": "직업: Police / 별자리: Pisces\nVincent의 생일입니다."
+  },
+  {
+    "season": "Spring",
+    "day": 15,
+    "type": "birthday",
+    "name": "Kiri 생일",
+    "desc": "직업: Trainer / 별자리: Pisces\nKiri의 생일입니다."
+  },
+  {
+    "season": "Spring",
     "day": 17,
     "type": "birthday",
     "name": "Michael 생일",
     "desc": "직업: Driver / 별자리: Pisces\nMichael의 생일입니다."
   },
   {
-    "season": "Fall",
-    "day": 17,
+    "season": "Spring",
+    "day": 21,
     "type": "birthday",
-    "name": "Nick 생일",
-    "desc": "직업: Bartender / 별자리: Virgo\nNick의 생일입니다."
+    "name": "Leon 생일",
+    "desc": "직업: Mayor / 별자리: Aries\nLeon의 생일입니다."
   },
   {
-    "season": "Winter",
+    "season": "Spring",
     "day": 22,
     "type": "birthday",
-    "name": "Nora 생일",
-    "desc": "직업: Chef / 별자리: Capricorn\nNora의 생일입니다."
+    "name": "Iris 생일",
+    "desc": "직업: Librarian / 별자리: Aries\nIris의 생일입니다."
+  },
+  {
+    "season": "Spring",
+    "day": 25,
+    "type": "birthday",
+    "name": "Fergus 생일",
+    "desc": "직업: Carpenter / 별자리: Aries\nFergus의 생일입니다."
   },
   {
     "season": "Summer",
-    "day": 27,
+    "day": 3,
     "type": "birthday",
-    "name": "Raymor 생일",
-    "desc": "직업: Miner / 별자리: Cancer\nRaymor의 생일입니다."
+    "name": "Lilis 생일",
+    "desc": "직업: Artifact Donor / 별자리: Taurus\nLilis의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 7,
+    "type": "birthday",
+    "name": "Aiden 생일",
+    "desc": "직업: Fire Fighter / 별자리: Taurus\nAiden의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 10,
+    "type": "birthday",
+    "name": "Vivian 생일",
+    "desc": "직업: Fire Fighter / 별자리: Taurus\nVivian의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 14,
+    "type": "birthday",
+    "name": "Dan 생일",
+    "desc": "직업: Reader / 별자리: Gemini\nDan의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 15,
+    "type": "birthday",
+    "name": "Chronos 생일",
+    "desc": "직업: Bard / 별자리: Gemini\nChronos의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 21,
+    "type": "birthday",
+    "name": "Sean 생일",
+    "desc": "직업: Reader / 별자리: Gemini\nSean의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 23,
+    "type": "birthday",
+    "name": "Erik 생일",
+    "desc": "직업: Sailor / 별자리: Cancer\nErik의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 25,
+    "type": "birthday",
+    "name": "Ivy 생일",
+    "desc": "직업: Herbalist / 별자리: Cancer\nIvy의 생일입니다."
   },
   {
     "season": "Summer",
@@ -259,11 +140,18 @@
     "desc": "직업: Makeup Artist / 별자리: Cancer\nReina의 생일입니다."
   },
   {
-    "season": "Winter",
-    "day": 23,
+    "season": "Summer",
+    "day": 27,
     "type": "birthday",
-    "name": "Rio 생일",
-    "desc": "직업: Jeweler / 별자리: Capricorn\nRio의 생일입니다."
+    "name": "Leymore 생일",
+    "desc": "직업: Miner / 별자리: Cancer\nLeymore의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 2,
+    "type": "birthday",
+    "name": "Aria 생일",
+    "desc": "직업: Police / 별자리: Leo\nAria의 생일입니다."
   },
   {
     "season": "Fall",
@@ -273,11 +161,60 @@
     "desc": "직업: Tailor / 별자리: Leo\nSamuel의 생일입니다."
   },
   {
-    "season": "Summer",
+    "season": "Fall",
+    "day": 5,
+    "type": "birthday",
+    "name": "Jocelyn 생일",
+    "desc": "직업: Tailor / 별자리: Leo\nJocelyn의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 7,
+    "type": "birthday",
+    "name": "Erica 생일",
+    "desc": "직업: Fisher / 별자리: Leo\nErica의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 9,
+    "type": "birthday",
+    "name": "Blake 생일",
+    "desc": "직업: Fire Fighter / 별자리: Leo\nBlake의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 12,
+    "type": "birthday",
+    "name": "Jade 생일",
+    "desc": "직업: Hunter / 별자리: Virgo\nJade의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 14,
+    "type": "birthday",
+    "name": "Syra 생일",
+    "desc": "직업: Nurse / 별자리: Virgo\nSyra의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 17,
+    "type": "birthday",
+    "name": "Nick 생일",
+    "desc": "직업: Bartender / 별자리: Virgo\nNick의 생일입니다."
+  },
+  {
+    "season": "Fall",
     "day": 21,
     "type": "birthday",
-    "name": "Sean 생일",
-    "desc": "직업: Reader / 별자리: Gemini\nSean의 생일입니다."
+    "name": "Angela 생일",
+    "desc": "직업: Barista / 별자리: Libra\nAngela의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 22,
+    "type": "birthday",
+    "name": "Kelly 생일",
+    "desc": "직업: Hunter / 별자리: Libra\nKelly의 생일입니다."
   },
   {
     "season": "Fall",
@@ -288,115 +225,171 @@
   },
   {
     "season": "Fall",
-    "day": 14,
+    "day": 24,
     "type": "birthday",
-    "name": "Syra 생일",
-    "desc": "직업: Nurse / 별자리: Virgo\nSyra의 생일입니다."
+    "name": "Emily 생일",
+    "desc": "직업: Server / 별자리: Virgo\nEmily의 생일입니다."
   },
   {
-    "season": "Spring",
-    "day": 14,
+    "season": "Fall",
+    "day": 28,
     "type": "birthday",
-    "name": "Vincent 생일",
-    "desc": "직업: Police / 별자리: Pisces\nVincent의 생일입니다."
+    "name": "Celine 생일",
+    "desc": "직업: Lifeguard / 별자리: Scorpio\nCeline의 생일입니다."
   },
   {
-    "season": "Summer",
-    "day": 10,
+    "season": "Winter",
+    "day": 2,
     "type": "birthday",
-    "name": "Vivian 생일",
-    "desc": "직업: Fire Fighter / 별자리: Taurus\nVivian의 생일입니다."
+    "name": "Daniel 생일",
+    "desc": "직업: Lifeguard / 별자리: Scorpio\nDaniel의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 5,
+    "type": "birthday",
+    "name": "Casandra 생일",
+    "desc": "직업: Accessory Crafter / 별자리: Scorpio\nCasandra의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 11,
+    "type": "birthday",
+    "name": "Joey 생일",
+    "desc": "직업: Mechanic / 별자리: Sagittarius\nJoey의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 14,
+    "type": "birthday",
+    "name": "Jenny 생일",
+    "desc": "직업: Author / 별자리: Sagittarius\nJenny의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 17,
+    "type": "birthday",
+    "name": "Kai 생일",
+    "desc": "직업: Police / 별자리: Sagittarius\nKai의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 19,
+    "type": "birthday",
+    "name": "Halen 생일",
+    "desc": "직업: Secretary / 별자리: Capricorn\nHalen의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 21,
+    "type": "birthday",
+    "name": "Alex 생일",
+    "desc": "직업: Nurse / 별자리: Capricorn\nAlex의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 22,
+    "type": "birthday",
+    "name": "Nora 생일",
+    "desc": "직업: Chef / 별자리: Capricorn\nNora의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 23,
+    "type": "birthday",
+    "name": "Rio 생일",
+    "desc": "직업: Jeweler / 별자리: Capricorn\nRio의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 27,
+    "type": "birthday",
+    "name": "Camila 생일",
+    "desc": "직업: Commission Manager / 별자리: Taurus\nCamila의 생일입니다."
   },
   {
     "season": "Spring",
     "day": 1,
     "type": "zodiac",
     "name": "물병자리 시작",
-    "desc": "물병자리의 기운이 시작됩니다."
+    "desc": "봄의 시작을 알리는 별자리입니다. 행운과 지혜, 생명을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 최소스탯증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
   },
   {
     "season": "Spring",
     "day": 11,
     "type": "zodiac",
     "name": "물고기자리 시작",
-    "desc": "물고기자리의 기운이 시작됩니다."
+    "desc": "깊은 바닷속을 헤엄치는 별자리입니다. 물과 꿈을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: HP,MP,스테미나증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
   },
   {
     "season": "Spring",
     "day": 21,
     "type": "zodiac",
     "name": "양자리 시작",
-    "desc": "양자리의 기운이 시작됩니다."
+    "desc": "봄의 끝을 알리는 별자리입니다. 불꽃과 힘을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬대미지증가 / 옵션2: 힘증가 / 옵션3: 불대미지"
   },
   {
     "season": "Summer",
     "day": 3,
     "type": "zodiac",
     "name": "황소자리 시작",
-    "desc": "황소자리의 기운이 시작됩니다."
+    "desc": "여름의 시작을 알리는 별자리입니다. 대지와 수호를 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 방어력증가 / 옵션2: 힘증가 / 옵션3: 전기대미지"
   },
   {
     "season": "Summer",
     "day": 13,
     "type": "zodiac",
     "name": "쌍둥이자리 시작",
-    "desc": "쌍둥이자리의 기운이 시작됩니다."
+    "desc": "한여름 밤의 꿈 같은 별자리입니다. 시간과 공간을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 스킬쿨타임감소 / 옵션2: 덱스증가 / 옵션3: 전기대미지"
   },
   {
     "season": "Summer",
     "day": 22,
     "type": "zodiac",
     "name": "게자리 시작",
-    "desc": "게자리의 기운이 시작됩니다."
+    "desc": "여름의 끝을 알리는 별자리입니다. 빛과 지식을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 최대스탯증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
   },
   {
     "season": "Fall",
     "day": 1,
     "type": "zodiac",
     "name": "사자자리 시작",
-    "desc": "사자자리의 기운이 시작됩니다."
+    "desc": "가을의 시작을 알리는 별자리입니다. 불꽃, 힘, 빛, 의지, 권력, 지성을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 보너스대미지증가 / 옵션2: 힘증가 / 옵션3: 불대미지"
   },
   {
     "season": "Fall",
     "day": 10,
     "type": "zodiac",
     "name": "처녀자리 시작",
-    "desc": "처녀자리의 기운이 시작됩니다."
+    "desc": "서늘한 가을바람 같은 별자리입니다. 바람, 신속함, 생명을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 기동성증가 / 옵션2: 덱스증가 / 옵션3: 전기대미지"
   },
   {
     "season": "Fall",
     "day": 19,
     "type": "zodiac",
     "name": "천칭자리 시작",
-    "desc": "천칭자리의 기운이 시작됩니다."
+    "desc": "가을의 끝을 알리는 별자리입니다. 꿈, 의지, 어둠, 빛을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬확률증가 / 옵션2: 행운증가 / 옵션3: 얼음대미지"
   },
   {
     "season": "Fall",
     "day": 28,
     "type": "zodiac",
     "name": "전갈자리 시작",
-    "desc": "전갈자리의 기운이 시작됩니다."
+    "desc": "겨울의 시작을 알리는 별자리입니다. 어둠, 행운, 전기를 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬대미지증가 / 옵션2: 행운증가 / 옵션3: 전기대미지"
   },
   {
     "season": "Winter",
     "day": 9,
     "type": "zodiac",
     "name": "사수자리 시작",
-    "desc": "사수자리의 기운이 시작됩니다."
+    "desc": "자유로운 영혼을 형상화한 별자리입니다. 바람, 공간, 민첩성, 행운을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 스킬쿨타임감소 / 옵션2: 덱스증가 / 옵션3: 불대미지"
   },
   {
     "season": "Winter",
-    "day": 19,
+    "day": 18,
     "type": "zodiac",
     "name": "염소자리 시작",
-    "desc": "염소자리의 기운이 시작됩니다."
-  },
-  {
-    "season": "Winter",
-    "day": 28,
-    "type": "zodiac",
-    "name": "물병자리 시작",
-    "desc": "물병자리의 기운이 시작됩니다."
+    "desc": "겨울의 끝을 알리는 별자리입니다. 대지, 수호, 힘을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 방어력증가 / 옵션2: 행운증가 / 옵션3: 불대미지"
   },
   {
     "season": "Spring",
