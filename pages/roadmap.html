@@ -255,3 +255,14 @@ permalink: /roadmap/
         </div>
     </div>
 </section>
+
+<script>
+// 일정이 많아 가로로 길다: 열 때 가장 최근의 "진행 중" 일정이 가운데에 오도록 스크롤
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.timeline-wrapper');
+    const current = document.querySelectorAll('.timeline-item.in-progress');
+    if (!wrapper || !current.length) return;
+    const item = current[current.length - 1];
+    wrapper.scrollLeft = item.offsetLeft - wrapper.clientWidth / 2 + item.clientWidth / 2;
+});
+</script>

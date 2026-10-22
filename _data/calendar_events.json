@@ -1,6 +1,13 @@
 [
   {
     "season": "Spring",
+    "day": 1,
+    "type": "zodiac",
+    "name": "물병자리 시작",
+    "desc": "봄의 시작을 알리는 별자리입니다. 행운과 지혜, 생명을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 최소스탯증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
+  },
+  {
+    "season": "Spring",
     "day": 3,
     "type": "birthday",
     "name": "Bella 생일",
@@ -15,10 +22,24 @@
   },
   {
     "season": "Spring",
+    "day": 8,
+    "type": "festival",
+    "name": "벚꽃 축제",
+    "desc": "매년 봄이면 마을은 만개한 벚꽃으로 가득 차 있습니다. 축제 기간 동안 거리는 꽃잎으로 장식되고, 노점들이 계절별 간식을 내놓고, 마을 사람들은 떨어지는 꽃잎 아래에서 모여 축제를 즐깁니다."
+  },
+  {
+    "season": "Spring",
     "day": 9,
     "type": "birthday",
     "name": "Darius 생일",
     "desc": "직업: Gardner / 별자리: Aquarius\nDarius의 생일입니다."
+  },
+  {
+    "season": "Spring",
+    "day": 9,
+    "type": "festival",
+    "name": "벚꽃 축제",
+    "desc": "매년 봄이면 마을은 만개한 벚꽃으로 가득 차 있습니다. 축제 기간 동안 거리는 꽃잎으로 장식되고, 노점들이 계절별 간식을 내놓고, 마을 사람들은 떨어지는 꽃잎 아래에서 모여 축제를 즐깁니다."
   },
   {
     "season": "Spring",
@@ -29,10 +50,45 @@
   },
   {
     "season": "Spring",
+    "day": 10,
+    "type": "festival",
+    "name": "벚꽃 축제",
+    "desc": "매년 봄이면 마을은 만개한 벚꽃으로 가득 차 있습니다. 축제 기간 동안 거리는 꽃잎으로 장식되고, 노점들이 계절별 간식을 내놓고, 마을 사람들은 떨어지는 꽃잎 아래에서 모여 축제를 즐깁니다."
+  },
+  {
+    "season": "Spring",
     "day": 11,
     "type": "birthday",
     "name": "Mia 생일",
     "desc": "직업: Painter / 별자리: Pisces\nMia의 생일입니다."
+  },
+  {
+    "season": "Spring",
+    "day": 11,
+    "type": "zodiac",
+    "name": "물고기자리 시작",
+    "desc": "깊은 바닷속을 헤엄치는 별자리입니다. 물과 꿈을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: HP,MP,스테미나증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
+  },
+  {
+    "season": "Spring",
+    "day": 11,
+    "type": "festival",
+    "name": "벚꽃 축제",
+    "desc": "매년 봄이면 마을은 만개한 벚꽃으로 가득 차 있습니다. 축제 기간 동안 거리는 꽃잎으로 장식되고, 노점들이 계절별 간식을 내놓고, 마을 사람들은 떨어지는 꽃잎 아래에서 모여 축제를 즐깁니다."
+  },
+  {
+    "season": "Spring",
+    "day": 12,
+    "type": "festival",
+    "name": "벚꽃 축제",
+    "desc": "매년 봄이면 마을은 만개한 벚꽃으로 가득 차 있습니다. 축제 기간 동안 거리는 꽃잎으로 장식되고, 노점들이 계절별 간식을 내놓고, 마을 사람들은 떨어지는 꽃잎 아래에서 모여 축제를 즐깁니다."
+  },
+  {
+    "season": "Spring",
+    "day": 13,
+    "type": "festival",
+    "name": "벚꽃 축제",
+    "desc": "매년 봄이면 마을은 만개한 벚꽃으로 가득 차 있습니다. 축제 기간 동안 거리는 꽃잎으로 장식되고, 노점들이 계절별 간식을 내놓고, 마을 사람들은 떨어지는 꽃잎 아래에서 모여 축제를 즐깁니다."
   },
   {
     "season": "Spring",
@@ -64,6 +120,13 @@
   },
   {
     "season": "Spring",
+    "day": 21,
+    "type": "zodiac",
+    "name": "양자리 시작",
+    "desc": "봄의 끝을 알리는 별자리입니다. 불꽃과 힘을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬대미지증가 / 옵션2: 힘증가 / 옵션3: 불대미지"
+  },
+  {
+    "season": "Spring",
     "day": 22,
     "type": "birthday",
     "name": "Iris 생일",
@@ -77,11 +140,39 @@
     "desc": "직업: Carpenter / 별자리: Aries\nFergus의 생일입니다."
   },
   {
+    "season": "Spring",
+    "day": 26,
+    "type": "festival",
+    "name": "로맨스 페스티벌",
+    "desc": "봄의 마지막 주말, 새로운 인연이 기다리고 있다. 금요일, 토요일, 일요일 사흘 동안 마을은 음악과 춤, 그리고 우연한 만남의 순간들로 축제를 벌인다."
+  },
+  {
+    "season": "Spring",
+    "day": 27,
+    "type": "festival",
+    "name": "로맨스 페스티벌",
+    "desc": "봄의 마지막 주말, 새로운 인연이 기다리고 있다. 금요일, 토요일, 일요일 사흘 동안 마을은 음악과 춤, 그리고 우연한 만남의 순간들로 축제를 벌인다."
+  },
+  {
+    "season": "Spring",
+    "day": 28,
+    "type": "festival",
+    "name": "로맨스 페스티벌",
+    "desc": "봄의 마지막 주말, 새로운 인연이 기다리고 있다. 금요일, 토요일, 일요일 사흘 동안 마을은 음악과 춤, 그리고 우연한 만남의 순간들로 축제를 벌인다."
+  },
+  {
     "season": "Summer",
     "day": 3,
     "type": "birthday",
     "name": "Lilis 생일",
     "desc": "직업: Artifact Donor / 별자리: Taurus\nLilis의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 3,
+    "type": "zodiac",
+    "name": "황소자리 시작",
+    "desc": "여름의 시작을 알리는 별자리입니다. 대지와 수호를 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 방어력증가 / 옵션2: 힘증가 / 옵션3: 전기대미지"
   },
   {
     "season": "Summer",
@@ -92,10 +183,59 @@
   },
   {
     "season": "Summer",
+    "day": 8,
+    "type": "festival",
+    "name": "바다 축제",
+    "desc": "해변에서 여름 더위를 이겨내세요! 낚시 대회와 즐거운 수영 활동 등 재미있는 물놀이에 참여하세요."
+  },
+  {
+    "season": "Summer",
+    "day": 9,
+    "type": "festival",
+    "name": "바다 축제",
+    "desc": "해변에서 여름 더위를 이겨내세요! 낚시 대회와 즐거운 수영 활동 등 재미있는 물놀이에 참여하세요."
+  },
+  {
+    "season": "Summer",
     "day": 10,
     "type": "birthday",
     "name": "Vivian 생일",
     "desc": "직업: Fire Fighter / 별자리: Taurus\nVivian의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 10,
+    "type": "festival",
+    "name": "바다 축제",
+    "desc": "해변에서 여름 더위를 이겨내세요! 낚시 대회와 즐거운 수영 활동 등 재미있는 물놀이에 참여하세요."
+  },
+  {
+    "season": "Summer",
+    "day": 11,
+    "type": "festival",
+    "name": "바다 축제",
+    "desc": "해변에서 여름 더위를 이겨내세요! 낚시 대회와 즐거운 수영 활동 등 재미있는 물놀이에 참여하세요."
+  },
+  {
+    "season": "Summer",
+    "day": 12,
+    "type": "festival",
+    "name": "바다 축제",
+    "desc": "해변에서 여름 더위를 이겨내세요! 낚시 대회와 즐거운 수영 활동 등 재미있는 물놀이에 참여하세요."
+  },
+  {
+    "season": "Summer",
+    "day": 13,
+    "type": "zodiac",
+    "name": "쌍둥이자리 시작",
+    "desc": "한여름 밤의 꿈 같은 별자리입니다. 시간과 공간을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 스킬쿨타임감소 / 옵션2: 덱스증가 / 옵션3: 전기대미지"
+  },
+  {
+    "season": "Summer",
+    "day": 13,
+    "type": "festival",
+    "name": "바다 축제",
+    "desc": "해변에서 여름 더위를 이겨내세요! 낚시 대회와 즐거운 수영 활동 등 재미있는 물놀이에 참여하세요."
   },
   {
     "season": "Summer",
@@ -120,6 +260,13 @@
   },
   {
     "season": "Summer",
+    "day": 22,
+    "type": "zodiac",
+    "name": "게자리 시작",
+    "desc": "여름의 끝을 알리는 별자리입니다. 빛과 지식을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 최대스탯증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
+  },
+  {
+    "season": "Summer",
     "day": 23,
     "type": "birthday",
     "name": "Erik 생일",
@@ -141,10 +288,38 @@
   },
   {
     "season": "Summer",
+    "day": 26,
+    "type": "festival",
+    "name": "불꽃놀이 축제",
+    "desc": "여름의 끝을 화려한 축제로 장식하세요. 해변에 모여 밤하늘을 수놓는 눈부신 불꽃놀이를 감상하세요."
+  },
+  {
+    "season": "Summer",
     "day": 27,
     "type": "birthday",
     "name": "Leymore 생일",
     "desc": "직업: Miner / 별자리: Cancer\nLeymore의 생일입니다."
+  },
+  {
+    "season": "Summer",
+    "day": 27,
+    "type": "festival",
+    "name": "불꽃놀이 축제",
+    "desc": "여름의 끝을 화려한 축제로 장식하세요. 해변에 모여 밤하늘을 수놓는 눈부신 불꽃놀이를 감상하세요."
+  },
+  {
+    "season": "Summer",
+    "day": 28,
+    "type": "festival",
+    "name": "불꽃놀이 축제",
+    "desc": "여름의 끝을 화려한 축제로 장식하세요. 해변에 모여 밤하늘을 수놓는 눈부신 불꽃놀이를 감상하세요."
+  },
+  {
+    "season": "Fall",
+    "day": 1,
+    "type": "zodiac",
+    "name": "사자자리 시작",
+    "desc": "가을의 시작을 알리는 별자리입니다. 불꽃, 힘, 빛, 의지, 권력, 지성을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 보너스대미지증가 / 옵션2: 힘증가 / 옵션3: 불대미지"
   },
   {
     "season": "Fall",
@@ -183,6 +358,13 @@
   },
   {
     "season": "Fall",
+    "day": 10,
+    "type": "zodiac",
+    "name": "처녀자리 시작",
+    "desc": "서늘한 가을바람 같은 별자리입니다. 바람, 신속함, 생명을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 기동성증가 / 옵션2: 덱스증가 / 옵션3: 전기대미지"
+  },
+  {
+    "season": "Fall",
     "day": 12,
     "type": "birthday",
     "name": "Jade 생일",
@@ -197,10 +379,59 @@
   },
   {
     "season": "Fall",
+    "day": 15,
+    "type": "festival",
+    "name": "수확제",
+    "desc": "한 해의 풍요를 기리는 축제. 마을 사람들은 가을의 세 번째 주에 모여 일 년 내내 정성껏 가꾼 농작물을 나누고 즐긴다."
+  },
+  {
+    "season": "Fall",
+    "day": 16,
+    "type": "festival",
+    "name": "수확제",
+    "desc": "한 해의 풍요를 기리는 축제. 마을 사람들은 가을의 세 번째 주에 모여 일 년 내내 정성껏 가꾼 농작물을 나누고 즐긴다."
+  },
+  {
+    "season": "Fall",
     "day": 17,
     "type": "birthday",
     "name": "Nick 생일",
     "desc": "직업: Bartender / 별자리: Virgo\nNick의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 17,
+    "type": "festival",
+    "name": "수확제",
+    "desc": "한 해의 풍요를 기리는 축제. 마을 사람들은 가을의 세 번째 주에 모여 일 년 내내 정성껏 가꾼 농작물을 나누고 즐긴다."
+  },
+  {
+    "season": "Fall",
+    "day": 18,
+    "type": "festival",
+    "name": "수확제",
+    "desc": "한 해의 풍요를 기리는 축제. 마을 사람들은 가을의 세 번째 주에 모여 일 년 내내 정성껏 가꾼 농작물을 나누고 즐긴다."
+  },
+  {
+    "season": "Fall",
+    "day": 19,
+    "type": "zodiac",
+    "name": "천칭자리 시작",
+    "desc": "가을의 끝을 알리는 별자리입니다. 꿈, 의지, 어둠, 빛을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬확률증가 / 옵션2: 행운증가 / 옵션3: 얼음대미지"
+  },
+  {
+    "season": "Fall",
+    "day": 19,
+    "type": "festival",
+    "name": "수확제",
+    "desc": "한 해의 풍요를 기리는 축제. 마을 사람들은 가을의 세 번째 주에 모여 일 년 내내 정성껏 가꾼 농작물을 나누고 즐긴다."
+  },
+  {
+    "season": "Fall",
+    "day": 20,
+    "type": "festival",
+    "name": "수확제",
+    "desc": "한 해의 풍요를 기리는 축제. 마을 사람들은 가을의 세 번째 주에 모여 일 년 내내 정성껏 가꾼 농작물을 나누고 즐긴다."
   },
   {
     "season": "Fall",
@@ -218,13 +449,6 @@
   },
   {
     "season": "Fall",
-    "day": 25,
-    "type": "birthday",
-    "name": "Sebastian 생일",
-    "desc": "직업: Farmer / 별자리: Libra\nSebastian의 생일입니다."
-  },
-  {
-    "season": "Fall",
     "day": 24,
     "type": "birthday",
     "name": "Emily 생일",
@@ -232,10 +456,45 @@
   },
   {
     "season": "Fall",
+    "day": 25,
+    "type": "birthday",
+    "name": "Sebastian 생일",
+    "desc": "직업: Farmer / 별자리: Libra\nSebastian의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 26,
+    "type": "festival",
+    "name": "사냥 축제",
+    "desc": "다가오는 겨울을 무사히 보내고 행운을 기원하는 빛의 축제. 등불을 밝혀 하늘로 띄우며, 마을 사람들의 소망이 밤하늘로 퍼져 나간다."
+  },
+  {
+    "season": "Fall",
+    "day": 27,
+    "type": "festival",
+    "name": "사냥 축제",
+    "desc": "다가오는 겨울을 무사히 보내고 행운을 기원하는 빛의 축제. 등불을 밝혀 하늘로 띄우며, 마을 사람들의 소망이 밤하늘로 퍼져 나간다."
+  },
+  {
+    "season": "Fall",
     "day": 28,
     "type": "birthday",
     "name": "Celine 생일",
     "desc": "직업: Lifeguard / 별자리: Scorpio\nCeline의 생일입니다."
+  },
+  {
+    "season": "Fall",
+    "day": 28,
+    "type": "zodiac",
+    "name": "전갈자리 시작",
+    "desc": "겨울의 시작을 알리는 별자리입니다. 어둠, 행운, 전기를 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬대미지증가 / 옵션2: 행운증가 / 옵션3: 전기대미지"
+  },
+  {
+    "season": "Fall",
+    "day": 28,
+    "type": "festival",
+    "name": "사냥 축제",
+    "desc": "다가오는 겨울을 무사히 보내고 행운을 기원하는 빛의 축제. 등불을 밝혀 하늘로 띄우며, 마을 사람들의 소망이 밤하늘로 퍼져 나간다."
   },
   {
     "season": "Winter",
@@ -253,10 +512,59 @@
   },
   {
     "season": "Winter",
+    "day": 8,
+    "type": "festival",
+    "name": "온천 휴양지",
+    "desc": "겨울 내내 마을 사람들은 호숫가에 모여 온천의 따뜻함을 즐깁니다. 추운 계절에 휴식을 취하고 기운을 되찾는 평화로운 시간입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 9,
+    "type": "zodiac",
+    "name": "사수자리 시작",
+    "desc": "자유로운 영혼을 형상화한 별자리입니다. 바람, 공간, 민첩성, 행운을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 스킬쿨타임감소 / 옵션2: 덱스증가 / 옵션3: 불대미지"
+  },
+  {
+    "season": "Winter",
+    "day": 9,
+    "type": "festival",
+    "name": "온천 휴양지",
+    "desc": "겨울 내내 마을 사람들은 호숫가에 모여 온천의 따뜻함을 즐깁니다. 추운 계절에 휴식을 취하고 기운을 되찾는 평화로운 시간입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 10,
+    "type": "festival",
+    "name": "온천 휴양지",
+    "desc": "겨울 내내 마을 사람들은 호숫가에 모여 온천의 따뜻함을 즐깁니다. 추운 계절에 휴식을 취하고 기운을 되찾는 평화로운 시간입니다."
+  },
+  {
+    "season": "Winter",
     "day": 11,
     "type": "birthday",
     "name": "Joey 생일",
     "desc": "직업: Mechanic / 별자리: Sagittarius\nJoey의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 11,
+    "type": "festival",
+    "name": "온천 휴양지",
+    "desc": "겨울 내내 마을 사람들은 호숫가에 모여 온천의 따뜻함을 즐깁니다. 추운 계절에 휴식을 취하고 기운을 되찾는 평화로운 시간입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 12,
+    "type": "festival",
+    "name": "온천 휴양지",
+    "desc": "겨울 내내 마을 사람들은 호숫가에 모여 온천의 따뜻함을 즐깁니다. 추운 계절에 휴식을 취하고 기운을 되찾는 평화로운 시간입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 13,
+    "type": "festival",
+    "name": "온천 휴양지",
+    "desc": "겨울 내내 마을 사람들은 호숫가에 모여 온천의 따뜻함을 즐깁니다. 추운 계절에 휴식을 취하고 기운을 되찾는 평화로운 시간입니다."
   },
   {
     "season": "Winter",
@@ -271,6 +579,13 @@
     "type": "birthday",
     "name": "Kai 생일",
     "desc": "직업: Police / 별자리: Sagittarius\nKai의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 18,
+    "type": "zodiac",
+    "name": "염소자리 시작",
+    "desc": "겨울의 끝을 알리는 별자리입니다. 대지, 수호, 힘을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 방어력증가 / 옵션2: 행운증가 / 옵션3: 불대미지"
   },
   {
     "season": "Winter",
@@ -295,10 +610,45 @@
   },
   {
     "season": "Winter",
+    "day": 22,
+    "type": "festival",
+    "name": "겨울 축제",
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
+  },
+  {
+    "season": "Winter",
     "day": 23,
     "type": "birthday",
     "name": "Rio 생일",
     "desc": "직업: Jeweler / 별자리: Capricorn\nRio의 생일입니다."
+  },
+  {
+    "season": "Winter",
+    "day": 23,
+    "type": "festival",
+    "name": "겨울 축제",
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
+  },
+  {
+    "season": "Winter",
+    "day": 24,
+    "type": "festival",
+    "name": "겨울 축제",
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
+  },
+  {
+    "season": "Winter",
+    "day": 25,
+    "type": "festival",
+    "name": "겨울 축제",
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
+  },
+  {
+    "season": "Winter",
+    "day": 26,
+    "type": "festival",
+    "name": "겨울 축제",
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
   },
   {
     "season": "Winter",
@@ -308,367 +658,17 @@
     "desc": "직업: Commission Manager / 별자리: Taurus\nCamila의 생일입니다."
   },
   {
-    "season": "Spring",
-    "day": 1,
-    "type": "zodiac",
-    "name": "물병자리 시작",
-    "desc": "봄의 시작을 알리는 별자리입니다. 행운과 지혜, 생명을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 최소스탯증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
-  },
-  {
-    "season": "Spring",
-    "day": 11,
-    "type": "zodiac",
-    "name": "물고기자리 시작",
-    "desc": "깊은 바닷속을 헤엄치는 별자리입니다. 물과 꿈을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: HP,MP,스테미나증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
-  },
-  {
-    "season": "Spring",
-    "day": 21,
-    "type": "zodiac",
-    "name": "양자리 시작",
-    "desc": "봄의 끝을 알리는 별자리입니다. 불꽃과 힘을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬대미지증가 / 옵션2: 힘증가 / 옵션3: 불대미지"
-  },
-  {
-    "season": "Summer",
-    "day": 3,
-    "type": "zodiac",
-    "name": "황소자리 시작",
-    "desc": "여름의 시작을 알리는 별자리입니다. 대지와 수호를 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 방어력증가 / 옵션2: 힘증가 / 옵션3: 전기대미지"
-  },
-  {
-    "season": "Summer",
-    "day": 13,
-    "type": "zodiac",
-    "name": "쌍둥이자리 시작",
-    "desc": "한여름 밤의 꿈 같은 별자리입니다. 시간과 공간을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 스킬쿨타임감소 / 옵션2: 덱스증가 / 옵션3: 전기대미지"
-  },
-  {
-    "season": "Summer",
-    "day": 22,
-    "type": "zodiac",
-    "name": "게자리 시작",
-    "desc": "여름의 끝을 알리는 별자리입니다. 빛과 지식을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 최대스탯증가 / 옵션2: 인트증가 / 옵션3: 얼음대미지"
-  },
-  {
-    "season": "Fall",
-    "day": 1,
-    "type": "zodiac",
-    "name": "사자자리 시작",
-    "desc": "가을의 시작을 알리는 별자리입니다. 불꽃, 힘, 빛, 의지, 권력, 지성을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 보너스대미지증가 / 옵션2: 힘증가 / 옵션3: 불대미지"
-  },
-  {
-    "season": "Fall",
-    "day": 10,
-    "type": "zodiac",
-    "name": "처녀자리 시작",
-    "desc": "서늘한 가을바람 같은 별자리입니다. 바람, 신속함, 생명을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 기동성증가 / 옵션2: 덱스증가 / 옵션3: 전기대미지"
-  },
-  {
-    "season": "Fall",
-    "day": 19,
-    "type": "zodiac",
-    "name": "천칭자리 시작",
-    "desc": "가을의 끝을 알리는 별자리입니다. 꿈, 의지, 어둠, 빛을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬확률증가 / 옵션2: 행운증가 / 옵션3: 얼음대미지"
-  },
-  {
-    "season": "Fall",
-    "day": 28,
-    "type": "zodiac",
-    "name": "전갈자리 시작",
-    "desc": "겨울의 시작을 알리는 별자리입니다. 어둠, 행운, 전기를 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 크리티컬대미지증가 / 옵션2: 행운증가 / 옵션3: 전기대미지"
-  },
-  {
-    "season": "Winter",
-    "day": 9,
-    "type": "zodiac",
-    "name": "사수자리 시작",
-    "desc": "자유로운 영혼을 형상화한 별자리입니다. 바람, 공간, 민첩성, 행운을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 스킬쿨타임감소 / 옵션2: 덱스증가 / 옵션3: 불대미지"
-  },
-  {
-    "season": "Winter",
-    "day": 18,
-    "type": "zodiac",
-    "name": "염소자리 시작",
-    "desc": "겨울의 끝을 알리는 별자리입니다. 대지, 수호, 힘을 상징하는 별이 밝게 빛납니다.\n\n[별자리 효과]\n옵션1: 방어력증가 / 옵션2: 행운증가 / 옵션3: 불대미지"
-  },
-  {
-    "season": "Spring",
-    "day": 8,
-    "type": "festival",
-    "name": "벚꽃놀이",
-    "desc": "봄을 알리는 벚꽃 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 9,
-    "type": "festival",
-    "name": "벚꽃놀이",
-    "desc": "봄을 알리는 벚꽃 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 10,
-    "type": "festival",
-    "name": "벚꽃놀이",
-    "desc": "봄을 알리는 벚꽃 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 11,
-    "type": "festival",
-    "name": "벚꽃놀이",
-    "desc": "봄을 알리는 벚꽃 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 12,
-    "type": "festival",
-    "name": "벚꽃놀이",
-    "desc": "봄을 알리는 벚꽃 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 13,
-    "type": "festival",
-    "name": "벚꽃놀이",
-    "desc": "봄을 알리는 벚꽃 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 26,
-    "type": "festival",
-    "name": "로맨스 축제",
-    "desc": "사랑을 고백하는 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 27,
-    "type": "festival",
-    "name": "로맨스 축제",
-    "desc": "사랑을 고백하는 축제입니다."
-  },
-  {
-    "season": "Spring",
-    "day": 28,
-    "type": "festival",
-    "name": "로맨스 축제",
-    "desc": "사랑을 고백하는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 8,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 9,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 10,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 11,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 12,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 13,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 14,
-    "type": "festival",
-    "name": "바다 축제",
-    "desc": "여름 바다를 즐기는 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 26,
-    "type": "festival",
-    "name": "불꽃놀이",
-    "desc": "밤하늘을 수놓는 불꽃 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 27,
-    "type": "festival",
-    "name": "불꽃놀이",
-    "desc": "밤하늘을 수놓는 불꽃 축제입니다."
-  },
-  {
-    "season": "Summer",
-    "day": 28,
-    "type": "festival",
-    "name": "불꽃놀이",
-    "desc": "밤하늘을 수놓는 불꽃 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 8,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 9,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 10,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 11,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 12,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 13,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 14,
-    "type": "festival",
-    "name": "수확제",
-    "desc": "풍성한 작물을 기념하는 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 26,
-    "type": "festival",
-    "name": "유령 축제",
-    "desc": "가을 밤의 미스터리한 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 27,
-    "type": "festival",
-    "name": "유령 축제",
-    "desc": "가을 밤의 미스터리한 축제입니다."
-  },
-  {
-    "season": "Fall",
-    "day": 28,
-    "type": "festival",
-    "name": "유령 축제",
-    "desc": "가을 밤의 미스터리한 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 8,
-    "type": "festival",
-    "name": "온천 여행",
-    "desc": "따뜻한 온천에서 몸을 녹이는 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 9,
-    "type": "festival",
-    "name": "온천 여행",
-    "desc": "따뜻한 온천에서 몸을 녹이는 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 10,
-    "type": "festival",
-    "name": "온천 여행",
-    "desc": "따뜻한 온천에서 몸을 녹이는 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 11,
-    "type": "festival",
-    "name": "온천 여행",
-    "desc": "따뜻한 온천에서 몸을 녹이는 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 12,
-    "type": "festival",
-    "name": "온천 여행",
-    "desc": "따뜻한 온천에서 몸을 녹이는 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 13,
-    "type": "festival",
-    "name": "온천 여행",
-    "desc": "따뜻한 온천에서 몸을 녹이는 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 24,
-    "type": "festival",
-    "name": "겨울 축제",
-    "desc": "한 해를 마무리하는 눈꽃 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 25,
-    "type": "festival",
-    "name": "겨울 축제",
-    "desc": "한 해를 마무리하는 눈꽃 축제입니다."
-  },
-  {
-    "season": "Winter",
-    "day": 26,
-    "type": "festival",
-    "name": "겨울 축제",
-    "desc": "한 해를 마무리하는 눈꽃 축제입니다."
-  },
-  {
     "season": "Winter",
     "day": 27,
     "type": "festival",
     "name": "겨울 축제",
-    "desc": "한 해를 마무리하는 눈꽃 축제입니다."
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
   },
   {
     "season": "Winter",
     "day": 28,
     "type": "festival",
     "name": "겨울 축제",
-    "desc": "한 해를 마무리하는 눈꽃 축제입니다."
+    "desc": "겨울의 마지막 주, 마을은 성대한 축제를 위해 한자리에 모입니다. 겨울 축제는 기쁨과 놀이, 공동체 정신으로 한 해의 마무리를 장식합니다."
   }
 ]

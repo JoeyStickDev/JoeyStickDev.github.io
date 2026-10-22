@@ -47,4 +47,7 @@ id,date,title,detail,status,progress_text
 46,2026.07,2D map transition bug,Fix bug where map movement after 2D transition is incorrect.,planned,
 47,2026.07,Game creation date & elapsed time,Display game creation date and elapsed time.,planned,
 48,2026.07,Map check,Implement map verification routine.,planned,
-49,2026.07,Relative evaluation skill,Create skill that scales exp, hp, atk, def with level and also increases exp.,planned,
+49,2026.07,Relative evaluation skill,"Create skill that scales exp, hp, atk, def with level and also increases exp.",planned,
+50,2026. 09 ~ 10,언리얼 엔진 5 리버스,"게임을 언리얼 엔진 5로 처음부터 다시 제작. 메인 이야기 30장 · 스토리 맵 17곳 · 주민 43명 · 퀘스트 491개. 아르바이트 8가지 · 카트 대회 · 버스킹 · 별자리 지도 · 특별한 무기 134종 추가. 함께 하기 (실험 단계)",completed,완료
+51,2026. 10,스팀 리버스 업데이트,"스팀의 기본 버전을 리버스 버전으로 교체. 공식 홈페이지 새 단장 (미디어 갤러리 · 고객센터 · 휴대폰 메뉴)",in-progress,진행 중
+52,2026. 11 이후 (예상),업데이트 이후,"플레이어 피드백 반영과 버그 수정. 함께 하기 (실험 단계) 안정화",planned,예정

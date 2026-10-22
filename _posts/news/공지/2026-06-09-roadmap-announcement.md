@@ -1,3 +1,8 @@
+---
+layout: post
+title: "로드맵 업데이트 안내 (Roadmap Update Announcement)"
+category: 공지
+---
 # Roadmap Update Announcement
 
 **Date:** 2026-06-09

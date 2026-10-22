@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "2026년 6월 업데이트 공지"
 date: 2026-06-03
-categories: [Update, News]
+category: 업데이트
 ---
 
 # 6월 업데이트 🎉

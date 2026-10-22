@@ -1,0 +1,150 @@
+# 미디어 갤러리 (/media/)의 그림 목록 — 줄을 더하면 갤러리에 바로 나온다.
+# screenshots: file = assets/images/media/screenshots/<file> (큰 그림 1600x900), 작은 그림은 같은 이름으로 thumb/ 에
+#   group: town (마을·생활) · world (책 속의 세계) · battle (전투·성장) · festival (축제·계절) · play (놀이)
+# artwork: src = 사이트 안의 그림 경로
+
+screenshot_groups:
+  - id: town
+    name: 마을·생활
+  - id: world
+    name: 책 속의 세계
+  - id: battle
+    name: 전투·성장
+  - id: festival
+    name: 축제·계절
+  - id: play
+    name: 놀이
+
+screenshots:
+  - file: 01_town_dawn.jpg
+    group: town
+    title: 새벽의 마을
+    desc: 가로등이 아직 켜진 새벽, 마을의 하루가 시작됩니다.
+  - file: 02_town_air.jpg
+    group: town
+    title: 하늘에서 본 마을
+    desc: 집과 가게, 길과 밭이 이어진 우리 마을.
+  - file: 03_harvest.jpg
+    group: town
+    title: 여름 밭의 수확
+    desc: 작물 18가지 — 계절마다 심을 수 있는 것이 다릅니다.
+  - file: 04_talk.jpg
+    group: town
+    title: 주민과의 대화
+    desc: 주민 43명과 이야기하고 선물하며 마음을 얻습니다.
+  - file: 05_fishing.jpg
+    group: town
+    title: 낚시
+    desc: 물고기 36종 — 마을의 물가와 책 속 세계에서 낚아 올립니다.
+  - file: 06_pet.jpg
+    group: town
+    title: 펫과 함께
+    desc: 펫 13종이 곁을 따라다닙니다.
+  - file: 07_temple.jpg
+    group: world
+    title: 책 속의 세계 · 신전
+    desc: 도서관의 책을 펼치면 그 이야기 속으로 들어갑니다.
+  - file: 08_cloud.jpg
+    group: world
+    title: 책 속의 세계 · 구름 위
+    desc: 무지개와 열기구가 떠 있는 하늘의 섬.
+  - file: 09_church.jpg
+    group: world
+    title: 책 속의 세계 · 교회
+    desc: 밤의 교회와 켈리의 성으로 이어지는 이야기.
+  - file: 10_stella.jpg
+    group: world
+    title: 책 속의 세계 · 스텔라 파티
+    desc: 별자리 연회장에서 열리는 밤의 파티.
+  - file: 11_magic.jpg
+    group: battle
+    title: 마법 전투
+    desc: 검 · 활 · 총 · 오브 · 마법 — 스킬 75가지.
+  - file: 12_boss.jpg
+    group: battle
+    title: 던전 보스
+    desc: 숲 던전 5층의 보스, 거대 멧돼지.
+  - file: 20_starmap.jpg
+    group: battle
+    title: 별자리 지도
+    desc: 별자리 52개, 별 196개를 켜며 스킬을 키웁니다.
+  - file: 13_cherry.jpg
+    group: festival
+    title: 벚꽃 축제
+    desc: 봄 8일 — 한 해에 열리는 축제 8번 가운데 첫 번째.
+  - file: 14_lantern.jpg
+    group: festival
+    title: 사냥 축제의 풍등
+    desc: 가을 26일 밤, 하늘로 오르는 풍등.
+  - file: 15_winterfest.jpg
+    group: festival
+    title: 겨울 축제
+    desc: 겨울 22일, 반짝이는 트리 아래 모인 마을 사람들.
+  - file: 16_winter.jpg
+    group: festival
+    title: 눈 내린 마을
+    desc: 같은 자리도 계절마다 다른 얼굴을 보여 줍니다.
+  - file: 17_race.jpg
+    group: play
+    title: 카트 대회 · 별자리 로드
+    desc: 별빛 하늘을 달리는 길 — 코스 30곳 · 컵 3개 · 8명이 달립니다.
+  - file: 18_cafe.jpg
+    group: play
+    title: 아르바이트 · 카페 바리스타
+    desc: 카페부터 고고학까지, 아르바이트 미니게임 8가지.
+  - file: 19_busking.jpg
+    group: play
+    title: 버스킹
+    desc: 기타 한 대로 마을의 무대에 섭니다.
+
+artwork:
+  - src: assets/images/home/hero_bg.png
+    title: 키 아트 · 도서관
+    desc: 수수께끼의 도서관 — 모든 이야기가 시작되는 곳.
+    wide: true
+  - src: assets/images/home/logo.png
+    title: 게임 로고
+    desc: Shards of the Library
+    wide: true
+  - src: assets/images/characters/0_Female/G_Angela.png
+    title: 안젤라
+    desc: 커뮤니티 센터의 바리스타
+  - src: assets/images/characters/0_Female/G_Fiona.png
+    title: 피오나
+    desc: 마을 사람들
+  - src: assets/images/characters/0_Male/M_Aiden.png
+    title: 에이든
+    desc: 마을 사람들
+  - src: assets/images/characters/0_Male/M_Leon.png
+    title: 레온
+    desc: 마을 사람들
+  - src: assets/images/characters/0_Female/G_Kiri.png
+    title: 키리
+    desc: 마을 사람들
+  - src: assets/images/characters/2_LunaLake/G_Ceilne_M2.png
+    title: 셀린
+    desc: 책 속의 세계 · 루나 호수
+  - src: assets/images/characters/2_LunaLake/M_Sebastian_M2.png
+    title: 세바스찬
+    desc: 책 속의 세계 · 루나 호수
+  - src: assets/images/characters/3_Temple/G_Jenny_M3.png
+    title: 제니
+    desc: 책 속의 세계 · 신전
+  - src: assets/images/characters/3_Temple/M_Kai_M3.png
+    title: 카이
+    desc: 책 속의 세계 · 신전
+  - src: assets/images/characters/5_Forest/M_Blake_M5.png
+    title: 블레이크
+    desc: 책 속의 세계 · 동물 숲
+  - src: assets/images/characters/6_Church/G_Kelly_M6.png
+    title: 켈리
+    desc: 책 속의 세계 · 교회
+  - src: assets/images/characters/7_Cloud/M_Rio_M7.png
+    title: 리오
+    desc: 책 속의 세계 · 구름 위
+  - src: assets/images/characters/8_Ship/G_Casandra_M8.png
+    title: 카산드라
+    desc: 책 속의 세계 · 함선의 선장
+  - src: assets/images/characters/9_OldTown/Iris_M9.png
+    title: 아이리스
+    desc: 책 속의 세계 · 올드 타운

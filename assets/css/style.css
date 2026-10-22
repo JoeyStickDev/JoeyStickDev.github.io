@@ -528,7 +528,254 @@ ul {
     .game-title {
         font-size: 2.5rem;
     }
+}
+
+/* ===== 2026-10 리버스 업데이트에서 더한 것 ===== */
+
+/* 격자 칸이 긴 글 제목 (한 줄로 자르는 목록)에 밀려 휴대폰에서 옆으로 넘치던 것 */
+.content-container > * { min-width: 0; }
+.post-list li { min-width: 0; }
+
+/* 홈 카드의 배경 그림 (게임 스크린샷) */
+.feature-card {
+    background-size: cover;
+    background-position: center;
+}
+.feature-game-info { background-image: url("../images/media/screenshots/thumb/03_harvest.jpg"); }
+.feature-media { background-image: url("../images/media/screenshots/thumb/08_cloud.jpg"); }
+.feature-lore { background-image: url("../images/media/screenshots/thumb/07_temple.jpg"); }
+.feature-card .card-overlay p { color: #d6dce6; }
+
+/* 홈: 게임 소개 */
+.home-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+}
+.home-about-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.home-about-head .eyebrow {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    letter-spacing: 3px;
+    font-size: 0.95rem;
+}
+.home-about-head h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 8px 0 10px;
+}
+.home-about-head p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+.home-stats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+.home-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 16px 10px;
+    text-align: center;
+}
+.home-stat strong {
+    display: block;
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+.home-stat span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+.home-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.home-feature {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.home-feature:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+.home-feature img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+.home-feature div {
+    padding: 16px 18px 18px;
+}
+.home-feature h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+.home-feature p {
+    color: var(--text-muted);
+    font-size: 0.93rem;
+    line-height: 1.6;
+}
+.home-about-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 뉴스 글의 본문 (전역 초기화 때문에 문단·목록·그림의 모양이 없었다) */
+.post-content-area {
+    margin-top: 110px !important;
+}
+.post-header .post-title {
+    white-space: normal;
+    overflow: visible;
+    line-height: 1.4;
+}
+.post-body h1 { color: #fff; font-size: 1.7rem; margin: 1.2em 0 0.6em; line-height: 1.4; }
+.post-body h2 { color: var(--accent-color); font-size: 1.4rem; margin: 1.8em 0 0.7em; line-height: 1.4; }
+.post-body h3 { color: #fff; font-size: 1.15rem; margin: 1.4em 0 0.5em; }
+.post-body h4 { color: #fff; font-size: 1.05rem; margin: 1.2em 0 0.4em; }
+.post-body > :first-child { margin-top: 0; }
+.post-body p { margin: 0 0 1em; }
+.post-body ul, .post-body ol { margin: 0 0 1.2em; padding-left: 1.4em; }
+.post-body ul { list-style: disc; }
+.post-body ol { list-style: decimal; }
+.post-body li { margin: 0.25em 0; }
+.post-body li > ul, .post-body li > ol { margin: 0.25em 0 0.4em; }
+.post-body ul ul { list-style: circle; }
+.post-body strong { color: #fff; }
+.post-body a { color: var(--accent-color); text-decoration: underline; text-underline-offset: 3px; }
+.post-body hr { border: 0; border-top: 1px solid var(--border-color); margin: 2em 0; }
+.post-body img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
+.post-body figure { margin: 1.2em 0 1.6em; }
+.post-body figcaption { color: var(--text-muted); font-size: 0.9rem; text-align: center; margin-top: 8px; }
+.post-body blockquote {
+    border-left: 4px solid var(--accent-color);
+    background: rgba(252, 163, 17, 0.08);
+    padding: 12px 18px;
+    margin: 0 0 1.2em;
+    border-radius: 4px;
+}
+.post-body blockquote p:last-child { margin-bottom: 0; }
+.post-body table { width: 100%; border-collapse: collapse; margin: 0 0 1.4em; font-size: 0.95rem; }
+.post-body th, .post-body td { border: 1px solid var(--border-color); padding: 8px 10px; text-align: left; vertical-align: top; }
+.post-body th { background: rgba(255, 255, 255, 0.05); color: #fff; }
+.post-body code { background: rgba(255, 255, 255, 0.08); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+.post-body .shot-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1.2em 0 1.6em; }
+.post-body .shot-row figure { margin: 0; }
+
+/* 휴대폰 메뉴 (전에는 768px 아래에서 메뉴가 통째로 숨었다) */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    width: 42px;
+    height: 38px;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.nav-mobile-only { display: none; }
+
+@media (max-width: 900px) {
+    .nav-toggle { display: block; }
+    .logo .logo-text { font-size: 1.15rem; }
     .main-nav {
-        display: none; /* simple mobile nav override needed later */
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(11, 19, 43, 0.98);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
+    .global-header.nav-open .main-nav { display: block; }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 20px 20px;
+    }
+    .main-nav li { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+    .main-nav li > a { display: block; padding: 12px 4px; }
+    .main-nav a::after { display: none; }
+    .dropdown { display: block; }
+    .dropdown::after { display: none; }
+    .dropdown > .dropdown-content,
+    .dropdown:hover > .dropdown-content {
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+        transform: none;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        padding: 0 0 10px;
+        margin: 0;
+        min-width: 0;
+        animation: none;
+    }
+    .dropdown-content a {
+        padding: 6px 12px;
+        margin: 0 6px 6px 0;
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        font-size: 0.88rem;
+        color: var(--text-muted);
+    }
+    .nav-mobile-only { display: list-item; }
+}
+
+@media (max-width: 560px) {
+    .header-action .btn-play-small { display: none; }
+    .hero-section { height: 520px; }
+    .home-stats { grid-template-columns: repeat(3, 1fr); }
+    .home-stat strong { font-size: 1.5rem; }
+    .post-content-area { padding: 24px 18px !important; margin: 90px 10px 30px !important; }
+    .post-content-area .post-title { font-size: 1.5rem !important; }
+    .post-body { font-size: 1rem !important; }
+    .post-body .shot-row { grid-template-columns: 1fr; }
+    .post-navigation { flex-wrap: wrap; gap: 14px; }
+    .footer-container { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .footer-links { flex-wrap: wrap; gap: 14px; }
+}
+
+/* 가이드: 인라인 격자 (사이드바 250px | 본문)가 휴대폰에서도 두 칸이었다 */
+@media (max-width: 768px) {
+    .page-guide .content-container { grid-template-columns: 1fr !important; gap: 20px !important; }
+    .page-guide .guide-sidebar { position: static !important; padding: 20px !important; }
+    .page-guide .guide-content { padding: 24px 18px !important; }
+    .page-guide .guide-section div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    .page-guide .cal-grid, .page-guide #calendar-container > div:first-child { gap: 4px !important; grid-template-columns: repeat(7, minmax(0, 1fr)) !important; }
+    .page-guide #calendar-container { padding: 10px !important; }
+    .page-guide .cal-cell { overflow: hidden; }
+    .page-guide .cal-cell { padding: 4px; min-height: 60px; }
+    .page-guide .cal-event-badge { font-size: 0.6rem; padding: 2px 3px; }
+    .page-guide .calendar-tabs { flex-wrap: wrap; }
+}
+
+@media (max-width: 900px) and (min-width: 561px) {
+    .home-stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+    .home-features { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+    .home-features { grid-template-columns: 1fr; }
 }

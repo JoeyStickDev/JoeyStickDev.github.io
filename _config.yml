@@ -25,3 +25,5 @@ exclude:
   - scripts/
   - README.md
   - .antigravityignore
+  - scratch/
+  - Temp/

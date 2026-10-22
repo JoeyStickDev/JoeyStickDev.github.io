@@ -36,4 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
             activateTab(hash);
         }
     });
+
+    // 휴대폰 메뉴 (☰): 열고 닫기, 메뉴의 링크를 누르면 닫힌다
+    const header = document.querySelector('.global-header');
+    const navToggle = document.querySelector('.nav-toggle');
+    if (header && navToggle) {
+        const setOpen = open => {
+            header.classList.toggle('nav-open', open);
+            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            navToggle.textContent = open ? '✕' : '☰';
+        };
+        navToggle.addEventListener('click', () => setOpen(!header.classList.contains('nav-open')));
+        header.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    }
 });

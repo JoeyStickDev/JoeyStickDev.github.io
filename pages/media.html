@@ -5,15 +5,15 @@ permalink: /media/
 ---
 <section class="main-content page-media" style="padding-top: 100px; min-height: 80vh;">
     <div style="max-width: 1200px; margin: 0 auto; display: block;">
-        
-        <div class="media-header" style="margin-bottom: 40px; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; display: flex; justify-content: space-between; align-items: flex-end;">
+
+        <div class="media-header">
             <div>
                 <h1 style="color: #fff; font-size: 2.8rem; margin-bottom: 10px;"><span style="color: var(--accent-color);">미디어</span> 갤러리</h1>
-                <p style="color: var(--text-muted); font-size: 1.15rem;">Shards of the Library의 인게임 스크린샷과 팬아트를 확인하세요.</p>
+                <p style="color: var(--text-muted); font-size: 1.15rem;">Shards of the Library의 인게임 스크린샷과 아트워크를 확인하세요. 그림을 누르면 크게 볼 수 있습니다.</p>
             </div>
-            <div style="display: flex; gap: 15px;">
-                <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="btn-play-small" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: var(--text-main);">스팀 스크린샷 ↗</a>
-                <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" class="btn-play-small" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: var(--text-main);">스팀 아트워크 ↗</a>
+            <div class="media-header-links">
+                <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" rel="noopener" class="btn-play-small" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: var(--text-main);">스팀 스크린샷 ↗</a>
+                <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" rel="noopener" class="btn-play-small" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: var(--text-main);">스팀 아트워크 ↗</a>
             </div>
         </div>
 
@@ -24,68 +24,259 @@ permalink: /media/
         </div>
 
         <div class="tab-content-container">
-            <!-- 스크린샷 탭 -->
+            <!-- 스크린샷 탭 (목록: _data/media.yml) -->
             <div class="tab-content active" id="tab-screenshots">
-                <div class="media-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
-                    
-                    <!-- 샘플 스크린샷 아이템 : 실제 스팀 이미지 주소와 링크 주소로 교체 가능 -->
-                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="media-card" style="display: block; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); transition: transform 0.3s;">
-                        <div class="media-img" style="height: 200px; background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3702320/capsule_616x353.jpg') center/cover;"></div>
-                        <div class="media-info" style="padding: 15px;">
-                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">도서관 전경</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">클릭하여 스팀 커뮤니티에서 보기</p>
+                <div class="media-filters" role="group" aria-label="스크린샷 분류">
+                    <button class="media-chip active" data-group="all">전체 <span>{{ site.data.media.screenshots | size }}</span></button>
+                    {% for g in site.data.media.screenshot_groups %}
+                    {% assign n = site.data.media.screenshots | where: "group", g.id | size %}
+                    <button class="media-chip" data-group="{{ g.id }}">{{ g.name }} <span>{{ n }}</span></button>
+                    {% endfor %}
+                </div>
+
+                <div class="media-grid">
+                    {% for s in site.data.media.screenshots %}
+                    <a href="{{ '/assets/images/media/screenshots/' | append: s.file | relative_url }}" class="media-card lightbox-item" data-group="{{ s.group }}" data-title="{{ s.title }}" data-desc="{{ s.desc }}">
+                        <div class="media-img-wrap">
+                            <img class="media-img" src="{{ '/assets/images/media/screenshots/thumb/' | append: s.file | relative_url }}" alt="{{ s.title }}" loading="lazy" width="640" height="360">
+                        </div>
+                        <div class="media-info">
+                            <h3>{{ s.title }}</h3>
+                            <p>{{ s.desc }}</p>
                         </div>
                     </a>
-                    
-                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="media-card" style="display: block; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); transition: transform 0.3s;">
-                        <div class="media-img" style="height: 200px; background: linear-gradient(45deg, var(--primary-color), #2c3e50);"></div>
-                        <div class="media-info" style="padding: 15px;">
-                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">플레이 스크린샷 2</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">클릭하여 스팀 커뮤니티에서 보기</p>
-                        </div>
-                    </a>
-                    
+                    {% endfor %}
                 </div>
                 <div style="text-align: center; margin-top: 40px;">
-                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">스팀에서 더 많은 스크린샷 보기 +</a>
+                    <a href="https://steamcommunity.com/app/3702320/screenshots/" target="_blank" rel="noopener" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">스팀에서 더 많은 스크린샷 보기 +</a>
                 </div>
             </div>
 
             <!-- 아트워크 탭 -->
             <div class="tab-content" id="tab-artwork">
-                <div class="media-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
-                    
-                    <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" class="media-card" style="display: block; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); transition: transform 0.3s;">
-                        <div class="media-img" style="height: 200px; background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));"></div>
-                        <div class="media-info" style="padding: 15px;">
-                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">공식 컨셉 아트</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">클릭하여 스팀 커뮤니티에서 보기</p>
+                <div class="media-grid art-grid">
+                    {% for a in site.data.media.artwork %}
+                    <a href="{{ a.src | relative_url }}" class="media-card art-card lightbox-item{% if a.wide %} art-wide{% endif %}" data-title="{{ a.title }}" data-desc="{{ a.desc }}">
+                        <div class="media-img-wrap art-img-wrap">
+                            <img class="media-img" src="{{ a.src | relative_url }}" alt="{{ a.title }}" loading="lazy">
+                        </div>
+                        <div class="media-info">
+                            <h3>{{ a.title }}</h3>
+                            <p>{{ a.desc }}</p>
                         </div>
                     </a>
-                    
+                    {% endfor %}
                 </div>
-                <div style="text-align: center; margin-top: 40px;">
-                    <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">스팀에서 더 많은 아트워크 보기 +</a>
+                <div class="media-more-links">
+                    <a href="{{ '/lorebook/characters.html' | relative_url }}" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">설정집에서 모든 인물 보기 +</a>
+                    <a href="https://steamcommunity.com/app/3702320/images/" target="_blank" rel="noopener" class="btn-more" style="font-size: 1.1rem; padding: 10px 20px; background: var(--bg-dark); border-radius: 20px;">스팀에서 더 많은 아트워크 보기 +</a>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </section>
 
+<!-- 크게 보기 -->
+<div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" aria-label="닫기">✕</button>
+    <button class="lb-nav lb-prev" aria-label="이전 그림">‹</button>
+    <figure class="lb-figure">
+        <img class="lb-img" alt="">
+        <figcaption><strong class="lb-title"></strong><span class="lb-desc"></span><span class="lb-count"></span></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" aria-label="다음 그림">›</button>
+</div>
+
 <style>
+.media-header {
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.media-header-links { display: flex; gap: 15px; flex-wrap: wrap; }
+.media-more-links { text-align: center; margin-top: 40px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.media-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.media-chip {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+.media-chip span { opacity: 0.6; margin-left: 4px; font-size: 0.85rem; }
+.media-chip:hover { color: #fff; border-color: var(--accent-color); }
+.media-chip.active { background: var(--accent-color); border-color: var(--accent-color); color: #000; font-weight: 700; }
+.media-chip.active span { opacity: 0.8; }
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+.media-card {
+    display: block;
+    background: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.media-card[hidden] { display: none; }
+.media-img-wrap { aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-dark); }
+.media-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.media-info { padding: 14px 16px 16px; }
+.media-info h3 { color: #fff; font-size: 1.05rem; margin-bottom: 5px; transition: color 0.3s; }
+.media-info p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; }
 .media-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     border-color: var(--accent-color);
 }
-.media-card:hover h3 {
-    color: var(--accent-color) !important;
+.media-card:hover h3 { color: var(--accent-color); }
+.media-card:hover .media-img { transform: scale(1.05); }
+
+/* 아트워크: 인물은 세로 카드, 키 아트·로고는 두 칸 */
+.art-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.art-img-wrap {
+    aspect-ratio: 3 / 4;
+    background: radial-gradient(circle at 50% 40%, var(--secondary-color), var(--bg-dark));
 }
-.media-img {
-    transition: transform 0.5s ease;
+.art-card .media-img { object-fit: contain; padding: 10px; }
+.art-wide { grid-column: span 2; }
+.art-wide .art-img-wrap { aspect-ratio: 3 / 2; }
+.art-wide .media-img { object-fit: cover; padding: 0; }
+.art-wide:nth-child(2) .media-img { object-fit: contain; padding: 24px; }
+
+/* 크게 보기 */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(2, 5, 10, 0.94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 70px;
 }
-.media-card:hover .media-img {
-    transform: scale(1.05); /* 약간의 줌인 효과 */
+.lightbox[hidden] { display: none; }
+.lb-figure { margin: 0; max-width: 1400px; width: 100%; text-align: center; }
+.lb-img {
+    max-width: 100%;
+    max-height: calc(100vh - 140px);
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    background: var(--bg-dark);
+}
+.lb-figure figcaption { margin-top: 14px; color: var(--text-muted); font-size: 1rem; }
+.lb-title { color: #fff; margin-right: 10px; }
+.lb-count { margin-left: 12px; font-size: 0.85rem; opacity: 0.7; }
+.lb-close, .lb-nav {
+    position: absolute;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid var(--border-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: inherit;
+    transition: background 0.2s, border-color 0.2s;
+}
+.lb-close:hover, .lb-nav:hover { background: rgba(252,163,17,0.25); border-color: var(--accent-color); }
+.lb-close { top: 20px; right: 20px; width: 44px; height: 44px; font-size: 1.2rem; }
+.lb-nav { top: 50%; transform: translateY(-50%); width: 50px; height: 50px; font-size: 2rem; line-height: 1; }
+.lb-prev { left: 12px; }
+.lb-next { right: 12px; }
+
+@media (max-width: 768px) {
+    .media-header h1 { font-size: 2.2rem !important; }
+    .media-grid { grid-template-columns: 1fr; }
+    .art-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .art-wide { grid-column: span 2; }
+    .tabs .tab-btn { padding: 8px 24px !important; font-size: 1.05rem !important; }
+    .lightbox { padding: 60px 10px 80px; }
+    .lb-nav { top: auto; bottom: 16px; transform: none; }
+    .lb-prev { left: calc(50% - 62px); }
+    .lb-next { right: calc(50% - 62px); }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 분류 버튼
+    const chips = document.querySelectorAll('.media-chip');
+    const shots = document.querySelectorAll('#tab-screenshots .media-card');
+    chips.forEach(chip => chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.toggle('active', c === chip));
+        const g = chip.dataset.group;
+        shots.forEach(card => { card.hidden = g !== 'all' && card.dataset.group !== g; });
+    }));
+
+    // 크게 보기: 같은 탭 안에서 지금 보이는 그림끼리 넘긴다
+    const box = document.getElementById('lightbox');
+    const img = box.querySelector('.lb-img');
+    const title = box.querySelector('.lb-title');
+    const desc = box.querySelector('.lb-desc');
+    const count = box.querySelector('.lb-count');
+    let list = [];
+    let at = 0;
+
+    function show(i) {
+        at = (i + list.length) % list.length;
+        const a = list[at];
+        img.src = a.getAttribute('href');
+        img.alt = a.dataset.title;
+        title.textContent = a.dataset.title;
+        desc.textContent = a.dataset.desc || '';
+        count.textContent = (at + 1) + ' / ' + list.length;
+    }
+    function open(a) {
+        const tab = a.closest('.tab-content');
+        list = Array.from(tab.querySelectorAll('.lightbox-item')).filter(x => !x.hidden);
+        box.hidden = false;
+        document.body.style.overflow = 'hidden';
+        show(list.indexOf(a));
+    }
+    function close() {
+        box.hidden = true;
+        img.removeAttribute('src');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.lightbox-item').forEach(a => a.addEventListener('click', e => {
+        e.preventDefault();
+        open(a);
+    }));
+    box.querySelector('.lb-close').addEventListener('click', close);
+    box.querySelector('.lb-prev').addEventListener('click', e => { e.stopPropagation(); show(at - 1); });
+    box.querySelector('.lb-next').addEventListener('click', e => { e.stopPropagation(); show(at + 1); });
+    box.addEventListener('click', e => { if (e.target === box) close(); });
+    document.addEventListener('keydown', e => {
+        if (box.hidden) return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowLeft') show(at - 1);
+        else if (e.key === 'ArrowRight') show(at + 1);
+    });
+});
+</script>
